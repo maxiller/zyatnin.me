@@ -10,7 +10,7 @@ WORKDIR /app
 COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* ./
 RUN \
   if [ -f yarn.lock ]; then yarn --frozen-lockfile; \
-  elif [ -f package-lock.json ]; then npm ci --production; \
+  elif [ -f package-lock.json ]; then npm ci; \
   elif [ -f pnpm-lock.yaml ]; then yarn global add pnpm && pnpm i --frozen-lockfile; \
   else echo "Lockfile not found." && exit 1; \
   fi
@@ -32,11 +32,16 @@ COPY . .
 # If using npm comment out above and use below instead
 RUN npm run build
 
+# Putting new version to container registry
+
+
+
 # Production image, copy all the files and run next
 FROM base AS runner
 WORKDIR /app
 
 ENV NODE_ENV production
+ENV NPM_CONFIG_LOGLEVEL warn
 # Uncomment the following line in case you want to disable telemetry during runtime.
 ENV NEXT_TELEMETRY_DISABLED 1
 
