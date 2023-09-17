@@ -3,9 +3,13 @@ name: Build & Publish
 on:
   push:
     branches:
-      - "**"             # all branches
-      - "!dependabot/**"      # exclude dependbot branches
+      - main
   workflow_dispatch:      # Manually run the workflow
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'info'
 
 jobs:
   push-image:
@@ -14,7 +18,7 @@ jobs:
       run:
         working-directory: './app'
       steps:
-        - name: 'Checkout Action'
+        - name: Checkout Action
           uses: actions/checkout@main
 
         - name:
