@@ -1,0 +1,7 @@
+{
+  "menu": [
+    { "title": "Cases", "url": "/cases" },
+    { "title": "Experience", "url": "/experience" },
+    { "title": "Contacts", "url": "/contatcs" }
+  ]
+}

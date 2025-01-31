@@ -48,3 +48,9 @@ export default tseslint.config({
   },
 })
 ```
+
+## Build
+Once ready, run in your terminal
+```
+npm run deploy
+```
