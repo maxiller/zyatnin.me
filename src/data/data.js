@@ -6,7 +6,7 @@ export const content = {
     },
     ru: {
       text: "Привет, я разработчик с опытом в веб-технологиях.",
-      photo: "/path/to/photo.jpg"
+      photo: "photo.png"
     }
   },
   cases: {
