@@ -1,7 +1,7 @@
 {
   "name": "zyatnin.me",
   "version": "0.1.0",
-  "homepage": "https://maxiller.github.com/zyatnin.me",
+  "homepage": "https://maxiller.github.io/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
