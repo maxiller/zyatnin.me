@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/zyatnin.me/static/css/main.0520e417.css",
+    "main.js": "/zyatnin.me/static/js/main.0c599eaa.js",
+    "static/js/488.faa7fd6e.chunk.js": "/zyatnin.me/static/js/488.faa7fd6e.chunk.js",
+    "index.html": "/zyatnin.me/index.html",
+    "main.0520e417.css.map": "/zyatnin.me/static/css/main.0520e417.css.map",
+    "main.0c599eaa.js.map": "/zyatnin.me/static/js/main.0c599eaa.js.map",
+    "488.faa7fd6e.chunk.js.map": "/zyatnin.me/static/js/488.faa7fd6e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0520e417.css",
+    "static/js/main.0c599eaa.js"
+  ]
+}
