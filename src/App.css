@@ -1,0 +1,278 @@
+/* Подключение моноширинного шрифта, похожего на Ubuntu Mono */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body.dark {
+  background: #300a24;
+  color: #ffffff;
+}
+
+body.light {
+  background: #ffffff;
+  color: #300a24;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Ubuntu Mono', monospace;
+  position: relative;
+}
+
+.header {
+  position: fixed;
+  top: 1rem;
+  left: 3rem;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: inherit;
+  z-index: 10;
+}
+
+nav {
+  display: none;
+  position: fixed;
+  top: 2.5rem;
+  left: 1rem;
+}
+
+nav.open {
+  display: block;
+  width: fit-content;
+  font-size: 1.5rem;
+  z-index: 10;
+}
+
+nav pre {
+  margin: 0;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.switches {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+.switches button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-size: 1rem;
+}
+
+.theme-toggle {
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-toggle.animate::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: ripple 0.5s ease-out forwards;
+}
+
+body.light .theme-toggle.animate::after {
+  background: rgba(48, 10, 36, 0.3);
+}
+
+@keyframes ripple {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  min-height: 80vh;
+}
+
+.about .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.profile-photo {
+  width: 25%;
+  margin: 0 1rem;
+  border-radius: 48px;
+}
+
+.about .content p {
+  flex: 1;
+  text-align: justify;
+  max-width: 60ch;
+}
+
+.cases {
+  align-items: flex-start;
+}
+
+.cases .case-list {
+  padding-top: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.case-item {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.case-item:not(.expanded) {
+  font-size: 1.5rem;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.expertise .json-display {
+  padding-top: 2rem;
+  text-align: left;
+}
+
+.expertise .json-display pre {
+  font-size: 1.5rem;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.expertise .json-link {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.expertise .json-link:hover {
+  text-decoration: underline;
+}
+
+/* Цвета в стиле VSCode */
+.json-key {
+  color: #569cd6;
+}
+
+.json-string {
+  color: #ce9178;
+}
+
+.json-number {
+  color: #b5cea8;
+}
+
+.json-array {
+  color: #d7ba7d;
+}
+
+body.light .json-key {
+  color: #007acc;
+}
+
+body.light .json-string {
+  color: #a31515;
+}
+
+body.light .json-number {
+  color: #008000;
+}
+
+body.light .json-array {
+  color: #795e26;
+}
+
+.telegram-sticky {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 36px;
+  height: 36px;
+  color: #ffffff;
+  z-index: 10;
+}
+
+body.light .telegram-sticky {
+  color: #300a24;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 1rem;
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .profile-photo {
+    width: 50%;
+    margin: 0 auto 1rem;
+  }
+  .about .content {
+    flex-direction: column;
+  }
+  .header h1 {
+    font-size: 1.2rem;
+  }
+  .expertise .json-display pre {
+    font-size: 1.2rem;
+  }
+  .case-item:not(.expanded) {
+    font-size: 1.2rem;
+  }
+  nav.open {
+    font-size: 1.2rem;
+  }
+}
