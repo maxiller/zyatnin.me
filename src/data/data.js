@@ -1,33 +1,57 @@
 export const content = {
   about: {
     en: {
-      title: 'README.md',
-      text: `I'm a passionate developer with years of experience in creating web solutions. My focus is on building clean, efficient, and user-friendly applications that solve real-world problems. When I'm not coding, you can find me exploring new technologies or enjoying a good cup of coffee.
-
-      My journey in tech has taught me the importance of continuous learning and adaptation. I thrive on challenges and enjoy turning complex ideas into simple, elegant solutions.`
+      text: "Hi, I'm a developer with experience in web technologies.",
+      photo: "photo.png" // Укажи реальный путь, если есть фото
     },
     ru: {
-      title: 'README.md',
-      text: `Я увлечённый разработчик с многолетним опытом создания веб-решений. Мой фокус — на создании чистых, эффективных и удобных приложений, решающих реальные задачи. Когда я не программирую, я изучаю новые технологии или наслаждаюсь чашкой хорошего кофе.
-
-      Мой путь в технологиях научил меня важности постоянного обучения и адаптации. Я процветаю на вызовах и люблю превращать сложные идеи в простые и элегантные решения.`
+      text: "Привет, я разработчик с опытом в веб-технологиях.",
+      photo: "/path/to/photo.jpg"
     }
   },
   cases: {
     en: [
-      { title: 'Project 1', text: 'Description of project one goes here', tags: ['react', 'web'] },
-      { title: 'Project 2', text: 'Description of project two is here', tags: ['node', 'api'] },
+      { title: "Project 1", text: "Description of project one goes here", tags: ["react", "web"] },
+      { title: "Project 2", text: "Description of project two is here", tags: ["node", "api"] }
     ],
     ru: [
-      { title: 'Проект 1', text: 'Описание первого проекта здесь', tags: ['react', 'web'] },
-      { title: 'Проект 2', text: 'Описание второго проекта тут', tags: ['node', 'api'] },
+      { title: "Проект 1", text: "Описание первого проекта здесь", tags: ["react", "web"] },
+      { title: "Проект 2", text: "Описание второго проекта здесь", tags: ["node", "api"] }
     ]
   },
   expertise: {
-    tags: ['react', 'node', 'javascript', 'css', 'html', 'api', 'web']
+    tags: ["React", "Node.js", "CSS", "JavaScript"]
+  },
+  menu: {
+    en: [
+      { path: "/", label: "about me" },
+      { path: "/cases", label: "cases" },
+      { path: "/expertise", label: "expertise" }
+    ],
+    ru: [
+      { path: "/", label: "обо мне" },
+      { path: "/cases", label: "кейсы" },
+      { path: "/expertise", label: "экспертиза" }
+    ]
+  },
+  sectionTitles: {
+    en: {
+      "/": "About",
+      "/cases": "Cases",
+      "/expertise": "Expertise"
+    },
+    ru: {
+      "/": "Обо мне",
+      "/cases": "Кейсы",
+      "/expertise": "Экспертиза"
+    }
   },
   footer: {
-    en: 'Prompting with Grok',
-    ru: 'Промптинг с Гроком'
+    en: {
+      text: "Prompting with Grok"
+    },
+    ru: {
+      text: "Работаю с Grok"
+    }
   }
 };

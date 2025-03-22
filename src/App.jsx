@@ -21,7 +21,7 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    document.body.className = theme; // Применяем класс темы к <body>
+    document.body.className = theme;
   }, [theme]);
 
   const toggleTheme = () => {
@@ -34,15 +34,12 @@ const App = () => {
 
   const getSectionTitle = () => {
     const path = window.location.pathname;
-    if (path === '/') return language === 'en' ? 'About' : 'Обо мне';
-    if (path === '/cases') return language === 'en' ? 'Cases' : 'Кейсы';
-    if (path === '/expertise') return language === 'en' ? 'Expertise' : 'Экспертиза';
-    return '';
+    return content.sectionTitles[language][path] || '';
   };
 
   return (
       <Router>
-        <div className="app"> {/* Убираем динамический класс темы с .app */}
+        <div className="app">
           <div className="header">
             <button className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               >_
@@ -51,9 +48,17 @@ const App = () => {
           </div>
           <nav className={isMenuOpen ? 'open' : ''}>
           <pre>
-            {`├─ `}<Link to="/" onClick={handleMenuClick}>{language === 'en' ? 'about me' : 'обо мне'}</Link>{`\n`}
-            {`├─ `}<Link to="/cases" onClick={handleMenuClick}>{language === 'en' ? 'cases' : 'кейсы'}</Link>{`\n`}
-            {`└─ `}<Link to="/expertise" onClick={handleMenuClick}>{language === 'en' ? 'expertise' : 'экспертиза'}</Link>
+            {content.menu[language].map((item, index) => {
+              const prefix = index === 0 ? '├─ ' : index === content.menu[language].length - 1 ? '└─ ' : '├─ ';
+              return (
+                  <div key={item.path}>
+                    {prefix}
+                    <Link to={item.path} onClick={handleMenuClick}>
+                      {item.label}
+                    </Link>
+                  </div>
+              );
+            })}
           </pre>
           </nav>
           <div className="switches">
