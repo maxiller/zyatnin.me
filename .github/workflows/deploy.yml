@@ -21,7 +21,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
+        run: echo "zyatnin.me" > ./build/CNAME && npm run build
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
