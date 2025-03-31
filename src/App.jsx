@@ -99,9 +99,8 @@ const App = () => {
 
         {/* Кнопка Telegram */}
         <a
-          href="https://t.me/yourusername"
+          href="https://t.me/ziatnine"
           className="telegram-sticky"
-          title="Contact via Telegram"
         >
           <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm4.865 7.392l-1.73 8.16c-.127.6-.497.745-.845.465l-2.49-1.835-1.205 1.165c-.133.13-.24.23-.49.23-.165 0-.315-.06-.465-.225l-.865-2.82-1.815-.575c-.585-.185-.59-.765.135-1.005l7.13-2.755c.48-.18.91.105.635.595z" />
