@@ -1,13 +1,11 @@
 import React from 'react';
-import { content } from '../data/data';
+import {content} from "../data/data";
 
 const Footer = ({ language }) => {
-  const footerContent = content.footer[language];
-
   return (
-      <footer className="footer">
-        {footerContent.text}
-      </footer>
+    <footer className="footer">
+      <p>{content.footer.text[language]}</p>
+    </footer>
   );
 };
 

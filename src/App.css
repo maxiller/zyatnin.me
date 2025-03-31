@@ -1,278 +1,201 @@
-/* Подключение моноширинного шрифта, похожего на Ubuntu Mono */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
-
-body {
+/* Общие стили */
+* {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
-body.dark {
-  background: #300a24;
-  color: #ffffff;
+body {
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.6;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-body.light {
-  background: #ffffff;
-  color: #300a24;
+/* Темы */
+body.theme-dark {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
 }
 
+body.theme-light {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+body.animate {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Контейнер приложения */
 .app {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: 'Ubuntu Mono', monospace;
-  position: relative;
+  min-height: 100vh;
 }
 
+/* Шапка */
 .header {
-  position: fixed;
-  top: 1rem;
-  left: 3rem;
-  z-index: 10;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: inherit;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: normal;
 }
 
 .hamburger {
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
   background: none;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
   color: inherit;
-  z-index: 10;
 }
 
-nav {
-  display: none;
+/* Навигация */
+.sidebar {
   position: fixed;
-  top: 2.5rem;
-  left: 1rem;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: inherit;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem 1rem;
+  transition: left 0.3s ease;
+  z-index: 1000;
 }
 
-nav.open {
-  display: block;
-  width: fit-content;
-  font-size: 1.5rem;
-  z-index: 10;
+.sidebar.open {
+  left: 0;
 }
 
-nav pre {
-  margin: 0;
+.sidebar ul {
+  list-style: none;
 }
 
-nav a {
+.sidebar li {
+  margin: 1rem 0;
+}
+
+.sidebar a {
   color: inherit;
   text-decoration: none;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.switches {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  z-index: 10;
-}
-
-.switches button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: inherit;
   font-size: 1rem;
 }
 
-.theme-toggle {
-  position: relative;
-  overflow: hidden;
-}
-
-.theme-toggle.animate::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  animation: ripple 0.5s ease-out forwards;
-}
-
-body.light .theme-toggle.animate::after {
-  background: rgba(48, 10, 36, 0.3);
-}
-
-@keyframes ripple {
-  0% {
-    width: 0;
-    height: 0;
-  }
-  100% {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  min-height: 80vh;
-}
-
-.about .content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding-top: 2rem;
-}
-
-.profile-photo {
-  width: 25%;
-  margin: 0 1rem;
-  border-radius: 48px;
-}
-
-.about .content p {
-  flex: 1;
-  text-align: justify;
-  max-width: 60ch;
-}
-
-.cases {
-  align-items: flex-start;
-}
-
-.cases .case-list {
-  padding-top: 0;
-  text-align: left;
-  width: 100%;
-}
-
-.case-item {
-  cursor: pointer;
-  padding: 0.5rem;
-}
-
-.case-item:not(.expanded) {
-  font-size: 1.5rem;
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.expertise .json-display {
-  padding-top: 2rem;
-  text-align: left;
-}
-
-.expertise .json-display pre {
-  font-size: 1.5rem;
-  white-space: pre-wrap;
-  margin: 0;
-}
-
-.expertise .json-link {
-  color: inherit;
-  text-decoration: none;
-  display: block;
-}
-
-.expertise .json-link:hover {
+.sidebar a:hover {
   text-decoration: underline;
 }
 
-/* Цвета в стиле VSCode */
-.json-key {
-  color: #569cd6;
+.prefix {
+  color: #888;
+  margin-right: 0.5rem;
 }
 
-.json-string {
-  color: #ce9178;
+/* Переключатели */
+.switches {
+  display: flex;
+  gap: 1rem;
 }
 
-.json-number {
-  color: #b5cea8;
+.theme-toggle,
+.switches button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.json-array {
-  color: #d7ba7d;
+.theme-toggle.animate {
+  transform: rotate(180deg);
 }
 
-body.light .json-key {
-  color: #007acc;
+/* Основной контент */
+.content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-body.light .json-string {
-  color: #a31515;
-}
-
-body.light .json-number {
-  color: #008000;
-}
-
-body.light .json-array {
-  color: #795e26;
-}
-
+/* Telegram кнопка */
 .telegram-sticky {
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  width: 36px;
-  height: 36px;
-  color: #ffffff;
-  z-index: 10;
+  bottom: 20px;
+  right: 20px;
+  color: inherit;
+  text-decoration: none;
+  z-index: 1000;
 }
 
-body.light .telegram-sticky {
-  color: #300a24;
+.telegram-sticky:hover {
+  opacity: 0.8;
+}
+
+/* Стили компонентов */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.case-item {
+  margin-bottom: 2rem;
+}
+
+.case-item h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.tags li {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.9rem;
 }
 
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 1rem;
-  padding: 0.5rem;
-  text-align: left;
-  font-size: 0.8rem;
-  opacity: 0.7;
-  z-index: 10;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-@media (max-width: 768px) {
-  .profile-photo {
-    width: 50%;
-    margin: 0 auto 1rem;
+/* Медиа-запросы для адаптивности */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
   }
-  .about .content {
-    flex-direction: column;
+
+  .sidebar {
+    position: static;
+    width: 200px;
+    height: auto;
+    border-right: none;
+    padding: 1rem;
   }
-  .header h1 {
-    font-size: 1.2rem;
+
+  .app {
+    flex-direction: row;
   }
-  .expertise .json-display pre {
-    font-size: 1.2rem;
-  }
-  .case-item:not(.expanded) {
-    font-size: 1.2rem;
-  }
-  nav.open {
-    font-size: 1.2rem;
+
+  .content {
+    margin-left: 200px;
   }
 }
