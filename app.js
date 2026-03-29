@@ -4,8 +4,8 @@
    ============================================ */
 
 // ---- State ----
-let currentLang = localStorage.getItem('lang') || 'ru';
-let currentTheme = localStorage.getItem('theme') || 
+let currentLang = 'ru';
+let currentTheme = 
   (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 
 // ---- Translations (shared across all pages) ----
@@ -305,7 +305,7 @@ const T = {
 function applyTheme(theme) {
   currentTheme = theme;
   document.documentElement.setAttribute('data-theme', theme);
-  localStorage.setItem('theme', theme);
+  // theme stored in memory
 }
 
 function toggleTheme() {
@@ -316,7 +316,7 @@ function toggleTheme() {
 function applyLang(lang) {
   currentLang = lang;
   document.documentElement.setAttribute('lang', lang);
-  localStorage.setItem('lang', lang);
+  // lang stored in memory
 
   // RTL for Hebrew
   if (lang === 'he') {
