@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article — Max Zia</title>
+  <meta name="description" content="Technical article by Max Zia">
+  <meta property="og:type" content="article">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231a1b2e'/><text x='4' y='23' font-family='monospace' font-size='18' font-weight='bold' fill='%230ea5e9'>MZ</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="MZ Logo">
+          <rect width="32" height="32" rx="6" fill="currentColor" opacity="0.1"/>
+          <path d="M5 22V10l5.5 7L16 10v12M18 10h9l-9 12h9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>zyatnin.me</span>
+      </a>
+      <nav class="header__nav">
+        <a href="index.html#about" data-nav="about">Обо мне</a>
+        <a href="index.html#projects" data-nav="projects">Проекты</a>
+        <a href="blog.html" data-nav="blog" class="active">Блог</a>
+      </nav>
+      <div class="header__controls">
+        <div class="lang-switcher">
+          <button data-lang="ru" class="active">RU</button>
+          <button data-lang="en">EN</button>
+          <button data-lang="he">HE</button>
+        </div>
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <a href="index.html#about" data-nav="about">Обо мне</a>
+    <a href="index.html#projects" data-nav="projects">Проекты</a>
+    <a href="blog.html" data-nav="blog">Блог</a>
+  </div>
+
+  <main id="main">
+    <article class="article" data-article-id="11">
+      <div class="container container--narrow">
+        <a href="blog.html" class="article__back">Назад к блогу</a>
+        <div class="article__header">
+          <span class="article__topic"></span>
+          <h1 class="article__title"></h1>
+          <span class="article__meta"></span>
+        </div>
+        <div class="article__body">
+          
+          <div class="lang-block" data-lang="ru">
+            <h2>Введение</h2>
+            <p>Доступ к удалённым сервисам через SSH-туннели — стандартная практика в enterprise-среде. Контейнеризация этих туннелей добавляет изоляцию, упрощает управление и позволяет интегрировать их в инфраструктуру Podman-подов.</p>
+
+            <h2>Containerfile для SSH-туннеля</h2>
+            <pre><code><span class="kw">FROM</span> docker.io/library/alpine:3.19
+<span class="kw">RUN</span> apk add --no-cache openssh-client netcat-openbsd
+<span class="kw">COPY</span> tunnel.sh /tunnel.sh
+<span class="kw">COPY</span> ssh_config /etc/ssh/ssh_config
+<span class="kw">RUN</span> chmod +x /tunnel.sh
+<span class="kw">HEALTHCHECK</span> --interval=10s --timeout=5s --retries=3 \
+  CMD nc -z localhost 8088 || exit 1
+<span class="kw">ENTRYPOINT</span> ["/tunnel.sh"]</code></pre>
+
+            <h2>Скрипт туннеля (tunnel.sh)</h2>
+            <pre><code><span class="cm">#!/bin/sh</span>
+<span class="kw">set</span> -euo pipefail
+
+<span class="cm"># Добавляем ключ хоста</span>
+mkdir -p /root/.ssh
+ssh-keyscan -H <span class="str">"$REMOTE_HOST"</span> >> /root/.ssh/known_hosts <span class="num">2</span>>/dev/null
+
+<span class="cm"># Цикл переподключения</span>
+<span class="kw">while</span> true; <span class="kw">do</span>
+    echo <span class="str">"[$(date)] Connecting to $REMOTE_HOST..."</span>
+    ssh -N -o ServerAliveInterval=<span class="num">30</span> \
+        -o ServerAliveCountMax=<span class="num">3</span> \
+        -o ExitOnForwardFailure=yes \
+        -L 0.0.0.0:<span class="str">"$LOCAL_PORT"</span>:<span class="str">"$TARGET_HOST"</span>:<span class="str">"$TARGET_PORT"</span> \
+        -i /secrets/ssh_key \
+        <span class="str">"$SSH_USER"</span>@<span class="str">"$REMOTE_HOST"</span> || true
+    
+    echo <span class="str">"[$(date)] Disconnected. Reconnecting in 5s..."</span>
+    sleep <span class="num">5</span>
+<span class="kw">done</span></code></pre>
+
+            <h2>Health Checks</h2>
+            <p>Healthcheck через netcat проверяет, что локальный порт туннеля доступен. Это позволяет другим контейнерам в поде дождаться установления туннеля перед началом работы. Podman выставляет статус здоровья через podman healthcheck run.</p>
+
+            <h2>Проброс портов (-L 0.0.0.0:port)</h2>
+            <p>Важный момент — привязка к 0.0.0.0 вместо localhost. Внутри Podman-пода контейнеры общаются через общий сетевой namespace. Туннель, привязанный к 0.0.0.0, доступен всем контейнерам пода. При привязке к 127.0.0.1 — только самому контейнеру туннеля.</p>
+
+            <h2>Управление known_hosts</h2>
+            <p>ssh-keyscan при запуске контейнера автоматически добавляет ключ удалённого хоста. Для повышения безопасности можно предоставить статический known_hosts через volume или Podman secret. StrictHostKeyChecking можно оставить yes при использовании предзагруженных ключей.</p>
+
+            <h2>Примеры использования</h2>
+            <p>Мы используем контейнеризированные SSH-туннели для доступа к Asterisk ARI (REST-интерфейс телефонии), базам данных PostgreSQL в защищённых сетях и API-сервисам, доступным только из определённых сегментов сети.</p>
+
+            <h2>Автоматическое переподключение</h2>
+            <p>Бесконечный цикл while true с sleep обеспечивает автоматическое восстановление при разрыве соединения. ServerAliveInterval и ServerAliveCountMax обнаруживают "мёртвые" соединения. ExitOnForwardFailure гарантирует корректный выход при невозможности проброса порта.</p>
+
+            <h2>Заключение</h2>
+            <p>Контейнеризированные SSH-туннели — надёжный и удобный способ обеспечения безопасного доступа к удалённым сервисам. Healthcheck, автопереподключение и интеграция с Podman-подами делают это решение production-ready.</p>
+          </div>
+
+          <div class="lang-block" data-lang="en" style="display:none">
+            <h2>Introduction</h2>
+            <p>Accessing remote services through SSH tunnels is standard practice in enterprise environments. Containerizing these tunnels adds isolation, simplifies management, and enables integration into Podman pod infrastructure.</p>
+
+            <h2>Containerfile for SSH Tunnel</h2>
+            <pre><code><span class="kw">FROM</span> docker.io/library/alpine:3.19
+<span class="kw">RUN</span> apk add --no-cache openssh-client netcat-openbsd
+<span class="kw">COPY</span> tunnel.sh /tunnel.sh
+<span class="kw">RUN</span> chmod +x /tunnel.sh
+<span class="kw">HEALTHCHECK</span> --interval=10s --timeout=5s --retries=3 \
+  CMD nc -z localhost 8088 || exit 1
+<span class="kw">ENTRYPOINT</span> ["/tunnel.sh"]</code></pre>
+
+            <h2>Tunnel Script (tunnel.sh)</h2>
+            <pre><code><span class="cm">#!/bin/sh</span>
+<span class="kw">set</span> -euo pipefail
+
+mkdir -p /root/.ssh
+ssh-keyscan -H <span class="str">"$REMOTE_HOST"</span> >> /root/.ssh/known_hosts
+
+<span class="kw">while</span> true; <span class="kw">do</span>
+    ssh -N -o ServerAliveInterval=<span class="num">30</span> \
+        -o ExitOnForwardFailure=yes \
+        -L 0.0.0.0:<span class="str">"$LOCAL_PORT"</span>:<span class="str">"$TARGET_HOST"</span>:<span class="str">"$TARGET_PORT"</span> \
+        -i /secrets/ssh_key \
+        <span class="str">"$SSH_USER"</span>@<span class="str">"$REMOTE_HOST"</span> || true
+    sleep <span class="num">5</span>
+<span class="kw">done</span></code></pre>
+
+            <h2>Health Checks</h2>
+            <p>Netcat-based healthcheck verifies the tunnel's local port is accessible. This allows other containers in the pod to wait for tunnel establishment before starting work. Podman exposes health status via podman healthcheck run.</p>
+
+            <h2>Port Forwarding (-L 0.0.0.0:port)</h2>
+            <p>A critical detail — binding to 0.0.0.0 instead of localhost. Inside a Podman pod, containers communicate through a shared network namespace. A tunnel bound to 0.0.0.0 is accessible to all pod containers. Binding to 127.0.0.1 makes it available only to the tunnel container itself.</p>
+
+            <h2>known_hosts Management</h2>
+            <p>ssh-keyscan at container startup automatically adds the remote host key. For enhanced security, provide a static known_hosts via volume or Podman secret. StrictHostKeyChecking can remain yes when using preloaded keys.</p>
+
+            <h2>Use Cases</h2>
+            <p>We use containerized SSH tunnels for accessing Asterisk ARI (telephony REST interface), PostgreSQL databases in secured networks, and API services accessible only from specific network segments.</p>
+
+            <h2>Automatic Reconnection</h2>
+            <p>The infinite while true loop with sleep provides automatic recovery on connection loss. ServerAliveInterval and ServerAliveCountMax detect "dead" connections. ExitOnForwardFailure ensures clean exit when port forwarding fails.</p>
+
+            <h2>Conclusion</h2>
+            <p>Containerized SSH tunnels are a reliable and convenient way to provide secure access to remote services. Health checks, auto-reconnection, and Podman pod integration make this solution production-ready.</p>
+          </div>
+
+          <div class="lang-block" data-lang="he" style="display:none">
+            <h2>מבוא</h2>
+            <p>גישה לשירותים מרוחקים דרך מנהרות SSH היא שיטה סטנדרטית בסביבות ארגוניות. קונטיינריזציה של מנהרות אלו מוסיפה בידוד, מפשטת ניהול ומאפשרת אינטגרציה בתשתית Podman pods.</p>
+
+            <h2>Containerfile למנהרת SSH</h2>
+            <p>הקונטיינר מבוסס על Alpine עם לקוח OpenSSH ו-netcat. סקריפט המנהרה מטפל בחיבור ובחיבור מחדש אוטומטי. HEALTHCHECK מאמת שהפורט המקומי נגיש.</p>
+
+            <h2>סקריפט מנהרה (tunnel.sh)</h2>
+            <p>הסקריפט משתמש ב-set -euo pipefail לטיפול קפדני בשגיאות. ssh-keyscan מוסיף אוטומטית את מפתח המארח המרוחק. לולאת while אינסופית עם sleep מבטיחה חיבור מחדש אוטומטי.</p>
+
+            <h2>בדיקות תקינות</h2>
+            <p>בדיקת תקינות מבוססת netcat מאמתת שהפורט המקומי של המנהרה נגיש. זה מאפשר לקונטיינרים אחרים בפוד להמתין להקמת המנהרה לפני תחילת העבודה.</p>
+
+            <h2>העברת פורטים (-L 0.0.0.0:port)</h2>
+            <p>פרט קריטי — קשירה ל-0.0.0.0 במקום localhost. בתוך פוד Podman, קונטיינרים מתקשרים דרך מרחב רשת משותף. מנהרה הקשורה ל-0.0.0.0 נגישה לכל קונטיינרי הפוד.</p>
+
+            <h2>ניהול known_hosts</h2>
+            <p>ssh-keyscan בהפעלת הקונטיינר מוסיף אוטומטית את מפתח המארח המרוחק. לאבטחה משופרת, ניתן לספק known_hosts סטטי דרך volume או Podman secret.</p>
+
+            <h2>מקרי שימוש</h2>
+            <p>אנחנו משתמשים במנהרות SSH בקונטיינרים לגישה ל-Asterisk ARI, מסדי נתונים PostgreSQL ברשתות מאובטחות, ושירותי API הנגישים רק מסגמנטי רשת ספציפיים.</p>
+
+            <h2>סיכום</h2>
+            <p>מנהרות SSH בקונטיינרים הן דרך אמינה ונוחה לספק גישה מאובטחת לשירותים מרוחקים. בדיקות תקינות, חיבור מחדש אוטומטי ואינטגרציית Podman pod הופכים פתרון זה למוכן לייצור.</p>
+          </div>
+        </div>
+
+        <div class="related-articles">
+          <h3 class="related-articles__title">Похожие статьи</h3>
+          <div class="related-articles__grid">
+          <a href="blog-12.html" class="blog-card" data-blog-id="12">
+            <span class="blog-card__topic"></span>
+            <h3 class="blog-card__title"></h3>
+            <p class="blog-card__excerpt"></p>
+            <span class="blog-card__read-more">Читать далее </span>
+          </a>
+          <a href="blog-1.html" class="blog-card" data-blog-id="1">
+            <span class="blog-card__topic"></span>
+            <h3 class="blog-card__title"></h3>
+            <p class="blog-card__excerpt"></p>
+            <span class="blog-card__read-more">Читать далее </span>
+          </a>
+          <a href="blog-9.html" class="blog-card" data-blog-id="9">
+            <span class="blog-card__topic"></span>
+            <h3 class="blog-card__title"></h3>
+            <p class="blog-card__excerpt"></p>
+            <span class="blog-card__read-more">Читать далее </span>
+          </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__copy" data-t="footer" data-tk="copy">© 2026 Max Zia. Все права защищены.</span>
+        <div class="footer__links">
+          <a href="https://github.com/maxiller" class="footer__link" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="mailto:perp1@zyatnin.me" class="footer__link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

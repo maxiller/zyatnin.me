@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article — Max Zia</title>
+  <meta name="description" content="Technical article by Max Zia">
+  <meta property="og:type" content="article">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231a1b2e'/><text x='4' y='23' font-family='monospace' font-size='18' font-weight='bold' fill='%230ea5e9'>MZ</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="MZ Logo">
+          <rect width="32" height="32" rx="6" fill="currentColor" opacity="0.1"/>
+          <path d="M5 22V10l5.5 7L16 10v12M18 10h9l-9 12h9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>zyatnin.me</span>
+      </a>
+      <nav class="header__nav">
+        <a href="index.html#about" data-nav="about">Обо мне</a>
+        <a href="index.html#projects" data-nav="projects">Проекты</a>
+        <a href="blog.html" data-nav="blog" class="active">Блог</a>
+      </nav>
+      <div class="header__controls">
+        <div class="lang-switcher">
+          <button data-lang="ru" class="active">RU</button>
+          <button data-lang="en">EN</button>
+          <button data-lang="he">HE</button>
+        </div>
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <a href="index.html#about" data-nav="about">Обо мне</a>
+    <a href="index.html#projects" data-nav="projects">Проекты</a>
+    <a href="blog.html" data-nav="blog">Блог</a>
+  </div>
+
+  <main id="main">
+    <article class="article" data-article-id="4">
+      <div class="container container--narrow">
+        <a href="blog.html" class="article__back">Назад к блогу</a>
+        <div class="article__header">
+          <span class="article__topic"></span>
+          <h1 class="article__title"></h1>
+          <span class="article__meta"></span>
+        </div>
+        <div class="article__body">
+          
+          <div class="lang-block" data-lang="ru">
+            <h2>Введение</h2>
+            <p>Telegram-боты — мощный инструмент для автоматизации рабочих процессов. Однако обработка тяжёлых задач непосредственно в обработчиках бота блокирует event loop и приводит к задержкам в ответах. Решение — разделение на асинхронный бот (aiogram) и фоновые воркеры (RQ + Valkey).</p>
+
+            <h2>Архитектура системы</h2>
+            <p>Полный цикл обработки запроса выглядит так: пользователь отправляет сообщение → бот получает его через aiogram → бот ставит задачу в очередь RQ через Valkey → RQ-воркер обрабатывает задачу → воркер отправляет результат обратно через Telegram API с привязкой к исходному сообщению.</p>
+
+            <h2>Бот: приём и постановка в очередь</h2>
+            <pre><code><span class="kw">from</span> aiogram <span class="kw">import</span> Bot, Dispatcher, types
+<span class="kw">from</span> redis <span class="kw">import</span> Redis
+<span class="kw">from</span> rq <span class="kw">import</span> Queue
+
+bot = Bot(token=BOT_TOKEN)
+dp = Dispatcher()
+redis_conn = Redis(host=<span class="str">'localhost'</span>, port=<span class="num">6379</span>)
+task_queue = Queue(<span class="str">'telegram'</span>, connection=redis_conn)
+
+@dp.message()
+<span class="kw">async def</span> <span class="fn">handle_message</span>(message: types.Message):
+    <span class="cm"># Ставим задачу в очередь, не блокируя бот</span>
+    task_queue.enqueue(
+        <span class="str">'workers.send_text_task'</span>,
+        chat_id=message.chat.id,
+        text=message.text,
+        reply_to=message.message_id
+    )
+    <span class="kw">await</span> message.reply(<span class="str">"⏳ Обрабатываю запрос..."</span>)</code></pre>
+
+            <h2>Воркер: обработка и ответ</h2>
+            <pre><code><span class="cm"># workers.py</span>
+<span class="kw">import</span> asyncio
+<span class="kw">from</span> aiogram <span class="kw">import</span> Bot
+
+<span class="kw">def</span> <span class="fn">send_text_task</span>(chat_id, text, reply_to):
+    <span class="cm"># Обрабатываем задачу (может быть долгой операцией)</span>
+    result = process_heavy_task(text)
+    
+    <span class="cm"># Отправляем результат через бот</span>
+    _run_async_task(
+        _reply_message(chat_id, result, reply_to)
+    )
+
+<span class="kw">async def</span> <span class="fn">_reply_message</span>(chat_id, text, reply_to):
+    bot = Bot(token=BOT_TOKEN)
+    <span class="kw">await</span> bot.send_message(
+        chat_id=chat_id,
+        text=text,
+        reply_to_message_id=reply_to
+    )
+    <span class="kw">await</span> bot.session.close()
+
+<span class="kw">def</span> <span class="fn">_run_async_task</span>(coro):
+    loop = asyncio.new_event_loop()
+    <span class="kw">try</span>:
+        loop.run_until_complete(coro)
+    <span class="kw">finally</span>:
+        loop.close()</code></pre>
+
+            <h2>ValkeyPersistence для хранения состояния</h2>
+            <p>Для отслеживания статуса задач мы используем Valkey (совместимый с Redis). FinishedJobRegistry позволяет боту периодически проверять завершённые задачи и уведомлять пользователей о результатах.</p>
+
+            <h2>reply_to_message_id для тредов</h2>
+            <p>Важная деталь — сохранение message_id исходного сообщения и передача его в reply_to_message_id при ответе. Это создаёт естественный тред в чате и помогает пользователю связать ответ с запросом, особенно когда несколько запросов обрабатываются параллельно.</p>
+
+            <h2>Контейнеризация</h2>
+            <p>Бот и воркеры работают в отдельных контейнерах внутри одного Podman-пода. Valkey также запущен в поде, обеспечивая коммуникацию через localhost.</p>
+
+            <h2>Заключение</h2>
+            <p>Разделение Telegram-бота на фронтенд (aiogram) и бэкенд (RQ-воркеры) обеспечивает отзывчивость бота и масштабируемость обработки. Valkey служит как брокером сообщений, так и хранилищем состояния.</p>
+          </div>
+
+          <div class="lang-block" data-lang="en" style="display:none">
+            <h2>Introduction</h2>
+            <p>Telegram bots are a powerful tool for workflow automation. However, processing heavy tasks directly in bot handlers blocks the event loop and leads to response delays. The solution is to separate the async bot (aiogram) from background workers (RQ + Valkey).</p>
+
+            <h2>System Architecture</h2>
+            <p>The complete request processing cycle works as follows: user sends a message → bot receives it via aiogram → bot enqueues a task in RQ via Valkey → RQ worker processes the task → worker sends the result back via Telegram API, linked to the original message.</p>
+
+            <h2>Bot: Receiving and Enqueueing</h2>
+            <pre><code><span class="kw">from</span> aiogram <span class="kw">import</span> Bot, Dispatcher, types
+<span class="kw">from</span> rq <span class="kw">import</span> Queue
+
+bot = Bot(token=BOT_TOKEN)
+dp = Dispatcher()
+task_queue = Queue(<span class="str">'telegram'</span>, connection=redis_conn)
+
+@dp.message()
+<span class="kw">async def</span> <span class="fn">handle_message</span>(message: types.Message):
+    task_queue.enqueue(
+        <span class="str">'workers.send_text_task'</span>,
+        chat_id=message.chat.id,
+        text=message.text,
+        reply_to=message.message_id
+    )
+    <span class="kw">await</span> message.reply(<span class="str">"⏳ Processing request..."</span>)</code></pre>
+
+            <h2>Worker: Processing and Responding</h2>
+            <pre><code><span class="kw">def</span> <span class="fn">send_text_task</span>(chat_id, text, reply_to):
+    result = process_heavy_task(text)
+    _run_async_task(
+        _reply_message(chat_id, result, reply_to)
+    )
+
+<span class="kw">async def</span> <span class="fn">_reply_message</span>(chat_id, text, reply_to):
+    bot = Bot(token=BOT_TOKEN)
+    <span class="kw">await</span> bot.send_message(
+        chat_id=chat_id, text=text,
+        reply_to_message_id=reply_to
+    )
+    <span class="kw">await</span> bot.session.close()</code></pre>
+
+            <h2>ValkeyPersistence for State Storage</h2>
+            <p>To track task statuses, we use Valkey (Redis-compatible). FinishedJobRegistry allows the bot to periodically check completed tasks and notify users of results. The worker stores results with TTL to prevent memory bloat.</p>
+
+            <h2>reply_to_message_id for Threading</h2>
+            <p>An important detail is preserving the original message_id and passing it to reply_to_message_id when responding. This creates a natural thread in the chat and helps the user link the response to their request, especially when multiple requests are being processed in parallel.</p>
+
+            <h2>Containerization</h2>
+            <p>The bot and workers run in separate containers within a single Podman pod. Valkey also runs in the pod, providing communication via localhost. This simplifies deployment and ensures all components share the same network.</p>
+
+            <h2>Conclusion</h2>
+            <p>Separating a Telegram bot into a frontend (aiogram) and backend (RQ workers) ensures bot responsiveness and processing scalability. Valkey serves as both message broker and state store.</p>
+          </div>
+
+          <div class="lang-block" data-lang="he" style="display:none">
+            <h2>מבוא</h2>
+            <p>בוטים של Telegram הם כלי רב-עוצמה לאוטומציה של תהליכי עבודה. עם זאת, עיבוד משימות כבדות ישירות במטפלי הבוט חוסם את לולאת האירועים ומוביל לעיכובים בתגובות. הפתרון הוא להפריד את הבוט האסינכרוני (aiogram) מעובדי הרקע (RQ + Valkey).</p>
+
+            <h2>ארכיטקטורת המערכת</h2>
+            <p>מחזור עיבוד הבקשה המלא עובד כך: משתמש שולח הודעה → הבוט מקבל אותה דרך aiogram → הבוט שם משימה בתור RQ דרך Valkey → עובד RQ מעבד את המשימה → העובד שולח את התוצאה בחזרה דרך Telegram API, מקושר להודעה המקורית.</p>
+
+            <h2>הבוט: קבלה והכנסה לתור</h2>
+            <p>הבוט מקבל הודעות דרך aiogram ומכניס משימות לתור RQ. התגובה המיידית מאשרת את קבלת הבקשה, והעיבוד בפועל מתבצע ברקע על ידי העובד.</p>
+
+            <h2>העובד: עיבוד ותגובה</h2>
+            <p>העובד מעבד את המשימה ושולח את התוצאה בחזרה דרך Telegram API. פונקציית העזר <code>_run_async_task</code> מאפשרת להריץ קוד אסינכרוני מתוך עובד RQ סינכרוני.</p>
+
+            <h2>ValkeyPersistence לאחסון מצב</h2>
+            <p>למעקב אחר סטטוס משימות, אנחנו משתמשים ב-Valkey (תואם Redis). FinishedJobRegistry מאפשר לבוט לבדוק מעת לעת משימות שהושלמו ולהודיע למשתמשים על תוצאות.</p>
+
+            <h2>reply_to_message_id לשרשורים</h2>
+            <p>פרט חשוב הוא שמירת ה-message_id המקורי והעברתו ל-reply_to_message_id בעת התגובה. זה יוצר שרשור טבעי בצ'אט ועוזר למשתמש לקשר את התגובה לבקשה שלו.</p>
+
+            <h2>קונטיינריזציה</h2>
+            <p>הבוט והעובדים רצים בקונטיינרים נפרדים בתוך פוד Podman יחיד. Valkey גם רץ בפוד, מספק תקשורת דרך localhost.</p>
+
+            <h2>סיכום</h2>
+            <p>הפרדת בוט Telegram לפרונטאנד (aiogram) ובקאנד (עובדי RQ) מבטיחה תגובתיות של הבוט וסקלביליות עיבוד. Valkey משמש גם כמתווך הודעות וגם כמאגר מצב.</p>
+          </div>
+        </div>
+
+        <div class="related-articles">
+          <h3 class="related-articles__title">Похожие статьи</h3>
+          <div class="related-articles__grid">
+          <a href="blog-5.html" class="blog-card" data-blog-id="5">
+            <span class="blog-card__topic"></span>
+            <h3 class="blog-card__title"></h3>
+            <p class="blog-card__excerpt"></p>
+            <span class="blog-card__read-more">Читать далее </span>
+          </a>
+          <a href="blog-6.html" class="blog-card" data-blog-id="6">
+            <span class="blog-card__topic"></span>
+            <h3 class="blog-card__title"></h3>
+            <p class="blog-card__excerpt"></p>
+            <span class="blog-card__read-more">Читать далее </span>
+          </a>
+          <a href="blog-2.html" class="blog-card" data-blog-id="2">
+            <span class="blog-card__topic"></span>
+            <h3 class="blog-card__title"></h3>
+            <p class="blog-card__excerpt"></p>
+            <span class="blog-card__read-more">Читать далее </span>
+          </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__copy" data-t="footer" data-tk="copy">© 2026 Max Zia. Все права защищены.</span>
+        <div class="footer__links">
+          <a href="https://github.com/maxiller" class="footer__link" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="mailto:perp1@zyatnin.me" class="footer__link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
