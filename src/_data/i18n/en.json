@@ -1,0 +1,102 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "blog": "Blog"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "title": "IT Engineer / DevOps Specialist",
+    "desc": "Department head for L3 support. I specialize in containerization with Podman, Python automation, and CI/CD pipelines. Building reliable infrastructure solutions for production.",
+    "cta_projects": "Projects",
+    "cta_blog": "Read Blog",
+    "terminal_1": "podman pod create --name jira-stack",
+    "terminal_2": "rq worker --with-scheduler jira asterisk",
+    "terminal_3": "systemctl --user enable container-runner.service",
+    "terminal_4": "# all systems go ✓"
+  },
+  "about": {
+    "label": "About",
+    "title": "Engineer & Team Lead",
+    "bio": "Department head for L3 technical support at Aisa IT Service. Specializing in the TermiDesk VDI platform support and development. I build Python automation tools, design CI/CD pipelines, and architect Podman-based container infrastructure.",
+    "skills_label": "Technologies",
+    "interests_label": "Interests",
+    "interests": [
+      "Linux desktops & window managers",
+      "Container orchestration",
+      "VoIP & telephony",
+      "Network infrastructure"
+    ]
+  },
+  "projects": {
+    "label": "Projects",
+    "title": "Featured Projects"
+  },
+  "blog": {
+    "label": "Blog",
+    "title": "Articles",
+    "subtitle": "Articles on containerization, automation, Linux, and DevOps",
+    "back": "← Back to blog",
+    "read_more": "Read more →",
+    "min_read": "min read",
+    "highlights_title": "Latest Articles",
+    "highlights_label": "Blog"
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  },
+  "skip_link": "Skip to content",
+  "topics": {
+    "t1": "Containerization & Podman",
+    "t2": "Python Automation & Integration",
+    "t3": "Linux Desktop & System Administration",
+    "t4": "DevOps & CI/CD",
+    "t5": "Networking & Infrastructure"
+  },
+  "projects_data": [
+    {
+      "icon": "🔔",
+      "name": "jira-alert-daemon",
+      "desc": "Containerized Python daemon for Jira notifications. Uses RQ workers, Valkey queue, and SSH tunnels within a Podman pod.",
+      "tags": ["Python", "Podman", "RQ", "Valkey", "Jira API"]
+    },
+    {
+      "icon": "🤖",
+      "name": "Telegram-Jira Bot",
+      "desc": "Telegram bot built with aiogram that accepts tasks and queues them via RQ/Valkey for background worker processing.",
+      "tags": ["aiogram", "RQ", "Valkey", "Podman"]
+    },
+    {
+      "icon": "⚙️",
+      "name": "Container Orchestration Pipeline",
+      "desc": "Custom dispatcher/worker pattern using Podman pods and ephemeral sidecar containers for SSH tunnels.",
+      "tags": ["Podman", "Python", "SSH", "Pods"]
+    },
+    {
+      "icon": "🔒",
+      "name": "AmneziaWG Deploy",
+      "desc": "Containerized WireGuard/AmneziaWG deployment template with CI/CD pipeline.",
+      "tags": ["WireGuard", "Podman", "CI/CD", "GitLab"]
+    },
+    {
+      "icon": "🚀",
+      "name": "CI/CD Infrastructure",
+      "desc": "GitLab Runner containerization using Podman quadlets with systemd integration.",
+      "tags": ["GitLab", "Podman", "Systemd", "CI/CD"]
+    },
+    {
+      "icon": "📊",
+      "name": "ITIL KPI System",
+      "desc": "Comprehensive KPI framework for L3 support engineers with weighted SLA metrics and engagement scoring.",
+      "tags": ["ITIL", "KPI", "Management", "SLA"]
+    },
+    {
+      "icon": "📋",
+      "name": "Competency Matrix",
+      "desc": "Skills assessment framework for TermiDesk support engineers across multiple technical domains.",
+      "tags": ["TermiDesk", "Training", "ITIL", "VDI"]
+    }
+  ]
+}

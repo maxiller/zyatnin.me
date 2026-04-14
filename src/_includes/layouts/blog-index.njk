@@ -1,0 +1,49 @@
+---
+layout: layouts/base.njk
+---
+
+<div class="page-header">
+  <div class="container container--narrow">
+    <h1 class="page-header__title">{{ i18n.blog.title }}</h1>
+    <p class="page-header__desc">{{ i18n.blog.subtitle }}</p>
+  </div>
+</div>
+
+<div class="blog-page">
+  <div class="container">
+    {% set allPosts = collections["posts_" + i18n.lang] %}
+
+    {% set t1posts = allPosts | filterByTopic("t1") %}
+    {% set t2posts = allPosts | filterByTopic("t2") %}
+    {% set t3posts = allPosts | filterByTopic("t3") %}
+    {% set t4posts = allPosts | filterByTopic("t4") %}
+    {% set t5posts = allPosts | filterByTopic("t5") %}
+
+    {% macro topicSection(posts, label) %}
+      {% if posts | length > 0 %}
+      <section class="blog-topic-group">
+        <h2 class="blog-topic-group__title">{{ label }}</h2>
+        <div class="blog-topic-group__grid">
+          {% for post in posts %}
+          <a href="{{ post.url }}" class="blog-card fade-in">
+            <span class="blog-card__topic">{{ label | upper }}</span>
+            <h3 class="blog-card__title">{{ post.data.title }}</h3>
+            <p class="blog-card__excerpt">{{ post.data.excerpt }}</p>
+            <div class="blog-card__meta">
+              <span>{{ post.data.date | dateDisplay }}</span>
+              <span class="blog-card__read">{{ i18n.blog.read_more }}</span>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+    {% endmacro %}
+
+    {{ topicSection(t1posts, i18n.topics.t1) }}
+    {{ topicSection(t2posts, i18n.topics.t2) }}
+    {{ topicSection(t3posts, i18n.topics.t3) }}
+    {{ topicSection(t4posts, i18n.topics.t4) }}
+    {{ topicSection(t5posts, i18n.topics.t5) }}
+  </div>
+</div>

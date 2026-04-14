@@ -1,0 +1,102 @@
+{
+  "lang": "he",
+  "dir": "rtl",
+  "nav": {
+    "about": "אודות",
+    "projects": "פרויקטים",
+    "blog": "בלוג"
+  },
+  "hero": {
+    "greeting": "שלום, אני",
+    "title": "מהנדס IT / מומחה DevOps",
+    "desc": "מנהל מחלקת תמיכה L3. מתמחה בקונטיינריזציה עם Podman, אוטומציה ב-Python וצינורות CI/CD. בונה פתרונות תשתית אמינים לסביבות ייצור.",
+    "cta_projects": "פרויקטים",
+    "cta_blog": "קראו את הבלוג",
+    "terminal_1": "podman pod create --name jira-stack",
+    "terminal_2": "rq worker --with-scheduler jira asterisk",
+    "terminal_3": "systemctl --user enable container-runner.service",
+    "terminal_4": "# הכל עובד ✓"
+  },
+  "about": {
+    "label": "אודות",
+    "title": "מהנדס ומנהל צוות",
+    "bio": "ראש מחלקת תמיכה טכנית L3 בחברת Aisa IT Service. מתמחה בתמיכה ופיתוח של פלטפורמת VDI TermiDesk. בונה כלי אוטומציה ב-Python, מתכנן CI/CD pipelines ותשתיות קונטיינרים מבוססות Podman.",
+    "skills_label": "טכנולוגיות",
+    "interests_label": "תחומי עניין",
+    "interests": [
+      "סביבות שולחן עבודה של Linux",
+      "תזמור קונטיינרים",
+      "VoIP וטלפוניה",
+      "תשתיות רשת"
+    ]
+  },
+  "projects": {
+    "label": "פרויקטים",
+    "title": "פרויקטים נבחרים"
+  },
+  "blog": {
+    "label": "בלוג",
+    "title": "מאמרים",
+    "subtitle": "מאמרים על קונטיינריזציה, אוטומציה, Linux ו-DevOps",
+    "back": "← חזרה לבלוג",
+    "read_more": "קרא עוד →",
+    "min_read": "דקות קריאה",
+    "highlights_title": "מאמרים אחרונים",
+    "highlights_label": "בלוג"
+  },
+  "footer": {
+    "rights": "כל הזכויות שמורות"
+  },
+  "skip_link": "דלג לתוכן",
+  "topics": {
+    "t1": "קונטיינריזציה ו-Podman",
+    "t2": "אוטומציה ואינטגרציה ב-Python",
+    "t3": "שולחן עבודה של Linux וניהול מערכות",
+    "t4": "DevOps ו-CI/CD",
+    "t5": "רשתות ותשתיות"
+  },
+  "projects_data": [
+    {
+      "icon": "🔔",
+      "name": "jira-alert-daemon",
+      "desc": "דימון Python בקונטיינר להתראות מ-Jira. משתמש ב-RQ workers, תור Valkey ומנהרות SSH בתוך פוד Podman.",
+      "tags": ["Python", "Podman", "RQ", "Valkey", "Jira API"]
+    },
+    {
+      "icon": "🤖",
+      "name": "Telegram-Jira Bot",
+      "desc": "בוט Telegram שנבנה עם aiogram שמקבל משימות ומכניס אותן לתור RQ/Valkey לעיבוד ב-workers ברקע.",
+      "tags": ["aiogram", "RQ", "Valkey", "Podman"]
+    },
+    {
+      "icon": "⚙️",
+      "name": "Container Orchestration Pipeline",
+      "desc": "תבנית dispatcher/worker מותאמת עם פודים של Podman וקונטיינרי sidecar זמניים למנהרות SSH.",
+      "tags": ["Podman", "Python", "SSH", "Pods"]
+    },
+    {
+      "icon": "🔒",
+      "name": "AmneziaWG Deploy",
+      "desc": "תבנית פריסה של WireGuard/AmneziaWG בקונטיינרים עם CI/CD pipeline.",
+      "tags": ["WireGuard", "Podman", "CI/CD", "GitLab"]
+    },
+    {
+      "icon": "🚀",
+      "name": "CI/CD Infrastructure",
+      "desc": "קונטיינריזציה של GitLab Runner באמצעות Podman quadlets עם אינטגרציית systemd.",
+      "tags": ["GitLab", "Podman", "Systemd", "CI/CD"]
+    },
+    {
+      "icon": "📊",
+      "name": "ITIL KPI System",
+      "desc": "מסגרת KPI מקיפה למהנדסי תמיכה L3 עם מדדי SLA משוקללים וניקוד מעורבות.",
+      "tags": ["ITIL", "KPI", "Management", "SLA"]
+    },
+    {
+      "icon": "📋",
+      "name": "Competency Matrix",
+      "desc": "מסגרת הערכת מיומנויות למהנדסי תמיכה של TermiDesk על פני מספר דומיינים טכניים.",
+      "tags": ["TermiDesk", "Training", "ITIL", "VDI"]
+    }
+  ]
+}

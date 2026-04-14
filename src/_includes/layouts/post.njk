@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+---
+
+<article class="article">
+  <div class="container container--narrow">
+    <a href="/{{ i18n.lang }}/blog/" class="article__back">{{ i18n.blog.back }}</a>
+    <div class="article__header">
+      <span class="article__topic">{{ i18n.topics[topic] }}</span>
+      <h1 class="article__title">{{ title }}</h1>
+      <span class="article__meta">{{ date | dateDisplay }} · {{ content | readingTime }} {{ i18n.blog.min_read }}</span>
+    </div>
+    <div class="article__body">
+      {{ content | safe }}
+    </div>
+  </div>
+</article>

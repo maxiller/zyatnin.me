@@ -1,0 +1,102 @@
+{
+  "lang": "ru",
+  "dir": "ltr",
+  "nav": {
+    "about": "Обо мне",
+    "projects": "Проекты",
+    "blog": "Блог"
+  },
+  "hero": {
+    "greeting": "Привет, я",
+    "title": "IT-инженер / DevOps-специалист",
+    "desc": "Руковожу отделом L3-поддержки. Специализируюсь на контейнеризации с Podman, автоматизации на Python и CI/CD. Строю надёжные инфраструктурные решения для продакшена.",
+    "cta_projects": "Проекты",
+    "cta_blog": "Читать блог",
+    "terminal_1": "podman pod create --name jira-stack",
+    "terminal_2": "rq worker --with-scheduler jira asterisk",
+    "terminal_3": "systemctl --user enable container-runner.service",
+    "terminal_4": "# всё работает ✓"
+  },
+  "about": {
+    "label": "Обо мне",
+    "title": "Инженер и руководитель",
+    "bio": "Руководитель отдела L3-технической поддержки в компании Айса ИТ Сервис. Специализируюсь на поддержке и развитии платформы виртуализации рабочих мест TermiDesk. Разрабатываю инструменты автоматизации на Python, проектирую CI/CD-конвейеры и инфраструктуру на базе контейнеров Podman.",
+    "skills_label": "Технологии",
+    "interests_label": "Интересы",
+    "interests": [
+      "Linux-десктопы и оконные менеджеры",
+      "Оркестрация контейнеров",
+      "VoIP и телефония",
+      "Сетевая инфраструктура"
+    ]
+  },
+  "projects": {
+    "label": "Проекты",
+    "title": "Избранные проекты"
+  },
+  "blog": {
+    "label": "Блог",
+    "title": "Статьи",
+    "subtitle": "Статьи о контейнеризации, автоматизации, Linux и DevOps",
+    "back": "← Назад к блогу",
+    "read_more": "Читать далее →",
+    "min_read": "мин. чтения",
+    "highlights_title": "Последние статьи",
+    "highlights_label": "Блог"
+  },
+  "footer": {
+    "rights": "Все права защищены"
+  },
+  "skip_link": "Перейти к содержимому",
+  "topics": {
+    "t1": "Контейнеризация и Podman",
+    "t2": "Автоматизация на Python",
+    "t3": "Linux и системное администрирование",
+    "t4": "DevOps и CI/CD",
+    "t5": "Сети и инфраструктура"
+  },
+  "projects_data": [
+    {
+      "icon": "🔔",
+      "name": "jira-alert-daemon",
+      "desc": "Контейнеризированный Python-демон для уведомлений из Jira. Использует RQ-воркеры, очередь Valkey и SSH-туннели внутри Podman-пода.",
+      "tags": ["Python", "Podman", "RQ", "Valkey", "Jira API"]
+    },
+    {
+      "icon": "🤖",
+      "name": "Telegram-Jira Bot",
+      "desc": "Telegram-бот на aiogram, который принимает задачи и ставит их в очередь RQ/Valkey для фоновой обработки воркерами.",
+      "tags": ["aiogram", "RQ", "Valkey", "Podman"]
+    },
+    {
+      "icon": "⚙️",
+      "name": "Container Orchestration Pipeline",
+      "desc": "Кастомный паттерн диспетчер/воркер с Podman-подами и эфемерными sidecar-контейнерами для SSH-туннелей.",
+      "tags": ["Podman", "Python", "SSH", "Pods"]
+    },
+    {
+      "icon": "🔒",
+      "name": "AmneziaWG Deploy",
+      "desc": "Шаблон для развёртывания WireGuard/AmneziaWG в контейнерах с CI/CD-конвейером.",
+      "tags": ["WireGuard", "Podman", "CI/CD", "GitLab"]
+    },
+    {
+      "icon": "🚀",
+      "name": "CI/CD Infrastructure",
+      "desc": "Контейнеризация GitLab Runner с помощью Podman quadlets и интеграции с systemd.",
+      "tags": ["GitLab", "Podman", "Systemd", "CI/CD"]
+    },
+    {
+      "icon": "📊",
+      "name": "ITIL KPI System",
+      "desc": "Комплексная система KPI для L3-инженеров поддержки с взвешенными метриками SLA и оценкой вовлечённости.",
+      "tags": ["ITIL", "KPI", "Management", "SLA"]
+    },
+    {
+      "icon": "📋",
+      "name": "Competency Matrix",
+      "desc": "Матрица компетенций для оценки навыков инженеров поддержки TermiDesk по нескольким доменам.",
+      "tags": ["TermiDesk", "Training", "ITIL", "VDI"]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+---
+layout: layouts/base.njk
+---
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__greeting">{{ i18n.hero.greeting }}</div>
+      <h1 class="hero__name">Max Zia</h1>
+      <p class="hero__title">{{ i18n.hero.title }}</p>
+      <p class="hero__desc">{{ i18n.hero.desc }}</p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">{{ i18n.hero.cta_projects }}</a>
+        <a href="/{{ i18n.lang }}/blog/" class="btn btn--secondary">{{ i18n.hero.cta_blog }}</a>
+      </div>
+      <div class="terminal">
+        <div class="terminal__header">
+          <span class="terminal__dot terminal__dot--red"></span>
+          <span class="terminal__dot terminal__dot--yellow"></span>
+          <span class="terminal__dot terminal__dot--green"></span>
+        </div>
+        <div class="terminal__body">
+          <span class="terminal__line"><span class="terminal__prompt">$ </span>{{ i18n.hero.terminal_1 }}</span>
+          <span class="terminal__line"><span class="terminal__prompt">$ </span>{{ i18n.hero.terminal_2 }}</span>
+          <span class="terminal__line"><span class="terminal__prompt">$ </span>{{ i18n.hero.terminal_3 }}</span>
+          <span class="terminal__line"><span class="terminal__prompt">&gt; </span>{{ i18n.hero.terminal_4 }}<span class="terminal__cursor"></span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section__header fade-in">
+      <div class="section__label">{{ i18n.about.label }}</div>
+      <h2 class="section__title">{{ i18n.about.title }}</h2>
+      <div class="section__divider"></div>
+    </div>
+    <div class="about__grid">
+      <div class="about__bio fade-in">
+        <p>{{ i18n.about.bio }}</p>
+        <div class="about__skills">
+          <h3>{{ i18n.about.skills_label }}</h3>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Podman</span>
+            <span class="tag">RQ/Valkey</span>
+            <span class="tag">GitLab CI/CD</span>
+            <span class="tag">Telegram API</span>
+            <span class="tag">Jira API</span>
+            <span class="tag">Fedora Linux</span>
+            <span class="tag">KDE Plasma</span>
+            <span class="tag">Astra Linux</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+      <div class="about__sidebar fade-in">
+        <h3>{{ i18n.about.interests_label }}</h3>
+        <ul class="about__interests">
+          {% for item in i18n.about.interests %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section section--alt">
+  <div class="container">
+    <div class="section__header fade-in">
+      <div class="section__label">// {{ i18n.projects.label }}</div>
+      <h2 class="section__title">{{ i18n.projects.title }}</h2>
+      <div class="section__divider"></div>
+    </div>
+    <div class="projects__grid">
+      {% for proj in i18n.projects_data %}
+      <div class="project-card fade-in">
+        <div class="project-card__icon">{{ proj.icon }}</div>
+        <h3 class="project-card__name">{{ proj.name }}</h3>
+        <p class="project-card__desc">{{ proj.desc }}</p>
+        <div class="project-card__tags">
+          {% for tag in proj.tags %}
+          <span class="tag tag--small">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Blog highlights -->
+<section class="section">
+  <div class="container">
+    <div class="section__header fade-in">
+      <div class="section__label">{{ i18n.blog.highlights_label }}</div>
+      <h2 class="section__title">{{ i18n.blog.highlights_title }}</h2>
+      <div class="section__divider"></div>
+    </div>
+    <div class="blog-highlights__grid">
+      {% set postsForLang = collections["posts_" + i18n.lang] %}
+      {% for post in postsForLang | limit(3) %}
+      <a href="{{ post.url }}" class="blog-card fade-in">
+        <span class="blog-card__topic">{{ i18n.topics[post.data.topic] }}</span>
+        <h3 class="blog-card__title">{{ post.data.title }}</h3>
+        <p class="blog-card__excerpt">{{ post.data.excerpt }}</p>
+        <div class="blog-card__meta">
+          <span>{{ post.data.date | dateDisplay }}</span>
+          <span class="blog-card__read">{{ i18n.blog.read_more }}</span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    <div class="section__cta">
+      <a href="/{{ i18n.lang }}/blog/" class="btn btn--secondary">{{ i18n.blog.cta_all if i18n.blog.cta_all else i18n.nav.blog }} →</a>
+    </div>
+  </div>
+</section>

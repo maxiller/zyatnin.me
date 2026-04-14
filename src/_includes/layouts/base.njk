@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="{{ i18n.lang }}" dir="{{ i18n.dir }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} — Max Zia{% else %}Max Zia — IT Engineer / DevOps Specialist{% endif %}</title>
+  <meta name="description" content="{% if description %}{{ description }}{% else %}Max Zia — IT Engineer, DevOps Specialist. Containerization, Python automation, CI/CD pipelines.{% endif %}">
+  <meta property="og:title" content="{% if title %}{{ title }} — Max Zia{% else %}Max Zia — IT Engineer / DevOps Specialist{% endif %}">
+  <meta property="og:description" content="{% if description %}{{ description }}{% else %}Department head for L3 support. Containerization with Podman, Python automation, CI/CD.{% endif %}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zyatnin.me{{ page.url }}">
+  <link rel="alternate" hreflang="ru" href="https://zyatnin.me{{ page.url | replace('/en/', '/ru/') | replace('/he/', '/ru/') }}">
+  <link rel="alternate" hreflang="en" href="https://zyatnin.me{{ page.url | replace('/ru/', '/en/') | replace('/he/', '/en/') }}">
+  <link rel="alternate" hreflang="he" href="https://zyatnin.me{{ page.url | replace('/ru/', '/he/') | replace('/en/', '/he/') }}">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231a1b2e'/><text x='4' y='23' font-family='monospace' font-size='18' font-weight='bold' fill='%230ea5e9'>MZ</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">{{ i18n.skip_link }}</a>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="/{{ i18n.lang }}/" class="header__logo">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="MZ Logo">
+          <rect width="32" height="32" rx="6" fill="currentColor" opacity="0.1"/>
+          <path d="M5 22V10l5.5 7L16 10v12M18 10h9l-9 12h9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>zyatnin.me</span>
+      </a>
+
+      <nav class="header__nav">
+        <a href="/{{ i18n.lang }}/#about">{{ i18n.nav.about }}</a>
+        <a href="/{{ i18n.lang }}/#projects">{{ i18n.nav.projects }}</a>
+        <a href="/{{ i18n.lang }}/blog/" class="{% if 'blog' in page.url %}active{% endif %}">{{ i18n.nav.blog }}</a>
+      </nav>
+
+      <div class="header__controls">
+        <div class="lang-switcher">
+          <a href="{{ page.url | replace('/en/', '/ru/') | replace('/he/', '/ru/') }}" class="{% if i18n.lang == 'ru' %}active{% endif %}">RU</a>
+          <a href="{{ page.url | replace('/ru/', '/en/') | replace('/he/', '/en/') }}" class="{% if i18n.lang == 'en' %}active{% endif %}">EN</a>
+          <a href="{{ page.url | replace('/ru/', '/he/') | replace('/en/', '/he/') }}" class="{% if i18n.lang == 'he' %}active{% endif %}">HE</a>
+        </div>
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <a href="/{{ i18n.lang }}/#about">{{ i18n.nav.about }}</a>
+    <a href="/{{ i18n.lang }}/#projects">{{ i18n.nav.projects }}</a>
+    <a href="/{{ i18n.lang }}/blog/">{{ i18n.nav.blog }}</a>
+  </div>
+
+  <main id="main">
+    {{ content | safe }}
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="24" height="24">
+            <rect width="32" height="32" rx="6" fill="currentColor" opacity="0.1"/>
+            <path d="M5 22V10l5.5 7L16 10v12M18 10h9l-9 12h9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Max Zia</span>
+        </div>
+        <div class="footer__links">
+          <a href="https://github.com/maxiller" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:perp1@zyatnin.me">Email</a>
+        </div>
+        <p class="footer__copy">© 2026 Max Zia. {{ i18n.footer.rights }}.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/app.js"></script>
+</body>
+</html>
