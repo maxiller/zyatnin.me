@@ -30,7 +30,7 @@ layout: layouts/base.njk
             <h3 class="blog-card__title">{{ post.data.title }}</h3>
             <p class="blog-card__excerpt">{{ post.data.excerpt }}</p>
             <div class="blog-card__meta">
-              <span>{{ post.data.date | dateDisplay }}</span>
+              <span>{{ post.data.date | dateDisplay(i18n.lang) }}</span>
               <span class="blog-card__read">{{ i18n.blog.read_more }}</span>
             </div>
           </a>

@@ -8,8 +8,8 @@
   },
   "hero": {
     "greeting": "Hi, I'm",
-    "title": "IT Engineer / DevOps Specialist",
-    "desc": "Department head for L3 support. I specialize in containerization with Podman, Python automation, and CI/CD pipelines. Building reliable infrastructure solutions for production.",
+    "title": "Technical Support Manager",
+    "desc": "Head of L3 support. I help small and medium companies run technical support that works: helpdesk processes, SLA, Python automation and container infrastructure.",
     "cta_projects": "Projects",
     "cta_blog": "Read Blog",
     "terminal_1": "podman pod create --name jira-stack",
@@ -19,8 +19,8 @@
   },
   "about": {
     "label": "About",
-    "title": "Engineer & Team Lead",
-    "bio": "Department head for L3 technical support at Aisa IT Service. Specializing in the TermiDesk VDI platform support and development. I build Python automation tools, design CI/CD pipelines, and architect Podman-based container infrastructure.",
+    "title": "Support for small & medium business",
+    "bio": "Head of L3 technical support at Aisa IT Service. I turn support into a managed service: helpdesk processes, SLA metrics, Python automation, CI/CD pipelines and Podman container infrastructure. I know what small and medium teams need — fast answers, predictable fixes and transparent reporting.",
     "skills_label": "Technologies",
     "interests_label": "Interests",
     "interests": [
@@ -48,6 +48,12 @@
     "rights": "All rights reserved"
   },
   "skip_link": "Skip to content",
+  "a11y": {
+    "navigation": "Navigation",
+    "theme_toggle": "Switch color theme",
+    "menu_open": "Open menu",
+    "menu_close": "Close menu"
+  },
   "topics": {
     "t1": "Containerization & Podman",
     "t2": "Python Automation & Integration",

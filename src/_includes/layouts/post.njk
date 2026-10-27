@@ -8,7 +8,7 @@ layout: layouts/base.njk
     <div class="article__header">
       <span class="article__topic">{{ i18n.topics[topic] }}</span>
       <h1 class="article__title">{{ title }}</h1>
-      <span class="article__meta">{{ date | dateDisplay }} · {{ content | readingTime }} {{ i18n.blog.min_read }}</span>
+      <span class="article__meta">{{ date | dateDisplay(i18n.lang) }} · {{ content | readingTime }} {{ i18n.blog.min_read }}</span>
     </div>
     <div class="article__body">
       {{ content | safe }}

@@ -16,9 +16,16 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("CNAME");
 
   // Custom filters
-  eleventyConfig.addFilter("dateDisplay", (dateStr) => {
-    if (!dateStr) return "";
-    return String(dateStr).split('T')[0].substring(0, 10);
+  // Dates arrive as Date objects (gray-matter parses YAML dates) or ISO strings.
+  // Format in UTC so a YYYY-MM-DD date never shifts to the neighbouring day.
+  const dateLocales = { ru: "ru-RU", en: "en-GB", he: "he-IL" };
+  eleventyConfig.addFilter("dateDisplay", (dateVal, lang = "en") => {
+    if (!dateVal) return "";
+    const d = dateVal instanceof Date ? dateVal : new Date(dateVal);
+    if (isNaN(d)) return "";
+    return new Intl.DateTimeFormat(dateLocales[lang] || lang, {
+      day: "numeric", month: "long", year: "numeric", timeZone: "UTC"
+    }).format(d);
   });
 
   eleventyConfig.addFilter("readingTime", (content) => {
