@@ -3,6 +3,7 @@ layout: layouts/project.njk
 title: "Mobile Carrier, USA"
 excerpt: "Moving carrier business processes to a cloud-based managed services model built on a vendor solution."
 order: 1
+status: done
 icon: "☁️"
 tags: [Telecom, "Managed Services", Cloud, Training]
 points:

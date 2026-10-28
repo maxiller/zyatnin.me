@@ -34,7 +34,11 @@
     "label": "Projects",
     "title": "Featured Projects",
     "back": "← Back to projects",
-    "read_more": "View details →"
+    "read_more": "View details →",
+    "status": {
+      "done": "Completed",
+      "in_progress": "In progress"
+    }
   },
   "blog": {
     "label": "Blog",

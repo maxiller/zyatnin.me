@@ -3,6 +3,7 @@ layout: layouts/project.njk
 title: "Oil Sector, Russia"
 excerpt: "Digital twin of critical production infrastructure."
 order: 2
+status: done
 icon: "🏭"
 tags: ["Digital Twin", Industrial, "Vendor Management", SLA]
 points:

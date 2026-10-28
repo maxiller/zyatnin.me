@@ -3,6 +3,7 @@ layout: layouts/project.njk
 title: "ענף הנפט, רוסיה"
 excerpt: "תאומה דיגיטלית של תשתית ייצור קריטית."
 order: 2
+status: done
 icon: "🏭"
 tags: ["תאומה דיגיטלית", תעשייה, "ניהול ונדורים", SLA]
 points:

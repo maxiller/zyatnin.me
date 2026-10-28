@@ -3,6 +3,7 @@ layout: layouts/project.njk
 title: "Major Bank"
 excerpt: "VDI for 150,000 users."
 order: 3
+status: done
 icon: "🖥️"
 tags: [VDI, "150,000 users", "Tech Support", Alerting]
 points:

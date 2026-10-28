@@ -3,6 +3,7 @@ layout: layouts/project.njk
 title: "בנק גדול"
 excerpt: "VDI ל-150,000 משתמשים."
 order: 3
+status: done
 icon: "🖥️"
 tags: [VDI, "150,000 משתמשים", "תמיכה טכנית", התראות]
 points:

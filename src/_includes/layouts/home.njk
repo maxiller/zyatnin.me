@@ -2,6 +2,8 @@
 layout: layouts/base.njk
 ---
 
+{% set statusMeta = { done: "✅", in_progress: "🚧" } %}
+
 {% macro projectIcon(n) %}
 <svg class="ticket-card__svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   {% if n == 1 %}
@@ -205,7 +207,9 @@ layout: layouts/base.njk
       <a href="{{ proj.url }}" class="ticket-card fade-in">
         <div class="ticket-card__top">
           <span class="ticket-card__num mono">#{{ '0' if proj.data.order < 10 else '' }}{{ proj.data.order }}</span>
-          <svg class="ticket-card__status" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-4"/></svg>
+          {% if statusMeta[proj.data.status] %}
+          <span class="ticket-card__status" role="img" aria-label="{{ i18n.projects.status[proj.data.status] }}" title="{{ i18n.projects.status[proj.data.status] }}">{{ statusMeta[proj.data.status] }}</span>
+          {% endif %}
         </div>
         <div class="ticket-card__icon">{{ projectIcon(proj.data.order) }}</div>
         <h3 class="ticket-card__name">{{ proj.data.title }}</h3>

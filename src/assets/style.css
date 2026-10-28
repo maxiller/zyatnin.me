@@ -706,9 +706,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ticket-card__status {
-  width: 20px;
-  height: 20px;
-  color: var(--ok);
+  font-size: 17px;
+  line-height: 1;
 }
 
 .ticket-card__icon {

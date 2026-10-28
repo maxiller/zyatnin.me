@@ -3,6 +3,7 @@ layout: layouts/project.njk
 title: "ספק סלולר, ארה״ב"
 excerpt: "מעבר תהליכי העסק של הספק למודל managed services מבוסס ענן, על בסיס פתרון ונדור."
 order: 1
+status: done
 icon: "☁️"
 tags: [טלקום, "Managed Services", ענן, הדרכה]
 points:

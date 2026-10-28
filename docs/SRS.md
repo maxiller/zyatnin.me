@@ -420,6 +420,7 @@ flowchart LR
 | FR-104 | Ссылка «Назад к проектам» должна вести на секцию проектов главной текущего языка | Must | Реализовано |
 | FR-105 | Порядок карточек на главной определяется полем `order` front matter | Must | Реализовано |
 | FR-106 | `slug` проекта должен быть уникальным в пределах языка и совпадать между языками | Must | Реализовано |
+| FR-107 | Карточка проекта должна отображать настраиваемый статус из front matter со значениями `done` и `in_progress`; индикатор — эмодзи с локализованной подписью; при отсутствии `status` индикатор не выводится | Should | Реализовано |
 
 **Критерии приёмки для раздела:**
 
@@ -486,7 +487,7 @@ flowchart LR
 | DR-09 | Языковой JSON содержит ключи `lang`, `dir`, `nav`, `hero`, `about`, `projects`, `blog`, `footer`, `skip_link`, `a11y`, `topics` |
 | DR-10 | `lang` совпадает с кодом языка, `dir` равен `ltr` или `rtl` |
 | DR-11 | `topics` содержит ровно ключи `t1`–`t6`, совпадающие со значениями `topic` в статьях |
-| DR-12 | Front matter проекта содержит `layout`, `title`, `excerpt`, `order`, `icon`, `tags`, `slug`, `permalink` и необязательный `points`; `tags` и `points` — массивы строк |
+| DR-12 | Front matter проекта содержит `layout`, `title`, `excerpt`, `order`, `icon`, `tags`, `slug`, `permalink` и необязательные `points` и `status` (`done` или `in_progress`); `tags` и `points` — массивы строк |
 | DR-13 | Контент статьи не содержит персональных данных, кроме публично разрешённых контактов |
 | DR-14 | `CNAME` содержит ровно `zyatnin.me` |
 | DR-15 | Все публичные URL уникальны; дубликаты `permalink` недопустимы |
@@ -564,7 +565,7 @@ flowchart LR
 | FR-40–FR-51 | AC-07, AC-08, AC-13 | `layouts/base.njk`, `assets/app.js`, `assets/style.css` | Браузер, axe |
 | FR-60–FR-71 | AC-09, AC-15 | `layouts/base.njk`, `src/index.njk` | HTML, Lighthouse |
 | FR-80–FR-86, FR-88, FR-89 | AC-10, AC-11, AC-16 | `src/{lang}/posts/*.md`, `_data/i18n/*.json` | Скрипт валидации |
-| FR-87, FR-100–FR-106 | AC-17 | `layouts/project.njk`, `layouts/home.njk`, `src/{lang}/projects/*.md` | Сборка, HTML |
+| FR-87, FR-100–FR-107 | AC-17 | `layouts/project.njk`, `layouts/home.njk`, `src/{lang}/projects/*.md` | Сборка, HTML |
 | FR-90–FR-99 | AC-12 | `package.json`, `.github/workflows/deploy.yml` | GitHub Actions |
 | NFR-01–NFR-05 | AC-06, AC-12 | `assets/style.css`, `assets/app.js`, сборка | Lighthouse, замеры |
 | NFR-06–NFR-12 | AC-13 | `assets/style.css`, `layouts/base.njk`, `app.js` | axe, ручная проверка |
@@ -709,6 +710,7 @@ layout: layouts/project.njk
 title: "jira-alert-daemon"
 excerpt: "Краткое описание для карточки и метаданных"
 order: 1
+status: done
 icon: "🔔"
 tags: [Python, Podman]
 slug: jira-alert-daemon
@@ -725,6 +727,7 @@ permalink: /ru/projects/jira-alert-daemon/
 | `icon` | Обязательно | строка | Эмодзи для страницы проекта |
 | `tags` | Обязательно | массив | Технологии или атрибуты проекта |
 | `points` | Опционально | массив | Ключевые результаты проекта; выводится списком в карточке и на странице |
+| `status` | Опционально | строка | `done` или `in_progress`; при отсутствии значения индикатор статуса не выводится |
 | `slug` | Обязательно | строка | `[a-z0-9-]+`, одинаков во всех языках |
 | `permalink` | Обязательно | строка | `/{lang}/projects/{slug}/` |
 
@@ -769,6 +772,8 @@ a11y.menu_open
 a11y.menu_close
 projects.back
 projects.read_more
+projects.status.done
+projects.status.in_progress
 topics.t1
 topics.t2
 topics.t3
@@ -832,3 +837,4 @@ topics.t6
 | 1.3 | 2026-10-28 | Переписан контент главной: «Обо мне» переориентировано на построение команд клиентского успеха, hero объединён с новым позиционированием («создание служб поддержки для бизнеса любого масштаба»), из терминала hero убраны отсылки к jira-alert-daemon; проекты заменены тремя клиентскими (оператор связи в США, нефтяной сектор в РФ, крупный банк) с необязательным полем `points` в front matter; FR-87 и AC-04 приведены к новой модели, в 7.1 добавлено поле `points` |
 | 1.4 | 2026-10-28 | Даты в карточках блога (главная и индекс) переведены на формат ISO-недели `YYYY-Www` через новый фильтр `dateWeek` (расчёт в UTC); FR-25 и критерии приёмки 3.2.3 обновлены; страница статьи сохраняет локализованный формат (FR-33) |
 | 1.5 | 2026-10-28 | Добавлен топик `t6` «Клиентский успех» (FR-81, DR-05, DR-11, ключи i18n 7.2, `blog-index.njk`); написаны четыре статьи на трёх языках: `project-based-hiring`, `email-only-response-sla`, `podman-vs-docker`, `ai-agents-in-support`; из ивритских статей удалён унаследованный HTML-фрагмент с пустыми карточками и ссылками `blog-N.html` |
+| 1.6 | 2026-10-28 | Статус проекта в карточках сделан настраиваемым: зелёный SVG-индикатор заменён на эмодзи по полю `status` front matter (`done` → ✅, `in_progress` → 🚧) с локализованными подписями `projects.status.*`; добавлены FR-107, поле в DR-12 и в схеме 7.1 |

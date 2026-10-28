@@ -3,6 +3,7 @@ layout: layouts/project.njk
 title: "Сотовый оператор, США"
 excerpt: "Миграция бизнес-процессов оператора на облачную модель managed services на базе вендорского решения."
 order: 1
+status: done
 icon: "☁️"
 tags: [Телеком, "Managed Services", Cloud, Обучение]
 points:
