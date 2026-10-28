@@ -1,4 +1,5 @@
 ---
+view: leader
 layout: layouts/project.njk
 title: "בנק גדול"
 excerpt: "VDI ל-150,000 משתמשים."
@@ -12,5 +13,4 @@ points:
 slug: bank-vdi
 permalink: /he/projects/bank-vdi/
 ---
-
 הלקוח הוא בנק גדול. הפתרון — VDI ל-150,000 משתמשים. במסגרת הפרויקט בוצעה אינטגרציה של תהליכי התמיכה הטכנית ונבנתה ערכת כלים להתראות חירום.

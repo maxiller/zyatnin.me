@@ -3,5 +3,17 @@
   "domain": "zyatnin.me",
   "email": "max@zyatnin.me",
   "github": "https://github.com/maxiller",
-  "year": 2026
+  "year": 2026,
+  "skills": [
+    "Python",
+    "Podman",
+    "RQ/Valkey",
+    "GitLab CI/CD",
+    "Telegram API",
+    "Jira API",
+    "Fedora Linux",
+    "KDE Plasma",
+    "Astra Linux",
+    "PostgreSQL"
+  ]
 }

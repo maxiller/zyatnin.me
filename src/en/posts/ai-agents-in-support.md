@@ -1,4 +1,5 @@
 ---
+view: leader
 layout: layouts/post.njk
 title: "AI agents in support: where they help and where they hurt"
 excerpt: "Practical use of AI agents in technical support: triage and reply drafts, limitations, effect metrics, and the boundaries of autonomy."
@@ -7,7 +8,6 @@ topic: t6
 slug: ai-agents-in-support
 permalink: /en/blog/ai-agents-in-support/
 ---
-
 ## Introduction
 
 AI agents in support have stopped being an experiment: models are cheap enough to hand the routine over to them. But between "an agent can" and "an agent should be trusted" lies a long distance. Experience says the value of an agent is determined not by the model but by how its boundaries and result checks are set up.

@@ -1,4 +1,5 @@
 ---
+view: leader
 layout: layouts/post.njk
 title: "Hiring for a project: getting skillset and motivation right"
 excerpt: "How to hire for a specific project: a requirement matrix instead of a technology wishlist, and the questions that reveal a candidate's motivation."
@@ -7,7 +8,6 @@ topic: t6
 slug: project-based-hiring
 permalink: /en/blog/project-based-hiring/
 ---
-
 ## Introduction
 
 Hiring "for a project" is not the same as hiring "for the team". A project has a phase, a role and a horizon: first build, then run. The classic mistake is assembling a vacancy from a list of tools someone remembered the night before. The team ends up fully staffed while the project stands still: people can do everything except what is needed right now.

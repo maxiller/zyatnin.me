@@ -26,7 +26,10 @@ permalink: /index.html
         }
         return 'en';
       }
-      redirect('/' + pickLanguage() + '/');
+      function pickView() {
+        try { return localStorage.getItem('zyatnin-view') === 'dev' ? 'dev/' : ''; } catch (e) { return ''; }
+      }
+      redirect('/' + pickLanguage() + '/' + pickView());
     })();
   </script>
 </head>
@@ -35,6 +38,11 @@ permalink: /index.html
     <a href="/ru/">Русский</a> ·
     <a href="/en/">English</a> ·
     <a href="/he/">עברית</a>
+  </p>
+  <p>
+    <a href="/ru/dev/">Русский — разработчик</a> ·
+    <a href="/en/dev/">English — developer</a> ·
+    <a href="/he/dev/">עברית — מפתח</a>
   </p>
 </body>
 </html>

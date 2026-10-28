@@ -1,13 +1,13 @@
 ---
-layout: layouts/post.njk
+view: dev
+layout: layouts/dev/post.njk
 title: "Почему я предпочитаю Podman вместо Docker"
 excerpt: "Rootless-контейнеры без демона и поды с изолированной средой: почему Podman — мой выбор по умолчанию вместо Docker."
 date: 2026-10-28
 topic: t1
 slug: podman-vs-docker
-permalink: /ru/blog/podman-vs-docker/
+permalink: /ru/dev/blog/podman-vs-docker/
 ---
-
 ## Введение
 
 Выбор рантайма — не вопрос веры, а инженерный расчёт: важны модель безопасности, интеграция с окружением и стоимость сопровождения. Для моих задач — инфраструктура поддержки, автоматизация, локальные и серверные окружения — по умолчанию я выбираю Podman. Причины две: работа без привилегий и поды.

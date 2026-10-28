@@ -2,8 +2,6 @@
 layout: layouts/base.njk
 ---
 
-{% set statusMeta = { done: "✅", in_progress: "🚧" } %}
-
 {% macro projectIcon(n) %}
 <svg class="ticket-card__svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   {% if n == 1 %}
@@ -30,14 +28,13 @@ layout: layouts/base.njk
 <section class="hero">
   <div class="container hero__grid">
     <div class="hero__content">
-      <p class="hero__greeting mono">&gt; {{ i18n.hero.greeting }}</p>
+      <p class="hero__greeting">{{ i18n.hero.greeting }}</p>
       <h1 class="hero__name">{{ site.name }}</h1>
       <p class="hero__role">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M4 14v-2a8 8 0 0 1 16 0v2"/>
-          <rect x="3" y="14" width="4" height="6" rx="2"/>
-          <rect x="17" y="14" width="4" height="6" rx="2"/>
-          <path d="M19 20a3 3 0 0 1-3 3h-3"/>
+          <rect x="4" y="7" width="16" height="14" rx="2"/>
+          <path d="M9 7V5a3 3 0 0 1 6 0v2"/>
+          <path d="M9 12h6"/>
         </svg>
         {{ i18n.hero.title }}
       </p>
@@ -46,104 +43,19 @@ layout: layouts/base.njk
         <a href="#projects" class="btn btn--primary">{{ i18n.hero.cta_projects }}</a>
         <a href="/{{ i18n.lang }}/blog/" class="btn btn--ghost">{{ i18n.hero.cta_blog }}</a>
       </div>
-      <div class="terminal fade-in">
-        <div class="terminal__bar" aria-hidden="true">
-          <span></span><span></span><span></span>
-        </div>
-        <div class="terminal__body">
-          <p class="terminal__line"><span class="terminal__prompt">$</span>{{ i18n.hero.terminal_1 }}</p>
-          <p class="terminal__line"><span class="terminal__prompt">$</span>{{ i18n.hero.terminal_2 }}</p>
-          <p class="terminal__line"><span class="terminal__prompt">$</span>{{ i18n.hero.terminal_3 }}</p>
-          <p class="terminal__line terminal__line--ok"><span class="terminal__prompt">&gt;</span>{{ i18n.hero.terminal_4 }}<span class="terminal__cursor" aria-hidden="true"></span></p>
-        </div>
-      </div>
     </div>
 
-    <div class="hero__art" aria-hidden="true">
-      <svg class="hero-svg" viewBox="0 0 560 470" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <pattern id="hero-dots" width="26" height="26" patternUnits="userSpaceOnUse">
-            <circle cx="2" cy="2" r="1.4" fill="var(--pattern-dot)"/>
-          </pattern>
-        </defs>
-        <rect x="24" y="16" width="512" height="438" rx="26" fill="url(#hero-dots)"/>
-
-        <!-- spark accents -->
-        <path d="M52 66v14M45 73h14" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
-        <circle cx="34" cy="214" r="4" stroke="var(--accent)" stroke-width="2" opacity="0.5"/>
-        <path d="M516 150v10M511 155h10" stroke="var(--ok)" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
-
-        <!-- floating ticket card -->
-        <g class="hero-float hero-float--slow">
-          <path d="M336 74h40" stroke="var(--border)" stroke-dasharray="3 5"/>
-          <rect x="380" y="40" width="152" height="72" rx="12" fill="var(--bg-card)" stroke="var(--border)" stroke-dasharray="6 5"/>
-          <circle cx="406" cy="66" r="10" fill="var(--ok-dim)"/>
-          <path d="m402 66 3 3 6-7" stroke="var(--ok)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <rect x="424" y="58" width="88" height="7" rx="3.5" fill="var(--border)"/>
-          <rect x="424" y="74" width="60" height="7" rx="3.5" fill="var(--border-light)"/>
-        </g>
-
-        <!-- support console window -->
-        <g>
-          <rect x="60" y="92" width="340" height="262" rx="16" fill="var(--bg-card)" stroke="var(--border)"/>
-          <line x1="60" y1="128" x2="400" y2="128" stroke="var(--border)"/>
-          <circle cx="84" cy="110" r="5" fill="var(--accent)"/>
-          <circle cx="102" cy="110" r="5" fill="var(--border)"/>
-          <circle cx="120" cy="110" r="5" fill="var(--border)"/>
-
-          <!-- ticket queue rows -->
-          <circle cx="88" cy="154" r="5" fill="var(--accent)"/>
-          <rect x="104" y="150" width="150" height="8" rx="4" fill="var(--border)"/>
-          <rect x="334" y="147" width="46" height="13" rx="6.5" fill="var(--accent-dim)"/>
-          <circle cx="88" cy="186" r="5" fill="var(--ok)"/>
-          <rect x="104" y="182" width="118" height="8" rx="4" fill="var(--border)"/>
-          <rect x="334" y="179" width="46" height="13" rx="6.5" fill="var(--ok-dim)"/>
-          <circle cx="88" cy="218" r="5" fill="var(--warn)"/>
-          <rect x="104" y="214" width="170" height="8" rx="4" fill="var(--border)"/>
-          <rect x="334" y="211" width="46" height="13" rx="6.5" fill="var(--warn-dim)"/>
-          <circle cx="88" cy="250" r="5" fill="var(--accent)"/>
-          <rect x="104" y="246" width="96" height="8" rx="4" fill="var(--border)"/>
-          <rect x="334" y="243" width="46" height="13" rx="6.5" fill="var(--accent-dim)"/>
-
-          <line x1="60" y1="284" x2="400" y2="284" stroke="var(--border-light)"/>
-
-          <!-- load bars -->
-          <rect x="86" y="322" width="18" height="18" rx="3" fill="var(--accent)" opacity="0.4"/>
-          <rect x="112" y="310" width="18" height="30" rx="3" fill="var(--accent)" opacity="0.6"/>
-          <rect x="138" y="298" width="18" height="42" rx="3" fill="var(--accent)" opacity="0.85"/>
-          <rect x="164" y="314" width="18" height="26" rx="3" fill="var(--accent)" opacity="0.55"/>
-
-          <!-- uptime pulse -->
-          <path d="M214 326h24l7-13 10 24 7-11h34" stroke="var(--ok)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-
-          <!-- SLA gauge -->
-          <circle cx="350" cy="324" r="21" stroke="var(--border)" stroke-width="6"/>
-          <circle cx="350" cy="324" r="21" stroke="var(--accent)" stroke-width="6" stroke-linecap="round" pathLength="100" stroke-dasharray="76 24" transform="rotate(-90 350 324)"/>
-          <text x="350" y="328" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" fill="var(--text-secondary)">SLA</text>
-        </g>
-
-        <!-- headset badge -->
-        <g class="hero-float">
-          <path d="M404 262h22" stroke="var(--border)" stroke-dasharray="3 5"/>
-          <rect x="430" y="212" width="88" height="88" rx="22" fill="var(--bg-card)" stroke="var(--border)"/>
-          <path d="M453 250v-2a21 21 0 0 1 42 0v2" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
-          <rect x="449" y="248" width="9" height="16" rx="4" fill="var(--accent)"/>
-          <rect x="490" y="248" width="9" height="16" rx="4" fill="var(--accent)"/>
-          <path d="M494 264v6c0 6-5 9-11 9" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
-          <circle cx="480" cy="279" r="3" fill="var(--accent)"/>
-        </g>
-
-        <!-- notification bubble -->
-        <g class="hero-float hero-float--slow">
-          <rect x="84" y="394" width="132" height="52" rx="13" fill="var(--bg-card)" stroke="var(--border)"/>
-          <path d="M112 402a5.5 5.5 0 0 0-11 0c0 6.5-2.8 8.3-2.8 8.3h16.6s-2.8-1.8-2.8-8.3" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(3.5, 6)"/>
-          <path d="M109.7 417.5a2 2 0 0 1-3.4 0" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" transform="translate(3.5, 6)"/>
-          <rect x="132" y="410" width="70" height="7" rx="3.5" fill="var(--border)"/>
-          <rect x="132" y="424" width="48" height="7" rx="3.5" fill="var(--border-light)"/>
-          <circle cx="206" cy="402" r="5" fill="var(--warn)"/>
-        </g>
-      </svg>
-    </div>
+    <aside class="hero__facts fade-in" aria-label="{{ i18n.about.label }}">
+      <p class="hero-facts__caption">{{ i18n.hero.facts_caption }}</p>
+      <dl class="hero-facts">
+        {% for f in i18n.hero.facts %}
+        <div class="hero-facts__row">
+          <dt class="hero-facts__label">{{ f.label }}</dt>
+          <dd class="hero-facts__value">{{ f.value }}</dd>
+        </div>
+        {% endfor %}
+      </dl>
+    </aside>
   </div>
 </section>
 
@@ -202,13 +114,13 @@ layout: layouts/base.njk
       <div class="section-head__rule" aria-hidden="true"></div>
     </header>
     <div class="projects__grid">
-      {% set projectsForLang = collections["projects_" + i18n.lang] %}
+      {% set projectsForLang = collections["projects_" + i18n.lang] | byView("leader") %}
       {% for proj in projectsForLang %}
       <a href="{{ proj.url }}" class="ticket-card fade-in">
         <div class="ticket-card__top">
-          <span class="ticket-card__num mono">#{{ '0' if proj.data.order < 10 else '' }}{{ proj.data.order }}</span>
-          {% if statusMeta[proj.data.status] %}
-          <span class="ticket-card__status" role="img" aria-label="{{ i18n.projects.status[proj.data.status] }}" title="{{ i18n.projects.status[proj.data.status] }}">{{ statusMeta[proj.data.status] }}</span>
+          <span class="ticket-card__num mono">№ {{ '0' if proj.data.order < 10 else '' }}{{ proj.data.order }}</span>
+          {% if proj.data.status %}
+          <span class="badge badge--{{ proj.data.status }}" title="{{ i18n.projects.status[proj.data.status] }}">{{ i18n.projects.status[proj.data.status] }}</span>
           {% endif %}
         </div>
         <div class="ticket-card__icon">{{ projectIcon(proj.data.order) }}</div>
@@ -245,7 +157,7 @@ layout: layouts/base.njk
       <div class="section-head__rule" aria-hidden="true"></div>
     </header>
     <div class="blog-highlights__grid">
-      {% set postsForLang = collections["posts_" + i18n.lang] %}
+      {% set postsForLang = collections["posts_" + i18n.lang] | byView("leader") %}
       {% for post in postsForLang | limit(3) %}
       <a href="{{ post.url }}" class="blog-card fade-in">
         <span class="blog-card__topic">{{ i18n.topics[post.data.topic] }}</span>

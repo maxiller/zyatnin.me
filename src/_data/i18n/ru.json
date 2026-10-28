@@ -6,6 +6,14 @@
     "projects": "Проекты",
     "blog": "Блог"
   },
+  "views": {
+    "leader": "Лидер",
+    "leader_full": "Лидер поддержки",
+    "dev": "Разработчик",
+    "aria_switch": "Переключить вид сайта",
+    "aria_to_leader": "Переключиться на вид «Лидер поддержки»",
+    "aria_to_dev": "Переключиться на вид «Разработчик»"
+  },
   "hero": {
     "greeting": "Привет, я",
     "title": "Строю службы поддержки",
@@ -15,7 +23,26 @@
     "terminal_1": "podman pod create --name support-stack",
     "terminal_2": "rq worker --with-scheduler tickets asterisk",
     "terminal_3": "systemctl --user enable container-runner.service",
-    "terminal_4": "# всё работает ✓"
+    "terminal_4": "# всё работает ✓",
+    "facts": [
+      {
+        "label": "Роль",
+        "value": "Руководитель отдела L3-поддержки"
+      },
+      {
+        "label": "Компания",
+        "value": "Айса ИТ Сервис"
+      },
+      {
+        "label": "Отрасли",
+        "value": "Телеком · Нефтегаз · Банки"
+      },
+      {
+        "label": "Масштаб",
+        "value": "VDI на 150 000 пользователей"
+      }
+    ],
+    "facts_caption": "Сводка профиля"
   },
   "about": {
     "label": "Обо мне",
@@ -48,7 +75,8 @@
     "read_more": "Читать далее →",
     "min_read": "мин. чтения",
     "highlights_title": "Последние статьи",
-    "highlights_label": "Блог"
+    "highlights_label": "Блог",
+    "empty": "В этом виде записей пока нет."
   },
   "footer": {
     "rights": "Все права защищены"
@@ -56,7 +84,6 @@
   "skip_link": "Перейти к содержимому",
   "a11y": {
     "navigation": "Навигация",
-    "theme_toggle": "Переключить цветовую тему",
     "menu_open": "Открыть меню",
     "menu_close": "Закрыть меню"
   },
@@ -67,5 +94,30 @@
     "t4": "DevOps и CI/CD",
     "t5": "Сети и инфраструктура",
     "t6": "Клиентский успех"
+  },
+  "dev": {
+    "hero": {
+      "greeting": "$ whoami",
+      "title": "Python · контейнеры · инфраструктура",
+      "desc": "Разрабатываю инструменты для эксплуатации и поддержки: автоматизация на Python, очереди задач на RQ и Valkey, Telegram-боты, контейнерная инфраструктура на Podman и CI/CD в GitLab.",
+      "cta_projects": "Проекты",
+      "cta_blog": "Смотреть заметки"
+    },
+    "about": {
+      "label": "О разработке",
+      "title": "Инженерная практика",
+      "bio": "Пишу сервисы и утилиты, которые держат поддержку и инфраструктуру на ходу: мульти-очередевые воркеры на RQ/Valkey, Telegram-боты на aiogram, демоны интеграции с Jira API, контейнеры на Podman — от quadlet-юнитов до CI-раннеров. Основная среда — Fedora Linux и KDE Plasma.",
+      "skills_label": "Стек",
+      "interests_label": "Фокус",
+      "interests": [
+        "Оркестрация контейнеров",
+        "Очереди задач и воркеры",
+        "VoIP и телефония",
+        "Сетевая инфраструктура"
+      ]
+    },
+    "blog": {
+      "subtitle": "Заметки о контейнерах, автоматизации и Linux"
+    }
   }
 }

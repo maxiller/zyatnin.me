@@ -6,6 +6,14 @@
     "projects": "Projects",
     "blog": "Blog"
   },
+  "views": {
+    "leader": "Leader",
+    "leader_full": "Support Leader",
+    "dev": "Developer",
+    "aria_switch": "Switch site view",
+    "aria_to_leader": "Switch to the Support Leader view",
+    "aria_to_dev": "Switch to the Developer view"
+  },
   "hero": {
     "greeting": "Hi, I'm",
     "title": "I build support organizations",
@@ -15,7 +23,26 @@
     "terminal_1": "podman pod create --name support-stack",
     "terminal_2": "rq worker --with-scheduler tickets asterisk",
     "terminal_3": "systemctl --user enable container-runner.service",
-    "terminal_4": "# all systems go ✓"
+    "terminal_4": "# all systems go ✓",
+    "facts": [
+      {
+        "label": "Role",
+        "value": "Head of L3 Support"
+      },
+      {
+        "label": "Company",
+        "value": "Aisa IT Service"
+      },
+      {
+        "label": "Industries",
+        "value": "Telecom · Oil & Gas · Banking"
+      },
+      {
+        "label": "Scale",
+        "value": "VDI for 150,000 users"
+      }
+    ],
+    "facts_caption": "Profile summary"
   },
   "about": {
     "label": "About",
@@ -48,7 +75,8 @@
     "read_more": "Read more →",
     "min_read": "min read",
     "highlights_title": "Latest Articles",
-    "highlights_label": "Blog"
+    "highlights_label": "Blog",
+    "empty": "No entries for this view yet."
   },
   "footer": {
     "rights": "All rights reserved"
@@ -56,7 +84,6 @@
   "skip_link": "Skip to content",
   "a11y": {
     "navigation": "Navigation",
-    "theme_toggle": "Switch color theme",
     "menu_open": "Open menu",
     "menu_close": "Close menu"
   },
@@ -67,5 +94,30 @@
     "t4": "DevOps & CI/CD",
     "t5": "Networking & Infrastructure",
     "t6": "Customer Success"
+  },
+  "dev": {
+    "hero": {
+      "greeting": "$ whoami",
+      "title": "Python · Containers · Infrastructure",
+      "desc": "I build tooling for operations and support: Python automation, RQ/Valkey task queues, Telegram bots, Podman container infrastructure, and GitLab CI/CD.",
+      "cta_projects": "Projects",
+      "cta_blog": "Browse notes"
+    },
+    "about": {
+      "label": "Engineering",
+      "title": "Engineering practice",
+      "bio": "I write services and utilities that keep support and infrastructure running: multi-queue RQ/Valkey workers, aiogram Telegram bots, Jira API integration daemons, and Podman containers — from quadlet units to CI runners. Daily environment: Fedora Linux and KDE Plasma.",
+      "skills_label": "Stack",
+      "interests_label": "Focus",
+      "interests": [
+        "Container orchestration",
+        "Task queues & workers",
+        "VoIP & telephony",
+        "Network infrastructure"
+      ]
+    },
+    "blog": {
+      "subtitle": "Notes on containers, automation, and Linux"
+    }
   }
 }
