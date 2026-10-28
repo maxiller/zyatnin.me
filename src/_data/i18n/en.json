@@ -8,19 +8,19 @@
   },
   "hero": {
     "greeting": "Hi, I'm",
-    "title": "Technical Support Manager",
-    "desc": "Head of L3 support. I help small and medium companies run technical support that works: helpdesk processes, SLA, Python automation and container infrastructure.",
+    "title": "I build support organizations",
+    "desc": "I build support and customer success teams for businesses of any size: helpdesk processes, SLA metrics, Python automation, and container infrastructure. Experience ranges from small teams to carriers and major banks.",
     "cta_projects": "Projects",
     "cta_blog": "Read Blog",
-    "terminal_1": "podman pod create --name jira-stack",
-    "terminal_2": "rq worker --with-scheduler jira asterisk",
+    "terminal_1": "podman pod create --name support-stack",
+    "terminal_2": "rq worker --with-scheduler tickets asterisk",
     "terminal_3": "systemctl --user enable container-runner.service",
     "terminal_4": "# all systems go ✓"
   },
   "about": {
     "label": "About",
-    "title": "Support for small & medium business",
-    "bio": "Head of L3 technical support at Aisa IT Service. I turn support into a managed service: helpdesk processes, SLA metrics, Python automation, CI/CD pipelines and Podman container infrastructure. I know what small and medium teams need — fast answers, predictable fixes and transparent reporting.",
+    "title": "Customer Success Teams",
+    "bio": "Experienced builder of customer success teams. I turn support into a managed service: helpdesk processes, SLA metrics, Python automation, CI/CD, and Podman container infrastructure. Head of L3 technical support at Aisa IT Service. Industry experience: mobile carriers, the oil sector, and major banks — from managed services migration to VDI for 150,000 users.",
     "skills_label": "Technologies",
     "interests_label": "Interests",
     "interests": [
@@ -32,7 +32,9 @@
   },
   "projects": {
     "label": "Projects",
-    "title": "Featured Projects"
+    "title": "Featured Projects",
+    "back": "← Back to projects",
+    "read_more": "View details →"
   },
   "blog": {
     "label": "Blog",
@@ -60,49 +62,5 @@
     "t3": "Linux Desktop & System Administration",
     "t4": "DevOps & CI/CD",
     "t5": "Networking & Infrastructure"
-  },
-  "projects_data": [
-    {
-      "icon": "🔔",
-      "name": "jira-alert-daemon",
-      "desc": "Containerized Python daemon for Jira notifications. Uses RQ workers, Valkey queue, and SSH tunnels within a Podman pod.",
-      "tags": ["Python", "Podman", "RQ", "Valkey", "Jira API"]
-    },
-    {
-      "icon": "🤖",
-      "name": "Telegram-Jira Bot",
-      "desc": "Telegram bot built with aiogram that accepts tasks and queues them via RQ/Valkey for background worker processing.",
-      "tags": ["aiogram", "RQ", "Valkey", "Podman"]
-    },
-    {
-      "icon": "⚙️",
-      "name": "Container Orchestration Pipeline",
-      "desc": "Custom dispatcher/worker pattern using Podman pods and ephemeral sidecar containers for SSH tunnels.",
-      "tags": ["Podman", "Python", "SSH", "Pods"]
-    },
-    {
-      "icon": "🔒",
-      "name": "AmneziaWG Deploy",
-      "desc": "Containerized WireGuard/AmneziaWG deployment template with CI/CD pipeline.",
-      "tags": ["WireGuard", "Podman", "CI/CD", "GitLab"]
-    },
-    {
-      "icon": "🚀",
-      "name": "CI/CD Infrastructure",
-      "desc": "GitLab Runner containerization using Podman quadlets with systemd integration.",
-      "tags": ["GitLab", "Podman", "Systemd", "CI/CD"]
-    },
-    {
-      "icon": "📊",
-      "name": "ITIL KPI System",
-      "desc": "Comprehensive KPI framework for L3 support engineers with weighted SLA metrics and engagement scoring.",
-      "tags": ["ITIL", "KPI", "Management", "SLA"]
-    },
-    {
-      "icon": "📋",
-      "name": "Competency Matrix",
-      "desc": "Skills assessment framework for TermiDesk support engineers across multiple technical domains.",
-      "tags": ["TermiDesk", "Training", "ITIL", "VDI"]
-    }
-  ]
+  }
 }

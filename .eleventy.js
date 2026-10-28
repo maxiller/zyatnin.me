@@ -19,6 +19,20 @@ module.exports = function(eleventyConfig) {
   // Dates arrive as Date objects (gray-matter parses YAML dates) or ISO strings.
   // Format in UTC so a YYYY-MM-DD date never shifts to the neighbouring day.
   const dateLocales = { ru: "ru-RU", en: "en-GB", he: "he-IL" };
+
+  // ISO week label for cards: "2026-W14". Computed in UTC so a date stored as
+  // UTC midnight keeps its ISO week regardless of the local timezone.
+  eleventyConfig.addFilter("dateWeek", (dateVal) => {
+    if (!dateVal) return "";
+    const d = dateVal instanceof Date ? dateVal : new Date(dateVal);
+    if (isNaN(d)) return "";
+    const t = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()));
+    const day = t.getUTCDay() || 7; // Mon=1 … Sun=7
+    t.setUTCDate(t.getUTCDate() + 4 - day); // shift to the ISO week's Thursday
+    const yearStart = new Date(Date.UTC(t.getUTCFullYear(), 0, 1));
+    const week = Math.ceil(((t - yearStart) / 86400000 + 1) / 7);
+    return `${t.getUTCFullYear()}-W${String(week).padStart(2, "0")}`;
+  });
   eleventyConfig.addFilter("dateDisplay", (dateVal, lang = "en") => {
     if (!dateVal) return "";
     const d = dateVal instanceof Date ? dateVal : new Date(dateVal);
@@ -50,6 +64,14 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addCollection(`posts_${lang}`, function(collectionApi) {
       return collectionApi.getFilteredByGlob(`src/${lang}/posts/*.md`)
         .sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
+    });
+  }
+
+  // Collections: projects per language, sorted by explicit front matter order
+  for (const lang of ["ru", "en", "he"]) {
+    eleventyConfig.addCollection(`projects_${lang}`, function(collectionApi) {
+      return collectionApi.getFilteredByGlob(`src/${lang}/projects/*.md`)
+        .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
     });
   }
 

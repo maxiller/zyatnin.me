@@ -8,19 +8,19 @@
   },
   "hero": {
     "greeting": "Привет, я",
-    "title": "Менеджер технической поддержки",
-    "desc": "Руковожу отделом L3-поддержки. Помогаю малому и среднему бизнесу выстроить техподдержку, которая работает: процессы helpdesk, SLA, автоматизация на Python и контейнерная инфраструктура.",
+    "title": "Строю службы поддержки",
+    "desc": "Выстраиваю поддержку и команды клиентского успеха для бизнеса любого масштаба: процессы helpdesk, SLA, автоматизация на Python и контейнерная инфраструктура. Опыт — от небольших команд до операторов связи и крупных банков.",
     "cta_projects": "Проекты",
     "cta_blog": "Читать блог",
-    "terminal_1": "podman pod create --name jira-stack",
-    "terminal_2": "rq worker --with-scheduler jira asterisk",
+    "terminal_1": "podman pod create --name support-stack",
+    "terminal_2": "rq worker --with-scheduler tickets asterisk",
     "terminal_3": "systemctl --user enable container-runner.service",
     "terminal_4": "# всё работает ✓"
   },
   "about": {
     "label": "Обо мне",
-    "title": "Поддержка для малого и среднего бизнеса",
-    "bio": "Руководитель отдела L3-технической поддержки в компании Айса ИТ Сервис. Превращаю поддержку в управляемый сервис: процессы helpdesk, метрики SLA, автоматизация на Python, CI/CD и контейнерная инфраструктура на Podman. Знаю, что нужно малым и средним командам: быстрые ответы, предсказуемые исправления и прозрачная отчётность.",
+    "title": "Команды клиентского успеха",
+    "bio": "Опытный создатель команд клиентского успеха. Выстраиваю поддержку как управляемый сервис: процессы helpdesk, метрики SLA, автоматизация на Python, CI/CD и контейнерная инфраструктура на Podman. Руковожу отделом L3-технической поддержки в Айса ИТ Сервис. Отраслевой опыт: сотовые операторы, нефтяной сектор и крупный банк — от миграции на managed services до VDI на 150 000 пользователей.",
     "skills_label": "Технологии",
     "interests_label": "Интересы",
     "interests": [
@@ -32,7 +32,9 @@
   },
   "projects": {
     "label": "Проекты",
-    "title": "Избранные проекты"
+    "title": "Избранные проекты",
+    "back": "← Назад к проектам",
+    "read_more": "Подробнее →"
   },
   "blog": {
     "label": "Блог",
@@ -60,49 +62,5 @@
     "t3": "Linux и системное администрирование",
     "t4": "DevOps и CI/CD",
     "t5": "Сети и инфраструктура"
-  },
-  "projects_data": [
-    {
-      "icon": "🔔",
-      "name": "jira-alert-daemon",
-      "desc": "Контейнеризированный Python-демон для уведомлений из Jira. Использует RQ-воркеры, очередь Valkey и SSH-туннели внутри Podman-пода.",
-      "tags": ["Python", "Podman", "RQ", "Valkey", "Jira API"]
-    },
-    {
-      "icon": "🤖",
-      "name": "Telegram-Jira Bot",
-      "desc": "Telegram-бот на aiogram, который принимает задачи и ставит их в очередь RQ/Valkey для фоновой обработки воркерами.",
-      "tags": ["aiogram", "RQ", "Valkey", "Podman"]
-    },
-    {
-      "icon": "⚙️",
-      "name": "Container Orchestration Pipeline",
-      "desc": "Кастомный паттерн диспетчер/воркер с Podman-подами и эфемерными sidecar-контейнерами для SSH-туннелей.",
-      "tags": ["Podman", "Python", "SSH", "Pods"]
-    },
-    {
-      "icon": "🔒",
-      "name": "AmneziaWG Deploy",
-      "desc": "Шаблон для развёртывания WireGuard/AmneziaWG в контейнерах с CI/CD-конвейером.",
-      "tags": ["WireGuard", "Podman", "CI/CD", "GitLab"]
-    },
-    {
-      "icon": "🚀",
-      "name": "CI/CD Infrastructure",
-      "desc": "Контейнеризация GitLab Runner с помощью Podman quadlets и интеграции с systemd.",
-      "tags": ["GitLab", "Podman", "Systemd", "CI/CD"]
-    },
-    {
-      "icon": "📊",
-      "name": "ITIL KPI System",
-      "desc": "Комплексная система KPI для L3-инженеров поддержки с взвешенными метриками SLA и оценкой вовлечённости.",
-      "tags": ["ITIL", "KPI", "Management", "SLA"]
-    },
-    {
-      "icon": "📋",
-      "name": "Competency Matrix",
-      "desc": "Матрица компетенций для оценки навыков инженеров поддержки TermiDesk по нескольким доменам.",
-      "tags": ["TermiDesk", "Training", "ITIL", "VDI"]
-    }
-  ]
+  }
 }
