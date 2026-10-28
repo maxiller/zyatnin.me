@@ -18,6 +18,7 @@ layout: layouts/base.njk
     {% set t3posts = allPosts | filterByTopic("t3") %}
     {% set t4posts = allPosts | filterByTopic("t4") %}
     {% set t5posts = allPosts | filterByTopic("t5") %}
+    {% set t6posts = allPosts | filterByTopic("t6") %}
 
     {% macro topicSection(posts, label) %}
       {% if posts | length > 0 %}
@@ -30,7 +31,7 @@ layout: layouts/base.njk
             <h3 class="blog-card__title">{{ post.data.title }}</h3>
             <p class="blog-card__excerpt">{{ post.data.excerpt }}</p>
             <div class="blog-card__meta">
-              <span>{{ post.data.date | dateDisplay(i18n.lang) }}</span>
+              <span>{{ post.data.date | dateWeek }}</span>
               <span class="blog-card__read">{{ i18n.blog.read_more }}</span>
             </div>
           </a>
@@ -45,5 +46,6 @@ layout: layouts/base.njk
     {{ topicSection(t3posts, i18n.topics.t3) }}
     {{ topicSection(t4posts, i18n.topics.t4) }}
     {{ topicSection(t5posts, i18n.topics.t5) }}
+    {{ topicSection(t6posts, i18n.topics.t6) }}
   </div>
 </div>

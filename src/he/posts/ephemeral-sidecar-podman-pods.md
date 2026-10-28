@@ -56,29 +56,3 @@ permalink: /he/blog/ephemeral-sidecar-podman-pods/
 
             <h2>סיכום</h2>
             <p>תבנית ה-sidecar הזמני מאפשרת לחסוך משאבים על ידי הפעלת שירותי עזר רק כשנדרש. מנהל ההקשר של Python מבטיח ניהול מחזור חיים אמין, ופודים של Podman מספקים מרחב רשת משותף לתקשורת בין קונטיינרים. גישה זו יעילה במיוחד למנהרות SSH, חיבורי מסד נתונים וחיבורים אחרים עתירי משאבים.</p>
-          </div>
-        </div>
-
-        <div class="related-articles">
-          <h3 class="related-articles__title">Похожие статьи</h3>
-          <div class="related-articles__grid">
-          <a href="blog-2.html" class="blog-card" data-blog-id="2">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          <a href="blog-3.html" class="blog-card" data-blog-id="3">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          <a href="blog-5.html" class="blog-card" data-blog-id="5">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          </div>
-        </div>

@@ -31,29 +31,3 @@ permalink: /he/blog/gitlab-runner-podman-quadlets/
 
             <h2>סיכום</h2>
             <p>Podman Quadlets הופכים קונטיינרים לשירותי systemd מלאים עם הפעלה אוטומטית, הפעלה מחדש וניהול סטנדרטי. עבור GitLab Runner, זה אומר תשתית CI אמינה, מאובטחת וקלה לתחזוקה.</p>
-          </div>
-        </div>
-
-        <div class="related-articles">
-          <h3 class="related-articles__title">Похожие статьи</h3>
-          <div class="related-articles__grid">
-          <a href="blog-3.html" class="blog-card" data-blog-id="3">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          <a href="blog-10.html" class="blog-card" data-blog-id="10">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          <a href="blog-11.html" class="blog-card" data-blog-id="11">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          </div>
-        </div>

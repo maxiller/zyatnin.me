@@ -31,29 +31,3 @@ permalink: /he/blog/container-image-consistency/
 
             <h2>סיכום</h2>
             <p>עקביות תמונות מושגת דרך משמעת: בנייה רק ב-CI, משיכה מרגיסטרי לפיתוח מקומי, נעילת גרסאות דרך digest ושימוש בבניות רב-ארכיטקטוריות בעת הצורך. גישה זו מסלקת את סוג השגיאות "עובד על המכונה שלי".</p>
-          </div>
-        </div>
-
-        <div class="related-articles">
-          <h3 class="related-articles__title">Похожие статьи</h3>
-          <div class="related-articles__grid">
-          <a href="blog-1.html" class="blog-card" data-blog-id="1">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          <a href="blog-2.html" class="blog-card" data-blog-id="2">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          <a href="blog-9.html" class="blog-card" data-blog-id="9">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          </div>
-        </div>

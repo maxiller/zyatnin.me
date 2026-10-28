@@ -34,29 +34,3 @@ permalink: /he/blog/jira-api-automation/
 
             <h2>סיכום</h2>
             <p>אוטומציית Jira דרך Python ודימון בקונטיינר יוצרת מערכת התראות אמינה ובלתי תלויה במנגנונים המובנים של Jira. פודים של Podman מספקים בידוד ופשטות פריסה.</p>
-          </div>
-        </div>
-
-        <div class="related-articles">
-          <h3 class="related-articles__title">Похожие статьи</h3>
-          <div class="related-articles__grid">
-          <a href="blog-4.html" class="blog-card" data-blog-id="4">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          <a href="blog-5.html" class="blog-card" data-blog-id="5">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          <a href="blog-1.html" class="blog-card" data-blog-id="1">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          </div>
-        </div>

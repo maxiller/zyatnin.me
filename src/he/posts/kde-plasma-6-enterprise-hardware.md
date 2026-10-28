@@ -31,29 +31,3 @@ permalink: /he/blog/kde-plasma-6-enterprise-hardware/
 
             <h2>סיכום</h2>
             <p>Fedora KDE Spin היא הבחירה האופטימלית למחשבים ניידים ארגוניים של HP ו-Dell. תמיכת חומרה יציבה, גרסאות Plasma עדכניות ומחזור שדרוגים צפוי הופכים אותה לסביבת עבודה אמינה למהנדסים.</p>
-          </div>
-        </div>
-
-        <div class="related-articles">
-          <h3 class="related-articles__title">Похожие статьи</h3>
-          <div class="related-articles__grid">
-          <a href="blog-8.html" class="blog-card" data-blog-id="8">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          <a href="blog-9.html" class="blog-card" data-blog-id="9">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          <a href="blog-12.html" class="blog-card" data-blog-id="12">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          </div>
-        </div>

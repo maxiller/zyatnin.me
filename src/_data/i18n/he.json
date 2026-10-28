@@ -8,19 +8,19 @@
   },
   "hero": {
     "greeting": "שלום, אני",
-    "title": "מנהל תמיכה טכנית",
-    "desc": "ראש מחלקת תמיכה L3. עוזר לעסקים קטנים ובינוניים להקים תמיכה טכנית שעובדת: תהליכי helpdesk, SLA, אוטומציה ב-Python ותשתית קונטיינרים.",
+    "title": "בונה מחלקות תמיכה",
+    "desc": "בונה צוותי תמיכה והצלחת לקוחות לעסקים בכל גודל: תהליכי helpdesk, מדדי SLA, אוטומציה ב-Python ותשתית קונטיינרים. ניסיון מצוותים קטנים ועד ספקי סלולר ובנקים גדולים.",
     "cta_projects": "פרויקטים",
     "cta_blog": "קראו את הבלוג",
-    "terminal_1": "podman pod create --name jira-stack",
-    "terminal_2": "rq worker --with-scheduler jira asterisk",
+    "terminal_1": "podman pod create --name support-stack",
+    "terminal_2": "rq worker --with-scheduler tickets asterisk",
     "terminal_3": "systemctl --user enable container-runner.service",
     "terminal_4": "# הכל עובד ✓"
   },
   "about": {
     "label": "אודות",
-    "title": "תמיכה לעסקים קטנים ובינוניים",
-    "bio": "ראש מחלקת תמיכה טכנית L3 בחברת Aisa IT Service. הופך תמיכה לשירות מנוהל: תהליכי helpdesk, מדדי SLA, אוטומציה ב-Python, CI/CD ותשתית קונטיינרים מבוססת Podman. יודע מה צוותים קטנים ובינוניים צריכים: תשובות מהירות, פתרונות צפויים ושקיפות מלאה.",
+    "title": "צוותי הצלחת לקוחות",
+    "bio": "בונה מנוסה של צוותי הצלחת לקוחות. הופך תמיכה לשירות מנוהל: תהליכי helpdesk, מדדי SLA, אוטומציה ב-Python, CI/CD ותשתית קונטיינרים מבוססת Podman. ראש מחלקת תמיכה טכנית L3 בחברת Aisa IT Service. ניסיון בענפים: ספקי סלולר, ענף הנפט ובנקים גדולים — החל ממעבר ל-managed services ועד VDI ל-150,000 משתמשים.",
     "skills_label": "טכנולוגיות",
     "interests_label": "תחומי עניין",
     "interests": [
@@ -32,7 +32,9 @@
   },
   "projects": {
     "label": "פרויקטים",
-    "title": "פרויקטים נבחרים"
+    "title": "פרויקטים נבחרים",
+    "back": "← חזרה לפרויקטים",
+    "read_more": "לפרטים →"
   },
   "blog": {
     "label": "בלוג",
@@ -59,50 +61,7 @@
     "t2": "אוטומציה ואינטגרציה ב-Python",
     "t3": "שולחן עבודה של Linux וניהול מערכות",
     "t4": "DevOps ו-CI/CD",
-    "t5": "רשתות ותשתיות"
-  },
-  "projects_data": [
-    {
-      "icon": "🔔",
-      "name": "jira-alert-daemon",
-      "desc": "דימון Python בקונטיינר להתראות מ-Jira. משתמש ב-RQ workers, תור Valkey ומנהרות SSH בתוך פוד Podman.",
-      "tags": ["Python", "Podman", "RQ", "Valkey", "Jira API"]
-    },
-    {
-      "icon": "🤖",
-      "name": "Telegram-Jira Bot",
-      "desc": "בוט Telegram שנבנה עם aiogram שמקבל משימות ומכניס אותן לתור RQ/Valkey לעיבוד ב-workers ברקע.",
-      "tags": ["aiogram", "RQ", "Valkey", "Podman"]
-    },
-    {
-      "icon": "⚙️",
-      "name": "Container Orchestration Pipeline",
-      "desc": "תבנית dispatcher/worker מותאמת עם פודים של Podman וקונטיינרי sidecar זמניים למנהרות SSH.",
-      "tags": ["Podman", "Python", "SSH", "Pods"]
-    },
-    {
-      "icon": "🔒",
-      "name": "AmneziaWG Deploy",
-      "desc": "תבנית פריסה של WireGuard/AmneziaWG בקונטיינרים עם CI/CD pipeline.",
-      "tags": ["WireGuard", "Podman", "CI/CD", "GitLab"]
-    },
-    {
-      "icon": "🚀",
-      "name": "CI/CD Infrastructure",
-      "desc": "קונטיינריזציה של GitLab Runner באמצעות Podman quadlets עם אינטגרציית systemd.",
-      "tags": ["GitLab", "Podman", "Systemd", "CI/CD"]
-    },
-    {
-      "icon": "📊",
-      "name": "ITIL KPI System",
-      "desc": "מסגרת KPI מקיפה למהנדסי תמיכה L3 עם מדדי SLA משוקללים וניקוד מעורבות.",
-      "tags": ["ITIL", "KPI", "Management", "SLA"]
-    },
-    {
-      "icon": "📋",
-      "name": "Competency Matrix",
-      "desc": "מסגרת הערכת מיומנויות למהנדסי תמיכה של TermiDesk על פני מספר דומיינים טכניים.",
-      "tags": ["TermiDesk", "Training", "ITIL", "VDI"]
-    }
-  ]
+    "t5": "רשתות ותשתיות",
+    "t6": "הצלחת לקוחות"
+  }
 }

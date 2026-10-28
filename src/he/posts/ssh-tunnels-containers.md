@@ -31,29 +31,3 @@ permalink: /he/blog/ssh-tunnels-containers/
 
             <h2>סיכום</h2>
             <p>מנהרות SSH בקונטיינרים הן דרך אמינה ונוחה לספק גישה מאובטחת לשירותים מרוחקים. בדיקות תקינות, חיבור מחדש אוטומטי ואינטגרציית Podman pod הופכים פתרון זה למוכן לייצור.</p>
-          </div>
-        </div>
-
-        <div class="related-articles">
-          <h3 class="related-articles__title">Похожие статьи</h3>
-          <div class="related-articles__grid">
-          <a href="blog-12.html" class="blog-card" data-blog-id="12">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          <a href="blog-1.html" class="blog-card" data-blog-id="1">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          <a href="blog-9.html" class="blog-card" data-blog-id="9">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          </div>
-        </div>

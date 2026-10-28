@@ -52,29 +52,3 @@ nmcli connection up br0</code></pre>
 
             <h2>סיכום</h2>
             <p>הגדרת KVM bridge networking דרך nmcli היא ישירה ברגע שמבינים את העקרונות. נקודות מפתח: כתובת IP על br0, ממשק פיזי כ-slave, STP מושבת לתצורות פשוטות, ואימות כללי firewall.</p>
-          </div>
-        </div>
-
-        <div class="related-articles">
-          <h3 class="related-articles__title">Похожие статьи</h3>
-          <div class="related-articles__grid">
-          <a href="blog-11.html" class="blog-card" data-blog-id="11">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          <a href="blog-7.html" class="blog-card" data-blog-id="7">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          <a href="blog-9.html" class="blog-card" data-blog-id="9">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          </div>
-        </div>

@@ -42,29 +42,3 @@ queues:
 
             <h2>סיכום</h2>
             <p>עובד RQ מרובה תורים עם שליחת קונטיינרים הוא תבנית חזקה לעיבוד משימות הטרוגניות. תצורת YAML מספקת גמישות, Podman מספק בידוד, וה-RoundRobinWorker מבטיח חלוקת עומס שווה.</p>
-          </div>
-        </div>
-
-        <div class="related-articles">
-          <h3 class="related-articles__title">Похожие статьи</h3>
-          <div class="related-articles__grid">
-          <a href="blog-1.html" class="blog-card" data-blog-id="1">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          <a href="blog-3.html" class="blog-card" data-blog-id="3">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          <a href="blog-5.html" class="blog-card" data-blog-id="5">
-            <span class="blog-card__topic"></span>
-            <h3 class="blog-card__title"></h3>
-            <p class="blog-card__excerpt"></p>
-            <span class="blog-card__read-more">Читать далее </span>
-          </a>
-          </div>
-        </div>

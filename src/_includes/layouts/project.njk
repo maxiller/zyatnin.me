@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+---
+
+<article class="article">
+  <div class="container container--narrow">
+    <a href="/{{ i18n.lang }}/#projects" class="article__back">{{ i18n.projects.back }}</a>
+    <div class="article__header">
+      <span class="project__icon" aria-hidden="true">{{ icon }}</span>
+      <h1 class="article__title article__title--mono">{{ title }}</h1>
+      <ul class="tags article__tags" role="list">
+        {% for tag in tags %}
+        <li class="tag">{{ tag }}</li>
+        {% endfor %}
+      </ul>
+      {% if points %}
+      <ul class="ticket-card__points project__points" role="list">
+        {% for point in points %}
+        <li>{{ point }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    <div class="article__body">
+      {{ content | safe }}
+    </div>
+  </div>
+</article>
