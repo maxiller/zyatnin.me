@@ -108,6 +108,38 @@ module.exports = function(eleventyConfig) {
     return base;
   });
 
+  // ISO 8601 date (YYYY-MM-DD) for sitemap <lastmod>
+  eleventyConfig.addFilter("isoDate", (dateVal) => {
+    if (!dateVal) return "";
+    const d = dateVal instanceof Date ? dateVal : new Date(dateVal);
+    return isNaN(d) ? "" : d.toISOString().slice(0, 10);
+  });
+
+  // Full ISO 8601 datetime for Atom feeds and JSON-LD
+  eleventyConfig.addFilter("isoDateTime", (dateVal) => {
+    if (!dateVal) return "";
+    const d = dateVal instanceof Date ? dateVal : new Date(dateVal);
+    return isNaN(d) ? "" : d.toISOString();
+  });
+
+  // JSON serialization for JSON-LD blocks. Escapes <, > and & so the payload
+  // can never terminate the surrounding <script> element.
+  eleventyConfig.addFilter("toJson", (value) =>
+    JSON.stringify(value)
+      .replace(/</g, "\\u003c")
+      .replace(/>/g, "\\u003e")
+      .replace(/&/g, "\\u0026"));
+
+  // Newest entry date of a list, for the Atom <updated> element.
+  // An empty feed reports the build time, which is what "regenerated now" means.
+  eleventyConfig.addFilter("feedUpdated", (arr) => {
+    const times = (Array.isArray(arr) ? arr : [])
+      .map(p => new Date((p.data && p.data.date) || 0).getTime())
+      .filter(t => !isNaN(t) && t > 0);
+    if (!times.length) return new Date().toISOString();
+    return new Date(Math.max(...times)).toISOString();
+  });
+
   // Collections: posts per language, sorted by date desc
   for (const lang of ["ru", "en", "he"]) {
     eleventyConfig.addCollection(`posts_${lang}`, function(collectionApi) {

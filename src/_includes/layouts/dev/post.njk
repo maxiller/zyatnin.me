@@ -10,6 +10,20 @@ layout: layouts/dev/base.njk
       <h1 class="dev-article__title">{{ title }}</h1>
       <p class="dev-article__meta">{{ date | dateDisplay(i18n.lang) }} · {{ content | readingTime }} {{ i18n.blog.min_read }}</p>
     </header>
+    {% set ldPublished = date | isoDateTime %}
+    {% set ldModified = updated | default(date) | isoDateTime %}
+    {% set ld = {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": title,
+      "description": description | default(excerpt),
+      "datePublished": ldPublished,
+      "dateModified": ldModified,
+      "inLanguage": i18n.lang,
+      "author": { "@type": "Person", "name": i18n.name, "url": "https://" + site.domain + "/" + i18n.lang + "/" },
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://" + site.domain + page.url }
+    } %}
+    <script type="application/ld+json">{{ ld | toJson | safe }}</script>
     <div class="dev-article__body">
       {{ content | safe }}
     </div>

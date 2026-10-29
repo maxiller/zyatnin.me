@@ -1,0 +1,90 @@
+---
+permalink: /404.html
+eleventyExcludeFromCollections: true
+---<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — {{ site.domain }}</title>
+  <meta name="robots" content="noindex, follow">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f7f8fa">
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f7f8fa;
+      color: #182231;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px;
+    }
+    main { max-width: 600px; width: 100%; }
+    .code {
+      font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #5f6d80;
+    }
+    h1 { font-size: clamp(2.2rem, 7vw, 3.2rem); font-weight: 700; margin: 10px 0 12px; }
+    .lead { color: #404e63; font-size: 16px; }
+    nav { margin-top: 28px; display: grid; gap: 12px; }
+    .group {
+      border: 1px solid #d8dfe8;
+      border-radius: 6px;
+      padding: 14px 16px;
+      background: #fff;
+    }
+    .group h2 {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #5f6d80;
+      margin-bottom: 8px;
+    }
+    .group ul { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 20px; }
+    a { color: #2b5fb0; text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    a:focus-visible { outline: 2px solid #2b5fb0; outline-offset: 2px; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="code">HTTP 404</p>
+    <h1>Page not found</h1>
+    <p class="lead">The page you requested does not exist. Pick a starting point below.</p>
+    <nav aria-label="Site sections">
+      <div class="group">
+        <h2 lang="ru">Русский</h2>
+        <ul>
+          <li><a href="/ru/" hreflang="ru">Лидер поддержки</a></li>
+          <li><a href="/ru/dev/" hreflang="ru">Разработчик</a></li>
+          <li><a href="/ru/blog/" hreflang="ru">Блог</a></li>
+        </ul>
+      </div>
+      <div class="group">
+        <h2 lang="en">English</h2>
+        <ul>
+          <li><a href="/en/" hreflang="en">Support Leader</a></li>
+          <li><a href="/en/dev/" hreflang="en">Developer</a></li>
+          <li><a href="/en/blog/" hreflang="en">Blog</a></li>
+        </ul>
+      </div>
+      <div class="group">
+        <h2 lang="he">עברית</h2>
+        <ul>
+          <li><a href="/he/" hreflang="he">מנהל תמיכה</a></li>
+          <li><a href="/he/dev/" hreflang="he">מפתח</a></li>
+          <li><a href="/he/blog/" hreflang="he">בלוג</a></li>
+        </ul>
+      </div>
+    </nav>
+  </main>
+</body>
+</html>

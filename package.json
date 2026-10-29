@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Personal portfolio site — Max Zia",
   "scripts": {
-    "build": "eleventy",
-    "build:ghpages": "eleventy",
+    "build": "eleventy && node scripts/check-seo.js",
+    "build:ghpages": "eleventy && node scripts/check-seo.js",
+    "check:seo": "node scripts/check-seo.js",
     "start": "eleventy --serve --port=5000",
     "dev": "eleventy --serve --port=5000"
   },

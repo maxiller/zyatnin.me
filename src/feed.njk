@@ -1,0 +1,26 @@
+---
+pagination:
+  data: feeds
+  size: 1
+  alias: f
+permalink: "{{ f.path }}feed.xml"
+eleventyExcludeFromCollections: true
+---<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ f.lang }}">
+  {%- set posts = collections["posts_" + f.lang] | byView(f.view) %}
+  <title>{{ f.title }}</title>
+  <id>https://{{ site.domain }}{{ f.path }}feed.xml</id>
+  <updated>{{ posts | feedUpdated }}</updated>
+  <link rel="self" type="application/atom+xml" href="https://{{ site.domain }}{{ f.path }}feed.xml"/>
+  <link rel="alternate" type="text/html" href="https://{{ site.domain }}{{ f.path }}"/>
+  <author><name>{{ f.author }}</name></author>
+  {%- for post in posts %}
+  <entry>
+    <title>{{ post.data.title | escape }}</title>
+    <link rel="alternate" type="text/html" href="https://{{ site.domain }}{{ post.url }}"/>
+    <id>https://{{ site.domain }}{{ post.url }}</id>
+    <updated>{{ post.data.date | isoDateTime }}</updated>
+    <summary>{{ post.data.excerpt | escape }}</summary>
+  </entry>
+  {%- endfor %}
+</feed>
