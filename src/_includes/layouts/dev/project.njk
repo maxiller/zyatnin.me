@@ -1,0 +1,28 @@
+---
+layout: layouts/dev/base.njk
+---
+
+<article class="dev-article">
+  <div class="dev-article__inner">
+    <a href="/{{ i18n.lang }}/dev/#projects" class="dev-article__back">cd ~/{{ i18n.projects.label | lower }}</a>
+    <header class="dev-article__header">
+      <p class="dev-article__topic">// {{ i18n.projects.label }}</p>
+      <h1 class="dev-article__title dev-article__title--mono">{{ title }}/</h1>
+      <ul class="dev-tags dev-article__tags" role="list">
+        {% for tag in tags %}
+        <li class="dev-tag">{{ tag }}</li>
+        {% endfor %}
+      </ul>
+      {% if points %}
+      <ul class="dev-repo__points dev-article__points" role="list">
+        {% for point in points %}
+        <li>{{ point }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </header>
+    <div class="dev-article__body">
+      {{ content | safe }}
+    </div>
+  </div>
+</article>

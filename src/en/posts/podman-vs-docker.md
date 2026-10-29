@@ -1,13 +1,13 @@
 ---
-layout: layouts/post.njk
+view: dev
+layout: layouts/dev/post.njk
 title: "Why I prefer Podman over Docker"
 excerpt: "Rootless containers without a daemon and pods with an isolated environment: why Podman is my default choice over Docker."
 date: 2026-10-28
 topic: t1
 slug: podman-vs-docker
-permalink: /en/blog/podman-vs-docker/
+permalink: /en/dev/blog/podman-vs-docker/
 ---
-
 ## Introduction
 
 Choosing a runtime is an engineering question, not a matter of faith: what matters is the security model, integration with the environment and the cost of maintenance. For my tasks — support infrastructure, automation, local and server environments — Podman is my default. Two reasons: rootless operation and pods.

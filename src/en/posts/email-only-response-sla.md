@@ -1,4 +1,5 @@
 ---
+view: leader
 layout: layouts/post.njk
 title: "Response-time SLA when all you have is email"
 excerpt: "How to measure first-response time without a ticketing system: Exchange email threads, FRT calculated in Power BI, and escalations through PagerDuty."
@@ -7,7 +8,6 @@ topic: t6
 slug: email-only-response-sla
 permalink: /en/blog/email-only-response-sla/
 ---
-
 ## Introduction
 
 Not every team starts with an ITSM platform. Requests arrive in a shared mailbox, engineers reply from Outlook, and the response-time SLA exists mostly on paper: there is nothing to measure it with. But the absence of a ticketing system does not cancel measurability — email already keeps everything you need, once you agree on what counts as a response.

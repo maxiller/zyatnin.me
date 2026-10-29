@@ -1,0 +1,17 @@
+---
+layout: layouts/dev/base.njk
+---
+
+<article class="dev-article">
+  <div class="dev-article__inner">
+    <a href="/{{ i18n.lang }}/dev/blog/" class="dev-article__back">cd ../blog/</a>
+    <header class="dev-article__header">
+      <p class="dev-article__topic">// {{ i18n.topics[topic] }}</p>
+      <h1 class="dev-article__title">{{ title }}</h1>
+      <p class="dev-article__meta">{{ date | dateDisplay(i18n.lang) }} · {{ content | readingTime }} {{ i18n.blog.min_read }}</p>
+    </header>
+    <div class="dev-article__body">
+      {{ content | safe }}
+    </div>
+  </div>
+</article>

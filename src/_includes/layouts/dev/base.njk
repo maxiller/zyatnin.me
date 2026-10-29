@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="{{ i18n.lang }}" dir="{{ i18n.dir }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} — {{ i18n.name }}{% else %}{{ i18n.name }} — {{ i18n.dev.hero.title }}{% endif %}</title>
+  <meta name="description" content="{% if description %}{{ description }}{% elif excerpt %}{{ excerpt }}{% else %}{{ i18n.dev.hero.desc }}{% endif %}">
+  <meta property="og:title" content="{% if title %}{{ title }} — {{ i18n.name }}{% else %}{{ i18n.name }} — {{ i18n.dev.hero.title }}{% endif %}">
+  <meta property="og:description" content="{% if description %}{{ description }}{% elif excerpt %}{{ excerpt }}{% else %}{{ i18n.dev.hero.desc }}{% endif %}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://{{ site.domain }}{{ page.url }}">
+  <meta property="og:locale" content="{% if i18n.lang == 'ru' %}ru_RU{% elif i18n.lang == 'he' %}he_IL{% else %}en_US{% endif %}">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#131519">
+  <link rel="canonical" href="https://{{ site.domain }}{{ page.url }}">
+  <link rel="alternate" hreflang="ru" href="https://{{ site.domain }}{{ page.url | replace('/en/', '/ru/') | replace('/he/', '/ru/') }}">
+  <link rel="alternate" hreflang="en" href="https://{{ site.domain }}{{ page.url | replace('/ru/', '/en/') | replace('/he/', '/en/') }}">
+  <link rel="alternate" hreflang="he" href="https://{{ site.domain }}{{ page.url | replace('/ru/', '/he/') | replace('/en/', '/he/') }}">
+  <link rel="alternate" hreflang="x-default" href="https://{{ site.domain }}{{ page.url | replace('/ru/', '/en/') | replace('/he/', '/en/') }}">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231a1b2e'/><text x='4' y='23' font-family='monospace' font-size='18' font-weight='bold' fill='%230ea5e9'>MZ</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/dev.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a href="#main" class="skip-link">{{ i18n.skip_link }}</a>
+
+  <header class="ide-titlebar">
+    <div class="ide-titlebar__traffic" aria-hidden="true"><span></span><span></span><span></span></div>
+    <span class="ide-titlebar__project">~/{{ site.domain }}</span>
+
+    <div class="ide-titlebar__spacer"></div>
+
+    <nav class="view-switch" aria-label="{{ i18n.views.aria_switch }}">
+      <a href="{{ collections.all | switchViewUrl(page.url, i18n.lang, 'leader') }}" data-view="leader" title="{{ i18n.views.dev }} → {{ i18n.views.leader_full }}" aria-label="{{ i18n.views.aria_to_leader }}">{{ i18n.views.leader }}</a>
+      <span class="view-switch__item active" aria-current="page">{{ i18n.views.dev }}</span>
+    </nav>
+
+    <div class="lang-switch">
+      <a href="{{ page.url | replace('/en/', '/ru/') | replace('/he/', '/ru/') }}" class="{% if i18n.lang == 'ru' %}active{% endif %}" hreflang="ru">RU</a>
+      <a href="{{ page.url | replace('/ru/', '/en/') | replace('/he/', '/en/') }}" class="{% if i18n.lang == 'en' %}active{% endif %}" hreflang="en">EN</a>
+      <a href="{{ page.url | replace('/ru/', '/he/') | replace('/en/', '/he/') }}" class="{% if i18n.lang == 'he' %}active{% endif %}" hreflang="he">HE</a>
+    </div>
+
+    <button class="menu-toggle" type="button" data-menu-toggle aria-controls="ide-sidebar" aria-expanded="false" aria-label="{{ i18n.a11y.menu_open }}" data-label-open="{{ i18n.a11y.menu_open }}" data-label-close="{{ i18n.a11y.menu_close }}">
+      <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+    </button>
+  </header>
+
+  <div class="ide-shell">
+    <nav class="ide-sidebar" id="ide-sidebar" data-menu-panel data-menu-open-class="ide-sidebar--open" aria-label="{{ i18n.a11y.navigation }}">
+      <div class="tree">
+        <a class="tree__item tree__item--file {% if page.url == '/' + i18n.lang + '/dev/' %}tree__item--active{% endif %}" href="/{{ i18n.lang }}/dev/">
+          <span class="tree__icon tree__icon--readme" aria-hidden="true"></span>readme.md
+        </a>
+        <a class="tree__item tree__item--file" href="/{{ i18n.lang }}/dev/#about">
+          <span class="tree__icon tree__icon--about" aria-hidden="true"></span>about.md
+        </a>
+
+        <a class="tree__item tree__item--folder" href="/{{ i18n.lang }}/dev/blog/">
+          <span class="tree__icon tree__icon--folder" aria-hidden="true"></span>blog/
+        </a>
+        <ul class="tree__list">
+          {% set devPosts = collections["posts_" + i18n.lang] | byView("dev") %}
+          {% for post in devPosts %}
+          <li>
+            <a class="tree__item tree__item--file {% if page.url == post.url %}tree__item--active{% endif %}" {% if page.url == post.url %}aria-current="page"{% endif %} href="{{ post.url }}">
+              <span class="tree__icon tree__icon--file" aria-hidden="true"></span>{{ post.data.slug }}.md
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+
+        {% set devProjects = collections["projects_" + i18n.lang] | byView("dev") %}
+        {% if devProjects | length > 0 %}
+        <a class="tree__item tree__item--folder" href="/{{ i18n.lang }}/dev/#projects">
+          <span class="tree__icon tree__icon--folder" aria-hidden="true"></span>projects/
+        </a>
+        <ul class="tree__list">
+          {% for proj in devProjects %}
+          <li>
+            <a class="tree__item tree__item--file {% if page.url == proj.url %}tree__item--active{% endif %}" {% if page.url == proj.url %}aria-current="page"{% endif %} href="{{ proj.url }}">
+              <span class="tree__icon tree__icon--file" aria-hidden="true"></span>{{ proj.data.slug }}/
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+    </nav>
+
+    <div class="ide-main">
+      <nav class="ide-tabs" aria-label="{{ i18n.a11y.navigation }}">
+        {% set devHome = '/' + i18n.lang + '/dev/' %}
+        {% set devBlog = devHome + 'blog/' %}
+        {% if topic %}{% set currentTab = 'file' %}{% set currentTabName = slug ~ '.md' %}
+        {% elif order %}{% set currentTab = 'file' %}{% set currentTabName = slug ~ '/' %}
+        {% elif page.url == devBlog %}{% set currentTab = 'blog' %}
+        {% else %}{% set currentTab = 'readme' %}{% endif %}
+        <a class="ide-tab {% if currentTab == 'readme' %}ide-tab--active{% endif %}" {% if currentTab == 'readme' %}aria-current="page"{% endif %} href="{{ devHome }}">readme.md</a>
+        <a class="ide-tab {% if currentTab == 'blog' %}ide-tab--active{% endif %}" {% if currentTab == 'blog' %}aria-current="page"{% endif %} href="{{ devBlog }}">blog/</a>
+        {% if currentTab == 'file' %}
+        <span class="ide-tab ide-tab--active" aria-current="page">{{ currentTabName }}</span>
+        {% endif %}
+      </nav>
+
+      <div class="ide-breadcrumbs">
+        <span>~/{{ site.domain }}</span>
+        {% if topic or page.url == devBlog %}
+        <span class="ide-breadcrumbs__sep">›</span><span>blog/</span>
+        {% elif order %}
+        <span class="ide-breadcrumbs__sep">›</span><span>projects/</span>
+        {% endif %}
+        {% if topic %}
+        <span class="ide-breadcrumbs__sep">›</span><span>{{ slug }}.md</span>
+        {% elif order %}
+        <span class="ide-breadcrumbs__sep">›</span><span>{{ slug }}/</span>
+        {% endif %}
+      </div>
+
+      <main id="main" class="ide-editor">
+        {{ content | safe }}
+      </main>
+    </div>
+  </div>
+
+  <footer class="ide-statusbar">
+    <div class="ide-statusbar__group">
+      <span class="ide-statusbar__item" aria-hidden="true">⎇ main</span>
+      <span class="ide-statusbar__item" aria-hidden="true">UTF-8</span>
+      <span class="ide-statusbar__item" aria-hidden="true">LF</span>
+      <span class="ide-statusbar__item">{{ i18n.name }}</span>
+    </div>
+    <div class="ide-statusbar__group">
+      <a class="ide-statusbar__item" href="{{ site.github }}" target="_blank" rel="noopener">GitHub</a>
+      <a class="ide-statusbar__item" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <span class="ide-statusbar__item">© {{ site.year }}</span>
+    </div>
+  </footer>
+
+  <script src="/assets/app.js"></script>
+</body>
+</html>

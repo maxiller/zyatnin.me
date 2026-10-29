@@ -1,4 +1,5 @@
 ---
+view: leader
 layout: layouts/project.njk
 title: "Oil Sector, Russia"
 excerpt: "Digital twin of critical production infrastructure."
@@ -12,5 +13,4 @@ points:
 slug: oil-sector-digital-twin
 permalink: /en/projects/oil-sector-digital-twin/
 ---
-
 The client is a company in the Russian oil sector. The solution is a digital twin of critical production infrastructure. Vendor engagement was organized through two intermediaries; SLA issue resolution was set up as a separate track.

@@ -1,4 +1,5 @@
 ---
+view: leader
 layout: layouts/project.njk
 title: "ענף הנפט, רוסיה"
 excerpt: "תאומה דיגיטלית של תשתית ייצור קריטית."
@@ -12,5 +13,4 @@ points:
 slug: oil-sector-digital-twin
 permalink: /he/projects/oil-sector-digital-twin/
 ---
-
 הלקוח הוא חברה בענף הנפט ברוסיה. הפתרון — תאומה דיגיטלית של תשתית ייצור קריטית. העבודה מול הוונדור אורגנה באמצעות שני מתווכים; יישוב סוגיות SLA הוקם כמסלול נפרד.

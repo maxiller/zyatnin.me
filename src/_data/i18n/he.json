@@ -1,10 +1,19 @@
 {
   "lang": "he",
   "dir": "rtl",
+  "name": "מַקְס זיַאטְנִין",
   "nav": {
     "about": "אודות",
     "projects": "פרויקטים",
     "blog": "בלוג"
+  },
+  "views": {
+    "leader": "מנהל",
+    "leader_full": "מנהל תמיכה",
+    "dev": "מפתח",
+    "aria_switch": "החלפת תצוגת האתר",
+    "aria_to_leader": "מעבר לתצוגת «מנהל תמיכה»",
+    "aria_to_dev": "מעבר לתצוגת «מפתח»"
   },
   "hero": {
     "greeting": "שלום, אני",
@@ -15,7 +24,22 @@
     "terminal_1": "podman pod create --name support-stack",
     "terminal_2": "rq worker --with-scheduler tickets asterisk",
     "terminal_3": "systemctl --user enable container-runner.service",
-    "terminal_4": "# הכל עובד ✓"
+    "terminal_4": "# הכל עובד ✓",
+    "facts": [
+      {
+        "label": "תפקיד",
+        "value": "ראש מחלקת תמיכה L3"
+      },
+      {
+        "label": "ענפים",
+        "value": "טלקום · נפט וגז · בנקאות"
+      },
+      {
+        "label": "היקף",
+        "value": "VDI ל-150,000 משתמשים"
+      }
+    ],
+    "facts_caption": "תקציר פרופיל"
   },
   "about": {
     "label": "אודות",
@@ -48,7 +72,8 @@
     "read_more": "קרא עוד →",
     "min_read": "דקות קריאה",
     "highlights_title": "מאמרים אחרונים",
-    "highlights_label": "בלוג"
+    "highlights_label": "בלוג",
+    "empty": "אין עדיין רשומות לתצוגה זו."
   },
   "footer": {
     "rights": "כל הזכויות שמורות"
@@ -56,7 +81,6 @@
   "skip_link": "דלג לתוכן",
   "a11y": {
     "navigation": "ניווט",
-    "theme_toggle": "החלפת ערכת נושא",
     "menu_open": "פתיחת תפריט",
     "menu_close": "סגירת תפריט"
   },
@@ -67,5 +91,30 @@
     "t4": "DevOps ו-CI/CD",
     "t5": "רשתות ותשתיות",
     "t6": "הצלחת לקוחות"
+  },
+  "dev": {
+    "hero": {
+      "greeting": "$ whoami",
+      "title": "Python · קונטיינרים · תשתית",
+      "desc": "בונה כלים לתפעול ולתמיכה: אוטומציה ב-Python, תורי משימות עם RQ ו-Valkey, בוטים לטלגרם, תשתית קונטיינרים עם Podman ו-CI/CD ב-GitLab.",
+      "cta_projects": "פרויקטים",
+      "cta_blog": "לרשימת הרשומות"
+    },
+    "about": {
+      "label": "הנדסה",
+      "title": "פרקטיקת הנדסה",
+      "bio": "כותב שירותים וכלים שמחזיקים תמיכה ותשתית באוויר: workers רב-תוריים עם RQ/Valkey, בוטים ב-aiogram, דמוני אינטגרציה ל-Jira API וקונטיינרים ב-Podman — מיחידות quadlet ועד רצי CI. סביבת העבודה היומיומית: Fedora Linux ו-KDE Plasma.",
+      "skills_label": "סטאק",
+      "interests_label": "מיקוד",
+      "interests": [
+        "תזמור קונטיינרים",
+        "תורי משימות ו-workers",
+        "VoIP וטלפוניה",
+        "תשתיות רשת"
+      ]
+    },
+    "blog": {
+      "subtitle": "רשומות על קונטיינרים, אוטומציה ו-Linux"
+    }
   }
 }

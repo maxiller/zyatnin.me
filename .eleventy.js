@@ -9,6 +9,20 @@ module.exports = function(eleventyConfig) {
 
   // Markdown with HTML passthrough
   const md = markdownIt({ html: true, linkify: true, typographer: true });
+
+  // Fenced ```mermaid blocks get a class on their <pre> so the view stylesheets
+  // can drop the code-block chrome (dark background, border, padding) and let the
+  // drawn diagram sit directly on the page background. Marking happens at build
+  // time; rendering itself is done by the lazy mermaid loader in app.js.
+  const defaultFence = md.renderer.rules.fence;
+  md.renderer.rules.fence = function(tokens, idx, options, env, self) {
+    const output = defaultFence
+      ? defaultFence(tokens, idx, options, env, self)
+      : self.renderToken(tokens, idx, options);
+    const info = String(tokens[idx].info || "").trim().split(/\s+/)[0];
+    return info === "mermaid" ? output.replace("<pre>", '<pre class="diagram-block">') : output;
+  };
+
   eleventyConfig.setLibrary("md", md);
 
   // Passthrough assets
@@ -53,10 +67,45 @@ module.exports = function(eleventyConfig) {
     return arr.slice(0, n);
   });
 
+  // Language code from a URL path ("/ru/blog/x/" -> "ru"), defaulting to "en"
+  eleventyConfig.addFilter("langFromPath", (url) => {
+    const m = typeof url === "string" ? url.match(/^\/(ru|en|he)(\/|$)/) : null;
+    return m ? m[1] : "en";
+  });
+
   // filterByTopic filter
   eleventyConfig.addFilter("filterByTopic", (arr, topic) => {
     if (!Array.isArray(arr)) return [];
     return arr.filter(p => p.data && p.data.topic === topic);
+  });
+
+  // byView filter: keep only entries that have content for the given view
+  // ("leader" or "dev"). Entries without a `view` field are shown in no view.
+  eleventyConfig.addFilter("byView", (arr, view) => {
+    if (!Array.isArray(arr)) return [];
+    return arr.filter(p => p.data && p.data.view === view);
+  });
+
+  // switchViewUrl: URL of the same page in the other view ("leader" <-> "dev").
+  // A target page "exists" only when it carries that view's content (its `view`
+  // front matter matches), so redirect stubs and index pages never confuse it.
+  // Falls back to the other view's blog index or home when the exact page
+  // has no content there, so the switcher never links to a 404.
+  eleventyConfig.addFilter("switchViewUrl", (pages, url, lang, targetView) => {
+    if (typeof url !== "string") return "/";
+    const langPrefix = `/${lang}/`;
+    const devPrefix = `${langPrefix}dev/`;
+    const isDev = url.startsWith(devPrefix);
+    const rest = isDev ? url.slice(devPrefix.length) : url.slice(langPrefix.length);
+    const base = targetView === "dev" ? devPrefix : langPrefix;
+    const target = base + rest;
+    const exists = Array.isArray(pages) &&
+      pages.some(p => p && p.url === target && p.data && p.data.view === targetView);
+    if (exists) return target;
+    // Index pages of both views always exist; deep pages fall back.
+    if (rest === "" || rest === "blog/") return target;
+    if (rest.startsWith("blog/")) return `${base}blog/`;
+    return base;
   });
 
   // Collections: posts per language, sorted by date desc

@@ -1,13 +1,13 @@
 ---
-layout: layouts/post.njk
+view: dev
+layout: layouts/dev/post.njk
 title: "למה אני מעדיף Podman על פני Docker"
 excerpt: "קונטיינרים rootless בלי daemon ופודים עם סביבה מבודדת: למה Podman הוא ברירת המחדל שלי על פני Docker."
 date: 2026-10-28
 topic: t1
 slug: podman-vs-docker
-permalink: /he/blog/podman-vs-docker/
+permalink: /he/dev/blog/podman-vs-docker/
 ---
-
 ## מבוא
 
 בחירת רנטיים היא שאלה הנדסית ולא עניין של אמונה: חשובים מודל האבטחה, האינטגרציה עם הסביבה ועלות התחזוקה. למשימות שלי — תשתית תמיכה, אוטומציה, סביבות מקומיות ושרתים — Podman הוא ברירת המחדל שלי. שתי סיבות: עבודה בלי הרשאות ופודים.

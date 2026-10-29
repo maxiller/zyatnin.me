@@ -1,0 +1,121 @@
+---
+layout: layouts/dev/base.njk
+---
+
+<section class="dev-hero">
+  <div class="terminal">
+    <div class="terminal__bar" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="terminal__body">
+      <p class="terminal__line"><span class="terminal__prompt">$</span>{{ i18n.hero.terminal_1 }}</p>
+      <p class="terminal__line"><span class="terminal__prompt">$</span>{{ i18n.hero.terminal_2 }}</p>
+      <p class="terminal__line"><span class="terminal__prompt">$</span>{{ i18n.hero.terminal_3 }}</p>
+      <p class="terminal__line terminal__line--ok"><span class="terminal__prompt">&gt;</span>{{ i18n.hero.terminal_4 }}<span class="terminal__cursor" aria-hidden="true"></span></p>
+    </div>
+  </div>
+
+  <p class="dev-hero__greeting">{{ i18n.dev.hero.greeting }}</p>
+  <h1 class="dev-hero__title">{{ i18n.dev.hero.title }}</h1>
+  <p class="dev-hero__desc">{{ i18n.dev.hero.desc }}</p>
+
+  {% set devProjects = collections["projects_" + i18n.lang] | byView("dev") %}
+  <div class="dev-hero__cta">
+    {% if devProjects | length > 0 %}
+    <a href="#projects" class="btn btn--primary">{{ i18n.dev.hero.cta_projects }}</a>
+    {% endif %}
+    <a href="/{{ i18n.lang }}/dev/blog/" class="btn btn--ghost">{{ i18n.dev.hero.cta_blog }}</a>
+  </div>
+</section>
+
+<section id="about" class="dev-section">
+  <header class="dev-section__head">
+    <span class="dev-section__index">[01]</span>
+    <div>
+      <p class="dev-section__label">{{ i18n.dev.about.label }}</p>
+      <h2 class="dev-section__title">{{ i18n.dev.about.title }}</h2>
+    </div>
+  </header>
+  <div class="dev-about">
+    <p class="dev-about__bio">{{ i18n.dev.about.bio }}</p>
+    <div class="dev-about__side">
+      <h3 class="dev-about__subtitle">{{ i18n.dev.about.skills_label }}</h3>
+      <ul class="dev-stack" role="list">
+        {% for skill in site.skills %}
+        <li class="dev-stack__item">{{ skill }}</li>
+        {% endfor %}
+      </ul>
+      <h3 class="dev-about__subtitle">{{ i18n.dev.about.interests_label }}</h3>
+      <ul class="dev-interests" role="list">
+        {% for item in i18n.dev.about.interests %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% if devProjects | length > 0 %}
+<section id="projects" class="dev-section">
+  <header class="dev-section__head">
+    <span class="dev-section__index">[02]</span>
+    <div>
+      <p class="dev-section__label">{{ i18n.projects.label }}</p>
+      <h2 class="dev-section__title">{{ i18n.projects.title }}</h2>
+    </div>
+  </header>
+  <div class="dev-repos">
+    {% for proj in devProjects %}
+    <a href="{{ proj.url }}" class="dev-repo fade-in">
+      <div class="dev-repo__top">
+        <span class="dev-repo__name">{{ proj.data.title }}/</span>
+        {% if proj.data.status %}
+        <span class="dev-badge dev-badge--{{ proj.data.status }}">{{ i18n.projects.status[proj.data.status] }}</span>
+        {% endif %}
+      </div>
+      <p class="dev-repo__desc">{{ proj.data.excerpt }}</p>
+      {% if proj.data.points %}
+      <ul class="dev-repo__points" role="list">
+        {% for point in proj.data.points %}
+        <li>{{ point }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      <ul class="dev-tags" role="list">
+        {% for tag in proj.data.tags %}
+        <li class="dev-tag">{{ tag }}</li>
+        {% endfor %}
+      </ul>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section class="dev-section">
+  <header class="dev-section__head">
+    <span class="dev-section__index">{% if devProjects | length > 0 %}[03]{% else %}[02]{% endif %}</span>
+    <div>
+      <p class="dev-section__label">{{ i18n.blog.highlights_label }}</p>
+      <h2 class="dev-section__title">{{ i18n.blog.highlights_title }}</h2>
+    </div>
+  </header>
+  {% set devPosts = collections["posts_" + i18n.lang] | byView("dev") %}
+  {% if devPosts | length > 0 %}
+  <div class="dev-files">
+    {% for post in devPosts | limit(3) %}
+    <a href="{{ post.url }}" class="dev-file fade-in">
+      <span class="dev-file__date mono">{{ post.data.date | dateWeek }}</span>
+      <span class="dev-file__main">
+        <span class="dev-file__name">{{ post.data.title }}</span>
+        <span class="dev-file__excerpt">{{ post.data.excerpt }}</span>
+      </span>
+      <span class="dev-tag">{{ i18n.topics[post.data.topic] }}</span>
+    </a>
+    {% endfor %}
+  </div>
+  <div class="dev-section__cta">
+    <a href="/{{ i18n.lang }}/dev/blog/" class="btn btn--ghost">{{ i18n.blog.cta_all if i18n.blog.cta_all else i18n.nav.blog }} →</a>
+  </div>
+  {% else %}
+  <p class="dev-empty">{{ i18n.blog.empty }}</p>
+  {% endif %}
+</section>

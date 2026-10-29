@@ -1,4 +1,5 @@
 ---
+view: leader
 layout: layouts/post.njk
 title: "SLA לזמן תגובה כשיש רק אימייל"
 excerpt: "איך למדוד זמן תגובה ראשונה בלי מערכת טיקטים: שרשורי אימייל ב-Exchange, חישוב FRT ב-Power BI והסלמות דרך PagerDuty."
@@ -7,7 +8,6 @@ topic: t6
 slug: email-only-response-sla
 permalink: /he/blog/email-only-response-sla/
 ---
-
 ## מבוא
 
 לא לכל צוות יש מערכת ITSM בהתחלה. פניות מגיעות לתיבה משותפת, המהנדסים עונים מ-Outlook, ו-SLA לזמן תגובה קיים בעיקר על הנייר: אין במה למדוד אותו. אבל היעדר מערכת טיקטים לא מבטל מדידה — באימייל כבר יש את כל מה שצריך, אם מגדירים מה נחשב לתשובה.
