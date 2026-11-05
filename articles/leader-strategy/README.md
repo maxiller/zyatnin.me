@@ -24,7 +24,7 @@
 | ID | Файл | Статья | Тип | Плановый выход | Источник |
 | --- | --- | --- | --- | --- | --- |
 | SP-01 | опубликована → `src/ru/posts/support-lead-five-results.md` | Пять результатов работы лида поддержки | Стратегия | 2026-11-02 | §1.1 |
-| SP-02 | [support-lead-boundaries.md](support-lead-boundaries.md) | Границы ответственности: что лид делает сам, делегирует и от чего отказывается | Стратегия | 2026-11-16 | §1.2 |
+| SP-02 | опубликована → `src/ru/posts/support-lead-boundaries.md` | Границы ответственности: что лид делает сам, делегирует и от чего отказывается | Стратегия | 2026-11-16 | §1.2 |
 | SP-03 | [support-lead-baseline-first.md](support-lead-baseline-first.md) | Baseline раньше целей: почему годовые планы проваливаются на старте | Стратегия | 2026-11-30 | §1.3 |
 | SP-04 | [support-lead-year-roadmap.md](support-lead-year-roadmap.md) | Год лида по кварталам: дорожная карта на 12 месяцев | Стратегия | 2026-12-14 | §2 |
 | SP-05 | [support-lead-service-map-baseline.md](support-lead-service-map-baseline.md) | Карта сервиса и Точка А: диагностика первого месяца | Стратегия | 2026-12-28 | §2 (месяц 1) |
