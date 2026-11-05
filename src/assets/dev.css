@@ -939,21 +939,7 @@ a.ide-statusbar__item:hover { text-decoration: none; color: var(--accent); }
 
 .dev-page { padding: 8px 32px 48px; }
 
-.dev-topic { margin-top: 32px; }
-
-.dev-topic__title {
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--text-dim);
-  margin-bottom: 14px;
-}
-
-.dev-topic__title::before {
-  content: "## ";
-  color: var(--purple);
-}
+.dev-files--index { margin-top: 32px; }
 
 /* --- Article (post/project page) --- */
 .dev-article { padding: 8px 0 56px; }

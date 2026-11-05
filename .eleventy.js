@@ -73,12 +73,6 @@ module.exports = function(eleventyConfig) {
     return m ? m[1] : "en";
   });
 
-  // filterByTopic filter
-  eleventyConfig.addFilter("filterByTopic", (arr, topic) => {
-    if (!Array.isArray(arr)) return [];
-    return arr.filter(p => p.data && p.data.topic === topic);
-  });
-
   // byView filter: keep only entries that have content for the given view
   // ("leader" or "dev"). Entries without a `view` field are shown in no view.
   eleventyConfig.addFilter("byView", (arr, view) => {

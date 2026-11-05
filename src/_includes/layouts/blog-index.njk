@@ -11,45 +11,26 @@ layout: layouts/base.njk
 
 <div class="blog-page">
   <div class="container">
+    {#- Один список в порядке убывания даты: коллекция posts_<lang> уже
+        отсортирована (AR-05), поэтому группировка по топикам не нужна. -#}
     {% set allPosts = collections["posts_" + i18n.lang] | byView("leader") %}
 
     {% if allPosts | length == 0 %}
     <p class="blog-page__empty">{{ i18n.blog.empty }}</p>
-    {% endif %}
-
-    {% set t1posts = allPosts | filterByTopic("t1") %}
-    {% set t2posts = allPosts | filterByTopic("t2") %}
-    {% set t3posts = allPosts | filterByTopic("t3") %}
-    {% set t4posts = allPosts | filterByTopic("t4") %}
-    {% set t5posts = allPosts | filterByTopic("t5") %}
-    {% set t6posts = allPosts | filterByTopic("t6") %}
-
-    {% macro topicSection(posts, label) %}
-      {% if posts | length > 0 %}
-      <section class="blog-topic-group">
-        <h2 class="blog-topic-group__title">{{ label }}</h2>
-        <div class="blog-topic-group__grid">
-          {% for post in posts %}
-          <a href="{{ post.url }}" class="blog-card fade-in">
-            <span class="blog-card__topic">{{ label | upper }}</span>
-            <h3 class="blog-card__title">{{ post.data.title }}</h3>
-            <p class="blog-card__excerpt">{{ post.data.excerpt }}</p>
-            <div class="blog-card__meta">
-              <span>{{ post.data.date | dateWeek }}</span>
-              <span class="blog-card__read">{{ i18n.blog.read_more }}</span>
-            </div>
-          </a>
-          {% endfor %}
+    {% else %}
+    <div class="blog-grid">
+      {% for post in allPosts %}
+      <a href="{{ post.url }}" class="blog-card fade-in">
+        <span class="blog-card__topic">{{ i18n.topics[post.data.topic] }}</span>
+        <h3 class="blog-card__title">{{ post.data.title }}</h3>
+        <p class="blog-card__excerpt">{{ post.data.excerpt }}</p>
+        <div class="blog-card__meta">
+          <span>{{ post.data.date | dateWeek }}</span>
+          <span class="blog-card__read">{{ i18n.blog.read_more }}</span>
         </div>
-      </section>
-      {% endif %}
-    {% endmacro %}
-
-    {{ topicSection(t1posts, i18n.topics.t1) }}
-    {{ topicSection(t2posts, i18n.topics.t2) }}
-    {{ topicSection(t3posts, i18n.topics.t3) }}
-    {{ topicSection(t4posts, i18n.topics.t4) }}
-    {{ topicSection(t5posts, i18n.topics.t5) }}
-    {{ topicSection(t6posts, i18n.topics.t6) }}
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
   </div>
 </div>

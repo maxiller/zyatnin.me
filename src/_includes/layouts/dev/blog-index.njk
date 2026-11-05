@@ -8,36 +8,24 @@ layout: layouts/dev/base.njk
 </header>
 
 <div class="dev-page">
+  {#- Один список в порядке убывания даты: коллекция posts_<lang> уже
+      отсортирована (AR-05), поэтому группировка по топикам не нужна. -#}
   {% set allPosts = collections["posts_" + i18n.lang] | byView("dev") %}
 
   {% if allPosts | length == 0 %}
   <p class="dev-empty">{{ i18n.blog.empty }}</p>
+  {% else %}
+  <div class="dev-files dev-files--index">
+    {% for post in allPosts %}
+    <a href="{{ post.url }}" class="dev-file fade-in">
+      <span class="dev-file__date mono">{{ post.data.date | dateWeek }}</span>
+      <span class="dev-file__main">
+        <span class="dev-file__name">{{ post.data.title }}</span>
+        <span class="dev-file__excerpt">{{ post.data.excerpt }}</span>
+      </span>
+      <span class="dev-tag">{{ i18n.topics[post.data.topic] }}</span>
+    </a>
+    {% endfor %}
+  </div>
   {% endif %}
-
-  {% macro topicSection(posts, label) %}
-    {% if posts | length > 0 %}
-    <section class="dev-topic">
-      <h2 class="dev-topic__title">{{ label }}</h2>
-      <div class="dev-files">
-        {% for post in posts %}
-        <a href="{{ post.url }}" class="dev-file fade-in">
-          <span class="dev-file__date mono">{{ post.data.date | dateWeek }}</span>
-          <span class="dev-file__main">
-            <span class="dev-file__name">{{ post.data.title }}</span>
-            <span class="dev-file__excerpt">{{ post.data.excerpt }}</span>
-          </span>
-          <span class="dev-tag">{{ label | upper }}</span>
-        </a>
-        {% endfor %}
-      </div>
-    </section>
-    {% endif %}
-  {% endmacro %}
-
-  {{ topicSection(allPosts | filterByTopic("t1"), i18n.topics.t1) }}
-  {{ topicSection(allPosts | filterByTopic("t2"), i18n.topics.t2) }}
-  {{ topicSection(allPosts | filterByTopic("t3"), i18n.topics.t3) }}
-  {{ topicSection(allPosts | filterByTopic("t4"), i18n.topics.t4) }}
-  {{ topicSection(allPosts | filterByTopic("t5"), i18n.topics.t5) }}
-  {{ topicSection(allPosts | filterByTopic("t6"), i18n.topics.t6) }}
 </div>
