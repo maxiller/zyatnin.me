@@ -86,7 +86,34 @@ module.exports = function(eleventyConfig) {
     return arr.filter(p => p.data && p.data.view === view);
   });
 
-  // switchViewUrl: URL of the same page in the other view ("leader" <-> "dev").
+  // altUrl: URL of this page in another language, or "" when no translation
+// exists. Used for <link rel="alternate" hreflang>, which must only point at
+// real pages (these are absolute URLs, so the build-time link check does not
+// see them).
+eleventyConfig.addFilter("altUrl", (pages, url, targetLang) => {
+  if (typeof url !== "string") return "";
+  const m = url.match(/^\/(ru|en|he)\//);
+  if (!m) return "";
+  const target = `/${targetLang}/` + url.slice(m[0].length);
+  return Array.isArray(pages) && pages.some(p => p && p.url === target) ? target : "";
+});
+
+// switchLangUrl: language-switcher target. The same page when its translation
+// exists, otherwise that language's section index and finally its home page,
+// so the switcher never links to a missing page (FR-07).
+eleventyConfig.addFilter("switchLangUrl", (pages, url, targetLang) => {
+  if (typeof url !== "string") return `/${targetLang}/`;
+  const m = url.match(/^\/(ru|en|he)\//);
+  const rest = m ? url.slice(m[0].length) : "";
+  const target = `/${targetLang}/${rest}`;
+  if (Array.isArray(pages) && pages.some(p => p && p.url === target)) return target;
+  if (rest.startsWith("dev/blog/")) return `/${targetLang}/dev/blog/`;
+  if (rest.startsWith("blog/")) return `/${targetLang}/blog/`;
+  if (rest.startsWith("dev/")) return `/${targetLang}/dev/`;
+  return `/${targetLang}/`;
+});
+
+// switchViewUrl: URL of the same page in the other view ("leader" <-> "dev").
   // A target page "exists" only when it carries that view's content (its `view`
   // front matter matches), so redirect stubs and index pages never confuse it.
   // Falls back to the other view's blog index or home when the exact page

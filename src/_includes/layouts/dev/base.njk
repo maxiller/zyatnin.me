@@ -18,10 +18,13 @@
   <meta property="og:image:alt" content="{{ i18n.name }} — {{ site.domain }}">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://{{ site.domain }}{{ page.url }}">
-  <link rel="alternate" hreflang="ru" href="https://{{ site.domain }}{{ page.url | replace('/en/', '/ru/') | replace('/he/', '/ru/') }}">
-  <link rel="alternate" hreflang="en" href="https://{{ site.domain }}{{ page.url | replace('/ru/', '/en/') | replace('/he/', '/en/') }}">
-  <link rel="alternate" hreflang="he" href="https://{{ site.domain }}{{ page.url | replace('/ru/', '/he/') | replace('/en/', '/he/') }}">
-  <link rel="alternate" hreflang="x-default" href="https://{{ site.domain }}{{ page.url | replace('/ru/', '/en/') | replace('/he/', '/en/') }}">
+  {% set altRu = collections.all | altUrl(page.url, 'ru') %}
+  {% set altEn = collections.all | altUrl(page.url, 'en') %}
+  {% set altHe = collections.all | altUrl(page.url, 'he') %}
+  {% if altRu %}<link rel="alternate" hreflang="ru" href="https://{{ site.domain }}{{ altRu }}">{% endif %}
+  {% if altEn %}<link rel="alternate" hreflang="en" href="https://{{ site.domain }}{{ altEn }}">{% endif %}
+  {% if altHe %}<link rel="alternate" hreflang="he" href="https://{{ site.domain }}{{ altHe }}">{% endif %}
+  <link rel="alternate" hreflang="x-default" href="https://{{ site.domain }}{% if altEn %}{{ altEn }}{% else %}{{ page.url }}{% endif %}">
   <link rel="alternate" type="application/atom+xml" href="/{{ i18n.lang }}/dev/feed.xml" title="{{ i18n.name }} — {{ i18n.views.dev }}">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231a1b2e'/><text x='4' y='23' font-family='monospace' font-size='18' font-weight='bold' fill='%230ea5e9'>MZ</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,9 +48,9 @@
     </nav>
 
     <div class="lang-switch">
-      <a href="{{ page.url | replace('/en/', '/ru/') | replace('/he/', '/ru/') }}" class="{% if i18n.lang == 'ru' %}active{% endif %}" hreflang="ru">RU</a>
-      <a href="{{ page.url | replace('/ru/', '/en/') | replace('/he/', '/en/') }}" class="{% if i18n.lang == 'en' %}active{% endif %}" hreflang="en">EN</a>
-      <a href="{{ page.url | replace('/ru/', '/he/') | replace('/en/', '/he/') }}" class="{% if i18n.lang == 'he' %}active{% endif %}" hreflang="he">HE</a>
+      <a href="{{ collections.all | switchLangUrl(page.url, 'ru') }}" class="{% if i18n.lang == 'ru' %}active{% endif %}" hreflang="ru">RU</a>
+      <a href="{{ collections.all | switchLangUrl(page.url, 'en') }}" class="{% if i18n.lang == 'en' %}active{% endif %}" hreflang="en">EN</a>
+      <a href="{{ collections.all | switchLangUrl(page.url, 'he') }}" class="{% if i18n.lang == 'he' %}active{% endif %}" hreflang="he">HE</a>
     </div>
 
     <button class="menu-toggle" type="button" data-menu-toggle aria-controls="ide-sidebar" aria-expanded="false" aria-label="{{ i18n.a11y.menu_open }}" data-label-open="{{ i18n.a11y.menu_open }}" data-label-close="{{ i18n.a11y.menu_close }}">
