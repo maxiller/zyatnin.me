@@ -4,7 +4,7 @@ layout: layouts/post.njk
 title: "תכנון מערכות KPI לצוותי תמיכה טכנית"
 excerpt: "גישה מבוססת ITIL למדידת ביצועי מהנדסי תמיכה L3."
 date: 2026-01-20
-topic: t4
+tags: [kpi, support-management]
 slug: kpi-system-technical-support
 permalink: /he/blog/kpi-system-technical-support/
 ---

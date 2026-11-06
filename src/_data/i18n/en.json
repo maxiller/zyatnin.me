@@ -84,13 +84,36 @@
     "menu_open": "Open menu",
     "menu_close": "Close menu"
   },
-  "topics": {
-    "t1": "Containerization & Podman",
-    "t2": "Python Automation & Integration",
-    "t3": "Linux Desktop & System Administration",
-    "t4": "DevOps & CI/CD",
-    "t5": "Networking & Infrastructure",
-    "t6": "Customer Success"
+  "tags": {
+    "label": "Tags",
+    "page_title_leader": "Articles tagged “{tag}”",
+    "page_desc_leader": "Blog articles from the Support Leader view tagged “{tag}”",
+    "page_title_dev": "Notes tagged “{tag}”",
+    "page_desc_dev": "Developer notes tagged “{tag}”: deep dives, practice, and tools",
+    "names": {
+      "ai-agents": "AI agents",
+      "automation": "Automation",
+      "ci-cd": "CI/CD",
+      "containers": "Containers",
+      "desktop": "Desktop",
+      "gitlab": "GitLab",
+      "hiring": "Hiring",
+      "jira": "Jira",
+      "kpi": "KPI",
+      "linux": "Linux",
+      "networking": "Networking",
+      "podman": "Podman",
+      "python": "Python",
+      "queues": "Task queues",
+      "sla": "SLA",
+      "spec-driven-dev": "Spec-Driven Development",
+      "ssh": "SSH",
+      "support-management": "Support management",
+      "systemd": "systemd",
+      "team-leadership": "Team leadership",
+      "telegram": "Telegram",
+      "virtualization": "Virtualization"
+    }
   },
   "dev": {
     "hero": {

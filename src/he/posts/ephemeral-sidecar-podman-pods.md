@@ -4,7 +4,7 @@ layout: layouts/dev/post.njk
 title: "תבנית Sidecar זמנית: ניהול מנהרות SSH בפודים של Podman"
 excerpt: "איך להפעיל ולעצור קונטיינרים דינמית בתוך פוד Podman באמצעות Python."
 date: 2026-03-15
-topic: t1
+tags: [podman, containers, ssh]
 slug: ephemeral-sidecar-podman-pods
 permalink: /he/dev/blog/ephemeral-sidecar-podman-pods/
 ---

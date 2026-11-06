@@ -4,7 +4,7 @@ view: leader
 title: "The Five Results of a Support Lead's Work"
 excerpt: "A support lead's work is measured not by closed tickets but by five verifiable results: service predictability, solution quality, team resilience, knowledge, and product feedback."
 date: 2026-11-02
-topic: t6
+tags: [team-leadership, support-management]
 slug: support-lead-five-results
 permalink: /en/blog/support-lead-five-results/
 ---

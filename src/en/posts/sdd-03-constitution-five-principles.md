@@ -4,7 +4,7 @@ view: dev
 title: "/speckit.constitution: five principles read by humans and agents alike"
 excerpt: "What a project constitution is, how it differs from a README, and why the agent stopped \"improving\" the API without asking."
 date: 2026-11-16
-topic: t4
+tags: [spec-driven-dev, ai-agents]
 slug: sdd-03-constitution-five-principles
 permalink: /en/dev/blog/sdd-03-constitution-five-principles/
 ---

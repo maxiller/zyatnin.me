@@ -4,7 +4,7 @@ layout: layouts/dev/post.njk
 title: "Building a Universal Container Dispatcher in Python"
 excerpt: "Pattern where a Python worker launches arbitrary Podman containers based on config."
 date: 2026-02-20
-topic: t2
+tags: [python, containers, automation]
 slug: universal-container-dispatcher
 permalink: /en/dev/blog/universal-container-dispatcher/
 ---

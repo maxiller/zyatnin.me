@@ -4,7 +4,7 @@ layout: layouts/post.njk
 title: "Designing KPI Systems for Technical Support Teams"
 excerpt: "ITIL-based approach to measuring L3 support engineer performance."
 date: 2026-01-20
-topic: t4
+tags: [kpi, support-management]
 slug: kpi-system-technical-support
 permalink: /en/blog/kpi-system-technical-support/
 ---

@@ -1,0 +1,9 @@
+{#- Метки как навигация вида «Разработчик». Ожидает `tagPages` (коллекция
+    tagPages_<lang>_dev) и необязательный `currentTag`. -#}
+{% if tagPages | length %}
+<nav class="dev-tags dev-tag-bar" aria-label="{{ i18n.tags.label }}">
+  {% for entry in tagPages %}
+  <a href="{{ entry.url }}" class="dev-tag{% if entry.tag == currentTag %} dev-tag--active{% endif %}"{% if entry.tag == currentTag %} aria-current="page"{% endif %}>{{ entry.label }}</a>
+  {% endfor %}
+</nav>
+{% endif %}

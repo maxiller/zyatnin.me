@@ -4,7 +4,6 @@ view: leader
 title: "Карта сервиса и Точка А: диагностика первого месяца"
 excerpt: "Прежде чем улучшать сервис, опишите его глазами клиента и замерьте фактическую реакцию: карта сервиса, baseline из трекера и перечень рисков первого месяца."
 date: 2026-12-28
-topic: t6
 slug: support-lead-service-map-baseline
 permalink: /ru/blog/support-lead-service-map-baseline/
 ---

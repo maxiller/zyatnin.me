@@ -1,0 +1,12 @@
+---
+layout: layouts/tag-index.njk
+pagination:
+  data: collections.tagPages_he_leader
+  size: 1
+  alias: entry
+  addAllPagesToCollections: true
+permalink: "{{ entry.url }}"
+eleventyComputed:
+  title: "{{ i18n.tags.page_title_leader | replace('{tag}', entry.label) }}"
+  description: "{{ i18n.tags.page_desc_leader | replace('{tag}', entry.label) }}"
+---

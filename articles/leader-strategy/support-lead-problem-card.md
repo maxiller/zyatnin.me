@@ -4,7 +4,6 @@ view: leader
 title: "Карточка проблемы для продукта, которую не закрыть без статуса"
 excerpt: "Карточка проблемы с затронутыми клиентами, трудозатратами и обходом превращает данные поддержки в изменения продукта — со статусом."
 date: 2027-08-23
-topic: t6
 slug: support-lead-problem-card
 permalink: /ru/blog/support-lead-problem-card/
 ---

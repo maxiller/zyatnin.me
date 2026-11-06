@@ -4,7 +4,6 @@ view: leader
 title: "1:1, которые не превращаются в отчёт и аттестацию"
 excerpt: "1:1 — ритуал про человека, а не про статус: структура 40 минут, банк вопросов и граница между рабочими фактами и личным."
 date: 2027-05-03
-topic: t6
 slug: support-lead-one-on-one
 permalink: /ru/blog/support-lead-one-on-one/
 ---

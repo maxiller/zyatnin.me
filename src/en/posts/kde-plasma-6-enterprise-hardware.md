@@ -4,7 +4,7 @@ layout: layouts/dev/post.njk
 title: "KDE Plasma 6 on Enterprise Hardware"
 excerpt: "Practical guide for running KDE Plasma 6 on business laptops like HP EliteBook and Dell."
 date: 2026-02-10
-topic: t3
+tags: [linux, desktop]
 slug: kde-plasma-6-enterprise-hardware
 permalink: /en/dev/blog/kde-plasma-6-enterprise-hardware/
 ---

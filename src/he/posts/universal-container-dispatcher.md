@@ -4,7 +4,7 @@ layout: layouts/dev/post.njk
 title: "בניית Dispatcher קונטיינרים אוניברסלי ב-Python"
 excerpt: "תבנית שבה עובד Python מפעיל קונטיינרים שרירותיים של Podman לפי קונפיגורציה."
 date: 2026-02-20
-topic: t2
+tags: [python, containers, automation]
 slug: universal-container-dispatcher
 permalink: /he/dev/blog/universal-container-dispatcher/
 ---

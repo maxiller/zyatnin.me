@@ -4,7 +4,7 @@ view: dev
 title: "Why a personal project needs a constitution and specs"
 excerpt: "Agents write code fast and projects fall apart. How 11 specs and 305 requirements brought a pet project back under control."
 date: 2026-11-09
-topic: t4
+tags: [spec-driven-dev, ai-agents]
 slug: sdd-01-constitution-and-specs
 permalink: /en/dev/blog/sdd-01-constitution-and-specs/
 ---

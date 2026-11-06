@@ -4,7 +4,7 @@ view: dev
 title: "/speckit.specify: a spec for «just one line in the log»"
 excerpt: "The task sounded like a single line. The spec grew to 18 requirements and three user stories — and that is a map of the rake, not bureaucracy."
 date: 2026-11-19
-topic: t4
+tags: [spec-driven-dev, ai-agents]
 slug: sdd-04-spec-for-one-log-line
 permalink: /en/dev/blog/sdd-04-spec-for-one-log-line/
 ---

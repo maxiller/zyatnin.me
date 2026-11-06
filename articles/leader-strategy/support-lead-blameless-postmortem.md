@@ -4,7 +4,6 @@ view: leader
 title: "Blameless-разбор инцидента: хронология без имён"
 excerpt: "Разбор инцидента ищет организационную причину, а не виноватого: хронология без имён, действия с владельцами и сроками."
 date: 2027-08-09
-topic: t6
 slug: support-lead-blameless-postmortem
 permalink: /ru/blog/support-lead-blameless-postmortem/
 ---

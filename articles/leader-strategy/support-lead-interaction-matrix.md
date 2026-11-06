@@ -4,7 +4,6 @@ view: leader
 title: "Матрица взаимодействий: кто решает и по каким вопросам"
 excerpt: "Матрица взаимодействий и правило «проект договорённости»: у каждой договорённости есть срок, владелец и артефакт — иначе её нет."
 date: 2027-06-28
-topic: t6
 slug: support-lead-interaction-matrix
 permalink: /ru/blog/support-lead-interaction-matrix/
 ---

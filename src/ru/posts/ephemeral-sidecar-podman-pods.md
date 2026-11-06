@@ -4,7 +4,7 @@ layout: layouts/dev/post.njk
 title: "Паттерн эфемерных sidecar-контейнеров: управление SSH-туннелями в Podman-подах"
 excerpt: "Как динамически запускать и останавливать контейнеры внутри Podman-пода с помощью Python."
 date: 2026-03-15
-topic: t1
+tags: [podman, containers, ssh]
 slug: ephemeral-sidecar-podman-pods
 permalink: /ru/dev/blog/ephemeral-sidecar-podman-pods/
 ---

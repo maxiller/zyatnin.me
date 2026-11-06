@@ -4,7 +4,7 @@ view: dev
 title: "למה פרויקט אישי צריך חוקה ומפרטים"
 excerpt: "סוכני AI כותבים קוד מהר והפרויקט מתפרק. כך 11 מפרטים ו-305 דרישות החזירו לפרויקט האישי שליטה וצפינויות."
 date: 2026-11-09
-topic: t4
+tags: [spec-driven-dev, ai-agents]
 slug: sdd-01-constitution-and-specs
 permalink: /he/dev/blog/sdd-01-constitution-and-specs/
 ---

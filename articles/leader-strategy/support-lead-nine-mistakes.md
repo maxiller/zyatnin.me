@@ -4,7 +4,6 @@ view: leader
 title: "Девять ошибок лида поддержки — и годовой отчёт"
 excerpt: "Девять типовых ошибок лида с антидотами — и годовой обзор «план/факт», после которого план следующего года строится от факта."
 date: 2027-10-04
-topic: t6
 slug: support-lead-nine-mistakes
 permalink: /ru/blog/support-lead-nine-mistakes/
 ---

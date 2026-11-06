@@ -4,7 +4,6 @@ view: leader
 title: "Статус руководству: письмо на страницу и часовой обзор"
 excerpt: "Руководство не читает отчёты длиннее страницы: еженедельное письмо на страницу и часовой обзор раз в месяц закрывают контур прозрачности."
 date: 2027-07-12
-topic: t6
 slug: support-lead-management-status
 permalink: /ru/blog/support-lead-management-status/
 ---

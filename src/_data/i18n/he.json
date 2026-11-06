@@ -84,13 +84,36 @@
     "menu_open": "פתיחת תפריט",
     "menu_close": "סגירת תפריט"
   },
-  "topics": {
-    "t1": "קונטיינריזציה ו-Podman",
-    "t2": "אוטומציה ואינטגרציה ב-Python",
-    "t3": "שולחן עבודה של Linux וניהול מערכות",
-    "t4": "DevOps ו-CI/CD",
-    "t5": "רשתות ותשתיות",
-    "t6": "הצלחת לקוחות"
+  "tags": {
+    "label": "תגיות",
+    "page_title_leader": "מאמרים עם התגית «{tag}»",
+    "page_desc_leader": "מאמרי הבלוג בתצוגת «מנהל תמיכה» עם התגית «{tag}»",
+    "page_title_dev": "רשומות עם התגית «{tag}»",
+    "page_desc_dev": "רשומות מפתחים עם התגית «{tag}»: העמקה, תרגול וכלים",
+    "names": {
+      "ai-agents": "סוכני AI",
+      "automation": "אוטומציה",
+      "ci-cd": "CI/CD",
+      "containers": "מכולות",
+      "desktop": "שולחן עבודה",
+      "gitlab": "GitLab",
+      "hiring": "גיוס",
+      "jira": "Jira",
+      "kpi": "KPI",
+      "linux": "Linux",
+      "networking": "רשתות",
+      "podman": "Podman",
+      "python": "Python",
+      "queues": "תורי משימות",
+      "sla": "SLA",
+      "spec-driven-dev": "Spec-Driven Development",
+      "ssh": "SSH",
+      "support-management": "ניהול תמיכה",
+      "systemd": "systemd",
+      "team-leadership": "הובלת צוות",
+      "telegram": "Telegram",
+      "virtualization": "וירטואליזציה"
+    }
   },
   "dev": {
     "hero": {

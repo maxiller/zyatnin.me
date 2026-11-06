@@ -4,7 +4,7 @@ view: dev
 title: "Вживляем speckit в существующий проект"
 excerpt: "Spec-driven development — не только для новых проектов. Как поставить speckit в живой репозиторий с историей, контрактами и работающим продом."
 date: 2026-11-12
-topic: t4
+tags: [spec-driven-dev, ai-agents]
 slug: sdd-02-speckit-integration
 permalink: /ru/dev/blog/sdd-02-speckit-integration/
 ---

@@ -1,0 +1,9 @@
+{#- Метки как навигация вида «Лидер». Ожидает `tagPages` (коллекция
+    tagPages_<lang>_leader) и необязательный `currentTag`. -#}
+{% if tagPages | length %}
+<nav class="tags tag-bar" aria-label="{{ i18n.tags.label }}">
+  {% for entry in tagPages %}
+  <a href="{{ entry.url }}" class="tag{% if entry.tag == currentTag %} tag--active{% endif %}"{% if entry.tag == currentTag %} aria-current="page"{% endif %}>{{ entry.label }}</a>
+  {% endfor %}
+</nav>
+{% endif %}

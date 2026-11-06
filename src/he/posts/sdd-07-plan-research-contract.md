@@ -4,7 +4,7 @@ view: dev
 title: "/speckit.plan: research, data-model וחוזה לפני הקוד"
 excerpt: "תוכנית פיצ'ר כארבעה מסמכים: research, data-model, חוזה האירוע ו-quickstart. והפיצול המרכזי — מאיפה לפלוט את האירוע."
 date: 2026-11-30
-topic: t4
+tags: [spec-driven-dev, ai-agents]
 slug: sdd-07-plan-research-contract
 permalink: /he/dev/blog/sdd-07-plan-research-contract/
 ---

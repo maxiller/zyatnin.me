@@ -6,9 +6,15 @@ layout: layouts/base.njk
   <div class="container container--narrow">
     <a href="/{{ i18n.lang }}/blog/" class="article__back">{{ i18n.blog.back }}</a>
     <div class="article__header">
-      <span class="article__topic">{{ i18n.topics[topic] }}</span>
       <h1 class="article__title">{{ title }}</h1>
       <span class="article__meta">{{ date | dateDisplay(i18n.lang) }} · {{ content | readingTime }} {{ i18n.blog.min_read }}</span>
+      {% if tags %}
+      <nav class="tags article__tags" aria-label="{{ i18n.tags.label }}">
+        {% for tag in tags %}
+        <a href="{{ i18n.lang | tagUrl('leader', tag) }}" class="tag">{{ i18n.tags.names[tag] }}</a>
+        {% endfor %}
+      </nav>
+      {% endif %}
     </div>
     {% set ldPublished = date | isoDateTime %}
     {% set ldModified = updated | default(date) | isoDateTime %}

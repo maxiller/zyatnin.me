@@ -4,7 +4,7 @@ view: leader
 title: "Границы ответственности: что лид делает сам, делегирует и от чего отказывается"
 excerpt: "Три списка снимают трение: за какие решения лид отвечает лично, что делегирует с правом решения и от каких ролей отказывается сознательно."
 date: 2026-11-16
-topic: t6
+tags: [team-leadership, support-management]
 slug: support-lead-boundaries
 permalink: /ru/blog/support-lead-boundaries/
 ---

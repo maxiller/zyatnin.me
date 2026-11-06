@@ -4,7 +4,6 @@ view: leader
 title: "Год лида по кварталам: дорожная карта на 12 месяцев"
 excerpt: "Год лида — четыре квартала с правилом «следующий месяц не начинается без результата предыдущего»: стабилизация, знания и люди, Shift Left, замыкание циклов."
 date: 2026-12-14
-topic: t6
 slug: support-lead-year-roadmap
 permalink: /ru/blog/support-lead-year-roadmap/
 ---

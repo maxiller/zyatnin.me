@@ -4,7 +4,7 @@ view: dev
 title: "Where are my logs? A production investigation of an empty event"
 excerpt: "Green tests, the spec obeyed, and no event in production logs. An investigation in which both the code and the spec turned out to be right."
 date: 2026-12-10
-topic: t4
+tags: [spec-driven-dev, containers]
 slug: sdd-10-empty-event-investigation
 permalink: /en/dev/blog/sdd-10-empty-event-investigation/
 ---

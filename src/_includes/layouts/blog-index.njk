@@ -18,19 +18,10 @@ layout: layouts/base.njk
     {% if allPosts | length == 0 %}
     <p class="blog-page__empty">{{ i18n.blog.empty }}</p>
     {% else %}
-    <div class="blog-grid">
-      {% for post in allPosts %}
-      <a href="{{ post.url }}" class="blog-card fade-in">
-        <span class="blog-card__topic">{{ i18n.topics[post.data.topic] }}</span>
-        <h3 class="blog-card__title">{{ post.data.title }}</h3>
-        <p class="blog-card__excerpt">{{ post.data.excerpt }}</p>
-        <div class="blog-card__meta">
-          <span>{{ post.data.date | dateWeek }}</span>
-          <span class="blog-card__read">{{ i18n.blog.read_more }}</span>
-        </div>
-      </a>
-      {% endfor %}
-    </div>
+    {% set tagPages = collections["tagPages_" + i18n.lang + "_leader"] %}
+    {% include "partials/tag-bar.njk" %}
+    {% set posts = allPosts %}
+    {% include "partials/post-list.njk" %}
     {% endif %}
   </div>
 </div>

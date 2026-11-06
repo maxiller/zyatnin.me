@@ -4,7 +4,7 @@ layout: layouts/dev/post.njk
 title: "Интеграция Telegram-ботов с очередями задач: aiogram + RQ + Valkey"
 excerpt: "Полная архитектура асинхронного Telegram-бота с фоновой обработкой задач."
 date: 2026-02-28
-topic: t2
+tags: [python, queues, telegram]
 slug: telegram-bot-rq-valkey
 permalink: /ru/dev/blog/telegram-bot-rq-valkey/
 ---

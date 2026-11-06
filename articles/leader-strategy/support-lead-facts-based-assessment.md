@@ -4,7 +4,6 @@ view: leader
 title: "Оценка по наблюдаемым фактам: QA-выборка и шесть критериев"
 excerpt: "Оценка инженера — по наблюдаемым фактам из QA-выборки, а не по количеству закрытий: чек-лист 0/1/2 и отметка «недостаточно наблюдений»."
 date: 2027-05-17
-topic: t6
 slug: support-lead-facts-based-assessment
 permalink: /ru/blog/support-lead-facts-based-assessment/
 ---

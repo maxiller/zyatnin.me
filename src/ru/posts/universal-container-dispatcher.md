@@ -4,7 +4,7 @@ layout: layouts/dev/post.njk
 title: "Универсальный контейнерный диспетчер на Python"
 excerpt: "Паттерн Python-воркера, запускающего произвольные Podman-контейнеры по конфигурации."
 date: 2026-02-20
-topic: t2
+tags: [python, containers, automation]
 slug: universal-container-dispatcher
 permalink: /ru/dev/blog/universal-container-dispatcher/
 ---

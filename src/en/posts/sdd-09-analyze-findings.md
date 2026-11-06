@@ -4,7 +4,7 @@ view: dev
 title: "/speckit.analyze: when the checks find what you missed"
 excerpt: "A cross-check of spec, plan and tasks found a coverage gap before production did. A breakdown of findings and what to do with them."
 date: 2026-12-07
-topic: t4
+tags: [spec-driven-dev, ai-agents]
 slug: sdd-09-analyze-findings
 permalink: /en/dev/blog/sdd-09-analyze-findings/
 ---

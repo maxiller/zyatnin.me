@@ -4,7 +4,7 @@ view: dev
 title: "/speckit.analyze: когда проверки находят то, чего вы не заметили"
 excerpt: "Кросс-сверка спеки, плана и задач нашла дыру в покрытии требования — до того, как её нашёл прод. Разбор находок и что с ними делать."
 date: 2026-12-07
-topic: t4
+tags: [spec-driven-dev, ai-agents]
 slug: sdd-09-analyze-findings
 permalink: /ru/dev/blog/sdd-09-analyze-findings/
 ---

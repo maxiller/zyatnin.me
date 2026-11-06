@@ -4,7 +4,7 @@ layout: layouts/post.njk
 title: "Response-time SLA when all you have is email"
 excerpt: "How to measure first-response time without a ticketing system: Exchange email threads, FRT calculated in Power BI, and escalations through PagerDuty."
 date: 2026-10-28
-topic: t6
+tags: [sla, support-management]
 slug: email-only-response-sla
 permalink: /en/blog/email-only-response-sla/
 ---

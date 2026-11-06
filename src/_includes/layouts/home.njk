@@ -160,7 +160,6 @@ layout: layouts/base.njk
       {% set postsForLang = collections["posts_" + i18n.lang] | byView("leader") %}
       {% for post in postsForLang | limit(3) %}
       <a href="{{ post.url }}" class="blog-card fade-in">
-        <span class="blog-card__topic">{{ i18n.topics[post.data.topic] }}</span>
         <h3 class="blog-card__title">{{ post.data.title }}</h3>
         <p class="blog-card__excerpt">{{ post.data.excerpt }}</p>
         <div class="blog-card__meta">

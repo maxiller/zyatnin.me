@@ -4,7 +4,7 @@ layout: layouts/dev/post.njk
 title: "בניית Worker מרובה תורים עם RQ ו-Podman"
 excerpt: "ארכיטקטורה של עובד RQ יחיד שמקשיב למספר תורים ומפיץ משימות לקונטיינרים שונים."
 date: 2026-03-10
-topic: t1
+tags: [python, queues, podman]
 slug: multi-queue-worker-rq-podman
 permalink: /he/dev/blog/multi-queue-worker-rq-podman/
 ---

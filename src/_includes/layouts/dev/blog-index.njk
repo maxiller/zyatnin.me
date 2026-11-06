@@ -15,17 +15,9 @@ layout: layouts/dev/base.njk
   {% if allPosts | length == 0 %}
   <p class="dev-empty">{{ i18n.blog.empty }}</p>
   {% else %}
-  <div class="dev-files dev-files--index">
-    {% for post in allPosts %}
-    <a href="{{ post.url }}" class="dev-file fade-in">
-      <span class="dev-file__date mono">{{ post.data.date | dateWeek }}</span>
-      <span class="dev-file__main">
-        <span class="dev-file__name">{{ post.data.title }}</span>
-        <span class="dev-file__excerpt">{{ post.data.excerpt }}</span>
-      </span>
-      <span class="dev-tag">{{ i18n.topics[post.data.topic] }}</span>
-    </a>
-    {% endfor %}
-  </div>
+  {% set tagPages = collections["tagPages_" + i18n.lang + "_dev"] %}
+  {% include "partials/dev/tag-bar.njk" %}
+  {% set posts = allPosts %}
+  {% include "partials/dev/post-list.njk" %}
   {% endif %}
 </div>

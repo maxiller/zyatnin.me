@@ -4,7 +4,7 @@ layout: layouts/dev/post.njk
 title: "KVM Bridge Networking: Connecting VMs to Physical Networks"
 excerpt: "Step-by-step KVM bridge setup on Fedora for connecting VMs to physical networks."
 date: 2026-01-10
-topic: t5
+tags: [networking, virtualization, linux]
 slug: kvm-bridge-networking
 permalink: /en/dev/blog/kvm-bridge-networking/
 ---

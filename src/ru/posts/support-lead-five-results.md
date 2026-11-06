@@ -4,7 +4,7 @@ view: leader
 title: "Пять результатов работы лида поддержки"
 excerpt: "Работа лида измеряется не закрытыми тикетами, а пятью проверяемыми результатами: предсказуемость сервиса, качество решений, устойчивость команды, знания и обратная связь в продукт."
 date: 2026-11-02
-topic: t6
+tags: [team-leadership, support-management]
 slug: support-lead-five-results
 permalink: /ru/blog/support-lead-five-results/
 ---

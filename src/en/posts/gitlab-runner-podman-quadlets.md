@@ -4,7 +4,7 @@ layout: layouts/dev/post.njk
 title: "GitLab Runner in Containers: Podman Quadlets and Systemd"
 excerpt: "Setting up GitLab CI with containerized runners using Podman quadlets."
 date: 2026-01-28
-topic: t4
+tags: [podman, gitlab, systemd]
 slug: gitlab-runner-podman-quadlets
 permalink: /en/dev/blog/gitlab-runner-podman-quadlets/
 ---

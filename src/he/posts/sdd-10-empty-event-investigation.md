@@ -4,7 +4,7 @@ view: dev
 title: "איפה הלוגים שלי? חקירה בפרודקשן של אירוע ריק"
 excerpt: "טסטים ירוקים, המפרט נשמר, ובלוגי הפרודקשן אין אירוע. חקירה שבה גם הקוד וגם המפרט התבררו כצודקים."
 date: 2026-12-10
-topic: t4
+tags: [spec-driven-dev, containers]
 slug: sdd-10-empty-event-investigation
 permalink: /he/dev/blog/sdd-10-empty-event-investigation/
 ---

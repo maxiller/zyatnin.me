@@ -4,7 +4,7 @@ view: dev
 title: "Post-mortem on the spec wave: what I learned in hindsight"
 excerpt: "Nine specs in one session: what was planned, what came out, and which process defects only showed up once everything sat in one folder."
 date: 2026-11-26
-topic: t4
+tags: [spec-driven-dev, ai-agents]
 slug: sdd-06-spec-wave-postmortem
 permalink: /en/dev/blog/sdd-06-spec-wave-postmortem/
 ---

@@ -4,7 +4,6 @@ view: leader
 title: "Триаж при первом касании: категория, критичность, маршрут"
 excerpt: "Триаж — единственный вход в сервис: сначала критичность, потом классификация. Матрица критичности и таймеры реакции экономят часы хаоса."
 date: 2027-01-11
-topic: t6
 slug: support-lead-triage-first-touch
 permalink: /ru/blog/support-lead-triage-first-touch/
 ---

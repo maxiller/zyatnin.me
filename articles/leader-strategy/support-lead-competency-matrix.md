@@ -4,7 +4,6 @@ view: leader
 title: "Матрица компетенций: закрываем одноточечные риски"
 excerpt: "Матрица компетенций делает одноточечный риск видимым: навыки, люди, уровни — и норматив «критичный навык уровня 3+ минимум у двух»."
 date: 2027-05-31
-topic: t6
 slug: support-lead-competency-matrix
 permalink: /ru/blog/support-lead-competency-matrix/
 ---

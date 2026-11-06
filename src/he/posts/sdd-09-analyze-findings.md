@@ -4,7 +4,7 @@ view: dev
 title: "/speckit.analyze: כשהבדיקות מוצאות את מה שפספסתם"
 excerpt: "הצלבת מפרט, תוכנית ומשימות מצאה חור בכיסוי דרישה לפני שהפרודקשן מצא אותו. פירוק הממצאים ומה עושים איתם."
 date: 2026-12-07
-topic: t4
+tags: [spec-driven-dev, ai-agents]
 slug: sdd-09-analyze-findings
 permalink: /he/dev/blog/sdd-09-analyze-findings/
 ---

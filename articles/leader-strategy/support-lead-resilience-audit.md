@@ -4,7 +4,6 @@ view: leader
 title: "Аудит живучести: что сломается, когда вас не будет"
 excerpt: "Аудит живучести ищет точки, которые сломаются в ваш отпуск: подхват тикета за 15 минут, восстановление трекера и базы знаний."
 date: 2027-09-20
-topic: t6
 slug: support-lead-resilience-audit
 permalink: /ru/blog/support-lead-resilience-audit/
 ---

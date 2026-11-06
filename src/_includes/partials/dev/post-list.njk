@@ -1,0 +1,12 @@
+{#- Список заметок вида «Разработчик». Ожидает переменную `posts`. -#}
+<div class="dev-files dev-files--index">
+  {% for post in posts %}
+  <a href="{{ post.url }}" class="dev-file fade-in">
+    <span class="dev-file__date mono">{{ post.data.date | dateWeek }}</span>
+    <span class="dev-file__main">
+      <span class="dev-file__name">{{ post.data.title }}</span>
+      <span class="dev-file__excerpt">{{ post.data.excerpt }}</span>
+    </span>
+  </a>
+  {% endfor %}
+</div>

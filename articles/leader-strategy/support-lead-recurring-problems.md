@@ -4,7 +4,6 @@ view: leader
 title: "Повторяющиеся проблемы: от потока тикетов к записям с владельцем"
 excerpt: "Три обращения с одной причиной за месяц — это одна проблема, у которой появляется владелец, обходной путь и путь в продуктовый отчёт."
 date: 2027-03-22
-topic: t6
 slug: support-lead-recurring-problems
 permalink: /ru/blog/support-lead-recurring-problems/
 ---

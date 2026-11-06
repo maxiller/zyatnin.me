@@ -4,7 +4,6 @@ view: leader
 title: "Мощность вместо героизма: расчёт потребности в инженерах"
 excerpt: "Потребность в людях считается формулой мощности, а не ощущением перегрузки: объём, среднее время, доступные часы — и запрос по данным."
 date: 2027-06-14
-topic: t6
 slug: support-lead-capacity-planning
 permalink: /ru/blog/support-lead-capacity-planning/
 ---

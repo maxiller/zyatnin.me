@@ -1,0 +1,20 @@
+---
+layout: layouts/dev/base.njk
+---
+
+{#- Страница метки вида «Разработчик»: заметки текущего языка с этой меткой.
+    `entry` — элемент коллекции tagPages_<lang>_dev (см. .eleventy.js). -#}
+{% set tagPages = collections["tagPages_" + i18n.lang + "_dev"] %}
+{% set posts = collections["posts_" + i18n.lang] | byView("dev") | byTag(entry.tag) %}
+{% set currentTag = entry.tag %}
+
+<header class="dev-page-head">
+  <h1 class="dev-page-head__title">{{ i18n.tags.page_title_dev | replace("{tag}", entry.label) }}</h1>
+  <p class="dev-page-head__desc">{{ i18n.tags.page_desc_dev | replace("{tag}", entry.label) }}</p>
+</header>
+
+<div class="dev-page">
+  <a href="/{{ i18n.lang }}/dev/blog/" class="dev-article__back">cd ../blog/</a>
+  {% include "partials/dev/tag-bar.njk" %}
+  {% include "partials/dev/post-list.njk" %}
+</div>

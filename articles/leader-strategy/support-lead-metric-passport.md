@@ -4,7 +4,6 @@ view: leader
 title: "Метрика без действия — это картинка: паспорт метрики"
 excerpt: "Метрика без действия — картинка: паспорт метрики с формулой, источником, порогом и действием. Старт с трёх живых метрик."
 date: 2027-09-06
-topic: t6
 slug: support-lead-metric-passport
 permalink: /ru/blog/support-lead-metric-passport/
 ---

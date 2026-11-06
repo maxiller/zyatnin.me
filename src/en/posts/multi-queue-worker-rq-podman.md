@@ -4,7 +4,7 @@ layout: layouts/dev/post.njk
 title: "Building a Multi-Queue Worker with RQ and Podman"
 excerpt: "Architecture for a single RQ worker listening to multiple queues and dispatching tasks to different containers."
 date: 2026-03-10
-topic: t1
+tags: [python, queues, podman]
 slug: multi-queue-worker-rq-podman
 permalink: /en/dev/blog/multi-queue-worker-rq-podman/
 ---

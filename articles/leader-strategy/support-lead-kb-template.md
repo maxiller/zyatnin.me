@@ -4,7 +4,6 @@ view: leader
 title: "Шаблон статьи базы знаний и владелец КБ"
 excerpt: "Полезная статья КБ — это структура и владелец, а не талант: симптомы, окружение, причина, решение, проверенные версии."
 date: 2027-03-08
-topic: t6
 slug: support-lead-kb-template
 permalink: /ru/blog/support-lead-kb-template/
 ---

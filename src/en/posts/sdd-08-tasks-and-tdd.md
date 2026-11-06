@@ -4,7 +4,7 @@ view: dev
 title: "/speckit.tasks + /speckit.implement: TDD by phases"
 excerpt: "Twenty tasks in four phases: contract and docs first, then tests, only then code. And the numbers from the run after implementation."
 date: 2026-12-03
-topic: t4
+tags: [spec-driven-dev, ai-agents]
 slug: sdd-08-tasks-and-tdd
 permalink: /en/dev/blog/sdd-08-tasks-and-tdd/
 ---

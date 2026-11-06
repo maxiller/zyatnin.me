@@ -4,7 +4,7 @@ view: dev
 title: "/speckit.constitution: חמישה עקרונות שגם אדם וגם סוכן קוראים"
 excerpt: "מהי חוקת פרויקט, במה היא שונה מ-README, ולמה הסוכן הפסיק \"לשפר\" את ה-API בלי לשאול."
 date: 2026-11-16
-topic: t4
+tags: [spec-driven-dev, ai-agents]
 slug: sdd-03-constitution-five-principles
 permalink: /he/dev/blog/sdd-03-constitution-five-principles/
 ---

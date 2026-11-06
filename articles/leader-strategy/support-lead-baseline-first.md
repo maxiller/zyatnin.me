@@ -4,7 +4,6 @@ view: leader
 title: "Baseline раньше целей: почему годовые планы проваливаются на старте"
 excerpt: "Цель без измеренной точки А — гипотеза, выдающая себя за план. Сначала baseline из трекера, потом калибровка целей с руководством."
 date: 2026-11-30
-topic: t6
 slug: support-lead-baseline-first
 permalink: /ru/blog/support-lead-baseline-first/
 ---

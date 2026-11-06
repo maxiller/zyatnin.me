@@ -4,7 +4,7 @@ layout: layouts/dev/post.njk
 title: "Jira API Automation: From Alerts to Action"
 excerpt: "Using Python to automate Jira workflows with containerized daemons."
 date: 2026-02-15
-topic: t2
+tags: [python, jira, automation]
 slug: jira-api-automation
 permalink: /en/dev/blog/jira-api-automation/
 ---

@@ -628,6 +628,26 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 
+/* Tags double as navigation: a label links to the page listing its articles. */
+a.tag {
+  text-decoration: none;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+a.tag:hover,
+a.tag:focus-visible {
+  border-color: var(--accent);
+  color: var(--text-primary);
+}
+
+a.tag--active {
+  border-color: var(--accent);
+  background: var(--accent-dim);
+  color: var(--text-primary);
+}
+
+.tag-bar { margin-bottom: 28px; }
+
 /* --- Project ticket cards --- */
 .projects__grid {
   display: grid;
@@ -780,20 +800,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-primary);
 }
 
-.blog-card__topic {
-  align-self: flex-start;
-  padding: 4px 11px;
-  border-radius: 3px;
-  border: 1px solid var(--border);
-  background: var(--bg-secondary);
-  color: var(--text-secondary);
-  font-family: var(--font-mono);
-  font-size: 11.5px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-}
-
 .blog-card__title {
   font-size: 17px;
   font-weight: 700;
@@ -861,20 +867,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .article__header { margin-bottom: 36px; }
 
-.article__topic {
-  display: inline-flex;
-  padding: 4px 11px;
-  border-radius: 3px;
-  border: 1px solid var(--border);
-  background: var(--bg-secondary);
-  color: var(--text-secondary);
-  font-family: var(--font-mono);
-  font-size: 11.5px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-}
-
+.article__body {
 .article__title {
   font-size: clamp(1.85rem, 4vw, 2.55rem);
   font-weight: 700;

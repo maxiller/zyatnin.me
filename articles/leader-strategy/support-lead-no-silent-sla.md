@@ -4,7 +4,6 @@ view: leader
 title: "Ни одного тихого нарушения SLA: еженедельный контроль очереди"
 excerpt: "Тихое нарушение SLA разрушает доверие быстрее самого нарушения: три фильтра рисков, действие на каждый тикет и предупреждение до истечения срока."
 date: 2027-01-25
-topic: t6
 slug: support-lead-no-silent-sla
 permalink: /ru/blog/support-lead-no-silent-sla/
 ---

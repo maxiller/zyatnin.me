@@ -4,7 +4,7 @@ layout: layouts/dev/post.njk
 title: "Почему я предпочитаю Podman вместо Docker"
 excerpt: "Rootless-контейнеры без демона и поды с изолированной средой: почему Podman — мой выбор по умолчанию вместо Docker."
 date: 2026-10-28
-topic: t1
+tags: [podman, containers]
 slug: podman-vs-docker
 permalink: /ru/dev/blog/podman-vs-docker/
 ---

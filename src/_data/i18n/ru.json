@@ -84,13 +84,36 @@
     "menu_open": "Открыть меню",
     "menu_close": "Закрыть меню"
   },
-  "topics": {
-    "t1": "Контейнеризация и Podman",
-    "t2": "Автоматизация на Python",
-    "t3": "Linux и системное администрирование",
-    "t4": "DevOps и CI/CD",
-    "t5": "Сети и инфраструктура",
-    "t6": "Клиентский успех"
+  "tags": {
+    "label": "Метки",
+    "page_title_leader": "Статьи с меткой «{tag}»",
+    "page_desc_leader": "Статьи блога вида «Лидер поддержки» с меткой «{tag}»",
+    "page_title_dev": "Заметки с меткой «{tag}»",
+    "page_desc_dev": "Заметки разработчика с меткой «{tag}»: разборы, практика и инструменты",
+    "names": {
+      "ai-agents": "AI-агенты",
+      "automation": "Автоматизация",
+      "ci-cd": "CI/CD",
+      "containers": "Контейнеры",
+      "desktop": "Десктоп",
+      "gitlab": "GitLab",
+      "hiring": "Найм",
+      "jira": "Jira",
+      "kpi": "KPI",
+      "linux": "Linux",
+      "networking": "Сети",
+      "podman": "Podman",
+      "python": "Python",
+      "queues": "Очереди задач",
+      "sla": "SLA",
+      "spec-driven-dev": "Spec-Driven Development",
+      "ssh": "SSH",
+      "support-management": "Управление поддержкой",
+      "systemd": "systemd",
+      "team-leadership": "Лидерство в команде",
+      "telegram": "Telegram",
+      "virtualization": "Виртуализация"
+    }
   },
   "dev": {
     "hero": {

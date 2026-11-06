@@ -105,28 +105,38 @@
       <nav class="ide-tabs" aria-label="{{ i18n.a11y.navigation }}">
         {% set devHome = '/' + i18n.lang + '/dev/' %}
         {% set devBlog = devHome + 'blog/' %}
-        {% if topic %}{% set currentTab = 'file' %}{% set currentTabName = slug ~ '.md' %}
-        {% elif order %}{% set currentTab = 'file' %}{% set currentTabName = slug ~ '/' %}
-        {% elif page.url == devBlog %}{% set currentTab = 'blog' %}
-        {% else %}{% set currentTab = 'readme' %}{% endif %}
-        <a class="ide-tab {% if currentTab == 'readme' %}ide-tab--active{% endif %}" {% if currentTab == 'readme' %}aria-current="page"{% endif %} href="{{ devHome }}">readme.md</a>
-        <a class="ide-tab {% if currentTab == 'blog' %}ide-tab--active{% endif %}" {% if currentTab == 'blog' %}aria-current="page"{% endif %} href="{{ devBlog }}">blog/</a>
-        {% if currentTab == 'file' %}
-        <span class="ide-tab ide-tab--active" aria-current="page">{{ currentTabName }}</span>
+        {#- Тип страницы решает активную вкладку и хлебные крошки: проект —
+            поле `order`, статья — `slug`, страница метки — alias `entry`
+            пагинации, индекс блога — URL. -#}
+        {% if order %}{% set kind = 'project' %}
+        {% elif slug %}{% set kind = 'post' %}
+        {% elif entry %}{% set kind = 'tag' %}
+        {% elif page.url == devBlog %}{% set kind = 'blog' %}
+        {% else %}{% set kind = 'readme' %}{% endif %}
+        <a class="ide-tab {% if kind == 'readme' %}ide-tab--active{% endif %}" {% if kind == 'readme' %}aria-current="page"{% endif %} href="{{ devHome }}">readme.md</a>
+        <a class="ide-tab {% if kind == 'blog' or kind == 'post' or kind == 'tag' %}ide-tab--active{% endif %}" {% if kind == 'blog' or kind == 'post' or kind == 'tag' %}aria-current="page"{% endif %} href="{{ devBlog }}">blog/</a>
+        {% if kind == 'post' %}
+        <span class="ide-tab ide-tab--active" aria-current="page">{{ slug }}.md</span>
+        {% elif kind == 'project' %}
+        <span class="ide-tab ide-tab--active" aria-current="page">{{ slug }}/</span>
+        {% elif kind == 'tag' %}
+        <span class="ide-tab ide-tab--active" aria-current="page">tags/{{ entry.tag }}/</span>
         {% endif %}
       </nav>
 
       <div class="ide-breadcrumbs">
         <span>~/{{ site.domain }}</span>
-        {% if topic or page.url == devBlog %}
+        {% if kind == 'blog' or kind == 'post' or kind == 'tag' %}
         <span class="ide-breadcrumbs__sep">›</span><span>blog/</span>
-        {% elif order %}
+        {% elif kind == 'project' %}
         <span class="ide-breadcrumbs__sep">›</span><span>projects/</span>
         {% endif %}
-        {% if topic %}
+        {% if kind == 'post' %}
         <span class="ide-breadcrumbs__sep">›</span><span>{{ slug }}.md</span>
-        {% elif order %}
+        {% elif kind == 'project' %}
         <span class="ide-breadcrumbs__sep">›</span><span>{{ slug }}/</span>
+        {% elif kind == 'tag' %}
+        <span class="ide-breadcrumbs__sep">›</span><span>tags/{{ entry.tag }}/</span>
         {% endif %}
       </div>
 

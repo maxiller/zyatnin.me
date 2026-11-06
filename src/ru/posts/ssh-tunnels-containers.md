@@ -4,7 +4,7 @@ layout: layouts/dev/post.njk
 title: "SSH-туннели в контейнерах: безопасный доступ к удалённым сервисам"
 excerpt: "Контейнеризированные SSH-туннели для доступа к Asterisk ARI и базам данных."
 date: 2026-01-15
-topic: t5
+tags: [containers, ssh, networking]
 slug: ssh-tunnels-containers
 permalink: /ru/dev/blog/ssh-tunnels-containers/
 ---

@@ -4,7 +4,7 @@ layout: layouts/dev/post.njk
 title: "למה אני מעדיף Podman על פני Docker"
 excerpt: "קונטיינרים rootless בלי daemon ופודים עם סביבה מבודדת: למה Podman הוא ברירת המחדל שלי על פני Docker."
 date: 2026-10-28
-topic: t1
+tags: [podman, containers]
 slug: podman-vs-docker
 permalink: /he/dev/blog/podman-vs-docker/
 ---

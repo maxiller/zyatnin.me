@@ -4,7 +4,6 @@ view: leader
 title: "Самообслуживание как Shift Left: пилот с честным измерением"
 excerpt: "Shift Left — перенос простых решений к клиенту: пилот на топ-3–5 сценариях, формат инструкции и честное измерение эффекта."
 date: 2027-04-05
-topic: t6
 slug: support-lead-shift-left-pilot
 permalink: /ru/blog/support-lead-shift-left-pilot/
 ---

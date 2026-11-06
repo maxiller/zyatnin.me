@@ -22,7 +22,7 @@ view: leader                      # leader | dev
 title: "Рабочий заголовок"
 excerpt: "40–200 символов, без HTML: суть статьи одной фразой"
 date: 2026-11-02                  # ISO-дата публикации
-topic: t6                         # t1–t6
+tags: [team-leadership, support-management]   # 1–3 ключа из tags.names
 slug: support-lead-five-results   # [a-z0-9-]+, одинаковый на трёх языках
 permalink: /ru/blog/support-lead-five-results/   # /{lang}/blog/{slug}/ или /{lang}/dev/blog/{slug}/
 ---
@@ -71,7 +71,7 @@ permalink: /ru/blog/support-lead-five-results/   # /{lang}/blog/{slug}/ или /
 - Английский: естественный английский, не подстрочник; «лид поддержки» → support lead.
 - Иврит: естественный иврит, мужской род, как в остальном сайте; терминология — как в `src/_data/i18n/he.json` (הנהלה, מוצר, בסיס ידע, תמיכה, מוקדן). RTL включается автоматически (`dir="rtl"` из i18n).
 - Структура (разделы, таблицы, схемы) совпадает с русской версией один в один; подписи схем переведены.
-- `slug`, `topic`, `view`, `date` — одинаковые; `permalink` — со своим языковым префиксом; `title` и `excerpt` — свои, в допустимых пределах.
+- `slug`, `tags`, `view`, `date` — одинаковые; метки берутся из словаря `tags.names` и не переводятся; `permalink` — со своим языковым префиксом; `title` и `excerpt` — свои, в допустимых пределах.
 
 ## 5. Файлы и границы изменений
 

@@ -4,7 +4,7 @@ view: dev
 title: "/speckit.plan: research, data-model и контракт до кода"
 excerpt: "План фичи как четыре документа: research, data-model, контракт события и quickstart. И главная развилка — где эмитить событие."
 date: 2026-11-30
-topic: t4
+tags: [spec-driven-dev, ai-agents]
 slug: sdd-07-plan-research-contract
 permalink: /ru/dev/blog/sdd-07-plan-research-contract/
 ---

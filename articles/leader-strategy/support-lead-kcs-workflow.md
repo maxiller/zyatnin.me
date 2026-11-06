@@ -4,7 +4,6 @@ view: leader
 title: "KCS в рабочем потоке: статья пишется в момент решения"
 excerpt: "База знаний растёт, когда статья пишется в момент решения, а не в свободное время: Solve Loop, Evolve Loop и почему квоты убивают КБ."
 date: 2027-02-22
-topic: t6
 slug: support-lead-kcs-workflow
 permalink: /ru/blog/support-lead-kcs-workflow/
 ---

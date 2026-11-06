@@ -4,7 +4,6 @@ view: leader
 title: "Просить решения, а не сочувствия: эскалация и запрос ресурсов"
 excerpt: "Эскалация и запрос ресурсов работают по схеме «факт → что сделано → риск → просьба» и «данные → следствие → запрос с альтернативами»."
 date: 2027-07-26
-topic: t6
 slug: support-lead-ask-for-decisions
 permalink: /ru/blog/support-lead-ask-for-decisions/
 ---

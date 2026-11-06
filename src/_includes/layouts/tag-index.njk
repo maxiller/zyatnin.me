@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+---
+
+{#- Страница метки: статьи текущего языка и вида с этой меткой. `entry` —
+    элемент коллекции tagPages_<lang>_leader (см. .eleventy.js). -#}
+{% set tagPages = collections["tagPages_" + i18n.lang + "_leader"] %}
+{% set posts = collections["posts_" + i18n.lang] | byView("leader") | byTag(entry.tag) %}
+{% set currentTag = entry.tag %}
+
+<div class="page-header">
+  <div class="container container--narrow">
+    <a href="/{{ i18n.lang }}/blog/" class="article__back">{{ i18n.blog.back }}</a>
+    <h1 class="page-header__title">{{ i18n.tags.page_title_leader | replace("{tag}", entry.label) }}</h1>
+    <p class="page-header__desc">{{ i18n.tags.page_desc_leader | replace("{tag}", entry.label) }}</p>
+  </div>
+</div>
+
+<div class="blog-page">
+  <div class="container">
+    {% include "partials/tag-bar.njk" %}
+    {% include "partials/post-list.njk" %}
+  </div>
+</div>

@@ -80,6 +80,12 @@ module.exports = function(eleventyConfig) {
     return arr.filter(p => p.data && p.data.view === view);
   });
 
+  // byTag filter: entries carrying the tag key in their `tags` front matter.
+  eleventyConfig.addFilter("byTag", (arr, tag) => {
+    if (!Array.isArray(arr)) return [];
+    return arr.filter(p => Array.isArray(p.data && p.data.tags) && p.data.tags.includes(tag));
+  });
+
   // altUrl: URL of this page in another language, or "" when no translation
 // exists. Used for <link rel="alternate" hreflang>, which must only point at
 // real pages (these are absolute URLs, so the build-time link check does not
@@ -162,7 +168,8 @@ eleventyConfig.addFilter("switchLangUrl", (pages, url, targetLang) => {
   });
 
   // Collections: posts per language, sorted by date desc
-  for (const lang of ["ru", "en", "he"]) {
+  const langs = ["ru", "en", "he"];
+  for (const lang of langs) {
     eleventyConfig.addCollection(`posts_${lang}`, function(collectionApi) {
       return collectionApi.getFilteredByGlob(`src/${lang}/posts/*.md`)
         .sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
@@ -170,11 +177,52 @@ eleventyConfig.addFilter("switchLangUrl", (pages, url, targetLang) => {
   }
 
   // Collections: projects per language, sorted by explicit front matter order
-  for (const lang of ["ru", "en", "he"]) {
+  for (const lang of langs) {
     eleventyConfig.addCollection(`projects_${lang}`, function(collectionApi) {
       return collectionApi.getFilteredByGlob(`src/${lang}/projects/*.md`)
         .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
     });
+  }
+
+  // Tag navigation. A post's `tags` are keys of the tag vocabulary; the labels
+  // come from `tags.names` of the current language. A tag label must always
+  // lead to a page that lists the posts carrying it, so one page exists per
+  // (language × view × tag actually used) triple, and this is the only place
+  // that decides their URLs.
+  const VIEW_DIRS = { leader: "", dev: "dev/" };
+  const tagUrl = (lang, view, tag) => `/${lang}/${VIEW_DIRS[view]}tags/${tag}/`;
+  eleventyConfig.addFilter("tagUrl", tagUrl);
+
+  for (const lang of langs) {
+    const tagNames = require(`./src/_data/i18n/${lang}.json`).tags.names;
+    for (const view of Object.keys(VIEW_DIRS)) {
+      eleventyConfig.addCollection(`tagPages_${lang}_${view}`, function(collectionApi) {
+        const posts = collectionApi.getFilteredByGlob(`src/${lang}/posts/*.md`)
+          .filter((p) => p.data && p.data.view === view);
+        const used = new Set();
+        for (const post of posts) {
+          const tags = post.data.tags;
+          // FR-118: 1–3 tags from the vocabulary. A missing or unknown tag key
+          // would silently produce a broken label or link, so fail the build.
+          if (!Array.isArray(tags) || tags.length < 1 || tags.length > 3) {
+            throw new Error(`${post.inputPath}: FR-118 — expected 1–3 tag keys`);
+          }
+          for (const tag of tags) {
+            if (!tagNames[tag]) {
+              throw new Error(`${post.inputPath}: tag "${tag}" is missing in tags.names (${lang})`);
+            }
+            used.add(tag);
+          }
+        }
+        return [...used].sort().map((tag) => ({
+          lang,
+          view,
+          tag,
+          url: tagUrl(lang, view, tag),
+          label: tagNames[tag]
+        }));
+      });
+    }
   }
 
   return {

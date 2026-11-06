@@ -4,7 +4,7 @@ layout: layouts/dev/post.njk
 title: "מנהרות SSH בקונטיינרים: גישה מאובטחת לשירותים מרוחקים"
 excerpt: "מנהרות SSH בקונטיינרים לגישה ל-Asterisk ARI, מסדי נתונים ו-API."
 date: 2026-01-15
-topic: t5
+tags: [containers, ssh, networking]
 slug: ssh-tunnels-containers
 permalink: /he/dev/blog/ssh-tunnels-containers/
 ---

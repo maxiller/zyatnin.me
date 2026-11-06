@@ -4,7 +4,7 @@ view: dev
 title: "פוסט-מורטם על גל המפרטים: מה למדתי בדיעבד"
 excerpt: "תשעה מפרטים בסשן אחד: מה תוכנן, מה יצא, ואילו פגמי תהליך התגלו רק כשהכל שכב בתיקייה אחת."
 date: 2026-11-26
-topic: t4
+tags: [spec-driven-dev, ai-agents]
 slug: sdd-06-spec-wave-postmortem
 permalink: /he/dev/blog/sdd-06-spec-wave-postmortem/
 ---

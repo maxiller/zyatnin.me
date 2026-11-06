@@ -4,7 +4,6 @@ view: leader
 title: "Эскалация в L3: пакет, OLA и владелец клиента"
 excerpt: "Эскалация — передача работы, а не ответственности: пакет эскалации, OLA с разработкой и правило владельца клиента до закрытия тикета."
 date: 2027-02-08
-topic: t6
 slug: support-lead-l3-escalation
 permalink: /ru/blog/support-lead-l3-escalation/
 ---

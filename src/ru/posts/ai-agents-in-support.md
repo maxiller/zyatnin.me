@@ -4,7 +4,7 @@ layout: layouts/post.njk
 title: "AI-агенты в поддержке: где помогают, а где мешают"
 excerpt: "Практика применения AI-агентов в техподдержке: триаж и черновики ответов, ограничения, метрики эффекта и границы автономности."
 date: 2026-10-28
-topic: t6
+tags: [ai-agents, support-management]
 slug: ai-agents-in-support
 permalink: /ru/blog/ai-agents-in-support/
 ---

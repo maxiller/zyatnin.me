@@ -4,7 +4,7 @@ view: dev
 title: "Пост-мортем по волне спек: что я узнал задним числом"
 excerpt: "Девять спек за сессию: что задумано, что вышло и какие дефекты процесса проявились только когда всё легло в одну папку."
 date: 2026-11-26
-topic: t4
+tags: [spec-driven-dev, ai-agents]
 slug: sdd-06-spec-wave-postmortem
 permalink: /ru/dev/blog/sdd-06-spec-wave-postmortem/
 ---

@@ -4,7 +4,7 @@ layout: layouts/dev/post.njk
 title: "מפיתוח לייצור: עקביות תמונות קונטיינר"
 excerpt: "שיטות CI/CD שמבטיחות שאותה תמונת OCI רצה בסביבות פיתוח וייצור."
 date: 2026-03-05
-topic: t1
+tags: [containers, ci-cd]
 slug: container-image-consistency
 permalink: /he/dev/blog/container-image-consistency/
 ---

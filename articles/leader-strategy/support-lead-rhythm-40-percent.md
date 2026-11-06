@@ -4,7 +4,6 @@ view: leader
 title: "Ритм руководителя: правило 40 %"
 excerpt: "Обязательные ритуалы лида — обзор очереди, разбор недели, 1:1, QA-выборка и статусы — не должны съедать больше 40 % времени."
 date: 2027-04-19
-topic: t6
 slug: support-lead-rhythm-40-percent
 permalink: /ru/blog/support-lead-rhythm-40-percent/
 ---
