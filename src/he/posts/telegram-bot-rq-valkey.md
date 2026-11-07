@@ -3,7 +3,7 @@ view: dev
 layout: layouts/dev/post.njk
 title: "שילוב בוטים של Telegram עם תורי משימות: aiogram + RQ + Valkey"
 excerpt: "ארכיטקטורה מלאה לבוט Telegram אסינכרוני עם עיבוד משימות ברקע."
-date: 2026-02-28
+date: 2025-11-14
 tags: [python, queues, telegram]
 slug: telegram-bot-rq-valkey
 permalink: /he/dev/blog/telegram-bot-rq-valkey/

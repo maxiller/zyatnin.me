@@ -3,7 +3,7 @@ layout: layouts/dev/post.njk
 view: dev
 title: "А где мои логи? Прод-расследование пустого события"
 excerpt: "Тесты зелёные, спека соблюдена, а в логах прода события нет. Разбор расследования, в котором оказались правы и код, и спека."
-date: 2026-12-10
+date: 2026-10-04
 tags: [spec-driven-dev, containers]
 slug: sdd-10-empty-event-investigation
 permalink: /ru/dev/blog/sdd-10-empty-event-investigation/

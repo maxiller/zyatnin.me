@@ -3,7 +3,7 @@ view: dev
 layout: layouts/dev/post.njk
 title: "אוטומציית Jira API: מהתראות לפעולה"
 excerpt: "שימוש ב-Python לאוטומציה של תהליכי עבודה ב-Jira עם דימונים בקונטיינרים."
-date: 2026-02-15
+date: 2025-10-11
 tags: [python, jira, automation]
 slug: jira-api-automation
 permalink: /he/dev/blog/jira-api-automation/

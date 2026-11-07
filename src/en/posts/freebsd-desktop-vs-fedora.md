@@ -3,7 +3,7 @@ view: dev
 layout: layouts/dev/post.njk
 title: "FreeBSD as a Desktop OS: Can It Replace Fedora KDE?"
 excerpt: "Real-world comparison of FreeBSD vs Fedora for daily development work."
-date: 2026-02-05
+date: 2025-09-07
 tags: [linux, desktop]
 slug: freebsd-desktop-vs-fedora
 permalink: /en/dev/blog/freebsd-desktop-vs-fedora/

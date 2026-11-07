@@ -3,7 +3,7 @@ view: dev
 layout: layouts/dev/post.njk
 title: "KVM Bridge Networking: חיבור מכונות וירטואליות לרשתות פיזיות"
 excerpt: "מדריך שלב אחר שלב להגדרת גשר KVM ב-Fedora."
-date: 2026-01-10
+date: 2025-07-01
 tags: [networking, virtualization, linux]
 slug: kvm-bridge-networking
 permalink: /he/dev/blog/kvm-bridge-networking/

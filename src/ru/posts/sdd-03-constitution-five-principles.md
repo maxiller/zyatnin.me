@@ -3,7 +3,7 @@ layout: layouts/dev/post.njk
 view: dev
 title: "/speckit.constitution: пять принципов, которые читает и человек, и агент"
 excerpt: "Что такое конституция проекта, чем она отличается от README и почему агент перестаёт «улучшать» API без спроса."
-date: 2026-11-16
+date: 2026-05-21
 tags: [spec-driven-dev, ai-agents]
 slug: sdd-03-constitution-five-principles
 permalink: /ru/dev/blog/sdd-03-constitution-five-principles/

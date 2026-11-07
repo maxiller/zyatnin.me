@@ -3,7 +3,7 @@ view: dev
 layout: layouts/dev/post.njk
 title: "Автоматизация Jira API: от оповещений к действиям"
 excerpt: "Использование Python для автоматизации рабочих процессов Jira с контейнеризированными демонами."
-date: 2026-02-15
+date: 2025-10-11
 tags: [python, jira, automation]
 slug: jira-api-automation
 permalink: /ru/dev/blog/jira-api-automation/

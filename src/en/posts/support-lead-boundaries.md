@@ -3,7 +3,7 @@ layout: layouts/post.njk
 view: leader
 title: "Ownership boundaries: what a support lead decides, delegates, and walks away from"
 excerpt: "Three lists remove the friction: which decisions the lead owns personally, what is delegated with the right to decide, and which roles are deliberately dropped."
-date: 2026-11-16
+date: 2026-06-07
 tags: [team-leadership, support-management]
 slug: support-lead-boundaries
 permalink: /en/blog/support-lead-boundaries/

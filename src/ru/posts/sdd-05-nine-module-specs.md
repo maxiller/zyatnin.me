@@ -3,7 +3,7 @@ layout: layouts/dev/post.njk
 view: dev
 title: "Спека как единица работы: раскладываем систему на 9 модульных спек"
 excerpt: "Одна сессия — девять спек и 241 новое требование. Зачем описывать весь проект модуль за модулем и что это даёт на практике."
-date: 2026-11-23
+date: 2026-07-11
 tags: [spec-driven-dev, ai-agents]
 slug: sdd-05-nine-module-specs
 permalink: /ru/dev/blog/sdd-05-nine-module-specs/

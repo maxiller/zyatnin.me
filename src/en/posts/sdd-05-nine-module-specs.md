@@ -3,7 +3,7 @@ layout: layouts/dev/post.njk
 view: dev
 title: "A spec as a unit of work: splitting the system into 9 module specs"
 excerpt: "One session — nine specs and 241 new requirements. Why describe the whole project module by module, and what that buys in practice."
-date: 2026-11-23
+date: 2026-07-11
 tags: [spec-driven-dev, ai-agents]
 slug: sdd-05-nine-module-specs
 permalink: /en/dev/blog/sdd-05-nine-module-specs/

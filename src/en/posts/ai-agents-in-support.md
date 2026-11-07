@@ -3,7 +3,7 @@ view: leader
 layout: layouts/post.njk
 title: "AI agents in support: where they help and where they hurt"
 excerpt: "Practical use of AI agents in technical support: triage and reply drafts, limitations, effect metrics, and the boundaries of autonomy."
-date: 2026-10-28
+date: 2026-01-21
 tags: [ai-agents, support-management]
 slug: ai-agents-in-support
 permalink: /en/blog/ai-agents-in-support/

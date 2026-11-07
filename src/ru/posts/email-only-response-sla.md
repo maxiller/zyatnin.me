@@ -3,7 +3,7 @@ view: leader
 layout: layouts/post.njk
 title: "SLA на реакцию, имея только почту"
 excerpt: "Как измерить время первой реакции инженера без тикет-системы: цепочки писем Exchange, расчёт FRT в PowerBI и эскалации через PagerDuty."
-date: 2026-10-28
+date: 2026-02-07
 tags: [sla, support-management]
 slug: email-only-response-sla
 permalink: /ru/blog/email-only-response-sla/

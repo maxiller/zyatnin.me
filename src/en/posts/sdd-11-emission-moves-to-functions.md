@@ -3,7 +3,7 @@ layout: layouts/dev/post.njk
 view: dev
 title: "The turn: «no exceptions» — emission moves into the functions"
 excerpt: "A product owner decision changes the architecture of a finished feature — and SDD makes that cheap. Helper signature, five calls, rewritten tests."
-date: 2026-12-14
+date: 2026-10-21
 tags: [spec-driven-dev, ai-agents]
 slug: sdd-11-emission-moves-to-functions
 permalink: /en/dev/blog/sdd-11-emission-moves-to-functions/

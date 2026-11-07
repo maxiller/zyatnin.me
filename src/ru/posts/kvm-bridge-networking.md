@@ -3,7 +3,7 @@ view: dev
 layout: layouts/dev/post.njk
 title: "KVM Bridge Networking: подключение виртуальных машин к физической сети"
 excerpt: "Пошаговая настройка сетевого моста KVM на Fedora."
-date: 2026-01-10
+date: 2025-07-01
 tags: [networking, virtualization, linux]
 slug: kvm-bridge-networking
 permalink: /ru/dev/blog/kvm-bridge-networking/

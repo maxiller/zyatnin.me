@@ -3,7 +3,7 @@ layout: layouts/dev/post.njk
 view: dev
 title: "מפרט כיחידת עבודה: מפרקים את המערכת ל-9 מפרטי מודול"
 excerpt: "סשן אחד — תשעה מפרטים ו-241 דרישות חדשות. למה לתאר את כל הפרויקט מודול אחרי מודול ומה זה נותן בפועל."
-date: 2026-11-23
+date: 2026-07-11
 tags: [spec-driven-dev, ai-agents]
 slug: sdd-05-nine-module-specs
 permalink: /he/dev/blog/sdd-05-nine-module-specs/

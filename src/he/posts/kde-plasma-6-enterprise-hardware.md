@@ -3,7 +3,7 @@ view: dev
 layout: layouts/dev/post.njk
 title: "KDE Plasma 6 על חומרה ארגונית"
 excerpt: "מדריך מעשי להפעלת KDE Plasma 6 על מחשבים ניידים עסקיים של HP ו-Dell."
-date: 2026-02-10
+date: 2025-09-24
 tags: [linux, desktop]
 slug: kde-plasma-6-enterprise-hardware
 permalink: /he/dev/blog/kde-plasma-6-enterprise-hardware/

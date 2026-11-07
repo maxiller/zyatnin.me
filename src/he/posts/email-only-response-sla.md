@@ -3,7 +3,7 @@ view: leader
 layout: layouts/post.njk
 title: "SLA לזמן תגובה כשיש רק אימייל"
 excerpt: "איך למדוד זמן תגובה ראשונה בלי מערכת טיקטים: שרשורי אימייל ב-Exchange, חישוב FRT ב-Power BI והסלמות דרך PagerDuty."
-date: 2026-10-28
+date: 2026-02-07
 tags: [sla, support-management]
 slug: email-only-response-sla
 permalink: /he/blog/email-only-response-sla/

@@ -3,7 +3,7 @@ layout: layouts/dev/post.njk
 view: dev
 title: "המפנה: «בלי חריגים» — הפליטה עוברת לפונקציות"
 excerpt: "החלטה של בעל המוצר משנה את הארכיטקטורה של פיצ'ר גמור — ו-SDD עושה את זה בזול. חתימת ה-helper, חמש קריאות, טסטים שנכתבו מחדש."
-date: 2026-12-14
+date: 2026-10-21
 tags: [spec-driven-dev, ai-agents]
 slug: sdd-11-emission-moves-to-functions
 permalink: /he/dev/blog/sdd-11-emission-moves-to-functions/

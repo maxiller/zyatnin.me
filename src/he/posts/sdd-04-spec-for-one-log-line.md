@@ -3,7 +3,7 @@ layout: layouts/dev/post.njk
 view: dev
 title: "/speckit.specify: מפרט ל«עוד שורה אחת בלוג»"
 excerpt: "המשימה נשמעה כמו שורה אחת. המפרט גדל ל-18 דרישות ולשלוש user stories — וזהו מפת מלכודות, לא ביורוקרטיה."
-date: 2026-11-19
+date: 2026-06-24
 tags: [spec-driven-dev, ai-agents]
 slug: sdd-04-spec-for-one-log-line
 permalink: /he/dev/blog/sdd-04-spec-for-one-log-line/

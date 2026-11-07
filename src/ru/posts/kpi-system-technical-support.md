@@ -3,7 +3,7 @@ view: leader
 layout: layouts/post.njk
 title: "Проектирование KPI-систем для команд технической поддержки"
 excerpt: "ITIL-подход к измерению эффективности L3-инженеров поддержки."
-date: 2026-01-20
+date: 2025-08-04
 tags: [kpi, support-management]
 slug: kpi-system-technical-support
 permalink: /ru/blog/kpi-system-technical-support/

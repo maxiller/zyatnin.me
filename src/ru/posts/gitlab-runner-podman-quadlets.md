@@ -3,7 +3,7 @@ view: dev
 layout: layouts/dev/post.njk
 title: "GitLab Runner в контейнерах: Podman Quadlets и Systemd"
 excerpt: "Настройка GitLab CI с контейнеризированными раннерами через Podman quadlets."
-date: 2026-01-28
+date: 2025-08-21
 tags: [podman, gitlab, systemd]
 slug: gitlab-runner-podman-quadlets
 permalink: /ru/dev/blog/gitlab-runner-podman-quadlets/

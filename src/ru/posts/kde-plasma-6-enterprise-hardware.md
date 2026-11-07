@@ -3,7 +3,7 @@ view: dev
 layout: layouts/dev/post.njk
 title: "KDE Plasma 6 на корпоративном железе"
 excerpt: "Практический гайд по запуску KDE Plasma 6 на бизнес-ноутбуках HP и Dell."
-date: 2026-02-10
+date: 2025-09-24
 tags: [linux, desktop]
 slug: kde-plasma-6-enterprise-hardware
 permalink: /ru/dev/blog/kde-plasma-6-enterprise-hardware/

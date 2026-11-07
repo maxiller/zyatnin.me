@@ -3,7 +3,7 @@ layout: layouts/dev/post.njk
 view: dev
 title: "Поворот: «исключений не будет» — эмиссия переезжает в функции"
 excerpt: "Решение владельца продукта меняет архитектуру уже готовой фичи — и SDD позволяет это дёшево. Сигнатура хелпера, пять вызовов и переписанные тесты."
-date: 2026-12-14
+date: 2026-10-21
 tags: [spec-driven-dev, ai-agents]
 slug: sdd-11-emission-moves-to-functions
 permalink: /ru/dev/blog/sdd-11-emission-moves-to-functions/

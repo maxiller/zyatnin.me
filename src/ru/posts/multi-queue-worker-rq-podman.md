@@ -3,7 +3,7 @@ view: dev
 layout: layouts/dev/post.njk
 title: "Мульти-очередной воркер с RQ и Podman"
 excerpt: "Архитектура единого RQ-воркера, слушающего несколько очередей и диспетчеризующего задачи в контейнеры."
-date: 2026-03-10
+date: 2025-12-18
 tags: [python, queues, podman]
 slug: multi-queue-worker-rq-podman
 permalink: /ru/dev/blog/multi-queue-worker-rq-podman/

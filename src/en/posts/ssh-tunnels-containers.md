@@ -3,7 +3,7 @@ view: dev
 layout: layouts/dev/post.njk
 title: "SSH Tunnels in Containers: Secure Access to Remote Services"
 excerpt: "Containerized SSH tunnels for accessing Asterisk ARI, databases, and APIs."
-date: 2026-01-15
+date: 2025-07-18
 tags: [containers, ssh, networking]
 slug: ssh-tunnels-containers
 permalink: /en/dev/blog/ssh-tunnels-containers/

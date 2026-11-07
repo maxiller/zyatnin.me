@@ -3,7 +3,7 @@ view: dev
 layout: layouts/dev/post.njk
 title: "Integrating Telegram Bots with Task Queues: aiogram + RQ + Valkey"
 excerpt: "Complete architecture for async Telegram bot with background job processing."
-date: 2026-02-28
+date: 2025-11-14
 tags: [python, queues, telegram]
 slug: telegram-bot-rq-valkey
 permalink: /en/dev/blog/telegram-bot-rq-valkey/

@@ -3,7 +3,7 @@ layout: layouts/dev/post.njk
 view: dev
 title: "משתילים את speckit בפרויקט קיים"
 excerpt: "Spec-driven development הוא לא רק לפרויקטים חדשים. איך מכניסים speckit למאגר חי שיש בו history, חוזים ופרודקשן שעובד."
-date: 2026-11-12
+date: 2026-05-04
 tags: [spec-driven-dev, ai-agents]
 slug: sdd-02-speckit-integration
 permalink: /he/dev/blog/sdd-02-speckit-integration/

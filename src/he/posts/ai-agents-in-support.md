@@ -3,7 +3,7 @@ view: leader
 layout: layouts/post.njk
 title: "סוכני AI בתמיכה: איפה הם עוזרים ואיפה הם מפריעים"
 excerpt: "שימוש מעשי בסוכני AI בתמיכה טכנית: טרייאז' וטיוטות תשובות, מגבלות, מדדי אפקט וגבולות האוטונומיה."
-date: 2026-10-28
+date: 2026-01-21
 tags: [ai-agents, support-management]
 slug: ai-agents-in-support
 permalink: /he/blog/ai-agents-in-support/

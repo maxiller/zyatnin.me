@@ -3,7 +3,7 @@ view: leader
 layout: layouts/post.njk
 title: "Hiring for a project: getting skillset and motivation right"
 excerpt: "How to hire for a specific project: a requirement matrix instead of a technology wishlist, and the questions that reveal a candidate's motivation."
-date: 2026-10-28
+date: 2026-03-14
 tags: [hiring, team-leadership]
 slug: project-based-hiring
 permalink: /en/blog/project-based-hiring/

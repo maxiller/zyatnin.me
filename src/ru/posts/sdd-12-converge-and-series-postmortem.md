@@ -3,7 +3,7 @@ layout: layouts/dev/post.njk
 view: dev
 title: "/speckit.converge, пост-мортем серии и следующий горизонт"
 excerpt: "Финал серии: сверка кода со спекой, честная ретроспектива на три части и шесть action items на следующий горизонт."
-date: 2026-12-17
+date: 2026-11-07
 tags: [spec-driven-dev, ai-agents]
 slug: sdd-12-converge-and-series-postmortem
 permalink: /ru/dev/blog/sdd-12-converge-and-series-postmortem/

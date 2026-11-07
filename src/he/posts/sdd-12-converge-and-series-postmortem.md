@@ -3,7 +3,7 @@ layout: layouts/dev/post.njk
 view: dev
 title: "/speckit.converge, פוסט-מורטם של הסדרה והאופק הבא"
 excerpt: "סיום הסדרה: הצלבת קוד מול מפרט, רטרוספקטיבה כנה בשלושה חלקים ושישה סעיפי פעולה לאופק הבא."
-date: 2026-12-17
+date: 2026-11-07
 tags: [spec-driven-dev, ai-agents]
 slug: sdd-12-converge-and-series-postmortem
 permalink: /he/dev/blog/sdd-12-converge-and-series-postmortem/

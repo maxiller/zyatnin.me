@@ -3,7 +3,7 @@ layout: layouts/dev/post.njk
 view: dev
 title: "/speckit.converge, the series post-mortem and the next horizon"
 excerpt: "The series finale: code-to-spec convergence, an honest three-part retrospective and six action items for the next horizon."
-date: 2026-12-17
+date: 2026-11-07
 tags: [spec-driven-dev, ai-agents]
 slug: sdd-12-converge-and-series-postmortem
 permalink: /en/dev/blog/sdd-12-converge-and-series-postmortem/

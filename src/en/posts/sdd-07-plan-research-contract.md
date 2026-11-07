@@ -3,7 +3,7 @@ layout: layouts/dev/post.njk
 view: dev
 title: "/speckit.plan: research, data-model and the contract before code"
 excerpt: "A feature plan as four documents: research, data-model, event contract and quickstart. And the main fork — where to emit the event."
-date: 2026-11-30
+date: 2026-08-14
 tags: [spec-driven-dev, ai-agents]
 slug: sdd-07-plan-research-contract
 permalink: /en/dev/blog/sdd-07-plan-research-contract/

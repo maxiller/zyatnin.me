@@ -3,7 +3,7 @@ layout: layouts/dev/post.njk
 view: dev
 title: "/speckit.tasks + /speckit.implement: TDD לפי שלבים"
 excerpt: "עשרים משימות בארבעה שלבים: קודם חוזה ותיעוד, אחר כך טסטים, ורק אז קוד. והמספרים מהרצה אחרי המימוש."
-date: 2026-12-03
+date: 2026-08-31
 tags: [spec-driven-dev, ai-agents]
 slug: sdd-08-tasks-and-tdd
 permalink: /he/dev/blog/sdd-08-tasks-and-tdd/

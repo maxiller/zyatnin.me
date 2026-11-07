@@ -3,7 +3,7 @@ view: dev
 layout: layouts/dev/post.njk
 title: "Why I prefer Podman over Docker"
 excerpt: "Rootless containers without a daemon and pods with an isolated environment: why Podman is my default choice over Docker."
-date: 2026-10-28
+date: 2026-02-24
 tags: [podman, containers]
 slug: podman-vs-docker
 permalink: /en/dev/blog/podman-vs-docker/

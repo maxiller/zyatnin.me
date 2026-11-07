@@ -3,7 +3,7 @@ view: dev
 layout: layouts/dev/post.njk
 title: "FreeBSD כמערכת הפעלה שולחנית: האם היא יכולה להחליף את Fedora KDE?"
 excerpt: "השוואה מעשית בין FreeBSD ל-Fedora לעבודת פיתוח יומיומית."
-date: 2026-02-05
+date: 2025-09-07
 tags: [linux, desktop]
 slug: freebsd-desktop-vs-fedora
 permalink: /he/dev/blog/freebsd-desktop-vs-fedora/

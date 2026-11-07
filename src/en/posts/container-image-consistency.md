@@ -3,7 +3,7 @@ view: dev
 layout: layouts/dev/post.njk
 title: "From Development to Production: Container Image Consistency"
 excerpt: "CI/CD practices ensuring the same OCI image runs in dev and prod environments."
-date: 2026-03-05
+date: 2025-12-01
 tags: [containers, ci-cd]
 slug: container-image-consistency
 permalink: /en/dev/blog/container-image-consistency/

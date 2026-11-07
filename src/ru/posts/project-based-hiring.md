@@ -3,7 +3,7 @@ view: leader
 layout: layouts/post.njk
 title: "Найм под проект: правильное определение скиллсета и мотивации"
 excerpt: "Как нанимать под конкретный проект: матрица требований вместо списка технологий и вопросы, которые раскрывают мотивацию кандидата."
-date: 2026-10-28
+date: 2026-03-14
 tags: [hiring, team-leadership]
 slug: project-based-hiring
 permalink: /ru/blog/project-based-hiring/

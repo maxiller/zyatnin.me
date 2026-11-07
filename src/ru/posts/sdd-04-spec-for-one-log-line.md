@@ -3,7 +3,7 @@ layout: layouts/dev/post.njk
 view: dev
 title: "/speckit.specify: спека на «всего лишь добавить строчку в лог»"
 excerpt: "Задача звучала как одна строчка. Спека выросла до 18 требований и трёх user story — и это не бюрократия, а карта граблей."
-date: 2026-11-19
+date: 2026-06-24
 tags: [spec-driven-dev, ai-agents]
 slug: sdd-04-spec-for-one-log-line
 permalink: /ru/dev/blog/sdd-04-spec-for-one-log-line/

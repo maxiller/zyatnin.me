@@ -3,7 +3,7 @@ layout: layouts/post.njk
 view: leader
 title: "חמש התוצאות של ראש התמיכה"
 excerpt: "את עבודת ראש התמיכה מודדים לא בכרטיסים שנסגרו אלא בחמש תוצאות שניתנות לאימות: צפיות השירות, איכות הפתרונות, חוסן הצוות, הידע והמשוב למוצר."
-date: 2026-11-02
+date: 2026-03-31
 tags: [team-leadership, support-management]
 slug: support-lead-five-results
 permalink: /he/blog/support-lead-five-results/

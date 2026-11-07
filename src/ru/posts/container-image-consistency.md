@@ -3,7 +3,7 @@ view: dev
 layout: layouts/dev/post.njk
 title: "От разработки до продакшена: консистентность образов контейнеров"
 excerpt: "CI/CD-практики для обеспечения идентичности OCI-образов в dev и prod средах."
-date: 2026-03-05
+date: 2025-12-01
 tags: [containers, ci-cd]
 slug: container-image-consistency
 permalink: /ru/dev/blog/container-image-consistency/

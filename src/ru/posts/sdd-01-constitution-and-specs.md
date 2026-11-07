@@ -3,7 +3,7 @@ layout: layouts/dev/post.njk
 view: dev
 title: "Зачем персональному проекту конституция и спеки"
 excerpt: "Агент пишет код быстро, а проект разваливается. Как 11 спек и 305 требований вернули pet-проекту управляемость и предсказуемость."
-date: 2026-11-09
+date: 2026-04-17
 tags: [spec-driven-dev, ai-agents]
 slug: sdd-01-constitution-and-specs
 permalink: /ru/dev/blog/sdd-01-constitution-and-specs/

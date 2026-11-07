@@ -3,7 +3,7 @@ view: leader
 layout: layouts/post.njk
 title: "גיוס לפרויקט: הגדרה נכונה של סקילסט ומוטיבציה"
 excerpt: "איך לגייס לפרויקט ספציפי: מטריצת דרישות במקום רשימת טכנולוגיות, והשאלות שחושפות את המוטיבציה של המועמד."
-date: 2026-10-28
+date: 2026-03-14
 tags: [hiring, team-leadership]
 slug: project-based-hiring
 permalink: /he/blog/project-based-hiring/

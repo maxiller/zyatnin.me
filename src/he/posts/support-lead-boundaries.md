@@ -3,7 +3,7 @@ layout: layouts/post.njk
 view: leader
 title: "גבולות אחריות: מה מנהל התמיכה מחליט בעצמו, מה הוא מאציל וממה הוא פורש"
 excerpt: "שלוש רשימות מפחיתות את החיכוך: אילו החלטות נשארות אצל מנהל התמיכה, מה מועבר עם הזכות להחליט ומאילו תפקידים פורשים במכוון."
-date: 2026-11-16
+date: 2026-06-07
 tags: [team-leadership, support-management]
 slug: support-lead-boundaries
 permalink: /he/blog/support-lead-boundaries/

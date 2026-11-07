@@ -3,7 +3,7 @@ layout: layouts/dev/post.njk
 view: dev
 title: "Where are my logs? A production investigation of an empty event"
 excerpt: "Green tests, the spec obeyed, and no event in production logs. An investigation in which both the code and the spec turned out to be right."
-date: 2026-12-10
+date: 2026-10-04
 tags: [spec-driven-dev, containers]
 slug: sdd-10-empty-event-investigation
 permalink: /en/dev/blog/sdd-10-empty-event-investigation/

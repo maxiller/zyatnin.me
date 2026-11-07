@@ -3,7 +3,7 @@ layout: layouts/dev/post.njk
 view: dev
 title: "/speckit.tasks + /speckit.implement: TDD по фазам"
 excerpt: "Двадцать задач в четырёх фазах: сначала контракт и документация, потом тесты, только потом код. И цифры прогона после реализации."
-date: 2026-12-03
+date: 2026-08-31
 tags: [spec-driven-dev, ai-agents]
 slug: sdd-08-tasks-and-tdd
 permalink: /ru/dev/blog/sdd-08-tasks-and-tdd/

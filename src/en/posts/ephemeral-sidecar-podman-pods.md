@@ -3,7 +3,7 @@ view: dev
 layout: layouts/dev/post.njk
 title: "Ephemeral Sidecar Pattern: Managing SSH Tunnels in Podman Pods"
 excerpt: "How to dynamically start and stop containers within a Podman pod using Python context managers."
-date: 2026-03-15
+date: 2026-01-04
 tags: [podman, containers, ssh]
 slug: ephemeral-sidecar-podman-pods
 permalink: /en/dev/blog/ephemeral-sidecar-podman-pods/

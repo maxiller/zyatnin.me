@@ -3,7 +3,7 @@ layout: layouts/dev/post.njk
 view: dev
 title: "Plugging speckit into an existing project"
 excerpt: "Spec-driven development is not only for greenfield projects. How to put speckit into a live repository with history, contracts and a running production."
-date: 2026-11-12
+date: 2026-05-04
 tags: [spec-driven-dev, ai-agents]
 slug: sdd-02-speckit-integration
 permalink: /en/dev/blog/sdd-02-speckit-integration/
