@@ -7,6 +7,6 @@ pagination:
   addAllPagesToCollections: true
 permalink: "{{ entry.url }}"
 eleventyComputed:
-  title: "{{ i18n.tags.page_title_dev | replace('{tag}', entry.label) }}"
-  description: "{{ i18n.tags.page_desc_dev | replace('{tag}', entry.label) }}"
+  title: "{{ i18n.dev.tags.page_title | replace('{tag}', entry.label) }}"
+  description: "{{ i18n.dev.tags.page_desc | replace('{tag}', entry.label) }}"
 ---

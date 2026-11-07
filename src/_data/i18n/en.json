@@ -10,49 +10,25 @@
   "views": {
     "leader": "Leader",
     "leader_full": "Support Leader",
-    "dev": "Developer",
+    "dev": "Engineer",
     "aria_switch": "Switch site view",
     "aria_to_leader": "Switch to the Support Leader view",
-    "aria_to_dev": "Switch to the Developer view"
+    "aria_to_dev": "Switch to the Engineer view"
   },
-  "hero": {
-    "greeting": "Hi, I'm",
-    "title": "I build support organizations",
-    "desc": "I build support and customer success teams for businesses of any size: helpdesk processes, SLA metrics, Python automation, and container infrastructure. Experience ranges from small teams to carriers and major banks.",
-    "cta_projects": "Projects",
-    "cta_blog": "Read Blog",
-    "terminal_1": "podman pod create --name support-stack",
-    "terminal_2": "rq worker --with-scheduler tickets asterisk",
-    "terminal_3": "systemctl --user enable container-runner.service",
-    "terminal_4": "# all systems go ✓",
-    "facts": [
-      {
-        "label": "Role",
-        "value": "Head of L3 Support"
-      },
-      {
-        "label": "Industries",
-        "value": "Telecom · Oil & Gas · Banking"
-      },
-      {
-        "label": "Scale",
-        "value": "VDI for 150,000 users"
-      }
-    ],
-    "facts_caption": "Profile summary"
+  "a11y": {
+    "navigation": "Navigation",
+    "menu_open": "Open menu",
+    "menu_close": "Close menu"
   },
-  "about": {
-    "label": "About",
-    "title": "Customer Success Teams",
-    "bio": "Experienced builder of customer success teams. I turn support into a managed service: helpdesk processes, SLA metrics, Python automation, CI/CD, and Podman container infrastructure. Head of L3 technical support at Aisa IT Service. Industry experience: mobile carriers, the oil sector, and major banks — from managed services migration to VDI for 150,000 users.",
-    "skills_label": "Technologies",
-    "interests_label": "Interests",
-    "interests": [
-      "Linux desktops & window managers",
-      "Container orchestration",
-      "VoIP & telephony",
-      "Network infrastructure"
-    ]
+  "footer": {
+    "rights": "All rights reserved"
+  },
+  "skip_link": "Skip to content",
+  "blog": {
+    "empty": "No entries for this view yet.",
+    "min_read": "min read",
+    "highlights_label": "Blog",
+    "highlights_title": "Latest Articles"
   },
   "projects": {
     "label": "Projects",
@@ -64,32 +40,8 @@
       "in_progress": "In progress"
     }
   },
-  "blog": {
-    "label": "Blog",
-    "title": "Articles",
-    "subtitle": "Articles on containerization, automation, Linux, and DevOps",
-    "back": "← Back to blog",
-    "read_more": "Read more →",
-    "min_read": "min read",
-    "highlights_title": "Latest Articles",
-    "highlights_label": "Blog",
-    "empty": "No entries for this view yet."
-  },
-  "footer": {
-    "rights": "All rights reserved"
-  },
-  "skip_link": "Skip to content",
-  "a11y": {
-    "navigation": "Navigation",
-    "menu_open": "Open menu",
-    "menu_close": "Close menu"
-  },
   "tags": {
     "label": "Tags",
-    "page_title_leader": "Articles tagged “{tag}”",
-    "page_desc_leader": "Blog articles from the Support Leader view tagged “{tag}”",
-    "page_title_dev": "Notes tagged “{tag}”",
-    "page_desc_dev": "Developer notes tagged “{tag}”: deep dives, practice, and tools",
     "names": {
       "ai-agents": "AI agents",
       "automation": "Automation",
@@ -115,13 +67,64 @@
       "virtualization": "Virtualization"
     }
   },
+  "leader": {
+    "hero": {
+      "greeting": "Hi, I'm",
+      "title": "I build support organizations",
+      "desc": "I build support and customer success teams for businesses of any size: helpdesk processes, SLA metrics, automation, and infrastructure. Experience ranges from small startup teams to carriers and major banks.",
+      "cta_projects": "Projects",
+      "cta_blog": "Read Blog",
+      "facts": [
+        {
+          "label": "Role",
+          "value": "Head of L3 Support"
+        },
+        {
+          "label": "Industries",
+          "value": "Telecom · B2G"
+        },
+        {
+          "label": "Scale",
+          "value": "Millions of satisfied users"
+        }
+      ],
+      "facts_caption": "Profile summary"
+    },
+    "about": {
+      "label": "About",
+      "title": "Customer Success Teams",
+      "bio": "Experienced builder of customer success teams. I turn support into a managed service: helpdesk processes, SLA metrics, Python automation, CI/CD, and Podman container infrastructure. Industry experience: mobile carriers, logistics companies, the oil sector, and major banks — from packaged monolithic products to migration to cloud managed services.",
+      "skills_label": "Technologies",
+      "interests_label": "Interests",
+      "interests": [
+        "Linux desktops & window managers",
+        "Container orchestration",
+        "VoIP & telephony",
+        "Network infrastructure"
+      ]
+    },
+    "blog": {
+      "title": "Articles",
+      "subtitle": "Articles on containerization, automation, Linux, and DevOps",
+      "back": "← Back to blog",
+      "read_more": "Read more →"
+    },
+    "tags": {
+      "page_title": "Articles tagged “{tag}”",
+      "page_desc": "Blog articles from the Support Leader view tagged “{tag}”"
+    }
+  },
   "dev": {
     "hero": {
       "greeting": "$ whoami",
       "title": "Python · Containers · Infrastructure",
       "desc": "I build tooling for operations and support: Python automation, RQ/Valkey task queues, Telegram bots, Podman container infrastructure, and GitLab CI/CD.",
       "cta_projects": "Projects",
-      "cta_blog": "Browse notes"
+      "cta_blog": "Browse notes",
+      "terminal_1": "podman pod create --name support-stack",
+      "terminal_2": "rq worker --with-scheduler tickets asterisk",
+      "terminal_3": "systemctl --user enable container-runner.service",
+      "terminal_4": "# all systems go ✓"
     },
     "about": {
       "label": "Engineering",
@@ -137,7 +140,12 @@
       ]
     },
     "blog": {
+      "title": "Notes",
       "subtitle": "Notes on containers, automation, and Linux"
+    },
+    "tags": {
+      "page_title": "Notes tagged “{tag}”",
+      "page_desc": "Developer notes tagged “{tag}”: deep dives, practice, and tools"
     }
   }
 }

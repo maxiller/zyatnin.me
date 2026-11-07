@@ -28,7 +28,7 @@ layout: layouts/base.njk
 <section class="hero">
   <div class="container hero__grid">
     <div class="hero__content">
-      <p class="hero__greeting">{{ i18n.hero.greeting }}</p>
+      <p class="hero__greeting">{{ i18n.leader.hero.greeting }}</p>
       <h1 class="hero__name">{{ i18n.name }}</h1>
       <p class="hero__role">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -36,19 +36,19 @@ layout: layouts/base.njk
           <path d="M9 7V5a3 3 0 0 1 6 0v2"/>
           <path d="M9 12h6"/>
         </svg>
-        {{ i18n.hero.title }}
+        {{ i18n.leader.hero.title }}
       </p>
-      <p class="hero__desc">{{ i18n.hero.desc }}</p>
+      <p class="hero__desc">{{ i18n.leader.hero.desc }}</p>
       <div class="hero__cta">
-        <a href="#projects" class="btn btn--primary">{{ i18n.hero.cta_projects }}</a>
-        <a href="/{{ i18n.lang }}/blog/" class="btn btn--ghost">{{ i18n.hero.cta_blog }}</a>
+        <a href="#projects" class="btn btn--primary">{{ i18n.leader.hero.cta_projects }}</a>
+        <a href="/{{ i18n.lang }}/blog/" class="btn btn--ghost">{{ i18n.leader.hero.cta_blog }}</a>
       </div>
     </div>
 
-    <aside class="hero__facts fade-in" aria-label="{{ i18n.about.label }}">
-      <p class="hero-facts__caption">{{ i18n.hero.facts_caption }}</p>
+    <aside class="hero__facts fade-in" aria-label="{{ i18n.leader.about.label }}">
+      <p class="hero-facts__caption">{{ i18n.leader.hero.facts_caption }}</p>
       <dl class="hero-facts">
-        {% for f in i18n.hero.facts %}
+        {% for f in i18n.leader.hero.facts %}
         <div class="hero-facts__row">
           <dt class="hero-facts__label">{{ f.label }}</dt>
           <dd class="hero-facts__value">{{ f.value }}</dd>
@@ -65,15 +65,15 @@ layout: layouts/base.njk
     <header class="section-head fade-in">
       <span class="section-head__index mono">[01]</span>
       <div class="section-head__text">
-        <p class="section-head__label">{{ i18n.about.label }}</p>
-        <h2 class="section-head__title">{{ i18n.about.title }}</h2>
+        <p class="section-head__label">{{ i18n.leader.about.label }}</p>
+        <h2 class="section-head__title">{{ i18n.leader.about.title }}</h2>
       </div>
       <div class="section-head__rule" aria-hidden="true"></div>
     </header>
     <div class="about__grid">
       <div class="about__bio fade-in">
-        <p>{{ i18n.about.bio }}</p>
-        <h3 class="about__subtitle">{{ i18n.about.skills_label }}</h3>
+        <p>{{ i18n.leader.about.bio }}</p>
+        <h3 class="about__subtitle">{{ i18n.leader.about.skills_label }}</h3>
         <ul class="tags" role="list">
           <li class="tag">Python</li>
           <li class="tag">Podman</li>
@@ -88,9 +88,9 @@ layout: layouts/base.njk
         </ul>
       </div>
       <aside class="about__side fade-in">
-        <h3 class="about__subtitle">{{ i18n.about.interests_label }}</h3>
+        <h3 class="about__subtitle">{{ i18n.leader.about.interests_label }}</h3>
         <ul class="interests" role="list">
-          {% for item in i18n.about.interests %}
+          {% for item in i18n.leader.about.interests %}
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>
             {{ item }}
@@ -164,13 +164,13 @@ layout: layouts/base.njk
         <p class="blog-card__excerpt">{{ post.data.excerpt }}</p>
         <div class="blog-card__meta">
           <span>{{ post.data.date | dateWeek }}</span>
-          <span class="blog-card__read">{{ i18n.blog.read_more }}</span>
+          <span class="blog-card__read">{{ i18n.leader.blog.read_more }}</span>
         </div>
       </a>
       {% endfor %}
     </div>
     <div class="section__cta">
-      <a href="/{{ i18n.lang }}/blog/" class="btn btn--ghost">{{ i18n.blog.cta_all if i18n.blog.cta_all else i18n.nav.blog }} →</a>
+      <a href="/{{ i18n.lang }}/blog/" class="btn btn--ghost">{{ i18n.nav.blog }} →</a>
     </div>
   </div>
 </section>

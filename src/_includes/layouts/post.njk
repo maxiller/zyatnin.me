@@ -4,7 +4,7 @@ layout: layouts/base.njk
 
 <article class="article">
   <div class="container container--narrow">
-    <a href="/{{ i18n.lang }}/blog/" class="article__back">{{ i18n.blog.back }}</a>
+    <a href="/{{ i18n.lang }}/blog/" class="article__back">{{ i18n.leader.blog.back }}</a>
     <div class="article__header">
       <h1 class="article__title">{{ title }}</h1>
       <span class="article__meta">{{ date | dateDisplay(i18n.lang) }} · {{ content | readingTime }} {{ i18n.blog.min_read }}</span>

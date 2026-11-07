@@ -6,10 +6,10 @@ layout: layouts/dev/base.njk
   <div class="terminal">
     <div class="terminal__bar" aria-hidden="true"><span></span><span></span><span></span></div>
     <div class="terminal__body">
-      <p class="terminal__line"><span class="terminal__prompt">$</span>{{ i18n.hero.terminal_1 }}</p>
-      <p class="terminal__line"><span class="terminal__prompt">$</span>{{ i18n.hero.terminal_2 }}</p>
-      <p class="terminal__line"><span class="terminal__prompt">$</span>{{ i18n.hero.terminal_3 }}</p>
-      <p class="terminal__line terminal__line--ok"><span class="terminal__prompt">&gt;</span>{{ i18n.hero.terminal_4 }}<span class="terminal__cursor" aria-hidden="true"></span></p>
+      <p class="terminal__line"><span class="terminal__prompt">$</span>{{ i18n.dev.hero.terminal_1 }}</p>
+      <p class="terminal__line"><span class="terminal__prompt">$</span>{{ i18n.dev.hero.terminal_2 }}</p>
+      <p class="terminal__line"><span class="terminal__prompt">$</span>{{ i18n.dev.hero.terminal_3 }}</p>
+      <p class="terminal__line terminal__line--ok"><span class="terminal__prompt">&gt;</span>{{ i18n.dev.hero.terminal_4 }}<span class="terminal__cursor" aria-hidden="true"></span></p>
     </div>
   </div>
 
@@ -112,7 +112,7 @@ layout: layouts/dev/base.njk
     {% endfor %}
   </div>
   <div class="dev-section__cta">
-    <a href="/{{ i18n.lang }}/dev/blog/" class="btn btn--ghost">{{ i18n.blog.cta_all if i18n.blog.cta_all else i18n.nav.blog }} →</a>
+    <a href="/{{ i18n.lang }}/dev/blog/" class="btn btn--ghost">{{ i18n.nav.blog }} →</a>
   </div>
   {% else %}
   <p class="dev-empty">{{ i18n.blog.empty }}</p>

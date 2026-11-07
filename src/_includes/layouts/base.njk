@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if title %}{{ title }} — {{ i18n.name }}{% else %}{{ i18n.name }} — {{ i18n.hero.title }}{% endif %}</title>
-  <meta name="description" content="{% if description %}{{ description }}{% elif excerpt %}{{ excerpt }}{% else %}{{ i18n.hero.desc }}{% endif %}">
-  <meta property="og:title" content="{% if title %}{{ title }} — {{ i18n.name }}{% else %}{{ i18n.name }} — {{ i18n.hero.title }}{% endif %}">
-  <meta property="og:description" content="{% if description %}{{ description }}{% elif excerpt %}{{ excerpt }}{% else %}{{ i18n.hero.desc }}{% endif %}">
+  <title>{% if title %}{{ title }} — {{ i18n.name }}{% else %}{{ i18n.name }} — {{ i18n.leader.hero.title }}{% endif %}</title>
+  <meta name="description" content="{% if description %}{{ description }}{% elif excerpt %}{{ excerpt }}{% else %}{{ i18n.leader.hero.desc }}{% endif %}">
+  <meta property="og:title" content="{% if title %}{{ title }} — {{ i18n.name }}{% else %}{{ i18n.name }} — {{ i18n.leader.hero.title }}{% endif %}">
+  <meta property="og:description" content="{% if description %}{{ description }}{% elif excerpt %}{{ excerpt }}{% else %}{{ i18n.leader.hero.desc }}{% endif %}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://{{ site.domain }}{{ page.url }}">
   <meta property="og:locale" content="{% if i18n.lang == 'ru' %}ru_RU{% elif i18n.lang == 'he' %}he_IL{% else %}en_US{% endif %}">

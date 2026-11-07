@@ -10,49 +10,25 @@
   "views": {
     "leader": "מנהל",
     "leader_full": "מנהל תמיכה",
-    "dev": "מפתח",
+    "dev": "מהנדס",
     "aria_switch": "החלפת תצוגת האתר",
     "aria_to_leader": "מעבר לתצוגת «מנהל תמיכה»",
-    "aria_to_dev": "מעבר לתצוגת «מפתח»"
+    "aria_to_dev": "מעבר לתצוגת «מהנדס»"
   },
-  "hero": {
-    "greeting": "שלום, אני",
-    "title": "בונה מחלקות תמיכה",
-    "desc": "בונה צוותי תמיכה והצלחת לקוחות לעסקים בכל גודל: תהליכי helpdesk, מדדי SLA, אוטומציה ב-Python ותשתית קונטיינרים. ניסיון מצוותים קטנים ועד ספקי סלולר ובנקים גדולים.",
-    "cta_projects": "פרויקטים",
-    "cta_blog": "קראו את הבלוג",
-    "terminal_1": "podman pod create --name support-stack",
-    "terminal_2": "rq worker --with-scheduler tickets asterisk",
-    "terminal_3": "systemctl --user enable container-runner.service",
-    "terminal_4": "# הכל עובד ✓",
-    "facts": [
-      {
-        "label": "תפקיד",
-        "value": "ראש מחלקת תמיכה L3"
-      },
-      {
-        "label": "ענפים",
-        "value": "טלקום · נפט וגז · בנקאות"
-      },
-      {
-        "label": "היקף",
-        "value": "VDI ל-150,000 משתמשים"
-      }
-    ],
-    "facts_caption": "תקציר פרופיל"
+  "a11y": {
+    "navigation": "ניווט",
+    "menu_open": "פתיחת תפריט",
+    "menu_close": "סגירת תפריט"
   },
-  "about": {
-    "label": "אודות",
-    "title": "צוותי הצלחת לקוחות",
-    "bio": "בונה מנוסה של צוותי הצלחת לקוחות. הופך תמיכה לשירות מנוהל: תהליכי helpdesk, מדדי SLA, אוטומציה ב-Python, CI/CD ותשתית קונטיינרים מבוססת Podman. ראש מחלקת תמיכה טכנית L3 בחברת Aisa IT Service. ניסיון בענפים: ספקי סלולר, ענף הנפט ובנקים גדולים — החל ממעבר ל-managed services ועד VDI ל-150,000 משתמשים.",
-    "skills_label": "טכנולוגיות",
-    "interests_label": "תחומי עניין",
-    "interests": [
-      "סביבות שולחן עבודה של Linux",
-      "תזמור קונטיינרים",
-      "VoIP וטלפוניה",
-      "תשתיות רשת"
-    ]
+  "footer": {
+    "rights": "כל הזכויות שמורות"
+  },
+  "skip_link": "דלג לתוכן",
+  "blog": {
+    "empty": "אין עדיין רשומות לתצוגה זו.",
+    "min_read": "דקות קריאה",
+    "highlights_label": "בלוג",
+    "highlights_title": "מאמרים אחרונים"
   },
   "projects": {
     "label": "פרויקטים",
@@ -64,32 +40,8 @@
       "in_progress": "בתהליך"
     }
   },
-  "blog": {
-    "label": "בלוג",
-    "title": "מאמרים",
-    "subtitle": "מאמרים על קונטיינריזציה, אוטומציה, Linux ו-DevOps",
-    "back": "← חזרה לבלוג",
-    "read_more": "קרא עוד →",
-    "min_read": "דקות קריאה",
-    "highlights_title": "מאמרים אחרונים",
-    "highlights_label": "בלוג",
-    "empty": "אין עדיין רשומות לתצוגה זו."
-  },
-  "footer": {
-    "rights": "כל הזכויות שמורות"
-  },
-  "skip_link": "דלג לתוכן",
-  "a11y": {
-    "navigation": "ניווט",
-    "menu_open": "פתיחת תפריט",
-    "menu_close": "סגירת תפריט"
-  },
   "tags": {
     "label": "תגיות",
-    "page_title_leader": "מאמרים עם התגית «{tag}»",
-    "page_desc_leader": "מאמרי הבלוג בתצוגת «מנהל תמיכה» עם התגית «{tag}»",
-    "page_title_dev": "רשומות עם התגית «{tag}»",
-    "page_desc_dev": "רשומות מפתחים עם התגית «{tag}»: העמקה, תרגול וכלים",
     "names": {
       "ai-agents": "סוכני AI",
       "automation": "אוטומציה",
@@ -115,13 +67,64 @@
       "virtualization": "וירטואליזציה"
     }
   },
+  "leader": {
+    "hero": {
+      "greeting": "שלום, אני",
+      "title": "בונה מחלקות תמיכה",
+      "desc": "בונה צוותי תמיכה והצלחת לקוחות לעסקים בכל גודל: תהליכי helpdesk, מדדי SLA, אוטומציה ותשתיות. ניסיון מצוותים של סטארטפים קטנים ועד ספקי סלולר ובנקים גדולים.",
+      "cta_projects": "פרויקטים",
+      "cta_blog": "קראו את הבלוג",
+      "facts": [
+        {
+          "label": "תפקיד",
+          "value": "ראש מחלקת תמיכה L3"
+        },
+        {
+          "label": "ענפים",
+          "value": "טלקום · B2G"
+        },
+        {
+          "label": "היקף",
+          "value": "מיליוני משתמשים מרוצים"
+        }
+      ],
+      "facts_caption": "תקציר פרופיל"
+    },
+    "about": {
+      "label": "אודות",
+      "title": "צוותי הצלחת לקוחות",
+      "bio": "בונה מנוסה של צוותי הצלחת לקוחות. הופך תמיכה לשירות מנוהל: תהליכי helpdesk, מדדי SLA, אוטומציה ב-Python, CI/CD ותשתית קונטיינרים מבוססת Podman. ניסיון בענפים: ספקי סלולר, חברות לוגיסטיקה, ענף הנפט ובנקים גדולים — החל ממוצרים מונוליטיים ארוזים ועד מעבר ל-cloud managed services.",
+      "skills_label": "טכנולוגיות",
+      "interests_label": "תחומי עניין",
+      "interests": [
+        "סביבות שולחן עבודה של Linux",
+        "תזמור קונטיינרים",
+        "VoIP וטלפוניה",
+        "תשתיות רשת"
+      ]
+    },
+    "blog": {
+      "title": "מאמרים",
+      "subtitle": "מאמרים על קונטיינריזציה, אוטומציה, Linux ו-DevOps",
+      "back": "← חזרה לבלוג",
+      "read_more": "קרא עוד →"
+    },
+    "tags": {
+      "page_title": "מאמרים עם התגית «{tag}»",
+      "page_desc": "מאמרי הבלוג בתצוגת «מנהל תמיכה» עם התגית «{tag}»"
+    }
+  },
   "dev": {
     "hero": {
       "greeting": "$ whoami",
       "title": "Python · קונטיינרים · תשתית",
       "desc": "בונה כלים לתפעול ולתמיכה: אוטומציה ב-Python, תורי משימות עם RQ ו-Valkey, בוטים לטלגרם, תשתית קונטיינרים עם Podman ו-CI/CD ב-GitLab.",
       "cta_projects": "פרויקטים",
-      "cta_blog": "לרשימת הרשומות"
+      "cta_blog": "לרשימת הרשומות",
+      "terminal_1": "podman pod create --name support-stack",
+      "terminal_2": "rq worker --with-scheduler tickets asterisk",
+      "terminal_3": "systemctl --user enable container-runner.service",
+      "terminal_4": "# הכל עובד ✓"
     },
     "about": {
       "label": "הנדסה",
@@ -137,7 +140,12 @@
       ]
     },
     "blog": {
+      "title": "רשומות",
       "subtitle": "רשומות על קונטיינרים, אוטומציה ו-Linux"
+    },
+    "tags": {
+      "page_title": "רשומות עם התגית «{tag}»",
+      "page_desc": "רשומות מפתחים עם התגית «{tag}»: העמקה, תרגול וכלים"
     }
   }
 }

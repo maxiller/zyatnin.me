@@ -10,9 +10,9 @@ layout: layouts/base.njk
 
 <div class="page-header">
   <div class="container container--narrow">
-    <a href="/{{ i18n.lang }}/blog/" class="article__back">{{ i18n.blog.back }}</a>
-    <h1 class="page-header__title">{{ i18n.tags.page_title_leader | replace("{tag}", entry.label) }}</h1>
-    <p class="page-header__desc">{{ i18n.tags.page_desc_leader | replace("{tag}", entry.label) }}</p>
+    <a href="/{{ i18n.lang }}/blog/" class="article__back">{{ i18n.leader.blog.back }}</a>
+    <h1 class="page-header__title">{{ i18n.leader.tags.page_title | replace("{tag}", entry.label) }}</h1>
+    <p class="page-header__desc">{{ i18n.leader.tags.page_desc | replace("{tag}", entry.label) }}</p>
   </div>
 </div>
 

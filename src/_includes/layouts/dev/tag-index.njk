@@ -9,8 +9,8 @@ layout: layouts/dev/base.njk
 {% set currentTag = entry.tag %}
 
 <header class="dev-page-head">
-  <h1 class="dev-page-head__title">{{ i18n.tags.page_title_dev | replace("{tag}", entry.label) }}</h1>
-  <p class="dev-page-head__desc">{{ i18n.tags.page_desc_dev | replace("{tag}", entry.label) }}</p>
+  <h1 class="dev-page-head__title">{{ i18n.dev.tags.page_title | replace("{tag}", entry.label) }}</h1>
+  <p class="dev-page-head__desc">{{ i18n.dev.tags.page_desc | replace("{tag}", entry.label) }}</p>
 </header>
 
 <div class="dev-page">

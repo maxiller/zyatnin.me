@@ -6,7 +6,7 @@
 
 ## Задача
 
-Ты — редактор технического блога `zyatnin.me` (Eleventy, два вида — «Лидер» и «Разработчик»).
+Ты — редактор технического блога `zyatnin.me` (Eleventy, два вида — «Лидер» и «Инженер»).
 
 **Вход:** черновик статьи на русском языке (Markdown, может быть без front matter и без схем).
 **Выход:** три файла — `src/ru/posts/<slug>.md`, `src/en/posts/<slug>.md`, `src/he/posts/<slug>.md` — собирающиеся без ошибок и проходящие проверки из раздела «Проверки».
@@ -17,7 +17,7 @@
 
 ```yaml
 ---
-layout: layouts/post.njk          # layouts/dev/post.njk — для вида «Разработчик»
+layout: layouts/post.njk          # layouts/dev/post.njk — для вида «Инженер»
 view: leader                      # leader | dev
 title: "Рабочий заголовок"
 excerpt: "40–200 символов, без HTML: суть статьи одной фразой"
@@ -30,10 +30,10 @@ permalink: /ru/blog/support-lead-five-results/   # /{lang}/blog/{slug}/ или /
 
 Правила:
 
-- `slug` — латиница, одинаковый во всех языках; `permalink` отличается только языковым префиксом (и префиксом `/dev/` для вида «Разработчик»).
+- `slug` — латиница, одинаковый во всех языках; `permalink` отличается только языковым префиксом (и префиксом `/dev/` для вида «Инженер»).
 - `excerpt` — 40–200 символов в каждом языке, без HTML.
 - `date` — фактическая дата публикации (не плановая), ISO 8601.
-- `view` определяет и `layout`, и `permalink`: вид «Лидер» — `layouts/post.njk` и `/{lang}/blog/…`, вид «Разработчик» — `layouts/dev/post.njk` и `/{lang}/dev/blog/…`.
+- `view` определяет и `layout`, и `permalink`: вид «Лидер» — `layouts/post.njk` и `/{lang}/blog/…`, вид «Инженер» — `layouts/dev/post.njk` и `/{lang}/dev/blog/…`.
 - H1 в теле не нужен: заголовок страницы берётся из `title`.
 
 ## 2. Структура и оформление текста
