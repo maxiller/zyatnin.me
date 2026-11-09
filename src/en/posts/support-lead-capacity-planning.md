@@ -17,7 +17,7 @@ A year later I brought the same request in a different shape: one page, a few fi
 
 The point of this article is simple: headcount is a capacity formula, not a feeling of overload. The formula has three parts: the volume of work, the average time per unit, and the hours available. Until it is calculated, every hiring conversation is a negotiation about trust in the lead rather than about resources. Trust is a poor foundation for a staffing plan.
 
-The calculation starts from a measured point A. Without an export from the tracker the formula is assembled from the same feelings, only in a spreadsheet. I went through point A in ["Baseline before goals"](/en/blog/support-lead-baseline-first/); here we assume it exists.
+The calculation starts from a measured point A. Without an export from the tracker the formula is assembled from the same feelings, only in a spreadsheet. I went through point A in "Baseline before goals"; here we assume it exists.
 
 ## Why "we're overloaded" doesn't work
 

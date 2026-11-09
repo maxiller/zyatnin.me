@@ -17,7 +17,7 @@ Since then I look at self-service differently. It is not about articles and not 
 
 In ITIL 4 terms this is shift left — moving the resolution as close to the source of the problem as possible. For support that means a scenario that does not need our expertise moves out of the queue to the client, while expertise stays on what genuinely needs a human. A pilot on three to five scenarios with honest measurement is more useful than a large portal without metrics.
 
-In the [yearly roadmap](/en/blog/support-lead-year-roadmap/) self-service sits in the third quarter — after the knowledge base and before the conversation with product, and that order is not accidental.
+In the yearly roadmap self-service sits in the third quarter — after the knowledge base and before the conversation with product, and that order is not accidental.
 
 ## Why "just write instructions" does not work
 

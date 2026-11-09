@@ -133,8 +133,8 @@ flowchart TD
 
 - [חמשת התוצרים של מנהל תמיכה](/he/blog/support-lead-five-results/) — 2026-03-31
 - [גבולות אחריות](/he/blog/support-lead-boundaries/) — 2026-06-07
-- [Baseline לפני מטרות](/he/blog/support-lead-baseline-first/) — 2026-11-10
-- [השנה של המנהל לפי רבעונים](/he/blog/support-lead-year-roadmap/) — 2026-11-13
+- Baseline לפני מטרות — 2026-11-10
+- השנה של המנהל לפי רבעונים — 2026-11-13
 
 **ייצוב השירות**
 

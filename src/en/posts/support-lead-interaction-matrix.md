@@ -17,7 +17,7 @@ The cause isn't people, it's an assumption everyone makes silently: that neighbo
 
 The interaction matrix is the table that replaces mind-reading: who decides on which questions, through which channel it happens, and what artefact is left behind. The agreement-as-a-project rule completes it: every agreement needs a date, an owner and an artefact - otherwise it simply doesn't exist.
 
-Both tools belong to the outer contour of the annual plan I described in ["A support lead's year by quarters"](/en/blog/support-lead-year-roadmap/). Here it's the mechanics: how the matrix is built and how it pulls a specific conversation out of the mud.
+Both tools belong to the outer contour of the annual plan I described in "A support lead's year by quarters". Here it's the mechanics: how the matrix is built and how it pulls a specific conversation out of the mud.
 
 ## Typical friction
 

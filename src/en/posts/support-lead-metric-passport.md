@@ -15,7 +15,7 @@ Every support team has a dashboard, and almost every one of them changes no deci
 
 I arrived at a simple criterion that cuts off most useless measurements: a metric must have an action that follows when it crosses the threshold. If there is no answer to the question "what do we do when the value goes past the line", then it is not a metric but an illustration: it describes the past and does not affect the future.
 
-This article is about why dashboards die, what the criterion of a live metric looks like, what goes into the passport, and which three metrics are worth starting with so as not to drown. It continues the line started in ["Baseline before goals"](/en/blog/support-lead-baseline-first/): there the subject was where the numbers come from and how they become goals; here it is how numbers become actions.
+This article is about why dashboards die, what the criterion of a live metric looks like, what goes into the passport, and which three metrics are worth starting with so as not to drown. It continues the line started in "Baseline before goals": there the subject was where the numbers come from and how they become goals; here it is how numbers become actions.
 
 ## The museum of metrics
 

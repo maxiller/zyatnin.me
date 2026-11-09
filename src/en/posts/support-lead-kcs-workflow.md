@@ -17,7 +17,7 @@ Back then I thought it was a matter of discipline: engineers don't like writing,
 
 That is how KCS works (Knowledge-Centered Service — an approach in which the knowledge base grows as a by-product of resolving requests rather than as a separate article-writing project): knowledge is created, used and improved in the same flow where tickets get closed. It is not a tool and not a policy but a way of organising the work.
 
-In the [yearly roadmap](/en/blog/support-lead-year-roadmap/) knowledge sits in the second quarter, and not earlier: until you have numbers about the flow, you cannot know which articles are needed at all. This article is about the mechanics of that quarter. The earlier steps of the block are about stabilising the service: triage at first touch, deadline control, escalation to L3.
+In the yearly roadmap knowledge sits in the second quarter, and not earlier: until you have numbers about the flow, you cannot know which articles are needed at all. This article is about the mechanics of that quarter. The earlier steps of the block are about stabilising the service: triage at first touch, deadline control, escalation to L3.
 
 ## A base as an archive and a base as a tool
 
@@ -127,7 +127,7 @@ The main measure of a base's health is the share of resolutions from the KB: the
 
 Like any metric, this one lives or dies by its definition. "Closed with a link to an article" is not the same as "closed from an article". In the first case attaching a link is enough; in the second the article has to have actually produced the solution. So the definition fixes two things: what counts as use, and how it is confirmed — by a helpfulness mark, a field in the ticket, or a sample review. Without that the metric measures discipline in filling a field, not the maturity of knowledge.
 
-Second, what to compare against. The absolute value of the share says nothing on its own: a service with a large flow of routine questions and a service with individual incidents are not comparable. Meaning appears in the quarter-on-quarter movement and in combination with the other indicators of point A — time to resolution, the share of repeat requests, the escalation rate. That is covered in detail in ["Baseline before goals"](/en/blog/support-lead-baseline-first/).
+Second, what to compare against. The absolute value of the share says nothing on its own: a service with a large flow of routine questions and a service with individual incidents are not comparable. Meaning appears in the quarter-on-quarter movement and in combination with the other indicators of point A — time to resolution, the share of repeat requests, the escalation rate. That is covered in detail in "Baseline before goals".
 
 <!-- вилка: динамика доли решений по КБ за квартал — значение на старте, текущее значение, что повлияло. -->
 

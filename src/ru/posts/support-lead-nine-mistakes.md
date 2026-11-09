@@ -133,8 +133,8 @@ flowchart TD
 
 - [Пять результатов работы лида поддержки](/ru/blog/support-lead-five-results/) — 2026-03-31
 - [Границы ответственности](/ru/blog/support-lead-boundaries/) — 2026-06-07
-- [Baseline раньше целей](/ru/blog/support-lead-baseline-first/) — 2026-11-10
-- [Год лида по кварталам](/ru/blog/support-lead-year-roadmap/) — 2026-11-13
+- Baseline раньше целей — 2026-11-10
+- Год лида по кварталам — 2026-11-13
 
 **Стабилизация сервиса**
 

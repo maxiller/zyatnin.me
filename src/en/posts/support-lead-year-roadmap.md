@@ -13,7 +13,7 @@ permalink: /en/blog/support-lead-year-roadmap/
 
 In my first year as a support lead I wrote a plan of nineteen initiatives. Three months later none of them remained: some burned up in day-to-day operations, some lost their point after the first data, some I simply forgot. The service did not get worse — it just did not change.
 
-The previous article of the series — ["Baseline before goals"](/en/blog/support-lead-baseline-first/) — was about point A and calibrating goals with management. This one is about the next step: how agreed goals become a calendar with room both for operations and for change.
+The previous article of the series — "Baseline before goals" — was about point A and calibrating goals with management. This one is about the next step: how agreed goals become a calendar with room both for operations and for change.
 
 The main idea I arrived at after several such years: a roadmap is not a wish list but a sequence. Its value lies not in what it contains but in the order things happen and in what cannot start before the previous step is finished.
 
@@ -125,46 +125,46 @@ This text is the fourth article of the "Support management strategy" series, and
 
 - [The five results of a support lead](/en/blog/support-lead-five-results/)
 - [Ownership boundaries: what a support lead decides, delegates, and walks away from](/en/blog/support-lead-boundaries/)
-- [Baseline before goals: why annual plans collapse at the start](/en/blog/support-lead-baseline-first/)
+- Baseline before goals: why annual plans collapse at the start
 - A support lead's year by quarters: a twelve-month roadmap — this article
 
 **Stabilising the service**
 
-- [Service map and point A: diagnosing the first month](/en/blog/support-lead-service-map-baseline/)
-- [Triage at first touch: category, severity, route](/en/blog/support-lead-triage-first-touch/)
-- [Not one silent SLA breach: weekly queue control](/en/blog/support-lead-no-silent-sla/)
-- [Escalation to L3: the package, the OLA and the client owner](/en/blog/support-lead-l3-escalation/)
+- Service map and point A: diagnosing the first month
+- Triage at first touch: category, severity, route
+- Not one silent SLA breach: weekly queue control
+- Escalation to L3: the package, the OLA and the client owner
 
 **Knowledge as a system**
 
-- [KCS in the workflow: the article is written at the moment of solving](/en/blog/support-lead-kcs-workflow/)
-- [A knowledge base article template and its owner](/en/blog/support-lead-kb-template/)
-- [Recurring problems: from the ticket stream to records with an owner](/en/blog/support-lead-recurring-problems/)
-- [Self-service as shift left: a pilot with honest measurement](/en/blog/support-lead-shift-left-pilot/)
+- KCS in the workflow: the article is written at the moment of solving
+- A knowledge base article template and its owner
+- Recurring problems: from the ticket stream to records with an owner
+- Self-service as shift left: a pilot with honest measurement
 
 **The team: people and growth**
 
-- [The manager's rhythm: the 40 % rule](/en/blog/support-lead-rhythm-40-percent/)
-- [One-on-ones that don't turn into a report and an appraisal](/en/blog/support-lead-one-on-one/)
-- [Assessment by observable facts: a QA sample and six criteria](/en/blog/support-lead-facts-based-assessment/)
-- [The competency matrix: closing single points of failure](/en/blog/support-lead-competency-matrix/)
-- [Capacity instead of heroism: calculating the need for engineers](/en/blog/support-lead-capacity-planning/)
+- The manager's rhythm: the 40 % rule
+- One-on-ones that don't turn into a report and an appraisal
+- Assessment by observable facts: a QA sample and six criteria
+- The competency matrix: closing single points of failure
+- Capacity instead of heroism: calculating the need for engineers
 
 **The outer contour**
 
-- [The interaction matrix: who decides and on which questions](/en/blog/support-lead-interaction-matrix/)
-- [Status for management: a one-page letter and an hourly review](/en/blog/support-lead-management-status/)
-- [Ask for decisions, not sympathy: escalation and the resource request](/en/blog/support-lead-ask-for-decisions/)
-- [A blameless incident review: a timeline without names](/en/blog/support-lead-blameless-postmortem/)
-- [A problem card for product that won't close without a status](/en/blog/support-lead-problem-card/)
+- The interaction matrix: who decides and on which questions
+- Status for management: a one-page letter and an hourly review
+- Ask for decisions, not sympathy: escalation and the resource request
+- A blameless incident review: a timeline without names
+- A problem card for product that won't close without a status
 
 **Metrics and closing the year**
 
-- [A metric without an action is a picture: the metric passport](/en/blog/support-lead-metric-passport/)
-- [Resilience audit: what breaks when you are gone](/en/blog/support-lead-resilience-audit/)
-- [Nine mistakes of a support lead — and the annual report](/en/blog/support-lead-nine-mistakes/)
+- A metric without an action is a picture: the metric passport
+- Resilience audit: what breaks when you are gone
+- Nine mistakes of a support lead — and the annual report
 
-All twenty-five articles of the series are published — the list above is its complete table of contents.
+The articles come out every two or three days, so links appear in the text as they publish. Every published article of the series is collected under the [team-leadership](/en/tags/team-leadership/) tag, while the list above stays the full plan of the series.
 
 ## What such a year leaves behind
 

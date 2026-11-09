@@ -15,7 +15,7 @@ For a long time I believed the main problem of a support lead was a shortage of 
 
 A lead's day is filled with work somebody has to do — the only question is who. Clearing the queue, answering "what do we do here", approving deadline changes, unblocking stuck tickets: all of that is work, and none of it waits. The rituals the role exists for also sit in the calendar — the queue review, the weekly review, one-on-ones, quality sampling, the status update to management. The problem is that the inflow doesn't respect a calendar: whatever isn't on fire today gets eaten first, which means exactly the rituals.
 
-Hence the formulation I keep in my annual plan and treat as the main constraint on my week: the mandatory rituals may take no more than 40% of working time. Not "ideally", not "try to" — a budget. Anything above it is subtracted from another line, and that line is change, growing people, and agreements with management. The [annual roadmap](/en/blog/support-lead-year-roadmap/) spells it out: work that isn't on fire today needs at least two days a week.
+Hence the formulation I keep in my annual plan and treat as the main constraint on my week: the mandatory rituals may take no more than 40% of working time. Not "ideally", not "try to" — a budget. Anything above it is subtracted from another line, and that line is change, growing people, and agreements with management. The annual roadmap spells it out: work that isn't on fire today needs at least two days a week.
 
 What follows: how to measure your own week without self-deception, what belongs in the minimum rhythm, where the number 40 comes from, and what to cut first when it still doesn't add up.
 

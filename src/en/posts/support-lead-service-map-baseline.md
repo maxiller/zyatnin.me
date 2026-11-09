@@ -15,7 +15,7 @@ I spent my first month as a support lead on process documents: reading, cross-ch
 
 The gap between those two services isn't a sign of a bad team. It's the normal state of a system nobody ever described as a whole: every piece of it appeared at its own time, for its own task and its own customer. The trouble starts later — when a lead arrives with an improvement plan and has nowhere to apply it, because it's unclear what exactly is being improved.
 
-Previous articles in the series covered the lead's time (["Ownership boundaries"](/en/blog/support-lead-boundaries/)), the logic of point A (["Baseline before goals"](/en/blog/support-lead-baseline-first/)), and how goals turn into a year (["A support lead's year by quarters"](/en/blog/support-lead-year-roadmap/)). This article is about the step that precedes all three: how to get a description of the service and its point A in the first weeks, with no time, no data, and no approval for big changes.
+Previous articles in the series covered the lead's time (["Ownership boundaries"](/en/blog/support-lead-boundaries/)), the logic of point A ("Baseline before goals"), and how goals turn into a year ("A support lead's year by quarters"). This article is about the step that precedes all three: how to get a description of the service and its point A in the first weeks, with no time, no data, and no approval for big changes.
 
 The thesis: diagnosing the first month answers two questions — what the customer sees on the way to a solution, and how long they actually wait at each step. The first answer comes from a service map, the second from measuring the actual response. Together they turn into artifacts you can already use to talk about goals.
 
@@ -79,7 +79,7 @@ This is also where the first unpleasant discovery usually happens: part of the f
 
 The third part of the diagnosis is a tracker export. It's easy to drown here: many fields, more reports, and the first attempt at "a proper dashboard" usually ends with a dashboard nobody uses.
 
-I went through the full field list and export rules in ["Baseline before goals"](/en/blog/support-lead-baseline-first/). In the first month four cuts are enough, and each one answers a specific question.
+I went through the full field list and export rules in "Baseline before goals". In the first month four cuts are enough, and each one answers a specific question.
 
 | Cut | The question it answers | What to do with the answer |
 | --- | --- | --- |

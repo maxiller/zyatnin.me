@@ -133,8 +133,8 @@ The "Support management strategy" series was written as a system rather than a s
 
 - [The five results of a support lead](/en/blog/support-lead-five-results/) — 2026-03-31
 - [Ownership boundaries](/en/blog/support-lead-boundaries/) — 2026-06-07
-- [Baseline before goals](/en/blog/support-lead-baseline-first/) — 2026-11-10
-- [The lead's year by quarters](/en/blog/support-lead-year-roadmap/) — 2026-11-13
+- Baseline before goals — 2026-11-10
+- The lead's year by quarters — 2026-11-13
 
 **Stabilizing the service**
 

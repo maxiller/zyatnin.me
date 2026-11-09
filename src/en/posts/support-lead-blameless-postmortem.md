@@ -17,7 +17,7 @@ I have run enough of these meetings to have settled on a rule for myself: a revi
 
 It matters not to confuse this with irresponsibility. "Without names" applies to the past, not to the future: every action after the review has an owner and a date. What follows is why finding someone to blame does not prevent a repeat, what a review consists of, how to write a timeline without names, and what happens to the actions after the meeting.
 
-This article continues the outer contour of the series: in ["A support lead's year by quarters"](/en/blog/support-lead-year-roadmap/) the reviews sit in the fourth quarter, as a way to close the loop rather than as a reporting ritual.
+This article continues the outer contour of the series: in "A support lead's year by quarters" the reviews sit in the fourth quarter, as a way to close the loop rather than as a reporting ritual.
 
 ## Why finding someone to blame does not prevent a repeat
 
