@@ -3,7 +3,7 @@ layout: layouts/post.njk
 view: leader
 title: "שנה של מנהל תמיכה לפי רבעונים: מפת דרכים לשנים עשר חודש"
 excerpt: "ארבעה רבעונים עם כלל אחד — הבא לא מתחיל בלי התוצאה של הקודם: ייצוב, ידע ואנשים, Shift Left, סגירת מעגלים."
-date: 2026-12-14
+date: 2026-11-13
 tags: [team-leadership, support-management]
 slug: support-lead-year-roadmap
 permalink: /he/blog/support-lead-year-roadmap/

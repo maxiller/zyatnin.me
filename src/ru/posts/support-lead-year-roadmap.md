@@ -3,7 +3,7 @@ layout: layouts/post.njk
 view: leader
 title: "Год лида по кварталам: дорожная карта на 12 месяцев"
 excerpt: "Четыре квартала с правилом «следующий не начинается без результата предыдущего»: стабилизация, знания и люди, Shift Left, замыкание циклов."
-date: 2026-12-14
+date: 2026-11-13
 tags: [team-leadership, support-management]
 slug: support-lead-year-roadmap
 permalink: /ru/blog/support-lead-year-roadmap/

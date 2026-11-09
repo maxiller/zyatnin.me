@@ -3,7 +3,7 @@ layout: layouts/post.njk
 view: leader
 title: "Baseline before goals: why annual plans collapse at the start"
 excerpt: "A goal without a measured point A is a hypothesis posing as a plan. Take the baseline from the tracker first, then calibrate goals with management."
-date: 2026-11-30
+date: 2026-11-10
 tags: [team-leadership, support-management]
 slug: support-lead-baseline-first
 permalink: /en/blog/support-lead-baseline-first/

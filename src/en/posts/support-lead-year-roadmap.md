@@ -3,7 +3,7 @@ layout: layouts/post.njk
 view: leader
 title: "A support lead's year by quarters: a twelve-month roadmap"
 excerpt: "Four quarters with one rule - the next one does not start without the previous result: stabilise, build knowledge and people, shift left, close the loops."
-date: 2026-12-14
+date: 2026-11-13
 tags: [team-leadership, support-management]
 slug: support-lead-year-roadmap
 permalink: /en/blog/support-lead-year-roadmap/

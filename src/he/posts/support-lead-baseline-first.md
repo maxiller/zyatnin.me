@@ -3,7 +3,7 @@ layout: layouts/post.njk
 view: leader
 title: "בסיס לפני מטרות: למה תוכניות שנתיות קורסות כבר בהתחלה"
 excerpt: "מטרה בלי נקודת מוצא מדודה היא השערה שמתיימרת להיות תוכנית. קודם בסיס מהמערכת, אחר כך כיול המטרות עם ההנהלה."
-date: 2026-11-30
+date: 2026-11-10
 tags: [team-leadership, support-management]
 slug: support-lead-baseline-first
 permalink: /he/blog/support-lead-baseline-first/
