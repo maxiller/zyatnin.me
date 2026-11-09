@@ -25,8 +25,8 @@
 | --- | --- | --- | --- | --- | --- |
 | SP-01 | опубликована → `src/ru/posts/support-lead-five-results.md` | Пять результатов работы лида поддержки | Стратегия | 2026-03-31 (факт) | §1.1 |
 | SP-02 | опубликована → `src/ru/posts/support-lead-boundaries.md` | Границы ответственности: что лид делает сам, делегирует и от чего отказывается | Стратегия | 2026-06-07 (факт) | §1.2 |
-| SP-03 | [support-lead-baseline-first.md](support-lead-baseline-first.md) | Baseline раньше целей: почему годовые планы проваливаются на старте | Стратегия | 2026-11-30 | §1.3 |
-| SP-04 | [support-lead-year-roadmap.md](support-lead-year-roadmap.md) | Год лида по кварталам: дорожная карта на 12 месяцев | Стратегия | 2026-12-14 | §2 |
+| SP-03 | опубликована → `src/ru/posts/support-lead-baseline-first.md` | Baseline раньше целей: почему годовые планы проваливаются на старте | Стратегия | 2026-11-30 | §1.3 |
+| SP-04 | опубликована → `src/ru/posts/support-lead-year-roadmap.md` | Год лида по кварталам: дорожная карта на 12 месяцев | Стратегия | 2026-12-14 | §2 |
 | SP-05 | [support-lead-service-map-baseline.md](support-lead-service-map-baseline.md) | Карта сервиса и Точка А: диагностика первого месяца | Стратегия | 2026-12-28 | §2 (месяц 1) |
 | SP-06 | [support-lead-triage-first-touch.md](support-lead-triage-first-touch.md) | Триаж при первом касании: категория, критичность, маршрут | Оператив | 2027-01-11 | §4.1 |
 | SP-07 | [support-lead-no-silent-sla.md](support-lead-no-silent-sla.md) | Ни одного тихого нарушения SLA: еженедельный контроль очереди | Оператив | 2027-01-25 | §4.2 |
