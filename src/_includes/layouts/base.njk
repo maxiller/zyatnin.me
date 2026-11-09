@@ -46,10 +46,14 @@
         <span class="brand__name">{{ site.domain }}</span>
       </a>
 
+      {#- page.url is false for a page the publication gate excluded (scheduled
+          post, draft). Such a page is still rendered, so no template may assume
+          it has a URL. -#}
+      {% set blogTabActive = page.url and 'blog' in page.url %}
       <nav class="site-nav" aria-label="{{ i18n.a11y.navigation }}">
         <a href="/{{ i18n.lang }}/#about">{{ i18n.nav.about }}</a>
         <a href="/{{ i18n.lang }}/#projects">{{ i18n.nav.projects }}</a>
-        <a href="/{{ i18n.lang }}/blog/" class="{% if 'blog' in page.url %}active{% endif %}">{{ i18n.nav.blog }}</a>
+        <a href="/{{ i18n.lang }}/blog/" class="{% if blogTabActive %}active{% endif %}">{{ i18n.nav.blog }}</a>
       </nav>
 
       <div class="site-header__controls">
@@ -72,7 +76,7 @@
     <nav class="mobile-menu" id="mobile-menu" data-menu-panel aria-label="{{ i18n.a11y.navigation }}">
       <a href="/{{ i18n.lang }}/#about">{{ i18n.nav.about }}</a>
       <a href="/{{ i18n.lang }}/#projects">{{ i18n.nav.projects }}</a>
-      <a href="/{{ i18n.lang }}/blog/" class="{% if 'blog' in page.url %}active{% endif %}">{{ i18n.nav.blog }}</a>
+      <a href="/{{ i18n.lang }}/blog/" class="{% if blogTabActive %}active{% endif %}">{{ i18n.nav.blog }}</a>
     </nav>
   </header>
 

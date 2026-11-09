@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - main
+  # Scheduled posts appear only when the site is rebuilt (lib/published.js),
+  # so a daily run turns a future `date` into an actual publication. Cron runs
+  # can lag by minutes; GitHub disables the schedule after ~60 days without
+  # repository activity, which any push or a manual run restores.
+  schedule:
+    - cron: "0 3 * * *"
   workflow_dispatch:
 
 permissions:

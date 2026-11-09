@@ -74,6 +74,7 @@ zyatnin.me/
 ├── .eleventy.js                 # конфигурация Eleventy, фильтры, коллекции
 ├── .github/workflows/deploy.yml # сборка и деплой на GitHub Pages
 ├── .gitignore                   # _site/ и package-lock.json игнорируются
+├── lib/published.js             # шлюз публикации: скрывает отложенные статьи и черновики
 ├── CNAME                        # zyatnin.me
 ├── README.md                    # краткое описание
 ├── package.json                 # скрипты и зависимости
@@ -98,18 +99,21 @@ zyatnin.me/
     │   ├── index.md             # /ru/
     │   ├── blog/index.md        # /ru/blog/
     │   ├── posts/*.md           # 12 статей
+    │   ├── posts/posts.11tydata.js # шлюз публикации для статей языка
     │   └── projects/*.md        # 3 клиентских проекта
     ├── en/
     │   ├── en.11tydata.js
     │   ├── index.md             # /en/
     │   ├── blog/index.md        # /en/blog/
     │   ├── posts/*.md           # 12 статей
+    │   ├── posts/posts.11tydata.js
     │   └── projects/*.md        # 3 клиентских проекта
     └── he/
         ├── he.11tydata.js
         ├── index.md             # /he/
         ├── blog/index.md        # /he/blog/
         ├── posts/*.md           # 12 статей
+        ├── posts/posts.11tydata.js
         └── projects/*.md        # 3 клиентских проекта
 ```
 
@@ -162,12 +166,14 @@ flowchart LR
 | `view` | строка | `leader` или `dev` — вид, в котором видна статья |
 | `title` | строка | Заголовок статьи |
 | `excerpt` | строка | Краткое описание в карточке |
-| `date` | дата | Сортировка и отображение |
+| `date` | дата | Сортировка и отображение; дата в будущем — отложенная публикация |
 | `tags` | массив | От одной до трёх меток из словаря `tags.names`; ключи одинаковы во всех языках статьи и ведут на страницы меток `/{lang}/tags/{tag}/` и `/{lang}/dev/tags/{tag}/` |
 | `slug` | строка | Идентификатор статьи, шаблонами не используется |
 | `permalink` | строка | Явный URL статьи |
 
 Поле `description` в статьях отсутствует, хотя `base.njk` пытается его использовать для мета-описания. Это приводит к подстановке общего описания сайта на всех страницах статей.
+
+> **Обновление 2026-11-09.** Дата статьи стала ещё и переключателем публикации: шлюз `lib/published.js` в связке с directory data `src/{lang}/posts/posts.11tydata.js` вычисляет `permalink: false` и `eleventyExcludeFromCollections` для статьи, чья `date` ещё не наступила, и для `draft: true`. Скрытая страница всё равно рендерится (Eleventy иначе не умеет), поэтому `base.njk` проверяет URL перед поиском вкладки: `page.url and 'blog' in page.url` — у скрытой страницы `page.url === false` (SRS FR-123, AC-21).
 
 ### 7.2 Метки
 
@@ -187,6 +193,7 @@ sequenceDiagram
     participant Pages as GitHub Pages
     Dev->>GH: git push
     GH->>CI: запуск deploy.yml
+    GH->>CI: ежедневный cron (schedule)
     CI->>CI: checkout
     CI->>CI: setup-node 22
     CI->>CI: npm install
@@ -205,6 +212,8 @@ sequenceDiagram
 | `start` | `eleventy --serve --port=5000` | Локальный сервер |
 | `dev` | `eleventy --serve --port=5000` | Идентичен `start` |
 
+> **Обновление 2026-11-09.** В потоке появились два новых шага: сайт пересобирается также по расписанию (`schedule: cron: 0 3 * * *` в `deploy.yml`, SRS FR-124) — без этого отложенные статьи не появились бы никогда, а в самой сборке директива `eleventyComputed` из `src/{lang}/posts/posts.11tydata.js` решает, что из `src/{lang}/posts/*.md` писать в `_site` и что отдавать в коллекции (FR-123). Запуск через `--serve` и переменная `INCLUDE_FUTURE=1` обходят шлюз для предпросмотра.
+
 Фактическая проверка: `npm install` установил 114 пакетов, `npm run build` собрал 43 страницы за 0,23 секунды. Сборка проходит без ошибок.
 
 ## 9. Реализованные функции (as-built)
@@ -217,6 +226,7 @@ sequenceDiagram
 | `hreflang` | Реализовано | Три альтернативы без `x-default` |
 | Главная: hero, about, projects, latest posts | Реализовано | Проекты — из front matter `src/{lang}/projects/*.md` (три клиентских проекта), карточки ведут на страницы проектов |
 | Блог: индекс единым списком по дате | Реализовано | Без группировки; над списком панель меток |
+| Отложенная публикация и черновики | Реализовано | Статья с будущей `date` и `draft: true` не собираются (`lib/published.js`) |
 | Статья: заголовок, метки, дата, время чтения | Реализовано | Метки — ссылки на страницы меток |
 | Тёмная и светлая темы | Реализовано | Автоопределение и кнопка |
 | Мобильное меню | Не работает | Несовпадение CSS-класса |
