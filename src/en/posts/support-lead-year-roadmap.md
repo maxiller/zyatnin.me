@@ -130,41 +130,41 @@ This text is the fourth article of the "Support management strategy" series, and
 
 **Stabilising the service**
 
-- Service map and point A: diagnosing the first month
-- Triage at first touch: category, severity, route
-- Not one silent SLA breach: weekly queue control
-- Escalation to L3: the package, the OLA and the client owner
+- [Service map and point A: diagnosing the first month](/en/blog/support-lead-service-map-baseline/)
+- [Triage at first touch: category, severity, route](/en/blog/support-lead-triage-first-touch/)
+- [Not one silent SLA breach: weekly queue control](/en/blog/support-lead-no-silent-sla/)
+- [Escalation to L3: the package, the OLA and the client owner](/en/blog/support-lead-l3-escalation/)
 
 **Knowledge as a system**
 
-- KCS in the workflow: the article is written at the moment of solving
-- A knowledge base article template and its owner
-- Recurring problems: from the ticket stream to records with an owner
-- Self-service as shift left: a pilot with honest measurement
+- [KCS in the workflow: the article is written at the moment of solving](/en/blog/support-lead-kcs-workflow/)
+- [A knowledge base article template and its owner](/en/blog/support-lead-kb-template/)
+- [Recurring problems: from the ticket stream to records with an owner](/en/blog/support-lead-recurring-problems/)
+- [Self-service as shift left: a pilot with honest measurement](/en/blog/support-lead-shift-left-pilot/)
 
 **The team: people and growth**
 
-- The manager's rhythm: the 40 % rule
-- One-on-ones that don't turn into a report and an appraisal
-- Assessment by observable facts: a QA sample and six criteria
-- The competency matrix: closing single points of failure
-- Capacity instead of heroism: calculating the need for engineers
+- [The manager's rhythm: the 40 % rule](/en/blog/support-lead-rhythm-40-percent/)
+- [One-on-ones that don't turn into a report and an appraisal](/en/blog/support-lead-one-on-one/)
+- [Assessment by observable facts: a QA sample and six criteria](/en/blog/support-lead-facts-based-assessment/)
+- [The competency matrix: closing single points of failure](/en/blog/support-lead-competency-matrix/)
+- [Capacity instead of heroism: calculating the need for engineers](/en/blog/support-lead-capacity-planning/)
 
 **The outer contour**
 
-- The interaction matrix: who decides and on which questions
-- Status for management: a one-page letter and an hourly review
-- Ask for decisions, not sympathy: escalation and the resource request
-- A blameless incident review: a timeline without names
-- A problem card for product that won't close without a status
+- [The interaction matrix: who decides and on which questions](/en/blog/support-lead-interaction-matrix/)
+- [Status for management: a one-page letter and an hourly review](/en/blog/support-lead-management-status/)
+- [Ask for decisions, not sympathy: escalation and the resource request](/en/blog/support-lead-ask-for-decisions/)
+- [A blameless incident review: a timeline without names](/en/blog/support-lead-blameless-postmortem/)
+- [A problem card for product that won't close without a status](/en/blog/support-lead-problem-card/)
 
 **Metrics and closing the year**
 
-- A metric without an action is a picture: the metric passport
-- Resilience audit: what breaks when you are gone
-- Nine mistakes of a support lead — and the annual report
+- [A metric without an action is a picture: the metric passport](/en/blog/support-lead-metric-passport/)
+- [Resilience audit: what breaks when you are gone](/en/blog/support-lead-resilience-audit/)
+- [Nine mistakes of a support lead — and the annual report](/en/blog/support-lead-nine-mistakes/)
 
-Links are added as the articles come out; the remaining titles keep their order and place in the plan.
+All twenty-five articles of the series are published — the list above is its complete table of contents.
 
 ## What such a year leaves behind
 
