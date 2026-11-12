@@ -12,7 +12,7 @@ description: Create and edit site content on zyatnin.me — pages, posts, projec
 Страница — пост или проект — хранится в одном контент-файле: `content/posts/<slug>.md` или `content/projects/<slug>.md`. Внутри файла три части (схема — [SRS, раздел 7.1](../../../docs/SRS.md#71-контент-файл-страницы)):
 
 1. **Метаданные** во front matter — то, что одинаково для всех языков: `slug`, `view`, `date`, `tags` (пост), `order`, `icon`, `status` (проект), необязательные `draft`, `updated`. Правятся один раз для всех трёх языков.
-2. **Куст `translations`** с ветвями `ru`, `en`, `he`: переводимые сущности (для поста — `title`, `excerpt`, необязательные `description`, `cover`; для проекта — `title`, `excerpt`, `tags`, необязательные `points`).
+2. **Куст `translations`** с ветвями `ru`, `en`, `he`: переводимые сущности (для поста — `title`, `excerpt`, необязательные `description`, `cover`; для проекта — `title`, `excerpt`, `tags`, необязательные `points`). `description` переопределяет мета-описание, `cover` — путь от корня сайта (`/assets/…`), который становится картинкой поста в Open Graph и JSON-LD; без `cover` используется общий `assets/og-image.png`.
 3. **Тело** — три раздела Markdown, каждый открывается маркером `<!-- lang:ru -->`, `<!-- lang:en -->`, `<!-- lang:he -->`.
 
 Правила:

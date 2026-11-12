@@ -1,0 +1,43 @@
+{#- Structured data of an article page: the `Article` itself (FR-69) and the
+    breadcrumb Home → Blog → Article (FR-126). Included by both post layouts, so
+    the leader and dev views cannot tell a crawler different things about the
+    same article. Expects the page data both layouts already have: `title`,
+    `description`, `excerpt`, `cover`, `date`, `updated`, `view`.
+
+    Every URL here is absolute: Google reads the image, the article URL and the
+    breadcrumb items as independent identifiers, not as relative to the page. -#}
+{%- set ldUrl = "https://" + site.domain + page.url -%}
+{%- set ldImage = "https://" + site.domain + (cover or "/assets/og-image.png") -%}
+{%- set ldPublished = date | isoDateTime -%}
+{%- set ldModified = updated | default(date) | isoDateTime -%}
+{%- set ldBlogIndex = "/" + i18n.lang + "/" + ("dev/" if view == "dev" else "") + "blog/" -%}
+{%- set ldArticle = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description or excerpt,
+  "image": ldImage,
+  "datePublished": ldPublished,
+  "dateModified": ldModified,
+  "inLanguage": i18n.lang,
+  "url": ldUrl,
+  "mainEntityOfPage": { "@type": "WebPage", "@id": ldUrl },
+  "author": { "@type": "Person", "name": i18n.name, "url": "https://" + site.domain + "/" + i18n.lang + "/" },
+  "publisher": {
+    "@type": "Organization",
+    "name": i18n.name,
+    "url": "https://" + site.domain + "/" + i18n.lang + "/",
+    "logo": { "@type": "ImageObject", "url": "https://" + site.domain + "/assets/og-image.png" }
+  }
+} -%}
+{%- set ldBreadcrumbs = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": i18n.name, "item": "https://" + site.domain + "/" + i18n.lang + "/" },
+    { "@type": "ListItem", "position": 2, "name": i18n.nav.blog, "item": "https://" + site.domain + ldBlogIndex },
+    { "@type": "ListItem", "position": 3, "name": title, "item": ldUrl }
+  ]
+} -%}
+<script type="application/ld+json">{{ ldArticle | toJson | safe }}</script>
+<script type="application/ld+json">{{ ldBreadcrumbs | toJson | safe }}</script>

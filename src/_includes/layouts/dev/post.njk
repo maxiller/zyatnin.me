@@ -16,20 +16,7 @@ layout: layouts/dev/base.njk
       </nav>
       {% endif %}
     </header>
-    {% set ldPublished = date | isoDateTime %}
-    {% set ldModified = updated | default(date) | isoDateTime %}
-    {% set ld = {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": title,
-      "description": description | default(excerpt),
-      "datePublished": ldPublished,
-      "dateModified": ldModified,
-      "inLanguage": i18n.lang,
-      "author": { "@type": "Person", "name": i18n.name, "url": "https://" + site.domain + "/" + i18n.lang + "/" },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://" + site.domain + page.url }
-    } %}
-    <script type="application/ld+json">{{ ld | toJson | safe }}</script>
+    {% include "partials/article-structured-data.njk" %}
     <div class="dev-article__body">
       {{ content | safe }}
     </div>

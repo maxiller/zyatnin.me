@@ -20,6 +20,9 @@ const FIELDS = [
   "updated",
   "tags",
   "slug",
+  // "posts" or "projects": templates need it to tell an article from a project
+  // page (article Open Graph type, structured data).
+  "kind",
   "view",
   "order",
   "status",
