@@ -1,5 +1,6 @@
 const { EleventyI18nPlugin } = require("@11ty/eleventy");
 const contentModel = require("./lib/content");
+const { previewing } = require("./lib/published");
 
 module.exports = function(eleventyConfig) {
   // i18n plugin
@@ -18,6 +19,15 @@ module.exports = function(eleventyConfig) {
   // Content files are data, not templates: the parsed model is rebuilt whenever
   // one of them changes.
   eleventyConfig.addWatchTarget("content/");
+
+  // A preview serves scheduled posts and drafts while `npm run build` does not
+  // (FR-91). Say it out loud: the extra pages otherwise look like a broken
+  // publication gate.
+  if (previewing()) {
+    console.log(
+      "[preview] видны отложенные статьи и черновики; сборка (npm run build) их не пишет"
+    );
+  }
 
   // Custom filters
   // Dates arrive as Date objects (gray-matter parses YAML dates) or ISO strings.
