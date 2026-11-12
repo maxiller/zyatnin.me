@@ -1,6 +1,7 @@
 const { EleventyI18nPlugin } = require("@11ty/eleventy");
 const contentModel = require("./lib/content");
 const { previewing } = require("./lib/published");
+const { formatDate } = require("./lib/dates");
 
 module.exports = function(eleventyConfig) {
   // i18n plugin
@@ -31,8 +32,7 @@ module.exports = function(eleventyConfig) {
 
   // Custom filters
   // Dates arrive as Date objects (gray-matter parses YAML dates) or ISO strings.
-  // Format in UTC so a YYYY-MM-DD date never shifts to the neighbouring day.
-  const dateLocales = { ru: "ru-RU", en: "en-GB", he: "he-IL" };
+  // lib/dates.js formats them in UTC, for the pages and for cover images alike.
 
   // ISO week label for cards: "2026-W14". Computed in UTC so a date stored as
   // UTC midnight keeps its ISO week regardless of the local timezone.
@@ -47,14 +47,7 @@ module.exports = function(eleventyConfig) {
     const week = Math.ceil(((t - yearStart) / 86400000 + 1) / 7);
     return `${t.getUTCFullYear()}-W${String(week).padStart(2, "0")}`;
   });
-  eleventyConfig.addFilter("dateDisplay", (dateVal, lang = "en") => {
-    if (!dateVal) return "";
-    const d = dateVal instanceof Date ? dateVal : new Date(dateVal);
-    if (isNaN(d)) return "";
-    return new Intl.DateTimeFormat(dateLocales[lang] || lang, {
-      day: "numeric", month: "long", year: "numeric", timeZone: "UTC"
-    }).format(d);
-  });
+  eleventyConfig.addFilter("dateDisplay", (dateVal, lang = "en") => formatDate(dateVal, lang));
 
   eleventyConfig.addFilter("readingTime", (content) => {
     const words = (content || "").replace(/<[^>]*>/g, "").split(/\s+/).length;

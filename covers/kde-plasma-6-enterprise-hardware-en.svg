@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0f1115"/>
+
+  <text x="96" y="92" text-anchor="start" font-family="Inter" font-size="24" font-weight="700" letter-spacing="4" fill="#61afef">ENGINEER</text>
+  <text x="1104" y="92" text-anchor="end" font-family="Inter" font-size="24" font-weight="400" fill="#9aa1ad">24 September 2025</text>
+  <rect x="96" y="112" width="72" height="6" rx="3" fill="#98c379"/>
+
+  <text x="96" y="208" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#d7dbe2">KDE Plasma 6 on Enterprise</text>
+  <text x="96" y="281" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#d7dbe2">Hardware</text>
+  <rect x="96.0" y="347" width="111.6" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
+  <text x="151.8" y="382" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#8ecbff">Linux</text>
+  <rect x="221.6" y="347" width="140.2" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
+  <text x="291.7" y="382" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#8ecbff">Desktop</text>
+
+  <text x="96" y="556" text-anchor="start" font-family="Inter" font-size="24" font-weight="700" fill="#61afef">zyatnin.me</text>
+  <text x="96" y="588" text-anchor="start" font-family="Inter" font-size="22" font-weight="400" fill="#9aa1ad">/en/dev/blog/kde-plasma-6-enterprise-hardware/</text>
+</svg>

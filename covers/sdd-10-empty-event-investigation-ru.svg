@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0f1115"/>
+
+  <text x="96" y="92" text-anchor="start" font-family="Inter" font-size="24" font-weight="700" letter-spacing="4" fill="#61afef">ИНЖЕНЕР</text>
+  <text x="1104" y="92" text-anchor="end" font-family="Inter" font-size="24" font-weight="400" fill="#9aa1ad">4 октября 2026 г.</text>
+  <rect x="96" y="112" width="72" height="6" rx="3" fill="#98c379"/>
+
+  <text x="96" y="208" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#d7dbe2">А где мои логи?</text>
+  <text x="96" y="281" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#d7dbe2">Прод-расследование</text>
+  <text x="96" y="354" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#d7dbe2">пустого события</text>
+  <rect x="96.0" y="420" width="350.5" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
+  <text x="271.3" y="455" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#8ecbff">Spec-Driven Development</text>
+  <rect x="460.5" y="420" width="205.2" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
+  <text x="563.1" y="455" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#8ecbff">Контейнеры</text>
+
+  <text x="96" y="556" text-anchor="start" font-family="Inter" font-size="24" font-weight="700" fill="#61afef">zyatnin.me</text>
+  <text x="96" y="588" text-anchor="start" font-family="Inter" font-size="22" font-weight="400" fill="#9aa1ad">/ru/dev/blog/sdd-10-empty-event-investigation/</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f7f8fa"/>
+
+  <text x="96" y="92" text-anchor="start" font-family="Inter" font-size="24" font-weight="700" letter-spacing="4" fill="#2b5fb0">ЛИДЕР</text>
+  <text x="1104" y="92" text-anchor="end" font-family="Inter" font-size="24" font-weight="400" fill="#5f6d80">5 декабря 2026 г.</text>
+  <rect x="96" y="112" width="72" height="6" rx="3" fill="#2b5fb0"/>
+
+  <text x="96" y="208" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#182231">Самообслуживание как</text>
+  <text x="96" y="281" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#182231">Shift Left: пилот с честным</text>
+  <text x="96" y="354" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#182231">измерением</text>
+  <rect x="96.0" y="420" width="332.1" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
+  <text x="262.0" y="455" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">Лидерство в команде</text>
+  <rect x="442.1" y="420" width="373.4" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
+  <text x="628.8" y="455" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">Управление поддержкой</text>
+
+  <text x="96" y="556" text-anchor="start" font-family="Inter" font-size="24" font-weight="700" fill="#2b5fb0">zyatnin.me</text>
+  <text x="96" y="588" text-anchor="start" font-family="Inter" font-size="22" font-weight="400" fill="#5f6d80">/ru/blog/support-lead-shift-left-pilot/</text>
+</svg>

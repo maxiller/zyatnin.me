@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0f1115"/>
+
+  <text x="1104" y="92" text-anchor="end" font-family="Noto Sans Hebrew" font-size="24" font-weight="700" letter-spacing="4" fill="#61afef">מהנדס</text>
+  <text x="96" y="92" text-anchor="start" font-family="Noto Sans Hebrew" font-size="24" font-weight="400" fill="#9aa1ad">‫7 בספטמבר 2025‬</text>
+  <rect x="1032" y="112" width="72" height="6" rx="3" fill="#98c379"/>
+
+  <text x="1104" y="208" text-anchor="end" font-family="Noto Sans Hebrew" font-size="66" font-weight="800" fill="#d7dbe2">FreeBSD כמערכת הפעלה</text>
+  <text x="1104" y="281" text-anchor="end" font-family="Noto Sans Hebrew" font-size="66" font-weight="800" fill="#d7dbe2">שולחנית: האם היא יכולה</text>
+  <text x="1104" y="354" text-anchor="end" font-family="Noto Sans Hebrew" font-size="66" font-weight="800" fill="#d7dbe2">להחליף את Fedora KDE?</text>
+  <rect x="992.4" y="420" width="111.6" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
+  <text x="1048.2" y="455" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#8ecbff">Linux</text>
+  <rect x="781.8" y="420" width="196.6" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
+  <text x="880.1" y="455" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#8ecbff">שולחן עבודה</text>
+
+  <text x="1104" y="556" text-anchor="end" font-family="Inter" font-size="24" font-weight="700" fill="#61afef">zyatnin.me</text>
+  <text x="1104" y="588" text-anchor="end" font-family="Inter" font-size="22" font-weight="400" fill="#9aa1ad">/he/dev/blog/freebsd-desktop-vs-fedora/</text>
+</svg>

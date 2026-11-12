@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0f1115"/>
+
+  <text x="1104" y="92" text-anchor="end" font-family="Noto Sans Hebrew" font-size="24" font-weight="700" letter-spacing="4" fill="#61afef">מהנדס</text>
+  <text x="96" y="92" text-anchor="start" font-family="Noto Sans Hebrew" font-size="24" font-weight="400" fill="#9aa1ad">‫21 באוגוסט 2025‬</text>
+  <rect x="1032" y="112" width="72" height="6" rx="3" fill="#98c379"/>
+
+  <text x="1104" y="208" text-anchor="end" font-family="Noto Sans Hebrew" font-size="66" font-weight="800" fill="#d7dbe2">GitLab Runner בקונטיינרים:</text>
+  <text x="1104" y="281" text-anchor="end" font-family="Noto Sans Hebrew" font-size="66" font-weight="800" fill="#d7dbe2">Podman Quadlets ו-Systemd</text>
+  <rect x="964.3" y="347" width="139.7" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
+  <text x="1034.2" y="382" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#8ecbff">Podman</text>
+  <rect x="828.3" y="347" width="122.0" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
+  <text x="889.3" y="382" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#8ecbff">GitLab</text>
+  <rect x="667.9" y="347" width="146.4" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
+  <text x="741.1" y="382" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#8ecbff">systemd</text>
+
+  <text x="1104" y="556" text-anchor="end" font-family="Inter" font-size="24" font-weight="700" fill="#61afef">zyatnin.me</text>
+  <text x="1104" y="588" text-anchor="end" font-family="Inter" font-size="22" font-weight="400" fill="#9aa1ad">/he/dev/blog/gitlab-runner-podman-quadlets/</text>
+</svg>

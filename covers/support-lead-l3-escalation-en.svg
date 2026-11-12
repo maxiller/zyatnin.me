@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f7f8fa"/>
+
+  <text x="96" y="92" text-anchor="start" font-family="Inter" font-size="24" font-weight="700" letter-spacing="4" fill="#2b5fb0">LEADER</text>
+  <text x="1104" y="92" text-anchor="end" font-family="Inter" font-size="24" font-weight="400" fill="#5f6d80">24 November 2026</text>
+  <rect x="96" y="112" width="72" height="6" rx="3" fill="#2b5fb0"/>
+
+  <text x="96" y="208" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#182231">Escalating to L3: the</text>
+  <text x="96" y="281" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#182231">package, the OLA, and the</text>
+  <text x="96" y="354" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#182231">customer owner</text>
+  <rect x="96.0" y="420" width="243.9" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
+  <text x="218.0" y="455" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">Team leadership</text>
+  <rect x="353.9" y="420" width="294.9" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
+  <text x="501.4" y="455" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">Support management</text>
+
+  <text x="96" y="556" text-anchor="start" font-family="Inter" font-size="24" font-weight="700" fill="#2b5fb0">zyatnin.me</text>
+  <text x="96" y="588" text-anchor="start" font-family="Inter" font-size="22" font-weight="400" fill="#5f6d80">/en/blog/support-lead-l3-escalation/</text>
+</svg>

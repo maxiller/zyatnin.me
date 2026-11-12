@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "description": "Personal portfolio site — Max Zia",
   "scripts": {
-    "build": "node scripts/check-content.js && node scripts/clean.js && eleventy && node scripts/check-seo.js",
-    "build:ghpages": "node scripts/check-content.js && node scripts/clean.js && eleventy && node scripts/check-seo.js",
+    "build": "node scripts/check-content.js && node scripts/make-covers.js check && node scripts/clean.js && node scripts/make-covers.js png && eleventy && node scripts/check-seo.js",
+    "build:ghpages": "node scripts/check-content.js && node scripts/make-covers.js check && node scripts/clean.js && node scripts/make-covers.js png && eleventy && node scripts/check-seo.js",
     "clean": "node scripts/clean.js",
     "check:content": "node scripts/check-content.js",
+    "check:covers": "node scripts/make-covers.js check",
     "check:seo": "node scripts/check-seo.js",
+    "covers": "npm run covers:svg && npm run covers:png",
+    "covers:svg": "node scripts/make-covers.js svg",
+    "covers:png": "node scripts/make-covers.js png",
     "start": "eleventy --serve --port=5000",
     "dev": "eleventy --serve --port=5000"
   },
@@ -15,5 +19,8 @@
     "@11ty/eleventy": "^3.1.2",
     "gray-matter": "npm:@11ty/gray-matter@^1.0.0",
     "markdown-it": "^14.1.0"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2"
   }
 }

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0f1115"/>
+
+  <text x="96" y="92" text-anchor="start" font-family="Inter" font-size="24" font-weight="700" letter-spacing="4" fill="#61afef">ИНЖЕНЕР</text>
+  <text x="1104" y="92" text-anchor="end" font-family="Inter" font-size="24" font-weight="400" fill="#9aa1ad">1 июля 2025 г.</text>
+  <rect x="96" y="112" width="72" height="6" rx="3" fill="#98c379"/>
+
+  <text x="96" y="208" text-anchor="start" font-family="Inter" font-size="62" font-weight="800" fill="#d7dbe2">KVM Bridge Networking:</text>
+  <text x="96" y="276" text-anchor="start" font-family="Inter" font-size="62" font-weight="800" fill="#d7dbe2">подключение виртуальных</text>
+  <text x="96" y="344" text-anchor="start" font-family="Inter" font-size="62" font-weight="800" fill="#d7dbe2">машин к физической сети</text>
+  <rect x="96.0" y="410" width="108.5" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
+  <text x="150.2" y="445" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#8ecbff">Сети</text>
+  <rect x="218.5" y="410" width="253.6" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
+  <text x="345.3" y="445" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#8ecbff">Виртуализация</text>
+  <rect x="486.0" y="410" width="111.6" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
+  <text x="541.8" y="445" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#8ecbff">Linux</text>
+
+  <text x="96" y="556" text-anchor="start" font-family="Inter" font-size="24" font-weight="700" fill="#61afef">zyatnin.me</text>
+  <text x="96" y="588" text-anchor="start" font-family="Inter" font-size="22" font-weight="400" fill="#9aa1ad">/ru/dev/blog/kvm-bridge-networking/</text>
+</svg>

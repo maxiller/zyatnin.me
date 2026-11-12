@@ -9,7 +9,8 @@
    Checks: sitemap coverage (indexable pages in, noindex pages out), every
    sitemap URL resolves to a file, robots.txt references the sitemap, all six
    Atom feeds exist, every internal href resolves, titles are unique and every
-   indexable page carries canonical/description/og:image.
+   indexable page carries canonical/description/og:image, and every og:image is
+   a real 1200×630 PNG in the build.
 
    Plus the article-specific metadata of FR-62, FR-63, FR-69 and FR-126: a post
    page declares `og:type=article` and `article:published_time`, its JSON-LD
@@ -48,6 +49,15 @@ function fileForPath(urlPath) {
   if (fs.existsSync(direct) && fs.statSync(direct).isFile()) return direct;
   const asDir = path.join(SITE, rel, "index.html");
   return fs.existsSync(asDir) ? asDir : null;
+}
+
+// Dimensions of a PNG, read from its IHDR chunk. og:image is a 1200×630 card by
+// contract, and a wrong size is only visible in a social preview — so the build
+// reads the header instead of trusting the meta tag next to it.
+function pngSize(file) {
+  const head = fs.readFileSync(file).subarray(0, 24);
+  if (head.length < 24 || head[0] !== 0x89 || head.toString("latin1", 12, 16) !== "IHDR") return null;
+  return { width: head.readUInt32BE(16), height: head.readUInt32BE(20) };
 }
 
 const files = walk(SITE, []);
@@ -125,7 +135,17 @@ for (const file of htmlFiles) {
     else if (descriptions.has(description)) errors.push(`${ownPath}: дублирующееся description (ещё у ${descriptions.get(description)})`);
     else descriptions.set(description, ownPath);
     if (!ogImage) errors.push(`${ownPath}: нет og:image`);
-    else if (!fileForPath(stripHost(ogImage))) errors.push(`${ownPath}: og:image ${ogImage} не найден в сборке`);
+    else {
+      const imageFile = fileForPath(stripHost(ogImage));
+      if (!imageFile) errors.push(`${ownPath}: og:image ${ogImage} не найден в сборке`);
+      else {
+        const size = pngSize(imageFile);
+        if (!size) errors.push(`${ownPath}: og:image ${ogImage} — не PNG, размер 1200×630 не подтверждён`);
+        else if (size.width !== 1200 || size.height !== 630) {
+          errors.push(`${ownPath}: og:image ${ogImage} — ${size.width}×${size.height}, ожидается 1200×630`);
+        }
+      }
+    }
     if (!title.trim()) errors.push(`${ownPath}: пустой <title>`);
     else if (titles.has(title)) errors.push(`${ownPath}: дублирующийся title «${title}» (ещё у ${titles.get(title)})`);
     else titles.set(title, ownPath);
@@ -186,6 +206,23 @@ for (const file of htmlFiles) {
     if (!href || href.startsWith("http") || href.startsWith("mailto:") || href.startsWith("data:")) continue;
     if (!href.startsWith("/")) continue; // relative hrefs are not used by the templates
     if (!fileForPath(stripHost(href))) errors.push(`${ownPath}: битая ссылка ${href}`);
+  }
+}
+
+// --- covers (FR-63) --------------------------------------------------------
+// Every PNG in the build must belong to a published article: a file left over
+// from a preview build (or from a post that went back to a future date) is
+// reachable even though nothing links to it.
+const coverDir = path.join(SITE, "assets", "covers");
+if (fs.existsSync(coverDir)) {
+  const expectedCovers = new Set(
+    [...articlePaths].map((articlePath) => {
+      const parts = articlePath.split("/").filter(Boolean);
+      return `${parts[parts.length - 1]}-${parts[0]}.png`;
+    })
+  );
+  for (const file of fs.readdirSync(coverDir)) {
+    if (!expectedCovers.has(file)) errors.push(`assets/covers/${file}: обложка без опубликованной статьи`);
   }
 }
 
