@@ -1,5 +1,5 @@
-const markdownIt = require("markdown-it");
 const { EleventyI18nPlugin } = require("@11ty/eleventy");
+const contentModel = require("./lib/content");
 
 module.exports = function(eleventyConfig) {
   // i18n plugin
@@ -7,27 +7,17 @@ module.exports = function(eleventyConfig) {
     defaultLanguage: "ru",
   });
 
-  // Markdown with HTML passthrough
-  const md = markdownIt({ html: true, linkify: true, typographer: true });
-
-  // Fenced ```mermaid blocks get a class on their <pre> so the view stylesheets
-  // can drop the code-block chrome (dark background, border, padding) and let the
-  // drawn diagram sit directly on the page background. Marking happens at build
-  // time; rendering itself is done by the lazy mermaid loader in app.js.
-  const defaultFence = md.renderer.rules.fence;
-  md.renderer.rules.fence = function(tokens, idx, options, env, self) {
-    const output = defaultFence
-      ? defaultFence(tokens, idx, options, env, self)
-      : self.renderToken(tokens, idx, options);
-    const info = String(tokens[idx].info || "").trim().split(/\s+/)[0];
-    return info === "mermaid" ? output.replace("<pre>", '<pre class="diagram-block">') : output;
-  };
-
-  eleventyConfig.setLibrary("md", md);
+  // Markdown: the same renderer renders template Markdown and the language
+  // branches of content files (lib/markdown.js).
+  eleventyConfig.setLibrary("md", require("./lib/markdown"));
 
   // Passthrough assets
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("CNAME");
+
+  // Content files are data, not templates: the parsed model is rebuilt whenever
+  // one of them changes.
+  eleventyConfig.addWatchTarget("content/");
 
   // Custom filters
   // Dates arrive as Date objects (gray-matter parses YAML dates) or ISO strings.
@@ -168,60 +158,60 @@ eleventyConfig.addFilter("switchLangUrl", (pages, url, targetLang) => {
   });
 
   // Collections: posts per language, sorted by date desc
-  const langs = ["ru", "en", "he"];
-  for (const lang of langs) {
-    eleventyConfig.addCollection(`posts_${lang}`, function(collectionApi) {
-      return collectionApi.getFilteredByGlob(`src/${lang}/posts/*.md`)
-        .sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
-    });
-  }
+  const toItem = (page) => ({
+    url: page.url,
+    date: page.date,
+    data: {
+      title: page.title,
+      excerpt: page.excerpt,
+      description: page.description,
+      date: page.date,
+      updated: page.updated,
+      tags: page.tags,
+      slug: page.slug,
+      view: page.view,
+      lang: page.lang,
+      kind: page.kind,
+      order: page.order,
+      status: page.status,
+      icon: page.icon,
+      points: page.points,
+    },
+  });
 
-  // Collections: projects per language, sorted by explicit front matter order
-  for (const lang of langs) {
-    eleventyConfig.addCollection(`projects_${lang}`, function(collectionApi) {
-      return collectionApi.getFilteredByGlob(`src/${lang}/projects/*.md`)
-        .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
-    });
+  for (const lang of contentModel.LANGS) {
+    // Posts of a language, newest first (AR-05, FR-22).
+    eleventyConfig.addCollection(`posts_${lang}`, () =>
+      contentModel.load().pages
+        .filter((page) => page.kind === "posts" && page.lang === lang)
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .map(toItem)
+    );
+
+    // Projects of a language, in the order given by `order` (FR-105).
+    eleventyConfig.addCollection(`projects_${lang}`, () =>
+      contentModel.load().pages
+        .filter((page) => page.kind === "projects" && page.lang === lang)
+        .sort((a, b) => a.order - b.order)
+        .map(toItem)
+    );
   }
 
   // Tag navigation. A post's `tags` are keys of the tag vocabulary; the labels
   // come from `tags.names` of the current language. A tag label must always
   // lead to a page that lists the posts carrying it, so one page exists per
-  // (language × view × tag actually used) triple, and this is the only place
-  // that decides their URLs.
-  const VIEW_DIRS = { leader: "", dev: "dev/" };
-  const tagUrl = (lang, view, tag) => `/${lang}/${VIEW_DIRS[view]}tags/${tag}/`;
+  // (language × view × tag actually used) triple, and lib/content.js is the only
+  // place that decides their URLs (FR-119, FR-120).
+  const tagUrl = (lang, view, tag) => contentModel.tagUrl(view, lang, tag);
   eleventyConfig.addFilter("tagUrl", tagUrl);
 
-  for (const lang of langs) {
-    const tagNames = require(`./src/_data/i18n/${lang}.json`).tags.names;
-    for (const view of Object.keys(VIEW_DIRS)) {
-      eleventyConfig.addCollection(`tagPages_${lang}_${view}`, function(collectionApi) {
-        const posts = collectionApi.getFilteredByGlob(`src/${lang}/posts/*.md`)
-          .filter((p) => p.data && p.data.view === view);
-        const used = new Set();
-        for (const post of posts) {
-          const tags = post.data.tags;
-          // FR-118: 1–3 tags from the vocabulary. A missing or unknown tag key
-          // would silently produce a broken label or link, so fail the build.
-          if (!Array.isArray(tags) || tags.length < 1 || tags.length > 3) {
-            throw new Error(`${post.inputPath}: FR-118 — expected 1–3 tag keys`);
-          }
-          for (const tag of tags) {
-            if (!tagNames[tag]) {
-              throw new Error(`${post.inputPath}: tag "${tag}" is missing in tags.names (${lang})`);
-            }
-            used.add(tag);
-          }
-        }
-        return [...used].sort().map((tag) => ({
-          lang,
-          view,
-          tag,
-          url: tagUrl(lang, view, tag),
-          label: tagNames[tag]
-        }));
-      });
+  for (const lang of contentModel.LANGS) {
+    for (const view of contentModel.VIEWS) {
+      eleventyConfig.addCollection(`tagPages_${lang}_${view}`, () =>
+        contentModel
+          .load()
+          .tagPages.filter((tag) => tag.lang === lang && tag.view === view)
+      );
     }
   }
 

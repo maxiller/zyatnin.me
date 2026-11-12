@@ -3,19 +3,24 @@
 
    Eleventy and the SEO check say nothing about the mistakes this catches:
    an i18n key that exists only in one language, a template reading a key from
-   the other view's branch, and a CSS block that is not closed (browsers then
-   swallow every rule after the mistake, which is silent on the page).
+   the other view's branch, a CSS block that is not closed (browsers then
+   swallow every rule after the mistake, which is silent on the page), and a
+   content file that lost one of its language branches.
 
    Checks:
    - `ru`, `en`, `he` have identical i18n key trees;
    - every `i18n.<path>` used by a template exists in all three languages;
    - view templates read only their own branch (`leader.*` / `dev.*`) plus the
      shared root keys;
-   - every CSS rule is closed and no rule body opens with another selector. */
+   - every CSS rule is closed and no rule body opens with another selector;
+   - every content file is a valid page (`lib/content.js`: metadata, three
+     language branches, tags, excerpt length). */
 "use strict";
 
 const fs = require("fs");
 const path = require("path");
+
+const contentModel = require("../lib/content");
 
 const LANGS = ["ru", "en", "he"];
 const errors = [];
@@ -118,6 +123,17 @@ for (const file of cssFiles) {
   }
 }
 
+// --- content model ----------------------------------------------------------
+// One file per page with three language branches (`lib/content.js`). Its
+// validator is run here so a broken content file stops the build before
+// Eleventy starts, and not in the middle of the page output.
+let contentPages = 0;
+try {
+  contentPages = contentModel.load().pages.length;
+} catch (error) {
+  errors.push(String(error.message));
+}
+
 // --- report -----------------------------------------------------------------
 if (errors.length) {
   console.error(`Content self-check: ${errors.length} проблема(и):`);
@@ -127,5 +143,5 @@ if (errors.length) {
 
 console.log(
   `Content self-check: ok — ${keySets.ru.size} ключей i18n × ${LANGS.length} языка, ` +
-    `${templates.length} шаблонов, ${cssFiles.length} CSS-файлов.`
+    `${templates.length} шаблонов, ${contentPages} страниц контента, ${cssFiles.length} CSS-файлов.`
 );

@@ -1,0 +1,12 @@
+---
+pagination:
+  data: contentModel.pages
+  size: 1
+  alias: entry
+  # Every generated page is a real page of the site: it belongs in
+  # `collections.all` (sitemap, language and view switchers, hreflang), not only
+  # the first one.
+  addAllPagesToCollections: true
+permalink: "{{ entry.url }}"
+---
+{{- entry.body | safe -}}

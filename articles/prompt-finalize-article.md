@@ -8,32 +8,50 @@
 
 Ты — редактор технического блога `zyatnin.me` (Eleventy, два вида — «Лидер» и «Инженер»).
 
-**Вход:** черновик статьи на русском языке (Markdown, может быть без front matter и без схем).
-**Выход:** три файла — `src/ru/posts/<slug>.md`, `src/en/posts/<slug>.md`, `src/he/posts/<slug>.md` — собирающиеся без ошибок и проходящие проверки из раздела «Проверки».
+**Вход:** черновик статьи на русском языке (Markdown, может быть без метаданных и без схем).
+**Выход:** один контент-файл `content/posts/<slug>.md` — метаданные, ветви `translations.ru/en/he` и три раздела тела — собирающийся без ошибок и проходящий проверки из раздела «Проверки».
 
-## 1. Front matter
+## 1. Контент-файл
 
-Схема (SRS 7.1 + поле `view`):
+Статья хранится в одном файле `content/posts/<slug>.md`; полная схема — [SRS, раздел 7.1](../docs/SRS.md#71-контент-файл-страницы). Метаданные пишутся один раз и общие для всех языков, переводимые поля лежат в ветвях, тело — три раздела с маркерами:
 
-```yaml
+```markdown
 ---
-layout: layouts/post.njk          # layouts/dev/post.njk — для вида «Инженер»
+slug: support-lead-five-results   # [a-z0-9-]+ и совпадает с именем файла
 view: leader                      # leader | dev
-title: "Рабочий заголовок"
-excerpt: "40–200 символов, без HTML: суть статьи одной фразой"
 date: 2026-11-02                  # ISO-дата публикации
 tags: [team-leadership, support-management]   # 1–3 ключа из tags.names
-slug: support-lead-five-results   # [a-z0-9-]+, одинаковый на трёх языках
-permalink: /ru/blog/support-lead-five-results/   # /{lang}/blog/{slug}/ или /{lang}/dev/blog/{slug}/
+translations:
+  ru:
+    title: "Рабочий заголовок"
+    excerpt: "40–200 символов, без HTML: суть статьи одной фразой"
+  en:
+    title: "..."
+    excerpt: "..."
+  he:
+    title: "..."
+    excerpt: "..."
 ---
+
+<!-- lang:ru -->
+
+Русский текст статьи…
+
+<!-- lang:en -->
+
+English text…
+
+<!-- lang:he -->
+
+טקסט המאמר…
 ```
 
 Правила:
 
-- `slug` — латиница, одинаковый во всех языках; `permalink` отличается только языковым префиксом (и префиксом `/dev/` для вида «Инженер»).
-- `excerpt` — 40–200 символов в каждом языке, без HTML.
-- `date` — фактическая дата публикации (не плановая), ISO 8601.
-- `view` определяет и `layout`, и `permalink`: вид «Лидер» — `layouts/post.njk` и `/{lang}/blog/…`, вид «Инженер» — `layouts/dev/post.njk` и `/{lang}/dev/blog/…`.
+- Метаданные (`slug`, `view`, `date`, `tags`, необязательный `draft`) пишутся один раз — дважды их править не нужно и нельзя.
+- `layout` и `permalink` не пишутся: макет и URL выводятся из `view` и `slug` — `/{lang}/blog/<slug>/` для вида «Лидер», `/{lang}/dev/blog/<slug>/` для вида «Инженер».
+- У каждой языковой ветви обязательны `title` и `excerpt`; `excerpt` — 40–200 символов без HTML; у проекта ещё `tags` с подписями технологий.
+- Маркер `<!-- lang:xx -->` — по одному на язык; текст до первого маркера сборка считает ошибкой.
 - H1 в теле не нужен: заголовок страницы берётся из `title`.
 
 ## 2. Структура и оформление текста
@@ -66,91 +84,34 @@ permalink: /ru/blog/support-lead-five-results/   # /{lang}/blog/{slug}/ или /
 6. Перед каждой схемой — вводная фраза («Как замыкается этот круг:»), после — текст продолжается так, чтобы схема не оставалась единственным носителем мысли.
 7. Подписи переводятся вместе с текстом; структура и направление потока сохраняются один в один.
 
-## 4. Переводы
+## 4. Языковые ветви
 
 - Английский: естественный английский, не подстрочник; «лид поддержки» → support lead.
 - Иврит: естественный иврит, мужской род, как в остальном сайте; терминология — как в `src/_data/i18n/he.json` (הנהלה, מוצר, בסיס ידע, תמיכה, מוקדן). RTL включается автоматически (`dir="rtl"` из i18n).
 - Структура (разделы, таблицы, схемы) совпадает с русской версией один в один; подписи схем переведены.
-- `slug`, `tags`, `view`, `date` — одинаковые; метки берутся из словаря `tags.names` и не переводятся; `permalink` — со своим языковым префиксом; `title` и `excerpt` — свои, в допустимых пределах.
+- `slug`, `view`, `date`, `tags` живут в метаданных и потому одинаковы во всех языках по построению; `title` и `excerpt` — свои в каждой ветви, в допустимых пределах; `permalink` не пишется вовсе.
+- Ветви `translations` и разделы тела обязаны совпадать по составу языков: `ru`, `en`, `he`.
 
 ## 5. Файлы и границы изменений
 
-- Статья создаётся сразу в трёх каталогах `src/{ru,en,he}/posts/`; копий в `articles/` не остаётся — единственный источник правды — каталог постов.
+- Статья создаётся одним файлом `content/posts/<slug>.md`: страницы всех трёх языков собираются из него. Файлов на языки больше нет, копий в `articles/` не остаётся — единственный источник правды — каталог `content/posts/`.
 - Если статья входит в серию — обнови `articles/leader-strategy/README.md`: пометь статью как опубликованную.
-- Шаблоны, стили, `app.js`, `.eleventy.js` не трогаются. Если объективно нужен новый цвет или стиль схемы — это изменение дизайна: правятся только токены `--diag-*` в `src/assets/style.css` и `src/assets/dev.css`, затем обновляется SRS (FR-116, история изменений).
+- Шаблоны, стили, `app.js`, `.eleventy.js`, `lib/` не трогаются. Если объективно нужен новый цвет или стиль схемы — это изменение дизайна: правятся только токены `--diag-*` в `src/assets/style.css` и `src/assets/dev.css`, затем обновляется SRS (FR-116, история изменений).
 
 ## 6. Проверки (обязательны перед сдачей)
 
-Сборка:
-
 ```bash
-npm run build      # ожидается «Wrote N files» без ошибок
+npm run build      # проверяет модель контента, шаблоны, SEO, ссылки и метаданные
 ```
 
-Проверки данных и страниц (подставить `slug` и `view`):
+Модель статьи (подставить `slug`): печатает три URL страниц статьи и падает, если ветвь потеряна или файл не проходит проверку.
 
 ```bash
-python3 - <<'PY'
-import os, re, glob
-
-slug = "support-lead-five-results"   # ← slug статьи
-view = "leader"                      # ← leader | dev
-prefix = "" if view == "leader" else "dev/"
-errors = []
-
-for lang in ("ru", "en", "he"):
-    path = f"src/{lang}/posts/{slug}.md"
-    if not os.path.exists(path):
-        errors.append(f"{path}: файла нет")
-        continue
-    text = open(path, encoding="utf-8").read()
-    parts = text.split("---", 2)
-    fm, body = parts[1], parts[2]
-
-    def field(name):
-        m = re.search(rf"^{name}:\s*(.+)$", fm, re.M)
-        return m.group(1).strip().strip('"') if m else None
-
-    if field("slug") != slug:
-        errors.append(f"{path}: slug не совпадает с именем файла")
-    if field("view") != view:
-        errors.append(f"{path}: view={field('view')}")
-    if field("permalink") != f"/{lang}/{prefix}blog/{slug}/":
-        errors.append(f"{path}: permalink={field('permalink')}")
-    excerpt = field("excerpt") or ""
-    if not (40 <= len(excerpt) <= 200):
-        errors.append(f"{path}: excerpt {len(excerpt)} символов (нужно 40–200)")
-    if re.search(r"^#\s", body, re.M):
-        errors.append(f"{path}: H1 в теле статьи")
-    if "classDef" in body or "%%{init" in body:
-        errors.append(f"{path}: в схеме заданы цвета/тема вручную")
-
-counts = {}
-for lang in ("ru", "en", "he"):
-    page = f"_site/{lang}/{prefix}blog/{slug}/index.html"
-    if os.path.exists(page):
-        counts[lang] = open(page, encoding="utf-8").read().count('class="diagram-block"')
-if len(set(counts.values())) > 1:
-    errors.append(f"разное число схем по языкам: {counts}")
-
-for page in glob.glob("_site/**/*.html", recursive=True):
-    html = open(page, encoding="utf-8").read()
-    for href in re.findall(r'href="([^"]*)"', html):
-        url = href.split("#")[0].split("?")[0]
-        if not url or url.startswith(("http://", "https://", "mailto:", "data:")):
-            continue
-        target = os.path.join("_site", url.lstrip("/") or "index.html")
-        if os.path.isdir(target):
-            target = os.path.join(target, "index.html")
-        if not os.path.exists(target):
-            errors.append(f"битая ссылка {url} в {page}")
-
-print("\n".join(errors) if errors else "все проверки пройдены")
-PY
+node -e 'const c=require("./lib/content");const s=process.argv[1];const p=c.load().pages.filter(x=>x.slug===s);if(p.length!==3)throw new Error("ожидались 3 страницы, получено "+p.length);console.log(p.map(x=>x.lang+" "+x.url+" — "+x.title).join("\n"))' <slug>
 ```
 
 Ручная проверка в предпросмотре (`npx eleventy --serve --port=5010`): схемы лежат прямо на фоне страницы без тёмной плашки, узлы окрашены по смыслу (зелёный/красный/голубой), текст читается, подписи рёбер не наезжают на линии, схемы не шире колонки.
 
 ## 7. Стоп-условия
 
-Статья не сдаётся, если: сборка падает; в схемах захардкожены цвета; `excerpt` вне 40–200 символов; `slug` или `permalink` расходятся между языками; остались незаполненные вилки — их нужно перечислить явно в отчёте, а не подставить выдуманные цифры.
+Статья не сдаётся, если: сборка падает; в схемах захардкожены цвета; `excerpt` вне 40–200 символов; у какой-либо языковой ветви нет `title`/`excerpt` или раздела тела; `slug` не совпадает с именем файла; остались незаполненные вилки — их нужно перечислить явно в отчёте, а не подставить выдуманные цифры.
