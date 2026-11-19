@@ -78,9 +78,9 @@ flowchart TD
 | База знаний и шаблон ответа | Статья пишется «когда будет время» и не пишется никогда | Критерий готовности и владелец статьи |
 | Метрика и дашборд | Дашборд, который никто не открывает | Паспорт метрики: формула, источник, порог, действие |
 
-Последние два участка связаны напрямую: KCS отвечает на вопрос, когда писать статью, а паспорт метрики — на вопрос, по какому признаку метрика вообще имеет право существовать. Спека не заменяет ни то, ни другое; она задаёт форму, в которой эти решения перестают быть устными. С маршрутами так же: [триаж при первом касании](/ru/blog/support-lead-triage-first-touch/) описывает, кто и куда ведёт заявку, а спека добавляет к маршруту то, чего в нём обычно нет, — границы и критерий приёмки.
+Последние два участка связаны напрямую: [KCS в рабочем потоке](/ru/blog/support-lead-kcs-workflow/) отвечает на вопрос, когда писать статью, а [паспорт метрики](/ru/blog/support-lead-metric-passport/) — на вопрос, по какому признаку метрика вообще имеет право существовать. Спека не заменяет ни то, ни другое; она задаёт форму, в которой эти решения перестают быть устными. С маршрутами так же: [триаж при первом касании](/ru/blog/support-lead-triage-first-touch/) описывает, кто и куда ведёт заявку, а спека добавляет к маршруту то, чего в нём обычно нет, — границы и критерий приёмки.
 
-Заявка в разработку — отдельный случай, потому что там появляется вторая сторона. Мой инструмент здесь — карточка проблемы: сколько клиентов затронуто, какая частота, во что обходится обходной путь. Спека прикладывается к карточке, а не заменяет её: карточка объясняет, почему это важно, спека — что именно должно измениться.
+Заявка в разработку — отдельный случай, потому что там появляется вторая сторона. Мой инструмент здесь — [карточка проблемы](/ru/blog/support-lead-problem-card/): сколько клиентов затронуто, какая частота, во что обходится обходной путь. Спека прикладывается к карточке, а не заменяет её: карточка объясняет, почему это важно, спека — что именно должно измениться.
 
 ## Как внедрять: от конституции до пилота
 
@@ -141,7 +141,7 @@ flowchart LR
 | Время от постановки до старта | Дата спеки → дата первого коммита или действия | Согласование дороже самой работы |
 | Доля спек с владельцем и датой сверки | По реестру спек | Спеки устаревают молча |
 
-Считать всё не нужно. Достаточно выборки в десять-пятнадцать заявок в месяц: этого хватает, чтобы увидеть направление, и мало, чтобы превратить измерение в отчётность. Правило из паспорта метрики действует и здесь: нет действия, которое меняется от цифры, — нет метрики.
+Считать всё не нужно. Достаточно выборки в десять-пятнадцать заявок в месяц: этого хватает, чтобы увидеть направление, и мало, чтобы превратить измерение в отчётность. Правило из [паспорта метрики](/ru/blog/support-lead-metric-passport/) действует и здесь: нет действия, которое меняется от цифры, — нет метрики.
 
 ### Метрики исхода
 
@@ -268,9 +268,9 @@ A support lead has no single inbox. There are five, and the price of a verbal re
 | Knowledge base and response template | The article is written "when there is time" and never is | A readiness criterion and an article owner |
 | Metric and dashboard | A dashboard nobody opens | A metric passport: formula, source, threshold, action |
 
-The last two areas are directly connected: KCS answers when to write the article, and the metric passport answers on what grounds a metric has the right to exist at all. A spec replaces neither; it sets the form in which those decisions stop being verbal. Routing works the same way: [triage at first touch](/en/blog/support-lead-triage-first-touch/) describes who routes a ticket where, and the spec adds what a regulation usually lacks — boundaries and an acceptance criterion.
+The last two areas are directly connected: [KCS in the workflow](/en/blog/support-lead-kcs-workflow/) answers when to write the article, and [the metric passport](/en/blog/support-lead-metric-passport/) answers on what grounds a metric has the right to exist at all. A spec replaces neither; it sets the form in which those decisions stop being verbal. Routing works the same way: [triage at first touch](/en/blog/support-lead-triage-first-touch/) describes who routes a ticket where, and the spec adds what a regulation usually lacks — boundaries and an acceptance criterion.
 
-A request to development is a separate case, because a second party appears there. My tool here is the problem card: how many clients are affected, how often, what the workaround costs. The spec is attached to the card rather than replacing it: the card explains why this matters, the spec explains what exactly must change.
+A request to development is a separate case, because a second party appears there. My tool here is [the problem card](/en/blog/support-lead-problem-card/): how many clients are affected, how often, what the workaround costs. The spec is attached to the card rather than replacing it: the card explains why this matters, the spec explains what exactly must change.
 
 ## How to adopt it: from a constitution to a pilot
 
@@ -331,7 +331,7 @@ Three "yes" out of four — a working spec. Two — a request, not a spec. Zero 
 | Time from request to start | Spec date → first commit or action | Agreement costs more than the work |
 | Share of specs with an owner and a check date | From the spec register | Specs go stale silently |
 
-You don't need to count everything. A sample of ten to fifteen requests a month is enough: enough to see a direction, little enough to keep measurement from turning into reporting. The rule from the metric passport applies here too: no action that changes because of the number — no metric.
+You don't need to count everything. A sample of ten to fifteen requests a month is enough: enough to see a direction, little enough to keep measurement from turning into reporting. The rule from [the metric passport](/en/blog/support-lead-metric-passport/) applies here too: no action that changes because of the number — no metric.
 
 ### Outcome metrics
 
@@ -458,9 +458,9 @@ flowchart TD
 | בסיס ידע ותבנית תשובה | המאמר נכתב "כשיהיה זמן" ולא נכתב לעולם | קריטריון מוכנות ובעלים למאמר |
 | מדד ודאשבורד | דאשבורד שאיש לא פותח | דרכון מדד: נוסחה, מקור, סף, פעולה |
 
-שני המקומות האחרונים קשורים ישירות: KCS עונה מתי לכתוב את המאמר, ודרכון המדד עונה על מה מעמיד מדד בכלל זכות קיום. מפרט לא מחליף לא זה ולא זה; הוא קובע את הצורה שבה ההחלטות האלה מפסיקות להיות בעל פה. גם המסלולים עובדים כך: [מיון במגע ראשון](/he/blog/support-lead-triage-first-touch/) מתאר מי מוביל פנייה ולאן, והמפרט מוסיף למסלול את מה שבדרך כלל חסר בו — גבולות וקריטריון קבלה.
+שני המקומות האחרונים קשורים ישירות: [KCS בזרימת העבודה](/he/blog/support-lead-kcs-workflow/) עונה מתי לכתוב את המאמר, ו[דרכון המדד](/he/blog/support-lead-metric-passport/) עונה על מה מעמיד מדד בכלל זכות קיום. מפרט לא מחליף לא זה ולא זה; הוא קובע את הצורה שבה ההחלטות האלה מפסיקות להיות בעל פה. גם המסלולים עובדים כך: [מיון במגע ראשון](/he/blog/support-lead-triage-first-touch/) מתאר מי מוביל פנייה ולאן, והמפרט מוסיף למסלול את מה שבדרך כלל חסר בו — גבולות וקריטריון קבלה.
 
-פנייה לפיתוח היא מקרה נפרד, כי שם מופיע צד שני. הכלי שלי כאן הוא כרטיס הבעיה: כמה לקוחות נפגעו, באיזו תדירות, כמה עולה מעקף. המפרט מצורף לכרטיס ולא מחליף אותו: הכרטיס מסביר למה זה חשוב, המפרט — מה בדיוק צריך להשתנות.
+פנייה לפיתוח היא מקרה נפרד, כי שם מופיע צד שני. הכלי שלי כאן הוא [כרטיס הבעיה](/he/blog/support-lead-problem-card/): כמה לקוחות נפגעו, באיזו תדירות, כמה עולה מעקף. המפרט מצורף לכרטיס ולא מחליף אותו: הכרטיס מסביר למה זה חשוב, המפרט — מה בדיוק צריך להשתנות.
 
 ## איך מיישמים: מחוקה לפיילוט
 
@@ -521,7 +521,7 @@ flowchart LR
 | זמן מהזמנה עד התחלה | תאריך המפרט → הקומיט או הפעולה הראשונה | התיאום יקר מהעבודה עצמה |
 | חלק המפרטים עם בעלים ותאריך הצלבה | לפי מרשם המפרטים | מפרטים מתיישנים בשקט |
 
-לא צריך לספור הכול. מדגם של עשר עד חמש עשרה פניות בחודש מספיק: מספיק כדי לראות כיוון, מעט מספיק כדי שהמדידה לא תהפוך לדיווח. הכלל מדרכון המדד תקף גם כאן: אין פעולה שמשתנה בגלל המספר — אין מדד.
+לא צריך לספור הכול. מדגם של עשר עד חמש עשרה פניות בחודש מספיק: מספיק כדי לראות כיוון, מעט מספיק כדי שהמדידה לא תהפוך לדיווח. הכלל מ[דרכון המדד](/he/blog/support-lead-metric-passport/) תקף גם כאן: אין פעולה שמשתנה בגלל המספר — אין מדד.
 
 ### מדדי התוצאה
 
