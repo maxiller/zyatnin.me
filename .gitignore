@@ -137,3 +137,6 @@ dist
 
 # Обложки рендерятся из covers/*.svg при каждой сборке
 src/assets/covers/
+
+# OS specific leftovers
+.DS_Store
