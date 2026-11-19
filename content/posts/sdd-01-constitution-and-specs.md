@@ -53,7 +53,7 @@ translations:
 
 Фича выбрана скучная и маленькая: в TRACE-режиме лог должен включать содержимое payload функций, которые выбирают следующее задание. «Добавить строчку в лог», не иначе. Посмотрим, во что это превратится.
 
-А закончится серия вот чем. Спека сказала, что событие будет. Прод показал, что события нет. Оказалось, спека была права, а прод — просто пустой. Но это будет десятый пост, а пока — установка инструмента.
+А закончится серия вот чем. Спека сказала, что событие будет. Прод показал, что события нет. Оказалось, спека была права, а прод — просто пустой. Но это будет [десятый пост](/ru/dev/blog/sdd-10-empty-event-investigation/), а пока — установка инструмента.
 
 ## Кому это может быть интересно
 
@@ -113,7 +113,7 @@ What follows is a full spec-driven cycle on one real feature — from the projec
 
 The feature is boring and small: in TRACE mode the log must include the payload of the functions that pick the next job. "Add a line to the log", nothing more. Let's see what it turns into.
 
-And here is how the series ends. The spec said the event would be there. Production showed no event. It turned out the spec was right and production was simply empty. But that is post ten; for now, installing the tool.
+And here is how the series ends. The spec said the event would be there. Production showed no event. It turned out the spec was right and production was simply empty. But that is [post ten](/en/dev/blog/sdd-10-empty-event-investigation/); for now, installing the tool.
 
 ## Who this may be useful for
 
@@ -173,7 +173,7 @@ Next up: putting speckit into a live project without rewriting it from scratch.
 
 הפיצ'ר נבחר משעמם וקטן: במצב TRACE הלוג צריך לכלול את תוכן ה-payload של הפונקציות שבוחרות את המשימה הבאה. "להוסיף שורה ללוג", לא פחות ולא יותר. נראה למה זה יתפתח.
 
-ואיך הסדרה נגמרת: המפרט אמר שהאירוע יהיה. הפרודקשן הראה שאין אירוע. מתברר שהמפרט צדק, והפרודקשן פשוט ריק. אבל זה הפוסט העשירי; בינתיים — התקנת הכלי.
+ואיך הסדרה נגמרת: המפרט אמר שהאירוע יהיה. הפרודקשן הראה שאין אירוע. מתברר שהמפרט צדק, והפרודקשן פשוט ריק. אבל זה [הפוסט העשירי](/he/dev/blog/sdd-10-empty-event-investigation/); בינתיים — התקנת הכלי.
 
 ## למי זה יכול לעניין
 

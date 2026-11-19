@@ -25,7 +25,7 @@ translations:
 
 Матрица взаимодействий — это таблица, которая заменяет чтение мыслей: кто принимает решения по каким вопросам, через какой канал это происходит и какой артефакт остаётся после. А правило «проект договорённости» дополняет её: у каждой договорённости есть срок, владелец и артефакт — иначе её просто нет.
 
-Оба инструмента — часть внешнего контура в годовом плане, о котором речь шла в статье «Год лида по кварталам». Здесь — механика: как устроена матрица и как она вытаскивает из трясины конкретный разговор.
+Оба инструмента — часть внешнего контура в годовом плане, о котором речь шла в статье [«Год лида по кварталам»](/ru/blog/support-lead-year-roadmap/). Здесь — механика: как устроена матрица и как она вытаскивает из трясины конкретный разговор.
 
 ## Типовые трения
 
@@ -155,7 +155,7 @@ The cause isn't people, it's an assumption everyone makes silently: that neighbo
 
 The interaction matrix is the table that replaces mind-reading: who decides on which questions, through which channel it happens, and what artefact is left behind. The agreement-as-a-project rule completes it: every agreement needs a date, an owner and an artefact - otherwise it simply doesn't exist.
 
-Both tools belong to the outer contour of the annual plan I described in "A support lead's year by quarters". Here it's the mechanics: how the matrix is built and how it pulls a specific conversation out of the mud.
+Both tools belong to the outer contour of the annual plan I described in ["A support lead's year by quarters"](/en/blog/support-lead-year-roadmap/). Here it's the mechanics: how the matrix is built and how it pulls a specific conversation out of the mud.
 
 ## Typical friction
 
@@ -285,7 +285,7 @@ And the last thing worth keeping in mind: the matrix is not about distributing b
 
 מטריצת אינטראקציות היא הטבלה שמחליפה קריאת מחשבות: מי מחליט באילו שאלות, בערוץ איזה זה קורה ואיזה מסמך נשאר אחרי. וכלל "הסכם כפרויקט" משלים אותה: לכל הסכמה יש תוקף, בעלים ומסמך — אחרת היא פשוט לא קיימת.
 
-שני הכלים הם חלק מהמעגל החיצוני בתוכנית השנתית, שתיארתי במאמר "שנה של מנהל תמיכה לפי רבעונים". כאן — המכניקה: איך בנויה המטריצה ואיך היא מוציאה שיחה מסוימת מהבוץ.
+שני הכלים הם חלק מהמעגל החיצוני בתוכנית השנתית, שתיארתי במאמר ["שנה של מנהל תמיכה לפי רבעונים"](/he/blog/support-lead-year-roadmap/). כאן — המכניקה: איך בנויה המטריצה ואיך היא מוציאה שיחה מסוימת מהבוץ.
 
 ## חיכוכים שגרתיים
 

@@ -23,7 +23,7 @@ translations:
 
 Причина не в разработке, которая медленно отвечает, и не в клиенте, который торопит. Причина в том, что я передал тикет без пакета и без договорённости, а ответственность за клиента считал переданной вместе с ним. Ни того, ни другого в реальности не произошло.
 
-В предыдущей статье серии — «Ни одного тихого нарушения SLA: еженедельный контроль очереди» — речь шла о контроле сроков и предупреждении нарушений. Эскалация — следующий шаг того же контура: что делать, когда срок под угрозой именно из-за зависимости от другой команды.
+В предыдущей статье серии — [«Ни одного тихого нарушения SLA: еженедельный контроль очереди»](/ru/blog/support-lead-no-silent-sla/) — речь шла о контроле сроков и предупреждении нарушений. Эскалация — следующий шаг того же контура: что делать, когда срок под угрозой именно из-за зависимости от другой команды.
 
 Тезис такой: эскалация — это передача работы с пакетом и договором о времени, но не передача ответственности за клиента. Разделение этих двух вещей и делает линию поддержки управляемой.
 
@@ -129,7 +129,7 @@ My first escalations felt like relief. The ticket went to the third line, and th
 
 The cause wasn't development replying slowly, or the customer hurrying things along. The cause was that I handed over the ticket without a package and without an agreement, while treating accountability for the customer as transferred with it. Neither had actually happened.
 
-The previous article in the series — "Not one silent SLA breach: weekly queue control" — was about deadline control and warning before breaches. Escalation is the next step of the same loop: what to do when the deadline is at risk precisely because of a dependency on another team.
+The previous article in the series — ["Not one silent SLA breach: weekly queue control"](/en/blog/support-lead-no-silent-sla/) — was about deadline control and warning before breaches. Escalation is the next step of the same loop: what to do when the deadline is at risk precisely because of a dependency on another team.
 
 The thesis: escalation hands over work with a package and an agreement about time, but not accountability for the customer. Separating those two things is what makes a support line manageable.
 
@@ -235,7 +235,7 @@ The most valuable thing this discipline gives you isn't the third line's speed �
 
 הסיבה אינה בפיתוח שעונה לאט ואינה בלקוח שממהר. הסיבה היא שהעברתי את הפנייה בלי חבילה ובלי הסכמה, ואת האחריות ללקוח חשבתי כמועברת יחד איתה. לא זה ולא זה קרה במציאות.
 
-המאמר הקודם בסדרה — "בלי הפרת SLA שקטה: בקרת תור שבועית" — עסק בבקרת מועדים ובהתראה לפני הפרות. הסלמה היא הצעד הבא של אותו מעגל: מה עושים כשהמועד בסכנה דווקא בגלל תלות בצוות אחר.
+המאמר הקודם בסדרה — ["בלי הפרת SLA שקטה: בקרת תור שבועית"](/he/blog/support-lead-no-silent-sla/) — עסק בבקרת מועדים ובהתראה לפני הפרות. הסלמה היא הצעד הבא של אותו מעגל: מה עושים כשהמועד בסכנה דווקא בגלל תלות בצוות אחר.
 
 הטענה: הסלמה היא העברת עבודה עם חבילה ועם הסכמה על זמן, אבל לא העברת האחריות ללקוח. דווקא ההפרדה בין שני הדברים האלה הופכת את קו התמיכה למנוהל.
 

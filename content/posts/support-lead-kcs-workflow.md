@@ -104,7 +104,7 @@ Evolve Loop опирается на сигналы использования, �
 
 Этим циклом кто-то должен заниматься. В моей практике это роль, а не отдельная ставка: владелец базы знаний — инженер, у которого есть выделенные часы в неделю и мандат менять чужие статьи. Что он делает: разбирает отметки «не помогло», сливает дубли, чистит устаревшее, следит, чтобы у статей были понятные названия, и возвращает авторам правки, которые те не успели внести.
 
-Роль без часов не работает. «Занимайся базой, когда есть время» — это ровно та формулировка, из которой вырос архив в первом разделе. Часы должны быть в календаре и защищены от очереди — так же, как время лида на изменения из статьи «Ритм руководителя: правило 40 %».
+Роль без часов не работает. «Занимайся базой, когда есть время» — это ровно та формулировка, из которой вырос архив в первом разделе. Часы должны быть в календаре и защищены от очереди — так же, как время лида на изменения из статьи [«Ритм руководителя: правило 40 %»](/ru/blog/support-lead-rhythm-40-percent/).
 
 <!-- вилка: ритм владельца КБ — сколько часов в неделю, какие сигналы смотрит, что чинит первым. -->
 
@@ -232,7 +232,7 @@ The life cycle of an article in such a system looks like this:
 
 Someone has to own this cycle. In my practice it is a role rather than a separate headcount: the knowledge base owner is an engineer with dedicated hours per week and a mandate to change other people's articles. What they do: work through "did not help" marks, merge duplicates, clean out the obsolete, make sure article titles are understandable, and hand back to authors the edits those authors did not get to.
 
-A role without hours does not work. "Deal with the base when you have time" is exactly the wording the archive in the first section grew out of. The hours have to sit in the calendar and be protected from the queue — just like the lead's time for change in the article "The manager's rhythm: the 40 % rule".
+A role without hours does not work. "Deal with the base when you have time" is exactly the wording the archive in the first section grew out of. The hours have to sit in the calendar and be protected from the queue — just like the lead's time for change in the article ["The manager's rhythm: the 40 % rule"](/en/blog/support-lead-rhythm-40-percent/).
 
 <!-- вилка: ритм владельца КБ — сколько часов в неделю, какие сигналы смотрит, что чинит первым. -->
 
@@ -360,7 +360,7 @@ Evolve Loop נשען על אותות שימוש, לא על דעה על איכו�
 
 מישהו צריך לעסוק במחזור הזה. אצלי זאת תפקיד ולא משרה נפרדת: בעל בסיס הידע הוא מוקדן שיש לו שעות מוקצות בשבוע ומנדט לשנות מאמרים של אחרים. מה הוא עושה: מפרק סימונים של "לא עזר", מאחד כפילויות, מנקה מיושן, דואג שלמאמרים יהיו שמות מובנים, ומחזיר לכותבים תיקונים שלא הספיקו לעשות.
 
-תפקיד בלי שעות לא עובד. "תעסוק בבסיס כשיש זמן" זה בדיוק הניסוח שממנו צמח הארכיון בפרק הראשון. השעות חייבות להיות ביומן ומוגנות מהתור — בדיוק כמו הזמן של מנהל התמיכה לשינויים במאמר "הקצב של המנהל: כלל 40 %".
+תפקיד בלי שעות לא עובד. "תעסוק בבסיס כשיש זמן" זה בדיוק הניסוח שממנו צמח הארכיון בפרק הראשון. השעות חייבות להיות ביומן ומוגנות מהתור — בדיוק כמו הזמן של מנהל התמיכה לשינויים במאמר ["הקצב של המנהל: כלל 40 %"](/he/blog/support-lead-rhythm-40-percent/).
 
 <!-- вилка: ритм владельца КБ — сколько часов в неделю, какие сигналы смотрит, что чинит первым. -->
 

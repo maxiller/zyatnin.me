@@ -25,7 +25,7 @@ translations:
 
 В терминах ITIL 4 это Shift Left — перенос решения как можно ближе к источнику проблемы. Для поддержки это значит: сценарий, который не требует нашей экспертизы, уходит из очереди к клиенту, а экспертиза остаётся на том, что действительно требует человека. Пилот на трёх-пяти сценариях с честным измерением полезнее большого портала без метрик.
 
-В дорожной карте года самообслуживание стоит третьим кварталом — после базы знаний и до разговора с продуктом, и это не случайный порядок.
+В [дорожной карте года](/ru/blog/support-lead-year-roadmap/) самообслуживание стоит третьим кварталом — после базы знаний и до разговора с продуктом, и это не случайный порядок.
 
 ## Почему «просто напишите инструкции» не работает
 
@@ -141,7 +141,7 @@ Since then I look at self-service differently. It is not about articles and not 
 
 In ITIL 4 terms this is shift left — moving the resolution as close to the source of the problem as possible. For support that means a scenario that does not need our expertise moves out of the queue to the client, while expertise stays on what genuinely needs a human. A pilot on three to five scenarios with honest measurement is more useful than a large portal without metrics.
 
-In the yearly roadmap self-service sits in the third quarter — after the knowledge base and before the conversation with product, and that order is not accidental.
+In the [yearly roadmap](/en/blog/support-lead-year-roadmap/) self-service sits in the third quarter — after the knowledge base and before the conversation with product, and that order is not accidental.
 
 ## Why "just write instructions" does not work
 
@@ -257,7 +257,7 @@ And one last thing. Shift left does not cancel support or reduce its value — i
 
 במונחי ITIL 4 זה Shift Left — קירוב הפתרון ככל האפשר למקור הבעיה. בתמיכה זה אומר שתרחיש שלא דורש את המומחיות שלנו יוצא מהתור אל הלקוח, והמומחיות נשארת במה שבאמת דורש אדם. פיילוט על שלושה עד חמישה תרחישים עם מדידה ישרה מועיל יותר מפורטל גדול בלי מדדים.
 
-במפת הדרכים של השנה שירות עצמי נמצא ברבעון השלישי — אחרי בסיס הידע ולפני השיחה עם המוצר, וזה לא סדר מקרי.
+ב[מפת הדרכים של השנה](/he/blog/support-lead-year-roadmap/) שירות עצמי נמצא ברבעון השלישי — אחרי בסיס הידע ולפני השיחה עם המוצר, וזה לא סדר מקרי.
 
 ## למה "פשוט לכתוב הוראות" לא עובד
 

@@ -23,7 +23,7 @@ translations:
 
 Через полгода те же люди писали статьи за десять минут и не считали это отдельной задачей. Изменилось не их отношение к тексту — изменился формат. Вместо чистого листа появился шаблон: пять блоков, каждый со своим вопросом. Когда знаешь, что первый блок — это симптомы словами клиента, а последний — версии, на которых решение проверено, писать становится нечем: остаётся только вспомнить, что было.
 
-В статье «KCS в рабочем потоке: статья пишется в момент решения» речь шла о том, чтобы статья появлялась внутри тикета. Эта статья — о том, что именно в ней должно быть, чтобы черновик из тикета через месяц кто-то смог использовать повторно.
+В статье [«KCS в рабочем потоке: статья пишется в момент решения»](/ru/blog/support-lead-kcs-workflow/) речь шла о том, чтобы статья появлялась внутри тикета. Эта статья — о том, что именно в ней должно быть, чтобы черновик из тикета через месяц кто-то смог использовать повторно.
 
 ## Почему статьи в свободной форме не переиспользуются
 
@@ -113,7 +113,7 @@ mindmap
 
 ## Владелец КБ без отдельной ставки
 
-Шаблон решает проблему структуры, но не решает проблему времени. Статьи стареют, дублируются, теряют актуальность — и кто-то должен это замечать. В статье «KCS в рабочем потоке» это роль владельца базы знаний; здесь — что именно она означает на практике, без отдельной ставки в штате.
+Шаблон решает проблему структуры, но не решает проблему времени. Статьи стареют, дублируются, теряют актуальность — и кто-то должен это замечать. В статье [«KCS в рабочем потоке»](/ru/blog/support-lead-kcs-workflow/) это роль владельца базы знаний; здесь — что именно она означает на практике, без отдельной ставки в штате.
 
 Владелец базы знаний — это инженер с выделенными часами в неделю и мандатом менять чужие статьи. Его работа состоит из четырёх повторяющихся действий:
 
@@ -138,7 +138,7 @@ When I proposed tidying up the knowledge base, the first reaction was predictabl
 
 Six months later the same people were writing articles in ten minutes and did not treat it as a separate task. What changed was not their attitude to text — the format changed. Instead of a blank page there was a template: five blocks, each with its own question. Once you know that the first block is the symptoms in the client's words and the last one is the versions the fix was verified on, there is nothing left to invent — you only have to recall what happened.
 
-The article "KCS in the workflow: the article is written at the moment of solving" was about making the article appear inside the ticket. This one is about what has to be in it so that a draft from a ticket can be reused by someone else a month later.
+The article ["KCS in the workflow: the article is written at the moment of solving"](/en/blog/support-lead-kcs-workflow/) was about making the article appear inside the ticket. This one is about what has to be in it so that a draft from a ticket can be reused by someone else a month later.
 
 ## Why free-form articles are not reused
 
@@ -226,7 +226,7 @@ The example is also useful because it removes the main fear: an article written 
 
 ## A KB owner without a separate headcount
 
-The template solves the problem of structure but not the problem of time. Articles age, get duplicated, lose relevance, and somebody has to notice. In "KCS in the workflow" this is the role of the knowledge base owner; here is what it means in practice, without a separate position on the staff list.
+The template solves the problem of structure but not the problem of time. Articles age, get duplicated, lose relevance, and somebody has to notice. In ["KCS in the workflow"](/en/blog/support-lead-kcs-workflow/) this is the role of the knowledge base owner; here is what it means in practice, without a separate position on the staff list.
 
 The knowledge base owner is an engineer with dedicated hours per week and a mandate to change other people's articles. The work consists of four recurring actions:
 
@@ -251,7 +251,7 @@ The template, the example and the owner are the three things that turn drafts fr
 
 כעבור חצי שנה אותם אנשים כתבו מאמרים בעשר דקות ולא התייחסו לזה כמשימה נפרדת. מה שהשתנה לא היה היחס שלהם לטקסט — השתנה הפורמט. במקום דף ריק הופיעה תבנית: חמישה בלוקים, לכל אחד שאלה משלו. כשיודעים שהבלוק הראשון הוא התסמינים במילים של הלקוח והאחרון הוא הגרסאות שבהן הפתרון נבדק, אין מה להמציא — נשאר רק להיזכר מה היה.
 
-במאמר "KCS בזרימת העבודה: המאמר נכתב ברגע הפתרון" עסקנו בכך שהמאמר ייווצר בתוך הפנייה. המאמר הזה עוסק במה שצריך להיות בו, כדי שטיוטה מתוך פנייה תוכל לשמש מישהו אחר בעוד חודש.
+במאמר ["KCS בזרימת העבודה: המאמר נכתב ברגע הפתרון"](/he/blog/support-lead-kcs-workflow/) עסקנו בכך שהמאמר ייווצר בתוך הפנייה. המאמר הזה עוסק במה שצריך להיות בו, כדי שטיוטה מתוך פנייה תוכל לשמש מישהו אחר בעוד חודש.
 
 ## למה מאמרים בטקסט חופשי לא משמשים שימוש חוזר
 
@@ -339,7 +339,7 @@ mindmap
 
 ## בעל בסיס הידע בלי משרה נפרדת
 
-התבנית פותרת את בעיית המבנה אבל לא את בעיית הזמן. מאמרים מתיישנים, משתכפלים, מאבדים רלוונטיות — ומישהו צריך לשים לב. במאמר "KCS בזרימת העבודה" זה התפקיד של בעל בסיס הידע; כאן — מה הכוונה בפועל, בלי משרה נפרדת בטבלת כוח האדם.
+התבנית פותרת את בעיית המבנה אבל לא את בעיית הזמן. מאמרים מתיישנים, משתכפלים, מאבדים רלוונטיות — ומישהו צריך לשים לב. במאמר ["KCS בזרימת העבודה"](/he/blog/support-lead-kcs-workflow/) זה התפקיד של בעל בסיס הידע; כאן — מה הכוונה בפועל, בלי משרה נפרדת בטבלת כוח האדם.
 
 בעל בסיס הידע הוא מוקדן שיש לו שעות מוקצות בשבוע ומנדט לשנות מאמרים של אחרים. העבודה מורכבת מארבע פעולות חוזרות:
 

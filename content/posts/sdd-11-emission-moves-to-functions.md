@@ -19,7 +19,7 @@ translations:
 
 ## Вопрос после расследования
 
-После поста 10 остался неприятный вопрос: событие не пишется, когда функция не породила заданий. Это правильно по FR-007. Но стоит ли делать исключения для терминальных и пустых случаев вообще?
+После [поста 10](/ru/dev/blog/sdd-10-empty-event-investigation/) остался неприятный вопрос: событие не пишется, когда функция не породила заданий. Это правильно по FR-007. Но стоит ли делать исключения для терминальных и пустых случаев вообще?
 
 Идея звучала соблазнительно: «терминальные ветки не логируем, зачем шуметь». Я сел её обдумать — и понял, что это ровно тот тип исключения, из которого потом растёт необъяснимое поведение.
 
@@ -27,7 +27,7 @@ translations:
 
 ## Что поменялось в архитектуре
 
-План (пост 7) выбрал эмиссию в диспетчере. Причина была в том, что диспетчер уже знает про каскад и в одном месте происходит всё, что связано с запуском заданий.
+План ([пост 7](/ru/dev/blog/sdd-07-plan-research-contract/)) выбрал эмиссию в диспетчере. Причина была в том, что диспетчер уже знает про каскад и в одном месте происходит всё, что связано с запуском заданий.
 
 Проблема: диспетчер знает про следующий шаг только то, что ему сообщили. Полный payload задания живёт в функции — она его формирует. Диспетчеру приходится либо тащить payload через границу слоёв, либо довольствоваться тем, что осталось.
 
@@ -85,7 +85,7 @@ await function_done(ctx, ...)
 
 ## The question after the investigation
 
-After post 10 an unpleasant question remained: no event is written when a function produces no jobs. That is correct per FR-007. But should there be exceptions for terminal and empty cases at all?
+After [post 10](/en/dev/blog/sdd-10-empty-event-investigation/) an unpleasant question remained: no event is written when a function produces no jobs. That is correct per FR-007. But should there be exceptions for terminal and empty cases at all?
 
 The idea sounded tempting: "we do not log terminal branches, why the noise". I sat down to think about it — and realised it is exactly the kind of exception that later grows into inexplicable behaviour.
 
@@ -93,7 +93,7 @@ The decision: **no exceptions**. If a function picks the next job — the event 
 
 ## What changed in the architecture
 
-The plan (post 7) chose emission in the dispatcher. The reason was that the dispatcher already knows about the cascade and everything related to launching jobs happens in one place.
+The plan ([post 7](/en/dev/blog/sdd-07-plan-research-contract/)) chose emission in the dispatcher. The reason was that the dispatcher already knows about the cascade and everything related to launching jobs happens in one place.
 
 The problem: the dispatcher knows about the next step only what it was told. The full job payload lives in the function — the function builds it. The dispatcher either has to drag the payload across a layer boundary or make do with what is left.
 
@@ -151,7 +151,7 @@ The feature is rebuilt. What is left is to check the code and the documents have
 
 ## השאלה שאחרי החקירה
 
-אחרי פוסט 10 נשארה שאלה לא נעימה: האירוע לא נכתב כשהפונקציה לא הולידה משימות. זה נכון לפי FR-007. אבל האם בכלל כדאי לעשות חריגים למקרים טרמינליים וריקים?
+אחרי [פוסט 10](/he/dev/blog/sdd-10-empty-event-investigation/) נשארה שאלה לא נעימה: האירוע לא נכתב כשהפונקציה לא הולידה משימות. זה נכון לפי FR-007. אבל האם בכלל כדאי לעשות חריגים למקרים טרמינליים וריקים?
 
 הרעיון נשמע מפתה: "ענפים טרמינליים לא מתעדים, למה הרעש". התיישבתי לחשוב על זה — והבנתי שזה בדיוק סוג החריג שממנו אחר כך גדלה התנהגות בלתי מוסברת.
 
@@ -159,7 +159,7 @@ The feature is rebuilt. What is left is to check the code and the documents have
 
 ## מה השתנה בארכיטקטורה
 
-התוכנית (פוסט 7) בחרה בפליטה ב-dispatcher. הנימוק היה שה-dispatcher כבר יודע על המפל וכל מה שקשור להרצת משימות קורה במקום אחד.
+התוכנית ([פוסט 7](/he/dev/blog/sdd-07-plan-research-contract/)) בחרה בפליטה ב-dispatcher. הנימוק היה שה-dispatcher כבר יודע על המפל וכל מה שקשור להרצת משימות קורה במקום אחד.
 
 הבעיה: ה-dispatcher יודע על הצעד הבא רק את מה שאמרו לו. ה-payload המלא של המשימה חי בפונקציה — היא בונה אותו. ה-dispatcher צריך לגרור את ה-payload דרך גבול שכבות או להסתפק במה שנשאר.
 

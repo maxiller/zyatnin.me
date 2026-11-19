@@ -112,7 +112,7 @@ flowchart TD
 
 Можно добавить и третью роль, менее очевидную:
 
-- **Самый компетентный эксперт по каждому продукту.** Если самая глубокая экспертиза в команде — вы, то ваш отпуск — инцидент, а ваш уход — катастрофа. Задача лида — чтобы критичная экспертиза была минимум у двоих; это отдельная работа с матрицей компетенций, и она заслуживает отдельной статьи серии.
+- **Самый компетентный эксперт по каждому продукту.** Если самая глубокая экспертиза в команде — вы, то ваш отпуск — инцидент, а ваш уход — катастрофа. Задача лида — чтобы критичная экспертиза была минимум у двоих; это отдельная работа с [матрицей компетенций](/ru/blog/support-lead-competency-matrix/), и она заслуживает отдельной статьи серии.
 
 Почему список «отказываюсь» труднее остальных: отказ не выглядит достижением. Договорённость «я больше не согласовываю переносы в рамках SLA» со стороны похожа на «лид расслабился». Держаться здесь помогает одна мысль: вы не теряете контроль — вы переносите его из своей головы в систему. Регламенты, триаж, матрица взаимодействий, владельцы решений — это и есть контроль, который не зависит от вашего самочувствия и графика.
 
@@ -134,7 +134,7 @@ flowchart TD
 
 Форма проще, чем кажется: страница текста или таблица с тремя колонками. Плюс ревизия раз в квартал, и она должна быть содержательной: какие пункты переехали между списками (делегированное устояло — значит, можно отказываться от следующей роли), где границы оказались размытыми на практике, какие решения стали типовыми и заслуживают регламента вместо вашего согласования. Ревизия без переездов — признак, что списки существуют только на бумаге.
 
-Важно понимать место этого списка в году. Списки границ — не бытовая оптимизация, а часть стратегической рамки: они нужны до того, как вы начнёте мерить baseline и договариваться о целях. Нельзя строить годовую дорожную карту, если половина вашего времени уходит на чужие решения — измерения будут врать, а цели — подстраиваться под хаос. Об этом — следующая статья серии.
+Важно понимать место этого списка в году. Списки границ — не бытовая оптимизация, а часть стратегической рамки: они нужны до того, как вы начнёте мерить baseline и договариваться о целях. Нельзя строить годовую дорожную карту, если половина вашего времени уходит на чужие решения — измерения будут врать, а цели — подстраиваться под хаос. Об этом — [следующая статья серии](/ru/blog/support-lead-baseline-first/).
 
 И последнее. Границы — это не про то, чтобы делать меньше. Это про то, чтобы ценность лида концентрировалась там, где её не может создать никто другой: правила игры, споры о критичности, развитие людей, контракт с руководством. Всё остальное — чья-то возможность вырасти, которую вы отбираете, решая за других.
 
@@ -225,7 +225,7 @@ The third list is the hardest: to walk away means to consciously leave a role th
 - **The single dispatcher.** Tickets are routed by triage and the matrix, not by me. While routing is my personal function, the service hinges on one person and triage never matures.
 - **The mandatory approver.** Routine operations have a process instead of my signature. If an operation is routine, it must run without me; if it isn't, it belongs in the "decide myself" list.
 
-A third, less obvious role: **the deepest expert on every product**. If the deepest expertise in the team is you, your vacation is an incident and your departure is a catastrophe. The lead's job is to have critical expertise in at least two people — separate work with the competency matrix, deserving its own article in the series.
+A third, less obvious role: **the deepest expert on every product**. If the deepest expertise in the team is you, your vacation is an incident and your departure is a catastrophe. The lead's job is to have critical expertise in at least two people — separate work with the [competency matrix](/en/blog/support-lead-competency-matrix/), deserving its own article in the series.
 
 Why the "walk away" list is the hardest: quitting a role doesn't look like an achievement. The agreement "I no longer approve in-SLA reschedules" looks from the outside like "the lead got lazy". What helps here is one thought: you don't lose control — you move it from your head into the system. Processes, triage, the interaction matrix, decision owners — control that doesn't depend on how you feel or what your calendar looks like.
 
@@ -245,7 +245,7 @@ Third, walking away from roles stops being "the lead got lazy": "I'm no longer t
 
 The form is simpler than it seems: a page of text or a three-column table. Plus a quarterly revision, and it should be substantive: which items moved between lists (delegated items that held up mean you can drop the next role), where boundaries proved blurry, which decisions became routine and deserve a process instead of your sign-off. A revision without movements means the lists exist only on paper.
 
-It's worth understanding where this sits in the year: boundaries aren't everyday optimization — they're part of the strategic frame, needed before you measure the baseline and negotiate goals. You can't build an annual roadmap while half your time goes to other people's decisions — the measurements will lie and the goals will bend to the chaos. That's the next article in the series.
+It's worth understanding where this sits in the year: boundaries aren't everyday optimization — they're part of the strategic frame, needed before you measure the baseline and negotiate goals. You can't build an annual roadmap while half your time goes to other people's decisions — the measurements will lie and the goals will bend to the chaos. That's the [next article in the series](/en/blog/support-lead-baseline-first/).
 
 And the last thing: boundaries aren't about doing less. They're about concentrating the lead's value where nobody else can create it — rules of the game, contested priorities, growing people, the contract with management. Everything else is someone's chance to grow, which you take away by deciding for others.
 
@@ -346,7 +346,7 @@ flowchart TD
 
 אפשר להוסיף תפקיד שלישי, פחות מובן:
 
-- **המומחה הכי עמוק בכל מוצר.** אם המומחיות הכי עמוקה בצוות — אתם, אז החופשה שלכם היא תקלה והעזיבה שלכם — אסון. המטרה של מנהל התמיכה — שלמומחיות קריטית יהיה לפחות שני אנשים; זאת עבודה נפרדת עם מטריצת כשרים, והיא ראויה למאמר נפרד בסדרה.
+- **המומחה הכי עמוק בכל מוצר.** אם המומחיות הכי עמוקה בצוות — אתם, אז החופשה שלכם היא תקלה והעזיבה שלכם — אסון. המטרה של מנהל התמיכה — שלמומחיות קריטית יהיה לפחות שני אנשים; זאת עבודה נפרדת עם [מטריצת כשרים](/he/blog/support-lead-competency-matrix/), והיא ראויה למאמר נפרד בסדרה.
 
 למה הרשימה "פורש" הכי קשה: פרישה לא נראית כהישג. הסכמה "אני כבר לא מאשר דחיות בתוך SLA" נראית מבחוץ כ"מנהל התרשל". מה שעוזר להחזיק כאן — מחשבה אחת: אתם לא מאבדים שליטה — אתם מעבירים אותה מהראש אל המערכת. נהלים, מיון, מטריצת אינטראקציות, בעלי החלטות — זו בדיוק השליטה שלא תלויה במצב הרוח ובלוח הזמנים שלכם.
 
@@ -368,6 +368,6 @@ flowchart TD
 
 הצורה פשוטה יותר ממה שנדמה: עמוד טקסט או טבלה עם שלוש עמודות. ועוד סקירה רבעונית, והיא צריכה להיות משמעותית: אילו סעיפים עברו בין הרשימות (מה שהואצל והחזיק מעמד — אפשר לפרוש מהתפקיד הבא), היכן הגבולות התבררו מטושטשים בפועל, אילו החלטות נהיו שגרתיות וראויות לנוהל במקום האישור שלכם. סקירה בלי מעברים — סימן שהרשימות קיימות רק על הנייר.
 
-חשוב להבין את מקום הרשימה הזאת בשנה. רשימות הגבולות אינן אופטימיזציה יומיומית אלא חלק מהמסגרת האסטרטגית: הן דרושות לפני שתתחילו למדוד baseline ולתאם מטרות. אי אפשר לבנות מפת דרכים שנתית כשחצי מהזמן שלכם הולך להחלטות של אחרים — המדידות ישקרו והמטרות יתאימו את עצמן לכאוס. על זה — המאמר הבא בסדרה.
+חשוב להבין את מקום הרשימה הזאת בשנה. רשימות הגבולות אינן אופטימיזציה יומיומית אלא חלק מהמסגרת האסטרטגית: הן דרושות לפני שתתחילו למדוד baseline ולתאם מטרות. אי אפשר לבנות מפת דרכים שנתית כשחצי מהזמן שלכם הולך להחלטות של אחרים — המדידות ישקרו והמטרות יתאימו את עצמן לכאוס. על זה — [המאמר הבא בסדרה](/he/blog/support-lead-baseline-first/).
 
 ואחרון. גבולות הם לא על לעשות פחות. הם על לרכז את ערך המנהל שם, שם שאף אחד אחר לא יכול ליצור אותו: כללי המשחק, מחלוקות עדיפות, פיתוח אנשים, ההסכם עם ההנהלה. כל השאר — הזדמנות של מישהו לצמוח, שאתם לוקחים על ידי החלטה בשביל אחרים.

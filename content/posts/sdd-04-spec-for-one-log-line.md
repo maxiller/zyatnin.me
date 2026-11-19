@@ -54,7 +54,7 @@ TRACE — самый дорогой уровень: payload сериализуе
 
 > **FR-014.** Событие пишется во всех ветвях выполнения функции: успех, пустой результат, ошибка.
 
-Именно это требование позже окажется самым спорным и приведёт к смене архитектуры (пост 11), а на этапе спеки оно выглядело абсолютно естественным.
+Именно это требование позже окажется самым спорным и приведёт к смене архитектуры ([пост 11](/ru/dev/blog/sdd-11-emission-moves-to-functions/)), а на этапе спеки оно выглядело абсолютно естественным.
 
 ## Почему требований так много
 
@@ -79,7 +79,7 @@ TRACE — самый дорогой уровень: payload сериализуе
 
 ## Сколько это заняло
 
-Несколько часов чтения кода и разговора с самим собой в формате «а что будет, если…». Дорого ли? Сравните с ценой расследования из поста 10: искать причину, по которой события нет в проде, дороже, чем заранее решить, когда оно должно быть.
+Несколько часов чтения кода и разговора с самим собой в формате «а что будет, если…». Дорого ли? Сравните с ценой расследования из [поста 10](/ru/dev/blog/sdd-10-empty-event-investigation/): искать причину, по которой события нет в проде, дороже, чем заранее решить, когда оно должно быть.
 
 Спека на одну строчку готова. Следующий вопрос — а стоит ли так расписывать остальные девять модулей проекта. Спойлер: я решил, что стоит.
 
@@ -126,7 +126,7 @@ There is always a temptation to cut long strings "so the log does not bloat". Bu
 
 > **FR-014.** The event is written in all branches of function execution: success, empty result, error.
 
-This requirement later becomes the most contested one and leads to an architecture change (post 11), while at the spec stage it looked perfectly natural.
+This requirement later becomes the most contested one and leads to an architecture change ([post 11](/en/dev/blog/sdd-11-emission-moves-to-functions/)), while at the spec stage it looked perfectly natural.
 
 ## Why there are so many requirements
 
@@ -151,7 +151,7 @@ When a document is needed by three different readers at once, links to specific 
 
 ## How long it took
 
-A few hours of reading code and talking to myself in the "what if…" format. Expensive? Compare it with the cost of the investigation in post 10: finding out why an event is missing in production is more expensive than deciding in advance when it should be there.
+A few hours of reading code and talking to myself in the "what if…" format. Expensive? Compare it with the cost of the investigation in [post 10](/en/dev/blog/sdd-10-empty-event-investigation/): finding out why an event is missing in production is more expensive than deciding in advance when it should be there.
 
 The spec for one line is ready. The next question: is it worth describing the other nine project modules this way. Spoiler: I decided it was.
 
@@ -198,7 +198,7 @@ TRACE היא הרמה היקרה ביותר: ה-payload מסודר במלואו.
 
 > **FR-014.** האירוע נכתב בכל ענפי ההרצה של הפונקציה: הצלחה, תוצאה ריקה, שגיאה.
 
-הדרישה הזאת תהיה אחר כך השנויה במחלוקת ביותר ותוביל לשינוי ארכיטקטורה (פוסט 11), ובשלב המפרט היא נראתה טבעית לגמרי.
+הדרישה הזאת תהיה אחר כך השנויה במחלוקת ביותר ותוביל לשינוי ארכיטקטורה ([פוסט 11](/he/dev/blog/sdd-11-emission-moves-to-functions/)), ובשלב המפרט היא נראתה טבעית לגמרי.
 
 ## למה כל כך הרבה דרישות
 
@@ -223,7 +223,7 @@ TRACE היא הרמה היקרה ביותר: ה-payload מסודר במלואו.
 
 ## כמה זה לקח
 
-כמה שעות של קריאת קוד ושיחה עם עצמי בפורמט "ומה אם…". יקר? השוו לעלות החקירה בפוסט 10: למצוא למה אין אירוע בפרודקשן יקר יותר מלהחליט מראש מתי הוא אמור להיות.
+כמה שעות של קריאת קוד ושיחה עם עצמי בפורמט "ומה אם…". יקר? השוו לעלות החקירה ב[פוסט 10](/he/dev/blog/sdd-10-empty-event-investigation/): למצוא למה אין אירוע בפרודקשן יקר יותר מלהחליט מראש מתי הוא אמור להיות.
 
 המפרט לשורה אחת מוכן. השאלה הבאה: האם כדאי לתאר ככה גם את תשעת המודולים האחרים. ספוילר: החלטתי שכן.
 

@@ -31,7 +31,7 @@ translations:
 
 Во всех трёх случаях работа была выполнена. Провалилась формулировка.
 
-Именно поэтому идея spec-driven development — сначала спека с критериями приёмки, потом работа — оказалась нужна мне не как инженеру, а как лиду поддержки. В dev-серии я разбирал полный цикл на реальной фиче: [конституцию и спеки](/ru/dev/blog/sdd-01-constitution-and-specs/), план, задачи, приёмку. Здесь — другая сторона того же инструмента: что он даёт человеку, который не пишет код, но ежедневно ставит задачи и принимает результат.
+Именно поэтому идея spec-driven development — сначала спека с критериями приёмки, потом работа — оказалась нужна мне не как инженеру, а как лиду поддержки. В dev-серии я разбирал полный цикл на реальной фиче: [конституцию и спеки](/ru/dev/blog/sdd-01-constitution-and-specs/), [план](/ru/dev/blog/sdd-07-plan-research-contract/), [задачи](/ru/dev/blog/sdd-08-tasks-and-tdd/), приёмку. Здесь — другая сторона того же инструмента: что он даёт человеку, который не пишет код, но ежедневно ставит задачи и принимает результат.
 
 Дальше: из чего состоит спека на языке поддержки, на каких пяти участках она окупается, как внедрить её без бюрократии, как отличить хорошую спеку от красивой и какие вопросы обычно задают, когда слышат «пишите спецификации».
 
@@ -221,7 +221,7 @@ A spoken spec is the most expensive form. Three cases from my practice, all reco
 
 In all three cases the work was done. The wording failed.
 
-That is why the idea of spec-driven development — a spec with acceptance criteria first, work second — turned out to matter to me not as an engineer but as a support lead. In the dev series I went through the full cycle on a real feature: [the constitution and the specs](/en/dev/blog/sdd-01-constitution-and-specs/), the plan, the tasks, the acceptance. Here is the other side of the same tool: what it gives a person who writes no code but assigns work and accepts results every day.
+That is why the idea of spec-driven development — a spec with acceptance criteria first, work second — turned out to matter to me not as an engineer but as a support lead. In the dev series I went through the full cycle on a real feature: [the constitution and the specs](/en/dev/blog/sdd-01-constitution-and-specs/), [the plan](/en/dev/blog/sdd-07-plan-research-contract/), [the tasks](/en/dev/blog/sdd-08-tasks-and-tdd/), the acceptance. Here is the other side of the same tool: what it gives a person who writes no code but assigns work and accepts results every day.
 
 What follows: what a spec looks like in the language of support, where it pays for itself, how to adopt it without bureaucracy, how to tell a good spec from a pretty one, and the questions people ask when they hear "write specifications".
 
@@ -411,7 +411,7 @@ The measure of a lead's maturity here is simple: how many of their decisions kee
 
 בכל שלושת המקרים העבודה נעשתה. הניסוח נכשל.
 
-בדיוק משום כך הרעיון של spec-driven development — קודם מפרט עם קריטריוני קבלה, אחר כך עבודה — התגלה כנחוץ לי לא כמהנדס אלא כמנהל תמיכה. בסדרת הפיתוח עברתי את המחזור המלא על פיצ'ר אמיתי: [חוקה ומפרטים](/he/dev/blog/sdd-01-constitution-and-specs/), תוכנית, משימות, קבלה. כאן — הצד השני של אותו כלי: מה הוא נותן לאדם שלא כותב קוד אבל מדי יום מזמין עבודה ומקבל תוצאות.
+בדיוק משום כך הרעיון של spec-driven development — קודם מפרט עם קריטריוני קבלה, אחר כך עבודה — התגלה כנחוץ לי לא כמהנדס אלא כמנהל תמיכה. בסדרת הפיתוח עברתי את המחזור המלא על פיצ'ר אמיתי: [חוקה ומפרטים](/he/dev/blog/sdd-01-constitution-and-specs/), [תוכנית](/he/dev/blog/sdd-07-plan-research-contract/), [משימות](/he/dev/blog/sdd-08-tasks-and-tdd/), קבלה. כאן — הצד השני של אותו כלי: מה הוא נותן לאדם שלא כותב קוד אבל מדי יום מזמין עבודה ומקבל תוצאות.
 
 ומה הלאה: ממה מורכב מפרט בשפת התמיכה, באיזה חמישה מקומות הוא משתלם, איך מיישמים אותו בלי ביורוקרטיה, איך מבדילים מפרט טוב ממפרט יפה ואילו שאלות שואלים כששומעים "כתבו מפרטים".
 

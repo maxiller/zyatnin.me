@@ -25,7 +25,7 @@ translations:
 
 Тезис статьи простой: потребность в людях — это формула мощности, а не ощущение перегрузки. В формуле три части: объём работы, среднее время на единицу и доступные часы. Пока она не посчитана, любой разговор о найме — переговоры о доверии к лиду, а не о ресурсах. Доверие — плохой фундамент для штатного расписания.
 
-Считать приходится от измеренной точки А. Без выгрузки из трекера формула собирается из тех же ощущений, только в виде таблицы. Как устроена точка А, я разбирал в статье «Baseline раньше целей»; здесь считаем, что она уже есть.
+Считать приходится от измеренной точки А. Без выгрузки из трекера формула собирается из тех же ощущений, только в виде таблицы. Как устроена точка А, я разбирал в статье [«Baseline раньше целей»](/ru/blog/support-lead-baseline-first/); здесь считаем, что она уже есть.
 
 ## Почему «мы перегружены» не работает
 
@@ -135,7 +135,7 @@ flowchart TD
 
 <!-- вилка: свой расчёт и пример запроса — что было на входе, какие варианты предложены, что выбрало руководство. -->
 
-Формула мощности не делает лида сильнее и не отменяет неприятных разговоров. Она делает другое: превращает нагрузку в предмет управления. Пока дефицит часов не посчитан, единственный доступный инструмент — героизм команды, а он заканчивается. Следующая статья серии — о том, как договориться с соседними командами, чтобы часть этого объёма вообще не доходила до поддержки: взаимодействия без матрицы держатся на личных договорённостях и памяти.
+Формула мощности не делает лида сильнее и не отменяет неприятных разговоров. Она делает другое: превращает нагрузку в предмет управления. Пока дефицит часов не посчитан, единственный доступный инструмент — героизм команды, а он заканчивается. Следующая статья серии — о том, как договориться с соседними командами, чтобы часть этого объёма вообще не доходила до поддержки: [взаимодействия без матрицы](/ru/blog/support-lead-interaction-matrix/) держатся на личных договорённостях и памяти.
 
 <!-- lang:en -->
 
@@ -147,7 +147,7 @@ A year later I brought the same request in a different shape: one page, a few fi
 
 The point of this article is simple: headcount is a capacity formula, not a feeling of overload. The formula has three parts: the volume of work, the average time per unit, and the hours available. Until it is calculated, every hiring conversation is a negotiation about trust in the lead rather than about resources. Trust is a poor foundation for a staffing plan.
 
-The calculation starts from a measured point A. Without an export from the tracker the formula is assembled from the same feelings, only in a spreadsheet. I went through point A in "Baseline before goals"; here we assume it exists.
+The calculation starts from a measured point A. Without an export from the tracker the formula is assembled from the same feelings, only in a spreadsheet. I went through point A in ["Baseline before goals"](/en/blog/support-lead-baseline-first/); here we assume it exists.
 
 ## Why "we're overloaded" doesn't work
 
@@ -255,7 +255,7 @@ And the last thing that makes a request work: a review date. "We come back to th
 
 <!-- вилка: свой расчёт и пример запроса — что было на входе, какие варианты предложены, что выбрало руководство. -->
 
-The capacity formula doesn't make a lead stronger and doesn't remove difficult conversations. It does something else: it turns load into a subject of management. While the shortfall of hours is uncounted, the only tool available is team heroism, and that runs out. The next article in the series is about agreeing with neighbouring teams so that part of this volume never reaches support at all: interactions without a matrix rest on personal deals and memory.
+The capacity formula doesn't make a lead stronger and doesn't remove difficult conversations. It does something else: it turns load into a subject of management. While the shortfall of hours is uncounted, the only tool available is team heroism, and that runs out. The next article in the series is about agreeing with neighbouring teams so that part of this volume never reaches support at all: [interactions without a matrix](/en/blog/support-lead-interaction-matrix/) rest on personal deals and memory.
 
 <!-- lang:he -->
 
@@ -267,7 +267,7 @@ The capacity formula doesn't make a lead stronger and doesn't remove difficult c
 
 הטענה של המאמר פשוטה: הצורך באנשים הוא נוסחת כושר נשיאה, לא תחושת עומס. בנוסחה שלושה חלקים: נפח העבודה, זמן הטיפול הממוצע ליחידה והשעות הזמינות. כל עוד היא לא מחושבת, כל שיחה על גיוס היא משא ומתן על האמון במנהל התמיכה ולא על משאבים. אמון הוא יסוד גרוע לתקן כוח אדם.
 
-החישוב יוצא מנקודת מוצא מדודה. בלי ייצוא מהמערכת הנוסחה נבנית מאותן תחושות, רק בטבלה. את נקודת המוצא פירקתי במאמר "בסיס לפני מטרות"; כאן מניחים שהיא כבר קיימת.
+החישוב יוצא מנקודת מוצא מדודה. בלי ייצוא מהמערכת הנוסחה נבנית מאותן תחושות, רק בטבלה. את נקודת המוצא פירקתי במאמר ["בסיס לפני מטרות"](/he/blog/support-lead-baseline-first/); כאן מניחים שהיא כבר קיימת.
 
 ## למה "אנחנו בעומס יתר" לא עובד
 
@@ -375,4 +375,4 @@ flowchart TD
 
 <!-- вилка: свой расчёт и пример запроса — что было на входе, какие варианты предложены, что выбрало руководство. -->
 
-נוסחת כושר הנשיאה לא הופכת את מנהל התמיכה לחזק יותר ולא מבטלת שיחות לא נעימות. היא עושה משהו אחר: היא הופכת עומס לנושא לניהול. כל עוד המחסור בשעות לא מחושב, הכלי היחיד שעומד לרשותנו הוא גבורה של הצוות, והיא נגמרת. המאמר הבא בסדרה — על איך מסכמים עם צוותים שכנים שחלק מהנפח הזה בכלל לא יגיע לתמיכה: אינטראקציות בלי מטריצה נשענות על הסדרים אישיים ועל זיכרון.
+נוסחת כושר הנשיאה לא הופכת את מנהל התמיכה לחזק יותר ולא מבטלת שיחות לא נעימות. היא עושה משהו אחר: היא הופכת עומס לנושא לניהול. כל עוד המחסור בשעות לא מחושב, הכלי היחיד שעומד לרשותנו הוא גבורה של הצוות, והיא נגמרת. המאמר הבא בסדרה — על איך מסכמים עם צוותים שכנים שחלק מהנפח הזה בכלל לא יגיע לתמיכה: [אינטראקציות בלי מטריצה](/he/blog/support-lead-interaction-matrix/) נשענות על הסדרים אישיים ועל זיכרון.

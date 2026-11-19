@@ -62,9 +62,9 @@ flowchart TD
 
 **Разбор недели.** Один регулярный блок, на котором смотрят не заявки, а повторяющиеся причины: что ломалось чаще всего, где решение принималось дважды, какие правила не сработали. Это единственное место, где решения становятся системными.
 
-**Встреча один на один.** Ритуал про человека, а не про статус задач; его устройству посвящена отдельная статья серии — «1:1, которые не превращаются в отчёт и аттестацию».
+**Встреча один на один.** Ритуал про человека, а не про статус задач; его устройству посвящена отдельная статья серии — [«1:1, которые не превращаются в отчёт и аттестацию»](/ru/blog/support-lead-one-on-one/).
 
-**QA-выборка.** Несколько закрытых заявок, прочитанных целиком, — единственный способ говорить о качестве не по впечатлениям. Как устроена выборка и по каким критериям читается заявка, разобрано в статье «Оценка по наблюдаемым фактам».
+**QA-выборка.** Несколько закрытых заявок, прочитанных целиком, — единственный способ говорить о качестве не по впечатлениям. Как устроена выборка и по каким критериям читается заявка, разобрано в статье [«Оценка по наблюдаемым фактам»](/ru/blog/support-lead-facts-based-assessment/).
 
 **Статус руководству.** Регулярный, по одной и той же форме. Его смысл не в отчётности, а в том, чтобы ресурс и решения просили заранее, а не в момент аварии.
 
@@ -181,9 +181,9 @@ My minimum set has five items, and each answers a question nobody else would ask
 
 **Weekly review.** One regular block that looks at recurring causes rather than tickets: what broke most often, where a decision was made twice, which rules didn't hold. It's the only place where decisions become systemic.
 
-**One-on-one.** A ritual about the person, not about task status; its structure gets a separate article in the series — "One-on-ones that don't turn into a status report or an appraisal".
+**One-on-one.** A ritual about the person, not about task status; its structure gets a separate article in the series — ["One-on-ones that don't turn into a status report or an appraisal"](/en/blog/support-lead-one-on-one/).
 
-**QA sampling.** A few closed tickets read end to end — the only way to talk about quality without relying on impressions. How the sample is built and which criteria a ticket is read against is covered in "Assessment by observable facts".
+**QA sampling.** A few closed tickets read end to end — the only way to talk about quality without relying on impressions. How the sample is built and which criteria a ticket is read against is covered in ["Assessment by observable facts"](/en/blog/support-lead-facts-based-assessment/).
 
 **Status to management.** Regular, in one and the same form. Its purpose isn't reporting but getting resources and decisions requested in advance instead of during an incident.
 
@@ -300,9 +300,9 @@ flowchart TD
 
 **סיכום השבוע.** בלוק קבוע אחד שמסתכל לא על פניות אלא על סיבות חוזרות: מה נשבר הכי הרבה, איפה החלטה התקבלה פעמיים, אילו כללים לא החזיקו. זה המקום היחיד שבו החלטות נהיות שיטתיות.
 
-**שיחה אחת־על־אחד.** טקס שעוסק באדם ולא בסטטוס של משימות; למבנה שלו מוקדש מאמר נפרד בסדרה — "שיחות 1:1 שלא הופכות לדוח סטטוס ולהערכה".
+**שיחה אחת־על־אחד.** טקס שעוסק באדם ולא בסטטוס של משימות; למבנה שלו מוקדש מאמר נפרד בסדרה — ["שיחות 1:1 שלא הופכות לדוח סטטוס ולהערכה"](/he/blog/support-lead-one-on-one/).
 
-**דגימת QA.** כמה פניות סגורות שנקראו מתחילתן ועד סופן — הדרך היחידה לדבר על איכות לא לפי רשמים. איך בנויה הדגימה ולפי אילו קריטריונים קוראים פנייה — במאמר "הערכה לפי עובדות נצפות".
+**דגימת QA.** כמה פניות סגורות שנקראו מתחילתן ועד סופן — הדרך היחידה לדבר על איכות לא לפי רשמים. איך בנויה הדגימה ולפי אילו קריטריונים קוראים פנייה — במאמר ["הערכה לפי עובדות נצפות"](/he/blog/support-lead-facts-based-assessment/).
 
 **סטטוס להנהלה.** קבוע, באותה צורה. מטרתו אינה דיווח אלא בקשה מוקדמת של משאבים והחלטות, ולא בזמן תקלה.
 

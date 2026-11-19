@@ -23,7 +23,7 @@ translations:
 
 Именно это слово — незаметно — и есть проблема. Нарушение срока само по себе неприятно, но объяснимо: случилось, разобрали, поправили. Нарушение, о котором первым узнал клиент, ломает другое: веру в то, что сервис видит свою работу. После такого письма клиент начинает проверять сам, а каждый его вопрос звучит как недоверие.
 
-В предыдущей статье серии — «Триаж при первом касании: категория, критичность, маршрут» — речь шла о том, чтобы каждое обращение на входе получало критичность, категорию и владельца. Эта статья о следующем контуре: о регулярном контроле, который замечает риск до того, как он станет фактом.
+В предыдущей статье серии — [«Триаж при первом касании: категория, критичность, маршрут»](/ru/blog/support-lead-triage-first-touch/) — речь шла о том, чтобы каждое обращение на входе получало критичность, категорию и владельца. Эта статья о следующем контуре: о регулярном контроле, который замечает риск до того, как он станет фактом.
 
 Тезис такой: нарушение срока — управляемое событие, если оно видно заранее. Тихое нарушение — это не сбой команды, а сбой контроля: никто не смотрит на очередь в те моменты, когда ещё можно что-то сделать.
 
@@ -100,7 +100,7 @@ flowchart TD
 
 Ответы обычно указывают на одну из двух причин: триаж поставил неверную критичность, и тикет попал не в ту очередь, или мощности не хватает на текущий поток. Первое лечится правилами, второе — только разговором о ресурсе. Смешивать эти два разговора нельзя: пока причина не названа, любое решение выглядит как «поработать интенсивнее».
 
-Дальше сигнал живёт уже не в отчёте, а в повестке. Если причина — неверная критичность, правится матрица и обучение триажа. Если мощность — нужны цифры: сколько часов работы в неделю требует поток и сколько есть. Это уже не про контроль очереди, а про расчёт потребности, и эта тема — из другого раздела серии.
+Дальше сигнал живёт уже не в отчёте, а в повестке. Если причина — неверная критичность, правится матрица и обучение триажа. Если мощность — нужны цифры: сколько часов работы в неделю требует поток и сколько есть. Это уже не про контроль очереди, а про [расчёт потребности](/ru/blog/support-lead-capacity-planning/), и эта тема — из другого раздела серии.
 
 ## Урок из нарушения
 
@@ -127,7 +127,7 @@ I learned about the first SLA (Service Level Agreement — the service commitmen
 
 That word — quietly — is the actual problem. A missed deadline is unpleasant but explainable: it happened, we reviewed it, we fixed it. A breach the customer notices first breaks something else: the belief that the service can see its own work. After that email, the customer starts checking for themselves, and every question of theirs sounds like distrust.
 
-The previous article in the series — "Triage at first touch: category, priority, route" — was about every request getting a priority, a category, and an owner at entry. This article is about the next loop: regular control that spots a risk before it becomes a fact.
+The previous article in the series — ["Triage at first touch: category, priority, route"](/en/blog/support-lead-triage-first-touch/) — was about every request getting a priority, a category, and an owner at entry. This article is about the next loop: regular control that spots a risk before it becomes a fact.
 
 The thesis: a missed deadline is a manageable event if it's visible in advance. A silent breach isn't a team failure but a control failure: nobody looks at the queue at the moments when something could still be done.
 
@@ -204,7 +204,7 @@ Three questions separate coincidence from a system.
 
 The answers usually point to one of two causes: triage set the wrong priority and the ticket landed in the wrong queue, or capacity can't carry the current flow. The first is fixed with rules, the second only by a conversation about resources. The two conversations must not be mixed: until the cause is named, every solution looks like "work harder".
 
-After that the signal lives on the agenda, not in the report. If the cause is a wrong priority, the matrix and triage training get fixed. If it's capacity, numbers are needed: how many hours of work per week the flow requires and how many exist. That's no longer queue control but a capacity calculation, and that topic belongs to another part of the series.
+After that the signal lives on the agenda, not in the report. If the cause is a wrong priority, the matrix and triage training get fixed. If it's capacity, numbers are needed: how many hours of work per week the flow requires and how many exist. That's no longer queue control but [a capacity calculation](/en/blog/support-lead-capacity-planning/), and that topic belongs to another part of the series.
 
 ## The lesson from a breach
 
@@ -231,7 +231,7 @@ The point of all this control isn't zero breaches. Zero breaches only happens wh
 
 דווקא המילה הזאת — בשקט — היא הבעיה. הפרת מועד כשלעצמה לא נעימה אבל מובנת: קרתה, פירקנו, תיקנו. הפרה שהלקוח מגלה ראשון שוברת משהו אחר: את האמון שהשירות רואה את העבודה של עצמו. אחרי מכתב כזה הלקוח מתחיל לבדוק בעצמו, וכל שאלה שלו נשמעת כמו חוסר אמון.
 
-המאמר הקודם בסדרה — "מיון במגע ראשון: קטגוריה, דחיפות, מסלול" — עסק בכך שכל פנייה בכניסה תקבל דחיפות, קטגוריה ובעלים. המאמר הזה עוסק במעגל הבא: בקרה קבועה שמבחינה בסיכון לפני שהוא הופך לעובדה.
+המאמר הקודם בסדרה — ["מיון במגע ראשון: קטגוריה, דחיפות, מסלול"](/he/blog/support-lead-triage-first-touch/) — עסק בכך שכל פנייה בכניסה תקבל דחיפות, קטגוריה ובעלים. המאמר הזה עוסק במעגל הבא: בקרה קבועה שמבחינה בסיכון לפני שהוא הופך לעובדה.
 
 הטענה: הפרת מועד היא אירוע מנוהל אם היא נראית מראש. הפרה שקטה אינה כשל של הצוות אלא כשל של הבקרה: אף אחד לא מסתכל בתור ברגעים שבהם עוד אפשר לעשות משהו.
 
@@ -308,7 +308,7 @@ flowchart TD
 
 התשובות מצביעות בדרך כלל על אחת משתי סיבות: המיון קבע דחיפות לא נכונה והפנייה נפלה לתור הלא נכון, או שאין כושר נשיאה לזרימה הנוכחית. הראשון נרפא בכללים, השני רק בשיחה על משאבים. אסור לערבב את שתי השיחות: כל עוד הסיבה לא נקראת בשמה, כל פתרון נראה כמו "לעבוד יותר קשה".
 
-מכאן הסימן חי לא בדוח אלא בסדר היום. אם הסיבה היא דחיפות שגויה — מתקנים את המטריצה ואת ההדרכה למיון. אם זו כושר נשיאה — צריך מספרים: כמה שעות עבודה בשבוע דורשת הזרימה וכמה יש. זה כבר לא בקרת תור אלא חישוב צרכים, והנושא הזה שייך לחלק אחר בסדרה.
+מכאן הסימן חי לא בדוח אלא בסדר היום. אם הסיבה היא דחיפות שגויה — מתקנים את המטריצה ואת ההדרכה למיון. אם זו כושר נשיאה — צריך מספרים: כמה שעות עבודה בשבוע דורשת הזרימה וכמה יש. זה כבר לא בקרת תור אלא [חישוב צרכים](/he/blog/support-lead-capacity-planning/), והנושא הזה שייך לחלק אחר בסדרה.
 
 ## השיעור מההפרה
 

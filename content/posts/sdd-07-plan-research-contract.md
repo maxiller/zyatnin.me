@@ -62,7 +62,7 @@ translations:
 
 План выбрал диспетчер. Аргумент был таким: одна точка эмиссии = меньше шансов забыть, чем при пяти точках.
 
-В посте 11 я расскажу, почему это решение пришлось развернуть. Пока просто запомните: план зафиксировал выбор и его обоснование — через полгода можно будет прочитать, почему код устроен так, а не иначе.
+В [посте 11](/ru/dev/blog/sdd-11-emission-moves-to-functions/) я расскажу, почему это решение пришлось развернуть. Пока просто запомните: план зафиксировал выбор и его обоснование — через полгода можно будет прочитать, почему код устроен так, а не иначе.
 
 ## `contracts/function-next-payload.md` и версия v4.12
 
@@ -144,7 +144,7 @@ Option two: **in the functions themselves**. Each of the five functions (`search
 
 The plan chose the dispatcher. The argument: one emission point means fewer chances to forget than five points.
 
-In post 11 I will explain why that decision had to be reversed. For now just remember: the plan recorded the choice and its reasoning — in six months you can read why the code is shaped that way and not otherwise.
+In [post 11](/en/dev/blog/sdd-11-emission-moves-to-functions/) I will explain why that decision had to be reversed. For now just remember: the plan recorded the choice and its reasoning — in six months you can read why the code is shaped that way and not otherwise.
 
 ## `contracts/function-next-payload.md` and version v4.12
 
@@ -232,7 +232,7 @@ The plan is ready. Next: how it turns into tasks and tests.
 
 התוכנית בחרה ב-dispatcher. הנימוק: נקודת פליטה אחת משמעה פחות סיכויים לשכוח לעומת חמש נקודות.
 
-בפוסט 11 אסביר למה את ההחלטה הזאת היה צריך להפוך. בינתיים רק זכרו: התוכנית תיעדה את הבחירה ואת הנימוק שלה — בעוד חצי שנה אפשר לקרוא למה הקוד בנוי כך ולא אחרת.
+ב[פוסט 11](/he/dev/blog/sdd-11-emission-moves-to-functions/) אסביר למה את ההחלטה הזאת היה צריך להפוך. בינתיים רק זכרו: התוכנית תיעדה את הבחירה ואת הנימוק שלה — בעוד חצי שנה אפשר לקרוא למה הקוד בנוי כך ולא אחרת.
 
 ## `contracts/function-next-payload.md` וגרסה v4.12
 

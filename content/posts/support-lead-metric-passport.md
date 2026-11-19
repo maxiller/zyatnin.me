@@ -23,7 +23,7 @@ translations:
 
 Я пришёл к простому критерию, который отсекает большинство бесполезных измерений: у метрики должно быть действие, которое наступает после выхода за порог. Если ответ на вопрос «что мы делаем, если значение ушло за границу» отсутствует, то это не метрика, а иллюстрация: она описывает прошлое и не влияет на будущее.
 
-В этой статье — почему дашборды умирают, как выглядит критерий живой метрики, что записывается в паспорт и с каких трёх метрик стоит начинать, чтобы не утонуть. Она продолжает линию, начатую в «Baseline раньше целей»: там речь шла о том, откуда берутся числа и как они превращаются в цели; здесь — о том, как числа превращаются в действия.
+В этой статье — почему дашборды умирают, как выглядит критерий живой метрики, что записывается в паспорт и с каких трёх метрик стоит начинать, чтобы не утонуть. Она продолжает линию, начатую в [«Baseline раньше целей»](/ru/blog/support-lead-baseline-first/): там речь шла о том, откуда берутся числа и как они превращаются в цели; здесь — о том, как числа превращаются в действия.
 
 ## Музей метрик
 
@@ -162,7 +162,7 @@ mindmap
 
 Живая метрика меняет не отчёт, а поведение: кто-то открывает значение, видит выход за порог и делает то, что записано в паспорте. Всё остальное — графика, которая делает отчёт похожим на управление.
 
-Следующая статья серии — «Аудит живучести: что сломается, когда вас не будет» — о том, какие из этих механизмов переживут ваш отпуск, а какие держатся только на привычке.
+Следующая статья серии — [«Аудит живучести: что сломается, когда вас не будет»](/ru/blog/support-lead-resilience-audit/) — о том, какие из этих механизмов переживут ваш отпуск, а какие держатся только на привычке.
 
 <!-- lang:en -->
 
@@ -172,7 +172,7 @@ Every support team has a dashboard, and almost every one of them changes no deci
 
 I arrived at a simple criterion that cuts off most useless measurements: a metric must have an action that follows when it crosses the threshold. If there is no answer to the question "what do we do when the value goes past the line", then it is not a metric but an illustration: it describes the past and does not affect the future.
 
-This article is about why dashboards die, what the criterion of a live metric looks like, what goes into the passport, and which three metrics are worth starting with so as not to drown. It continues the line started in "Baseline before goals": there the subject was where the numbers come from and how they become goals; here it is how numbers become actions.
+This article is about why dashboards die, what the criterion of a live metric looks like, what goes into the passport, and which three metrics are worth starting with so as not to drown. It continues the line started in ["Baseline before goals"](/en/blog/support-lead-baseline-first/): there the subject was where the numbers come from and how they become goals; here it is how numbers become actions.
 
 ## The museum of metrics
 
@@ -311,7 +311,7 @@ The rollout order I consider workable:
 
 A live metric changes not the report but the behaviour: someone opens the value, sees the threshold crossed, and does what is written in the passport. Everything else is graphics that make a report look like management.
 
-The next article of the series — "Resilience audit: what breaks when you are gone" — is about which of these mechanisms will survive your vacation and which hold on habit alone.
+The next article of the series — ["Resilience audit: what breaks when you are gone"](/en/blog/support-lead-resilience-audit/) — is about which of these mechanisms will survive your vacation and which hold on habit alone.
 
 <!-- lang:he -->
 
@@ -321,7 +321,7 @@ The next article of the series — "Resilience audit: what breaks when you are g
 
 הגעתי לקריטריון פשוט שמסנן את רוב המדידות חסרות התועלת: למדד צריכה להיות פעולה שמתרחשת אחרי חריגה מהסף. אם אין תשובה לשאלה "מה אנחנו עושים אם הערך עבר את הגבול", זה לא מדד אלא איור: הוא מתאר את העבר ולא משפיע על העתיד.
 
-במאמר הזה — למה דאשבורדים מתים, איך נראה הקריטריון של מדד חי, מה נרשם בדרכון ומאילו שלושה מדדים כדאי להתחיל כדי לא לטבוע. הוא ממשיך את הקו שהתחיל ב"בסיס לפני מטרות": שם דובר על מאיפה מגיעים המספרים ואיך הם הופכים למטרות; כאן — איך המספרים הופכים לפעולות.
+במאמר הזה — למה דאשבורדים מתים, איך נראה הקריטריון של מדד חי, מה נרשם בדרכון ומאילו שלושה מדדים כדאי להתחיל כדי לא לטבוע. הוא ממשיך את הקו שהתחיל ב["בסיס לפני מטרות"](/he/blog/support-lead-baseline-first/): שם דובר על מאיפה מגיעים המספרים ואיך הם הופכים למטרות; כאן — איך המספרים הופכים לפעולות.
 
 ## מוזיאון המדדים
 
@@ -460,4 +460,4 @@ mindmap
 
 מדד חי משנה לא את הדוח אלא את ההתנהגות: מישהו פותח את הערך, רואה חריגה מהסף ועושה את מה שרשום בדרכון. כל השאר הוא גרפיקה שעושה מהדוח משהו שנראה כמו ניהול.
 
-המאמר הבא בסדרה — "ביקורת חוסן: מה יישבר כשלא תהיו" — על אילו מהמנגנונים האלה ישרדו את החופשה שלכם, ואילו מחזיקים רק בהרגל.
+המאמר הבא בסדרה — ["ביקורת חוסן: מה יישבר כשלא תהיו"](/he/blog/support-lead-resilience-audit/) — על אילו מהמנגנונים האלה ישרדו את החופשה שלכם, ואילו מחזיקים רק בהרגל.

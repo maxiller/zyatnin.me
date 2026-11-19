@@ -60,7 +60,7 @@ translations:
 5. Поставить markdownlint локально в devDependencies.
 6. Закоммитить `specs/003…011` по `docs/GIT-RULES.md`.
 
-Пункт 6 — самый срочный. Девять каталогов спек лежат в рабочем дереве неотслеживаемыми, и это ровно та ошибка, которую я сам же описал в пост-мортеме волны.
+Пункт 6 — самый срочный. Девять каталогов спек лежат в рабочем дереве неотслеживаемыми, и это ровно та ошибка, которую я сам же описал в [пост-мортеме волны](/ru/dev/blog/sdd-06-spec-wave-postmortem/).
 
 ## Что бы я сделал иначе
 
@@ -68,7 +68,7 @@ translations:
 
 **Сразу заложить эмиссию в функциях.** Один круг по плану и один пост в блоге ушли на то, чтобы переоткрыть очевидное: payload живёт в функции — функция пусть и логирует.
 
-**Проверять прод-данные раньше, чем обвинять код.** Полчаса на проверку, вернул ли Jira хоть одну задачу, сэкономили бы всю детективную ветку поста 10 — хотя признаюсь честно, без неё серия была бы менее полезной.
+**Проверять прод-данные раньше, чем обвинять код.** Полчаса на проверку, вернул ли Jira хоть одну задачу, сэкономили бы всю детективную ветку [поста 10](/ru/dev/blog/sdd-10-empty-event-investigation/) — хотя признаюсь честно, без неё серия была бы менее полезной.
 
 **Коммитить `specs/` сразу, а не держать девять каталогов неотслеживаемыми.** Спека вне git — не артефакт, а черновик.
 
@@ -137,7 +137,7 @@ Six items for the near future:
 5. Install markdownlint locally as a devDependency.
 6. Commit `specs/003…011` per `docs/GIT-RULES.md`.
 
-Item 6 is the most urgent. Nine spec directories sit untracked in the working tree — exactly the mistake I described myself in the wave post-mortem.
+Item 6 is the most urgent. Nine spec directories sit untracked in the working tree — exactly the mistake I described myself in the [wave post-mortem](/en/dev/blog/sdd-06-spec-wave-postmortem/).
 
 ## What I would do differently
 
@@ -145,7 +145,7 @@ Three things the series paid for with time:
 
 **Put emission in the functions from the start.** One plan round and one blog post went into rediscovering the obvious: the payload lives in the function, so let the function log it.
 
-**Check production data before blaming the code.** Half an hour of checking whether Jira returned any tasks at all would have saved the whole detective branch of post 10 — although, honestly, the series would have been less useful without it.
+**Check production data before blaming the code.** Half an hour of checking whether Jira returned any tasks at all would have saved the whole detective branch of [post 10](/en/dev/blog/sdd-10-empty-event-investigation/) — although, honestly, the series would have been less useful without it.
 
 **Commit `specs/` right away instead of keeping nine directories untracked.** A spec outside git is not an artefact but a draft.
 
@@ -214,7 +214,7 @@ That is exactly where an ordinary project rots silently, and SDD gives a second 
 5. להתקין markdownlint מקומית כ-devDependency.
 6. לעשות commit ל-`specs/003…011` לפי `docs/GIT-RULES.md`.
 
-סעיף 6 הוא הדחוף ביותר. תשע תיקיות מפרטים יושבות בעץ העבודה בלי מעקב — בדיוק הטעות שתיארתי בעצמי בפוסט-מורטם של הגל.
+סעיף 6 הוא הדחוף ביותר. תשע תיקיות מפרטים יושבות בעץ העבודה בלי מעקב — בדיוק הטעות שתיארתי בעצמי ב[פוסט-מורטם של הגל](/he/dev/blog/sdd-06-spec-wave-postmortem/).
 
 ## מה הייתי עושה אחרת
 
@@ -222,7 +222,7 @@ That is exactly where an ordinary project rots silently, and SDD gives a second 
 
 **להכניס את הפליטה לפונקציות מההתחלה.** סיבוב תוכנית אחד ופוסט בלוג אחד הלכו לגילוי מחדש של המובן מאלוי: ה-payload חי בפונקציה — אז שהפונקציה תתעד אותו.
 
-**לבדוק נתוני פרודקשן לפני שמאשימים את הקוד.** חצי שעה של בדיקה אם Jira החזירה בכלל משימות היתה חוסכת את כל ענף החקירה של פוסט 10 — למרות שבכנות, בלעדיו הסדרה היתה פחות שימושית.
+**לבדוק נתוני פרודקשן לפני שמאשימים את הקוד.** חצי שעה של בדיקה אם Jira החזירה בכלל משימות היתה חוסכת את כל ענף החקירה של [פוסט 10](/he/dev/blog/sdd-10-empty-event-investigation/) — למרות שבכנות, בלעדיו הסדרה היתה פחות שימושית.
 
 **לעשות commit ל-`specs/` מיד, ולא להחזיק תשע תיקיות בלי מעקב.** מפרט מחוץ ל-git הוא לא ארטיפקט אלא טיוטה.
 

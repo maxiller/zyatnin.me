@@ -25,7 +25,7 @@ translations:
 
 Важно не путать это с безответственностью. «Без имён» относится к прошлому, а не к будущему: у каждого действия после разбора есть владелец и срок. Дальше — почему поиск виноватого не мешает повтору, из чего состоит разбор, как писать хронологию без имён и что делать с действиями после встречи.
 
-Она продолжает внешний контур серии: в «Годе лида по кварталам» разборы стоят в четвёртом квартале — как способ замкнуть цикл, а не как ритуал отчётности.
+Она продолжает внешний контур серии: в [«Годе лида по кварталам»](/ru/blog/support-lead-year-roadmap/) разборы стоят в четвёртом квартале — как способ замкнуть цикл, а не как ритуал отчётности.
 
 ## Почему поиск виноватого не предотвращает повтор
 
@@ -143,7 +143,7 @@ mindmap
 
 Разбор без имён не делает команду мягче — он делает её быстрее: люди приходят с фактами, а не с защитной версией событий, и организационная причина находится на первой встрече, а не на третьей. Хронология без имён — не вежливость, а инструмент: она позволяет обсуждать условия, которые создали ошибку, и менять именно их.
 
-Дальше в серии — «Карточка проблемы для продукта, которую не закрыть без статуса»: о том, что делать с причинами, которые нельзя исправить внутри поддержки.
+Дальше в серии — [«Карточка проблемы для продукта, которую не закрыть без статуса»](/ru/blog/support-lead-problem-card/): о том, что делать с причинами, которые нельзя исправить внутри поддержки.
 
 <!-- lang:en -->
 
@@ -155,7 +155,7 @@ I have run enough of these meetings to have settled on a rule for myself: a revi
 
 It matters not to confuse this with irresponsibility. "Without names" applies to the past, not to the future: every action after the review has an owner and a date. What follows is why finding someone to blame does not prevent a repeat, what a review consists of, how to write a timeline without names, and what happens to the actions after the meeting.
 
-This article continues the outer contour of the series: in "A support lead's year by quarters" the reviews sit in the fourth quarter, as a way to close the loop rather than as a reporting ritual.
+This article continues the outer contour of the series: in ["A support lead's year by quarters"](/en/blog/support-lead-year-roadmap/) the reviews sit in the fourth quarter, as a way to close the loop rather than as a reporting ritual.
 
 ## Why finding someone to blame does not prevent a repeat
 
@@ -273,7 +273,7 @@ The most common problem with a review is not the quality of the conclusions but 
 
 A review without names does not make a team softer — it makes it faster: people arrive with facts instead of a defensive version of events, and the organisational cause is found at the first meeting rather than at the third. A timeline without names is not politeness but a tool: it lets you discuss the conditions that produced the error, and change exactly those.
 
-Next in the series — "A problem card for product that won't close without a status": what to do with the causes that cannot be fixed inside support.
+Next in the series — ["A problem card for product that won't close without a status"](/en/blog/support-lead-problem-card/): what to do with the causes that cannot be fixed inside support.
 
 <!-- lang:he -->
 
@@ -285,7 +285,7 @@ Next in the series — "A problem card for product that won't close without a st
 
 חשוב לא לבלבל את זה עם חוסר אחריות. "בלי שמות" מתייחס לעבר, לא לעתיד: לכל פעולה אחרי הניתוח יש בעלים ומועד. בהמשך — למה חיפוש האשם לא מונע חזרה, ממה מורכב הניתוח, איך כותבים כרונולוגיה בלי שמות ומה עושים עם הפעולות שאחרי הפגישה.
 
-המאמר ממשיך את המעגל החיצוני של הסדרה: ב"שנה של מנהל תמיכה לפי רבעונים" הניתוחים עומדים ברבעון הרביעי — כדרך לסגור מעגל, לא כטקס דיווח.
+המאמר ממשיך את המעגל החיצוני של הסדרה: ב["שנה של מנהל תמיכה לפי רבעונים"](/he/blog/support-lead-year-roadmap/) הניתוחים עומדים ברבעון הרביעי — כדרך לסגור מעגל, לא כטקס דיווח.
 
 ## למה חיפוש האשם לא מונע חזרה
 
@@ -403,4 +403,4 @@ mindmap
 
 ניתוח בלי שמות לא עושה את הצוות רך יותר — הוא עושה אותו מהיר יותר: אנשים מגיעים עם עובדות ולא עם גרסה מגוננת של האירועים, והסיבה הארגונית נמצאת בפגישה הראשונה ולא בשלישית. כרונולוגיה בלי שמות היא לא נימוס אלא כלי: היא מאפשרת לדון בתנאים שיצרו את הטעות ולשנות בדיוק אותם.
 
-בהמשך הסדרה — "כרטיס בעיה למוצר שאי אפשר לסגור בלי סטטוס": על מה לעשות עם סיבות שאי אפשר לתקן בתוך התמיכה.
+בהמשך הסדרה — ["כרטיס בעיה למוצר שאי אפשר לסגור בלי סטטוס"](/he/blog/support-lead-problem-card/): על מה לעשות עם סיבות שאי אפשר לתקן בתוך התמיכה.

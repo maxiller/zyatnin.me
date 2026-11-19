@@ -82,7 +82,7 @@ flowchart TD
 
 И ещё одна деталь, которая сэкономила время: у события всегда есть предшественник. Сначала смотрится ответ внешнего API, потом — построенные из него задания, и только в конце — эмиссия. Если бы я начал с кода эмиссии, то проверил бы больше трёх файлов вместо одной строки в логе Jira.
 
-Второй урок уже про процесс: тест на пустой результат у меня был (тот самый седьмой тест из поста 8), но в проде я про него забыл. Спека помнила, а я — нет.
+Второй урок уже про процесс: тест на пустой результат у меня был (тот самый седьмой тест из [поста 8](/ru/dev/blog/sdd-08-tasks-and-tdd/)), но в проде я про него забыл. Спека помнила, а я — нет.
 
 ## Про безопасность логов
 
@@ -167,7 +167,7 @@ I will formulate the lesson as a rule: "silence in the log" is not the same as "
 
 One more detail that saved time: an event always has a predecessor. You look at the external API response first, then at the jobs built from it, and only then at the emission. Had I started with the emission code, I would have checked more than three files instead of one line in the Jira log.
 
-The second lesson is about process: I had a test for the empty result (that seventh test from post 8), but in production I forgot about it. The spec remembered; I did not.
+The second lesson is about process: I had a test for the empty result (that seventh test from [post 8](/en/dev/blog/sdd-08-tasks-and-tdd/)), but in production I forgot about it. The spec remembered; I did not.
 
 ## About log security
 
@@ -250,7 +250,7 @@ flowchart TD
 
 עוד פרט שחסך זמן: לאירוע תמיד יש קודם. קודם מסתכלים בתשובת ה-API החיצוני, אחר כך במשימות שנבנו ממנה, ורק בסוף בפליטה. אילו התחלתי מקוד הפליטה, הייתי בודק יותר משלושה קבצים במקום שורה אחת בלוג של Jira.
 
-הלקח השני הוא על תהליך: היה לי טסט לתוצאה ריקה (הטסט השביעי מהפוסט 8), אבל בפרודקשן שכחתי ממנו. המפרט זכר, אני לא.
+הלקח השני הוא על תהליך: היה לי טסט לתוצאה ריקה (הטסט השביעי מה[פוסט 8](/he/dev/blog/sdd-08-tasks-and-tdd/)), אבל בפרודקשן שכחתי ממנו. המפרט זכר, אני לא.
 
 ## על אבטחת לוגים
 

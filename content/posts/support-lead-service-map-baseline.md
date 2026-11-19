@@ -23,7 +23,7 @@ translations:
 
 Разрыв между этими двумя сервисами — не признак плохой команды. Это нормальное состояние системы, которую никто никогда не описывал целиком: каждый её кусок появился в своё время, под свою задачу и своего клиента. Проблема начинается позже — когда лид приходит с планом улучшений, а плана некуда приложить, потому что неясно, что именно улучшается.
 
-В предыдущих статьях серии речь шла о времени лида ([«Границы ответственности»](/ru/blog/support-lead-boundaries/)), о логике точки А («Baseline раньше целей») и о том, как из целей собирается год («Год лида по кварталам»). Эта статья — о шаге, который предшествует всем трём: как за первые недели получить описание сервиса и его точку А, не имея ни времени, ни данных, ни согласия на большие изменения.
+В предыдущих статьях серии речь шла о времени лида ([«Границы ответственности»](/ru/blog/support-lead-boundaries/)), о логике точки А ([«Baseline раньше целей»](/ru/blog/support-lead-baseline-first/)) и о том, как из целей собирается год ([«Год лида по кварталам»](/ru/blog/support-lead-year-roadmap/)). Эта статья — о шаге, который предшествует всем трём: как за первые недели получить описание сервиса и его точку А, не имея ни времени, ни данных, ни согласия на большие изменения.
 
 Тезис такой: диагностика первого месяца отвечает на два вопроса — что видит клиент, когда идёт к решению, и сколько он на каждом шаге ждёт на самом деле. Первый ответ даёт карта сервиса, второй — замер фактической реакции. Вместе они превращаются в артефакты, с которыми уже можно разговаривать о целях.
 
@@ -87,7 +87,7 @@ mindmap
 
 Третья часть диагностики — выгрузка из трекера. Здесь легко утонуть: полей много, отчётов ещё больше, и первая попытка «сделать нормальный дашборд» обычно заканчивается дашбордом, которым никто не пользуется.
 
-Полный список полей и правил выгрузки я разбирал в статье «Baseline раньше целей». В первый месяц достаточно четырёх разрезов, и у каждого есть конкретный вопрос, на который он отвечает.
+Полный список полей и правил выгрузки я разбирал в статье [«Baseline раньше целей»](/ru/blog/support-lead-baseline-first/). В первый месяц достаточно четырёх разрезов, и у каждого есть конкретный вопрос, на который он отвечает.
 
 | Разрез | Вопрос, на который отвечает | Что делать с ответом |
 | --- | --- | --- |
@@ -141,7 +141,7 @@ flowchart TD
 
 Эти четыре артефакта — не диагностика ради диагностики. Они отвечают на вопрос, который рано или поздно задаст любой руководитель: «что происходит в сервисе». И отвечают не впечатлением, а описанием.
 
-Дальше начинается работа, которая делается один раз и потом только поддерживается: маршрутизация обращений. Диагностика показала, что маршрутов несколько и они разные; следующий шаг — сделать так, чтобы каждое обращение попадало в свой маршрут с первого касания, а не после двух передач и одного возврата. Об этом — в статье «Триаж при первом касании: категория, критичность, маршрут».
+Дальше начинается работа, которая делается один раз и потом только поддерживается: маршрутизация обращений. Диагностика показала, что маршрутов несколько и они разные; следующий шаг — сделать так, чтобы каждое обращение попадало в свой маршрут с первого касания, а не после двух передач и одного возврата. Об этом — в статье [«Триаж при первом касании: категория, критичность, маршрут»](/ru/blog/support-lead-triage-first-touch/).
 
 Хорошая диагностика заканчивается не документом, а фразой «теперь понятно, что делать первым». Если после месяца работы такой фразы нет, значит, вы описали сервис, но не посмотрели на него глазами клиента.
 
@@ -153,7 +153,7 @@ I spent my first month as a support lead on process documents: reading, cross-ch
 
 The gap between those two services isn't a sign of a bad team. It's the normal state of a system nobody ever described as a whole: every piece of it appeared at its own time, for its own task and its own customer. The trouble starts later — when a lead arrives with an improvement plan and has nowhere to apply it, because it's unclear what exactly is being improved.
 
-Previous articles in the series covered the lead's time (["Ownership boundaries"](/en/blog/support-lead-boundaries/)), the logic of point A ("Baseline before goals"), and how goals turn into a year ("A support lead's year by quarters"). This article is about the step that precedes all three: how to get a description of the service and its point A in the first weeks, with no time, no data, and no approval for big changes.
+Previous articles in the series covered the lead's time (["Ownership boundaries"](/en/blog/support-lead-boundaries/)), the logic of point A (["Baseline before goals"](/en/blog/support-lead-baseline-first/)), and how goals turn into a year (["A support lead's year by quarters"](/en/blog/support-lead-year-roadmap/)). This article is about the step that precedes all three: how to get a description of the service and its point A in the first weeks, with no time, no data, and no approval for big changes.
 
 The thesis: diagnosing the first month answers two questions — what the customer sees on the way to a solution, and how long they actually wait at each step. The first answer comes from a service map, the second from measuring the actual response. Together they turn into artifacts you can already use to talk about goals.
 
@@ -217,7 +217,7 @@ This is also where the first unpleasant discovery usually happens: part of the f
 
 The third part of the diagnosis is a tracker export. It's easy to drown here: many fields, more reports, and the first attempt at "a proper dashboard" usually ends with a dashboard nobody uses.
 
-I went through the full field list and export rules in "Baseline before goals". In the first month four cuts are enough, and each one answers a specific question.
+I went through the full field list and export rules in ["Baseline before goals"](/en/blog/support-lead-baseline-first/). In the first month four cuts are enough, and each one answers a specific question.
 
 | Cut | The question it answers | What to do with the answer |
 | --- | --- | --- |
@@ -271,7 +271,7 @@ By the end of the first month a lead should have four things, and none of them n
 
 These four artifacts aren't diagnosis for its own sake. They answer the question every manager eventually asks: "what is happening in the service". And they answer it with a description, not an impression.
 
-What follows is work done once and then only maintained: routing requests. The diagnosis showed there are several routes and they differ; the next step is to make every request land on its own route at the first touch, not after two handoffs and a return. That's the subject of "Triage at first touch: category, priority, route".
+What follows is work done once and then only maintained: routing requests. The diagnosis showed there are several routes and they differ; the next step is to make every request land on its own route at the first touch, not after two handoffs and a return. That's the subject of ["Triage at first touch: category, priority, route"](/en/blog/support-lead-triage-first-touch/).
 
 A good diagnosis ends not with a document but with the sentence "now we know what comes first". If after a month of work that sentence is missing, you described the service but never looked at it through the customer's eyes.
 
@@ -283,7 +283,7 @@ A good diagnosis ends not with a document but with the sentence "now we know wha
 
 הפער בין שני השירותים האלה אינו סימן לצוות גרוע. זה מצב תקין של מערכת שאיש לא תיאר אותה בשלמותה: כל חלק בה נוצר בזמנו, למשימה שלו וללקוח שלו. הבעיה מתחילה מאוחר יותר — כשמנהל התמיכה מגיע עם תוכנית שיפור ואין להיכן להחיל אותה, כי לא ברור מה בדיוק משפרים.
 
-במאמרים הקודמים בסדרה עסקנו בזמן של מנהל התמיכה (["גבולות אחריות"](/he/blog/support-lead-boundaries/)), בהיגיון של נקודת המוצא ("בסיס לפני מטרות") ובאיך מטרות הופכות לשנה ("שנה של מנהל תמיכה לפי רבעונים"). המאמר הזה עוסק בצעד שלפני שלושתם: איך להשיג בשבועות הראשונים תיאור של השירות ואת נקודת המוצא שלו, בלי זמן, בלי נתונים ובלי אישור לשינויים גדולים.
+במאמרים הקודמים בסדרה עסקנו בזמן של מנהל התמיכה (["גבולות אחריות"](/he/blog/support-lead-boundaries/)), בהיגיון של נקודת המוצא (["בסיס לפני מטרות"](/he/blog/support-lead-baseline-first/)) ובאיך מטרות הופכות לשנה (["שנה של מנהל תמיכה לפי רבעונים"](/he/blog/support-lead-year-roadmap/)). המאמר הזה עוסק בצעד שלפני שלושתם: איך להשיג בשבועות הראשונים תיאור של השירות ואת נקודת המוצא שלו, בלי זמן, בלי נתונים ובלי אישור לשינויים גדולים.
 
 הטענה: אבחון החודש הראשון עונה על שתי שאלות — מה הלקוח רואה בדרך לפתרון, וכמה הוא באמת ממתין בכל שלב. את התשובה הראשונה נותנת מפת השירות, ואת השנייה — מדידת התגובה בפועל. יחד הן הופכות לתוצרים שאפשר כבר לדבר איתם על מטרות.
 
@@ -347,7 +347,7 @@ mindmap
 
 החלק השלישי של האבחון — דיווח מהמערכת. כאן קל לטבוע: שדות רבים, דוחות עוד יותר, והניסיון הראשון "לעשות דשבורד נורמלי" נגמר בדרך כלל בדשבורד שאיש לא משתמש בו.
 
-את רשימת השדות המלאה וכללי הדיווח פירקתי במאמר "בסיס לפני מטרות". בחודש הראשון מספיקים ארבעה חתכים, ולכל אחד יש שאלה קונקרטית שהוא עונה עליה.
+את רשימת השדות המלאה וכללי הדיווח פירקתי במאמר ["בסיס לפני מטרות"](/he/blog/support-lead-baseline-first/). בחודש הראשון מספיקים ארבעה חתכים, ולכל אחד יש שאלה קונקרטית שהוא עונה עליה.
 
 | חתך | השאלה שהוא עונה עליה | מה עושים עם התשובה |
 | --- | --- | --- |
@@ -401,6 +401,6 @@ flowchart TD
 
 ארבעת התוצרים האלה אינם אבחון לשם אבחון. הם עונים על השאלה שכל ממונה ישאל במוקדם או במאוחר: "מה קורה בשירות". ועונים לא ברושם אלא בתיאור.
 
-מכאן מתחילה עבודה שנעשית פעם אחת ואחר כך רק מתוחזקת: ניתוב הפניות. האבחון הראה שהמסלולים אחדים ושונים זה מזה; הצעד הבא — שכל פנייה תיפול למסלול שלה כבר במגע הראשון, ולא אחרי שתי העברות וחזרה אחת. על כך במאמר "מיון במגע ראשון: קטגוריה, דחיפות, מסלול".
+מכאן מתחילה עבודה שנעשית פעם אחת ואחר כך רק מתוחזקת: ניתוב הפניות. האבחון הראה שהמסלולים אחדים ושונים זה מזה; הצעד הבא — שכל פנייה תיפול למסלול שלה כבר במגע הראשון, ולא אחרי שתי העברות וחזרה אחת. על כך במאמר ["מיון במגע ראשון: קטגוריה, דחיפות, מסלול"](/he/blog/support-lead-triage-first-touch/).
 
 אבחון טוב נגמר לא במסמך אלא במשפט "עכשיו ברור מה עושים קודם". אם אחרי חודש עבודה המשפט הזה לא קיים, תיארתם את השירות אבל לא הסתכלתם עליו בעיני הלקוח.

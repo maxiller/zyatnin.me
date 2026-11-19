@@ -23,7 +23,7 @@ translations:
 
 Тезис, к которому я пришёл: встреча один на один — ритуал про человека. Не про его задачи (они живут в трекере), не про его оценку (для этого есть наблюдаемые факты), а про то, как ему работается и что мешает. Превращённая в отчёт о статусе, встреча дублирует трекер; превращённая в аттестацию, она перестаёт получать правду.
 
-Эта статья — про четыре вещи, которые удерживают формат: структуру, банк вопросов, границу личного и правила отмены. Она продолжает разговор о ритме лида — в статье «Ритм руководителя: правило 40 %» встреча один на один была одним из пяти обязательных ритуалов; здесь — как сделать так, чтобы этот час не был потерян.
+Эта статья — про четыре вещи, которые удерживают формат: структуру, банк вопросов, границу личного и правила отмены. Она продолжает разговор о ритме лида — в статье [«Ритм руководителя: правило 40 %»](/ru/blog/support-lead-rhythm-40-percent/) встреча один на один была одним из пяти обязательных ритуалов; здесь — как сделать так, чтобы этот час не был потерян.
 
 ## Два вырожденных формата
 
@@ -139,7 +139,7 @@ For my first six months, one-on-ones were a status report with a human face. I c
 
 The claim I arrived at: a one-on-one is a ritual about the person. Not about their tasks (those live in the tracker), not about their assessment (that needs observable facts), but about how the work feels and what gets in the way. Turned into a status report, the meeting duplicates the tracker; turned into an appraisal, it stops receiving the truth.
 
-This article covers the four things that hold the format together: structure, a question bank, the boundary of the personal, and rules for cancelling. It continues the conversation about a lead's rhythm — in "The lead's rhythm: the 40% rule" the one-on-one was one of five mandatory rituals; here it's about making sure that hour isn't wasted.
+This article covers the four things that hold the format together: structure, a question bank, the boundary of the personal, and rules for cancelling. It continues the conversation about a lead's rhythm — in ["The lead's rhythm: the 40% rule"](/en/blog/support-lead-rhythm-40-percent/) the one-on-one was one of five mandatory rituals; here it's about making sure that hour isn't wasted.
 
 ## Two degenerate formats
 
@@ -255,7 +255,7 @@ A one-on-one is expensive — it takes time from both people. But it's the only 
 
 הטענה שאליה הגעתי: שיחה אחת־על־אחד היא טקס על האדם. לא על המשימות שלו (אלה חיות במערכת), לא על ההערכה שלו (לכך דרושות עובדות נצפות), אלא על איך מתנהלת העבודה שלו ומה מפריע. כשהיא הופכת לדוח סטטוס, היא משכפלת את המערכת; כשהיא הופכת להערכה, היא מפסיקה לקבל את האמת.
 
-המאמר הזה עוסק בארבעה דברים שמחזיקים את הפורמט: מבנה, בנק שאלות, גבול האישי וכללי ביטול. הוא ממשיך את השיחה על הקצב של מנהל התמיכה — במאמר "הקצב של מנהל התמיכה: חוק 40%" השיחה האחת־על־אחד הייתה אחד מחמישה טקסים מחייבים; כאן — איך לעשות שהשעה הזאת לא תלך לאיבוד.
+המאמר הזה עוסק בארבעה דברים שמחזיקים את הפורמט: מבנה, בנק שאלות, גבול האישי וכללי ביטול. הוא ממשיך את השיחה על הקצב של מנהל התמיכה — במאמר ["הקצב של מנהל התמיכה: חוק 40%"](/he/blog/support-lead-rhythm-40-percent/) השיחה האחת־על־אחד הייתה אחד מחמישה טקסים מחייבים; כאן — איך לעשות שהשעה הזאת לא תלך לאיבוד.
 
 ## שני פורמטים מנוונים
 

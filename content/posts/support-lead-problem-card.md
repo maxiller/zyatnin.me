@@ -23,7 +23,7 @@ translations:
 
 Я убеждён, что лид поддержки владеет самыми честными данными о проблемах клиентов в компании. Вопрос только в том, в каком виде эти данные выходят наружу. Формулировка «у нас много жалоб на выгрузку» не переживает первой встречи с планированием релиза, а карточка проблемы — переживает, потому что в ней есть клиенты, часы и цена обхода.
 
-Blameless-разбор из прошлой статьи серии касался отдельного инцидента: сбой случился, его разобрали, действия получили владельцев. Эта статья о другом классе проблем — тех, что не закрываются одним действием, потому что решение лежит в продукте.
+[Blameless-разбор из прошлой статьи серии](/ru/blog/support-lead-blameless-postmortem/) касался отдельного инцидента: сбой случился, его разобрали, действия получили владельцев. Эта статья о другом классе проблем — тех, что не закрываются одним действием, потому что решение лежит в продукте.
 
 ## Почему «у нас проблемы» игнорируется
 
@@ -143,7 +143,7 @@ flowchart TD
 - **Молчание — не статус.** Если ответа нет в оговорённый срок, карточка получает отметку «молчание» с датой. Это не формальность: именно молчание съедает кварталы, а не отказы.
 - **Отложено — не отказ.** У отсрочки есть причина и дата пересмотра. Без даты «отложено» — это вежливое «никогда».
 - **Отклонено — тоже результат.** Причина записывается, поддержка сообщает клиентам и продолжает жить с обходом. Это честнее, чем тишина: обход становится видимым расходом.
-- **Эскалация — с числами.** Если проблема отложена два квартала подряд, разговор идёт на уровень выше — не в формате «продукт нас не слышит», а с ценой обхода за период и риском. Просить решения, а не сочувствия, — отдельный навык, и он уже разобран в предыдущей части серии.
+- **Эскалация — с числами.** Если проблема отложена два квартала подряд, разговор идёт на уровень выше — не в формате «продукт нас не слышит», а с ценой обхода за период и риском. [Просить решения, а не сочувствия](/ru/blog/support-lead-ask-for-decisions/), — отдельный навык, и он уже разобран в предыдущей части серии.
 
 Отдельное правило — про то, чего в эскалации быть не должно. Карточки не используются как аргумент в спорах между командами или как способ показать, кто виноват в задержке. Как только карточка становится оружием, продукт начинает защищаться, а не читать данные, и канал закрывается.
 
@@ -163,7 +163,7 @@ flowchart TD
 
 <!-- вилка: история одной карточки — от записи до решения продукта: что было в данных, какой аргумент сработал, что изменилось после. -->
 
-Карточка проблемы — не бюрократия, а минимальный формат, при котором боль клиента становится задачей с ценой и владельцем. Следующая статья серии — «Метрика без действия — это картинка: паспорт метрики» — о том, как убедиться, что числа, на которых стоят эти карточки, кто-то действительно использует для решений.
+Карточка проблемы — не бюрократия, а минимальный формат, при котором боль клиента становится задачей с ценой и владельцем. Следующая статья серии — [«Метрика без действия — это картинка: паспорт метрики»](/ru/blog/support-lead-metric-passport/) — о том, как убедиться, что числа, на которых стоят эти карточки, кто-то действительно использует для решений.
 
 <!-- lang:en -->
 
@@ -173,7 +173,7 @@ Support is the only place in the company where you can see what actually breaks 
 
 I am convinced that the support lead owns the most honest data about client problems in the company. The only question is the shape in which that data gets out. "We get a lot of complaints about the export" does not survive the first meeting with release planning; a problem card does, because it contains clients, hours and the cost of the workaround.
 
-The blameless postmortem from the previous article of the series dealt with a single incident: a failure happened, it was reviewed, the actions got owners. This article is about a different class of problems — the ones no single action closes, because the solution lies in the product.
+[The blameless postmortem from the previous article of the series](/en/blog/support-lead-blameless-postmortem/) dealt with a single incident: a failure happened, it was reviewed, the actions got owners. This article is about a different class of problems — the ones no single action closes, because the solution lies in the product.
 
 ## Why "we have problems" gets ignored
 
@@ -293,7 +293,7 @@ What stands behind this scheme:
 - **Silence is not a status.** If there is no answer within the agreed period, the card gets a "silence" mark with a date. This is not a formality: it is silence that eats quarters, not refusals.
 - **Deferred is not a refusal.** A deferral has a reason and a review date. Without a date, "deferred" is a polite "never".
 - **Rejected is a result too.** The reason is recorded, support tells the clients and keeps living with the workaround. That is more honest than silence: the workaround becomes a visible expense.
-- **Escalation — with numbers.** If a problem has been deferred two quarters in a row, the conversation moves a level up — not in the format "product doesn't hear us" but with the cost of the workaround over the period and the risk. Asking for decisions rather than sympathy is a separate skill, and it was already covered in the previous part of the series.
+- **Escalation — with numbers.** If a problem has been deferred two quarters in a row, the conversation moves a level up — not in the format "product doesn't hear us" but with the cost of the workaround over the period and the risk. [Asking for decisions rather than sympathy](/en/blog/support-lead-ask-for-decisions/) is a separate skill, and it was already covered in the previous part of the series.
 
 A separate rule is about what must not be in an escalation. Cards are not used as an argument in disputes between teams or as a way to show who is to blame for a delay. As soon as a card becomes a weapon, product starts defending itself instead of reading the data, and the channel closes.
 
@@ -313,7 +313,7 @@ And the behaviour of engineers changes. When a problem has a number and a status
 
 <!-- вилка: история одной карточки — от записи до решения продукта: что было в данных, какой аргумент сработал, что изменилось после. -->
 
-A problem card is not bureaucracy but the minimum format at which a client's pain becomes a task with a cost and an owner. The next article of the series — "A metric without an action is a picture: the metric passport" — is about making sure that the numbers these cards rest on are actually used by someone to make decisions.
+A problem card is not bureaucracy but the minimum format at which a client's pain becomes a task with a cost and an owner. The next article of the series — ["A metric without an action is a picture: the metric passport"](/en/blog/support-lead-metric-passport/) — is about making sure that the numbers these cards rest on are actually used by someone to make decisions.
 
 <!-- lang:he -->
 
@@ -323,7 +323,7 @@ A problem card is not bureaucracy but the minimum format at which a client's pai
 
 אני משוכנע שלמנהל התמיכה יש את הנתונים הכי ישרים על בעיות של לקוחות בחברה. השאלה היחידה היא באיזו צורה הנתונים האלה יוצאים החוצה. הניסוח "יש לנו הרבה תלונות על הייצוא" לא שורד פגישה ראשונה עם תכנון השחרור, וכרטיס בעיה שורד — כי יש בו לקוחות, שעות ומחיר של מעקף.
 
-הניתוח blameless מהמאמר הקודם בסדרה עסק בתקלה בודדת: התקלה קרתה, נותחה, ולפעולות נמצאו בעלים. המאמר הזה עוסק בסוג אחר של בעיות — כאלה שלא נסגרות בפעולה אחת, כי הפתרון נמצא במוצר.
+[הניתוח blameless מהמאמר הקודם בסדרה](/he/blog/support-lead-blameless-postmortem/) עסק בתקלה בודדת: התקלה קרתה, נותחה, ולפעולות נמצאו בעלים. המאמר הזה עוסק בסוג אחר של בעיות — כאלה שלא נסגרות בפעולה אחת, כי הפתרון נמצא במוצר.
 
 ## למה מתעלמים מ"יש לנו בעיות"
 
@@ -443,7 +443,7 @@ flowchart TD
 - **שתיקה היא לא סטטוס.** אם אין תשובה במועד שסוכם, הכרטיס מקבל סימון "שתיקה" עם תאריך. זה לא פורמליות: דווקא השתיקה אוכלת רבעים, לא הסירובים.
 - **נדחה למועד אחר — לא סירוב.** לדחייה יש סיבה ותאריך בחינה מחדש. בלי תאריך, "נדחה" הוא "אף פעם" מנומס.
 - **סירוב הוא גם תוצאה.** הסיבה נרשמת, התמיכה מודיעה ללקוחות וממשיכה לחיות עם המעקף. זה ישר יותר משתיקה: המעקף הופך להוצאה גלויה.
-- **הסלמה — עם מספרים.** אם הבעיה נדחתה שני רבעים ברצף, השיחה עוברת לרמה גבוהה יותר — לא בנוסח "המוצר לא שומע אותנו", אלא עם מחיר המעקף בתקופה והסיכון. לבקש החלטות ולא אמפתיה זה כישור נפרד, והוא כבר נותח בחלק הקודם של הסדרה.
+- **הסלמה — עם מספרים.** אם הבעיה נדחתה שני רבעים ברצף, השיחה עוברת לרמה גבוהה יותר — לא בנוסח "המוצר לא שומע אותנו", אלא עם מחיר המעקף בתקופה והסיכון. [לבקש החלטות ולא אמפתיה](/he/blog/support-lead-ask-for-decisions/) זה כישור נפרד, והוא כבר נותח בחלק הקודם של הסדרה.
 
 כלל נפרד — על מה שאסור שיהיה בהסלמה. אין להשתמש בכרטיסים כטיעון בוויכוחים בין צוותים או כדרך להראות מי אשם בעיכוב. ברגע שהכרטיס הופך לנשק, המוצר מתחיל להתגונן במקום לקרוא נתונים, והערוץ נסגר.
 
@@ -463,4 +463,4 @@ flowchart TD
 
 <!-- вилка: история одной карточки — от записи до решения продукта: что было в данных, какой аргумент сработал, что изменилось после. -->
 
-כרטיס בעיה הוא לא ביורוקרטיה אלא פורמט מינימלי שבו כאב של לקוח הופך למשימה עם מחיר ובעלים. המאמר הבא בסדרה — "מדד בלי פעולה הוא תמונה: דרכון המדד" — על איך לוודא שהמספרים שעליהם עומדים הכרטיסים האלה באמת משמשים מישהו להחלטות.
+כרטיס בעיה הוא לא ביורוקרטיה אלא פורמט מינימלי שבו כאב של לקוח הופך למשימה עם מחיר ובעלים. המאמר הבא בסדרה — ["מדד בלי פעולה הוא תמונה: דרכון המדד"](/he/blog/support-lead-metric-passport/) — על איך לוודא שהמספרים שעליהם עומדים הכרטיסים האלה באמת משמשים מישהו להחלטות.

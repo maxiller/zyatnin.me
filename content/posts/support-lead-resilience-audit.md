@@ -21,7 +21,7 @@ translations:
 
 У лида поддержки есть один честный тест на то, чем он на самом деле управляет: уйти и посмотреть, что останется. Не «справятся ли ребята» — они почти всегда справляются, — а с какой скоростью сервис начнёт терять заявки, обещания и контекст.
 
-В предыдущей статье серии — «Метрика без действия — это картинка: паспорт метрики» — речь шла о том, чтобы у каждой цифры было действие. Эта статья — последняя проверка года: что произойдёт с сервисом, если из него вынуть конкретного человека. Называю эту проверку аудитом живучести. Это не про доверие к команде и не про поиск виноватых, а про поиск точек отказа до того, как отказ случится: в отпуске, на больничном, в день увольнения или в день, когда трекер лёг вместе с доступом к нему.
+В предыдущей статье серии — [«Метрика без действия — это картинка: паспорт метрики»](/ru/blog/support-lead-metric-passport/) — речь шла о том, чтобы у каждой цифры было действие. Эта статья — последняя проверка года: что произойдёт с сервисом, если из него вынуть конкретного человека. Называю эту проверку аудитом живучести. Это не про доверие к команде и не про поиск виноватых, а про поиск точек отказа до того, как отказ случится: в отпуске, на больничном, в день увольнения или в день, когда трекер лёг вместе с доступом к нему.
 
 Тезис, из которого я исхожу: живучесть — это свойство системы, а не характера людей. Пока знание, маршрут и решение живут в одном человеке, сервис работает на его присутствии, а не на регламенте. Аудит нужен, чтобы увидеть этот разрыв в спокойное время, когда исправление стоит часа, а не репутации.
 
@@ -64,7 +64,7 @@ flowchart TD
 
 ## Проверка нормативов расчётом
 
-Норматив легко объявить и трудно доказать. Проверяется он расчётом мощности из статьи «Мощность вместо героизма»: объём потока за период, умноженный на среднее время обработки одной заявки, делённый на доступные часы команды. Пока расчёт сходится при полном составе, всё выглядит благополучно. Аудит живучести добавляет к нему один вопрос: сходится ли расчёт, если вычесть одного человека — и особенно если вычесть именно того, кто держит самый тяжёлый участок.
+Норматив легко объявить и трудно доказать. Проверяется он расчётом мощности из статьи [«Мощность вместо героизма»](/ru/blog/support-lead-capacity-planning/): объём потока за период, умноженный на среднее время обработки одной заявки, делённый на доступные часы команды. Пока расчёт сходится при полном составе, всё выглядит благополучно. Аудит живучести добавляет к нему один вопрос: сходится ли расчёт, если вычесть одного человека — и особенно если вычесть именно того, кто держит самый тяжёлый участок.
 
 Считать нужно по трём вычетам.
 
@@ -110,7 +110,7 @@ flowchart TD
 
 <!-- вилка: результаты вашего аудита — какие точки риска нашли, что закрыли, что осталось открытым. -->
 
-Живучесть нельзя доказать презентацией. Её доказывает один факт: сервис работает, когда вас нет, и никто не выясняет по ходу дела, где лежит нужный доступ. Год, который заканчивается таким фактом, можно считать удавшимся — и следующий планировать от него, а не от пожеланий. Об этом — в последней статье серии: «Девять ошибок лида поддержки — и годовой отчёт».
+Живучесть нельзя доказать презентацией. Её доказывает один факт: сервис работает, когда вас нет, и никто не выясняет по ходу дела, где лежит нужный доступ. Год, который заканчивается таким фактом, можно считать удавшимся — и следующий планировать от него, а не от пожеланий. Об этом — в последней статье серии: [«Девять ошибок лида поддержки — и годовой отчёт»](/ru/blog/support-lead-nine-mistakes/).
 
 <!-- lang:en -->
 
@@ -118,7 +118,7 @@ flowchart TD
 
 A support lead has exactly one honest test of what they actually manage: walk away and see what remains. Not "will the team cope" — they almost always cope — but how fast the service starts losing tickets, promises, and context.
 
-The previous article in the series — "A metric without an action is a picture: the metric passport" — was about making every number lead to a decision. This one is the year's final check: what happens to the service when one specific person is removed from it. I call it a resilience audit. It isn't about trusting the team or hunting for someone to blame; it's about finding the failure points before they fail: on vacation, on sick leave, on the day someone resigns, or on the day the tracker goes down along with access to it.
+The previous article in the series — ["A metric without an action is a picture: the metric passport"](/en/blog/support-lead-metric-passport/) — was about making every number lead to a decision. This one is the year's final check: what happens to the service when one specific person is removed from it. I call it a resilience audit. It isn't about trusting the team or hunting for someone to blame; it's about finding the failure points before they fail: on vacation, on sick leave, on the day someone resigns, or on the day the tracker goes down along with access to it.
 
 The premise I start from: resilience is a property of the system, not of people's character. While the knowledge, the route, and the decision all live in one person, the service runs on that person's presence rather than on a process. The audit exists to expose that gap in calm times, when fixing it costs an hour instead of a reputation.
 
@@ -161,7 +161,7 @@ It's worth stating explicitly that the norm applies to working hours. Round-the-
 
 ## Checking norms by calculation
 
-A norm is easy to declare and hard to prove. It's verified with the capacity calculation from "Capacity instead of heroism": the volume of the flow over a period, multiplied by the average handling time per ticket, divided by the team's available hours. While the calculation balances at full strength, everything looks healthy. The resilience audit adds one question: does it still balance if you subtract one person — especially the one carrying the heaviest segment?
+A norm is easy to declare and hard to prove. It's verified with the capacity calculation from ["Capacity instead of heroism"](/en/blog/support-lead-capacity-planning/): the volume of the flow over a period, multiplied by the average handling time per ticket, divided by the team's available hours. While the calculation balances at full strength, everything looks healthy. The resilience audit adds one question: does it still balance if you subtract one person — especially the one carrying the heaviest segment?
 
 There are three subtractions to make.
 
@@ -207,7 +207,7 @@ Who to involve: the second engineer who can work that segment, a representative 
 
 <!-- вилка: результаты вашего аудита — какие точки риска нашли, что закрыли, что осталось открытым. -->
 
-Resilience can't be proven with a slide deck. One fact proves it: the service works when you're not there, and nobody has to figure out on the fly where the needed access lives. A year that ends with that fact can be called a success — and the next one planned from it rather than from wishes. That's the subject of the final article in the series: "Nine mistakes of a support lead — and the annual report".
+Resilience can't be proven with a slide deck. One fact proves it: the service works when you're not there, and nobody has to figure out on the fly where the needed access lives. A year that ends with that fact can be called a success — and the next one planned from it rather than from wishes. That's the subject of the final article in the series: ["Nine mistakes of a support lead — and the annual report"](/en/blog/support-lead-nine-mistakes/).
 
 <!-- lang:he -->
 
@@ -215,7 +215,7 @@ Resilience can't be proven with a slide deck. One fact proves it: the service wo
 
 למנהל תמיכה יש מבחן כן אחד למה שהוא באמת מנהל: לצאת ולראות מה נשאר. לא "האם הצוות יסתדר" — הצוות כמעט תמיד מסתדר — אלא באיזו מהירות השירות מתחיל לאבד פניות, הבטחות והקשר.
 
-במאמר הקודם בסדרה — "מדד בלי פעולה הוא תמונה: דרכון המדד" — עסקנו בכך שלכל מספר תהיה פעולה. המאמר הזה הוא הבדיקה האחרונה של השנה: מה יקרה לשירות אם יוציאו ממנו אדם מסוים. אני קורא לבדיקה הזאת ביקורת עמידות. היא לא על אמון בצוות ולא על חיפוש אשמים, אלא על איתור נקודות כשל לפני שהן נכשלות: בחופשה, ביום מחלה, ביום עזיבה או ביום שהמערכת לניהול פניות נפלה יחד עם הגישה אליה.
+במאמר הקודם בסדרה — ["מדד בלי פעולה הוא תמונה: דרכון המדד"](/he/blog/support-lead-metric-passport/) — עסקנו בכך שלכל מספר תהיה פעולה. המאמר הזה הוא הבדיקה האחרונה של השנה: מה יקרה לשירות אם יוציאו ממנו אדם מסוים. אני קורא לבדיקה הזאת ביקורת עמידות. היא לא על אמון בצוות ולא על חיפוש אשמים, אלא על איתור נקודות כשל לפני שהן נכשלות: בחופשה, ביום מחלה, ביום עזיבה או ביום שהמערכת לניהול פניות נפלה יחד עם הגישה אליה.
 
 הנחת המוצא שלי: עמידות היא תכונה של המערכת, לא של האופי של האנשים. כל עוד הידע, המסלול וההחלטה חיים אצל אדם אחד, השירות עובד מנוכחותו ולא מהנוהל. הביקורת דרושה כדי לראות את הפער הזה בזמן שקט, כשהתיקון עולה שעה ולא מוניטין.
 
@@ -258,7 +258,7 @@ flowchart TD
 
 ## בדיקת התקנים בחישוב
 
-קל להכריז תקן וקשה להוכיח אותו. הוא נבדק בחישוב הכוח מהמאמר "כוח במקום גבורה": היקף הזרימה בתקופה, כפול זמן הטיפול הממוצע לפנייה, חלקי השעות הזמינות של הצוות. כל עוד החישוב מסתדר בהרכב מלא, הכל נראה תקין. ביקורת העמידות מוסיפה שאלה אחת: האם החישוב מסתדר אם מחסירים אדם אחד — ובעיקר אם מחסירים את זה שמחזיק את הקטע הכבד ביותר.
+קל להכריז תקן וקשה להוכיח אותו. הוא נבדק בחישוב הכוח מהמאמר ["כוח במקום גבורה"](/he/blog/support-lead-capacity-planning/): היקף הזרימה בתקופה, כפול זמן הטיפול הממוצע לפנייה, חלקי השעות הזמינות של הצוות. כל עוד החישוב מסתדר בהרכב מלא, הכל נראה תקין. ביקורת העמידות מוסיפה שאלה אחת: האם החישוב מסתדר אם מחסירים אדם אחד — ובעיקר אם מחסירים את זה שמחזיק את הקטע הכבד ביותר.
 
 יש לעשות שלוש הפחתות.
 
@@ -304,4 +304,4 @@ flowchart TD
 
 <!-- вилка: результаты вашего аудита — какие точки риска нашли, что закрыли, что осталось открытым. -->
 
-עמידות לא מוכיחים במצגת. אותה מוכיח עובדה אחת: השירות עובד כשאין אתכם, ואף אחד לא מגלה בדרך איפה נמצאת הגישה הנדרשת. שנה שמסתיימת בעובדה הזאת אפשר לקרוא לה מוצלחת — ואת הבאה לתכנן ממנה ולא מרצונות. על כך במאמר האחרון בסדרה: "תשע טעויות של מנהל תמיכה — והדוח השנתי".
+עמידות לא מוכיחים במצגת. אותה מוכיח עובדה אחת: השירות עובד כשאין אתכם, ואף אחד לא מגלה בדרך איפה נמצאת הגישה הנדרשת. שנה שמסתיימת בעובדה הזאת אפשר לקרוא לה מוצלחת — ואת הבאה לתכנן ממנה ולא מרצונות. על כך במאמר האחרון בסדרה: ["תשע טעויות של מנהל תמיכה — והדוח השנתי"](/he/blog/support-lead-nine-mistakes/).

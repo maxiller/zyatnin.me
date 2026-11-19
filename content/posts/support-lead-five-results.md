@@ -144,7 +144,7 @@ flowchart TD
 
 Руководство, которое согласилось с пятью результатами, больше не спрашивает «сколько закрыли» — оно спрашивает «что стало предсказуемее» и «какие проблемы ушли в продукт». Если же согласия нет — это тоже ценный сигнал: вам заранее известно, как будут оценивать вашу работу, и вы можете осознанно решать, готовы ли вы работать диспетчером.
 
-Второе следствие: эти же пять результатов становятся каркасом года. Стабилизация сервиса — это предсказуемость. Знания и самообслуживание — база знаний. Оценка и развитие команды — устойчивость и качество. Разборы инцидентов и карточки проблем — обратная связь в продукт. В следующей статье серии — о границах ответственности: что лид делает сам, что делегирует и от чего отказывается сознательно.
+Второе следствие: эти же пять результатов становятся каркасом года. Стабилизация сервиса — это предсказуемость. Знания и самообслуживание — база знаний. Оценка и развитие команды — устойчивость и качество. Разборы инцидентов и карточки проблем — обратная связь в продукт. В следующей статье серии — [о границах ответственности](/ru/blog/support-lead-boundaries/): что лид делает сам, что делегирует и от чего отказывается сознательно.
 
 <!-- lang:en -->
 
@@ -275,7 +275,7 @@ flowchart TD
 
 Management that has agreed to the five results stops asking "how many did you close" and starts asking "what became more predictable" and "which problems went into the product." If there is no agreement, that too is a valuable signal: you know in advance how your work will be judged, and you can consciously decide whether you are ready to work as a dispatcher.
 
-The second consequence: these same five results become the frame of the year. Service stabilization is predictability. Knowledge and self-service are the knowledge base. Assessment and development of the team are resilience and quality. Incident reviews and problem cards are feedback into the product. The next article in the series is about boundaries of responsibility: what a lead does personally, what they delegate, and what they give up consciously.
+The second consequence: these same five results become the frame of the year. Service stabilization is predictability. Knowledge and self-service are the knowledge base. Assessment and development of the team are resilience and quality. Incident reviews and problem cards are feedback into the product. The next article in the series is about [boundaries of responsibility](/en/blog/support-lead-boundaries/): what a lead does personally, what they delegate, and what they give up consciously.
 
 <!-- lang:he -->
 
@@ -406,4 +406,4 @@ flowchart TD
 
 הנהלה שהסכימה עם חמש התוצאות מפסיקה לשאול "כמה סגרתם" — ומתחילה לשאול "מה נעשה צפוי יותר" ו"אילו בעיות יצאו למוצר". אם הסכמה אין — גם זה אות חשוב: מראש ידוע לך איך יעריכו את העבודה שלך, ואתה יכול להחליט במודע אם אתה מוכן לעבוד כמוקדן.
 
-ההשלכה השנייה: אותן חמש תוצאות הופכות לשלד של השנה. ייצוב השירות — זו צפיות. ידע ושירות עצמי — זה בסיס הידע. הערכה ופיתוח הצוות — חוסן ואיכות. ניתוחי תקלות וכרטיסי בעיות — משוב למוצר. במאמר הבא בסדרה — גבולות האחריות: מה ראש תמיכה עושה בעצמו, מה הוא מעביר לאחרים, וממה הוא פורש במכוון.
+ההשלכה השנייה: אותן חמש תוצאות הופכות לשלד של השנה. ייצוב השירות — זו צפיות. ידע ושירות עצמי — זה בסיס הידע. הערכה ופיתוח הצוות — חוסן ואיכות. ניתוחי תקלות וכרטיסי בעיות — משוב למוצר. במאמר הבא בסדרה — [גבולות האחריות](/he/blog/support-lead-boundaries/): מה ראש תמיכה עושה בעצמו, מה הוא מעביר לאחרים, וממה הוא פורש במכוון.

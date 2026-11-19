@@ -141,43 +141,43 @@ flowchart TD
 
 - [Пять результатов работы лида поддержки](/ru/blog/support-lead-five-results/) — 2026-03-31
 - [Границы ответственности](/ru/blog/support-lead-boundaries/) — 2026-06-07
-- Baseline раньше целей — 2026-11-10
-- Год лида по кварталам — 2026-11-13
+- [Baseline раньше целей](/ru/blog/support-lead-baseline-first/) — 2026-11-10
+- [Год лида по кварталам](/ru/blog/support-lead-year-roadmap/) — 2026-11-13
 
 **Стабилизация сервиса**
 
-- Карта сервиса и Точка А — 2026-11-15
-- Триаж при первом касании — 2026-11-18
-- Ни одного тихого нарушения SLA — 2026-11-21
-- Эскалация в L3 — 2026-11-24
+- [Карта сервиса и Точка А](/ru/blog/support-lead-service-map-baseline/) — 2026-11-15
+- [Триаж при первом касании](/ru/blog/support-lead-triage-first-touch/) — 2026-11-18
+- [Ни одного тихого нарушения SLA](/ru/blog/support-lead-no-silent-sla/) — 2026-11-21
+- [Эскалация в L3](/ru/blog/support-lead-l3-escalation/) — 2026-11-24
 
 **Знания как система**
 
-- KCS в рабочем потоке — 2026-11-26
-- Шаблон статьи базы знаний и владелец КБ — 2026-11-29
-- Повторяющиеся проблемы — 2026-12-02
-- Самообслуживание как Shift Left — 2026-12-05
+- [KCS в рабочем потоке](/ru/blog/support-lead-kcs-workflow/) — 2026-11-26
+- [Шаблон статьи базы знаний и владелец КБ](/ru/blog/support-lead-kb-template/) — 2026-11-29
+- [Повторяющиеся проблемы](/ru/blog/support-lead-recurring-problems/) — 2026-12-02
+- [Самообслуживание как Shift Left](/ru/blog/support-lead-shift-left-pilot/) — 2026-12-05
 
 **Команда: люди и развитие**
 
-- Ритм руководителя: правило 40 % — 2026-12-07
-- 1:1, которые не превращаются в отчёт — 2026-12-10
-- Оценка по наблюдаемым фактам — 2026-12-13
-- Матрица компетенций — 2026-12-15
-- Мощность вместо героизма — 2026-12-18
+- [Ритм руководителя: правило 40 %](/ru/blog/support-lead-rhythm-40-percent/) — 2026-12-07
+- [1:1, которые не превращаются в отчёт](/ru/blog/support-lead-one-on-one/) — 2026-12-10
+- [Оценка по наблюдаемым фактам](/ru/blog/support-lead-facts-based-assessment/) — 2026-12-13
+- [Матрица компетенций](/ru/blog/support-lead-competency-matrix/) — 2026-12-15
+- [Мощность вместо героизма](/ru/blog/support-lead-capacity-planning/) — 2026-12-18
 
 **Внешний контур**
 
-- Матрица взаимодействий — 2026-12-21
-- Статус руководству — 2026-12-24
-- Просить решения, а не сочувствия — 2026-12-26
-- Blameless-разбор инцидента — 2026-12-29
-- Карточка проблемы для продукта — 2026-12-31
+- [Матрица взаимодействий](/ru/blog/support-lead-interaction-matrix/) — 2026-12-21
+- [Статус руководству](/ru/blog/support-lead-management-status/) — 2026-12-24
+- [Просить решения, а не сочувствия](/ru/blog/support-lead-ask-for-decisions/) — 2026-12-26
+- [Blameless-разбор инцидента](/ru/blog/support-lead-blameless-postmortem/) — 2026-12-29
+- [Карточка проблемы для продукта](/ru/blog/support-lead-problem-card/) — 2026-12-31
 
 **Метрики и замыкание года**
 
-- Метрика без действия — 2027-01-04
-- Аудит живучести — 2027-01-06
+- [Метрика без действия](/ru/blog/support-lead-metric-passport/) — 2027-01-04
+- [Аудит живучести](/ru/blog/support-lead-resilience-audit/) — 2027-01-06
 - Девять ошибок лида поддержки — эта статья
 
 Спасибо, что дочитали до конца: год лида складывается не из методов, а из привычек, и девять ошибок — это не приговор, а список того, что стоит перенести в план. Если у вас есть своя ошибка, которой нет в таблице, — напишите, я буду рад дополнить список и обсудить его в следующей серии.
@@ -308,43 +308,43 @@ The "Support management strategy" series was written as a system rather than a s
 
 - [The five results of a support lead](/en/blog/support-lead-five-results/) — 2026-03-31
 - [Ownership boundaries](/en/blog/support-lead-boundaries/) — 2026-06-07
-- Baseline before goals — 2026-11-10
-- The lead's year by quarters — 2026-11-13
+- [Baseline before goals](/en/blog/support-lead-baseline-first/) — 2026-11-10
+- [The lead's year by quarters](/en/blog/support-lead-year-roadmap/) — 2026-11-13
 
 **Stabilizing the service**
 
-- The service map and Point A — 2026-11-15
-- Triage at first touch — 2026-11-18
-- Not one silent SLA breach — 2026-11-21
-- L3 escalation — 2026-11-24
+- [The service map and Point A](/en/blog/support-lead-service-map-baseline/) — 2026-11-15
+- [Triage at first touch](/en/blog/support-lead-triage-first-touch/) — 2026-11-18
+- [Not one silent SLA breach](/en/blog/support-lead-no-silent-sla/) — 2026-11-21
+- [L3 escalation](/en/blog/support-lead-l3-escalation/) — 2026-11-24
 
 **Knowledge as a system**
 
-- KCS in the workflow — 2026-11-26
-- The knowledge base article template and its owner — 2026-11-29
-- Recurring problems — 2026-12-02
-- Self-service as Shift Left — 2026-12-05
+- [KCS in the workflow](/en/blog/support-lead-kcs-workflow/) — 2026-11-26
+- [The knowledge base article template and its owner](/en/blog/support-lead-kb-template/) — 2026-11-29
+- [Recurring problems](/en/blog/support-lead-recurring-problems/) — 2026-12-02
+- [Self-service as Shift Left](/en/blog/support-lead-shift-left-pilot/) — 2026-12-05
 
 **The team: people and growth**
 
-- The manager's rhythm: the 40 percent rule — 2026-12-07
-- One-on-ones that don't turn into a report — 2026-12-10
-- Assessing by observable facts — 2026-12-13
-- The competency matrix — 2026-12-15
-- Capacity instead of heroism — 2026-12-18
+- [The manager's rhythm: the 40 percent rule](/en/blog/support-lead-rhythm-40-percent/) — 2026-12-07
+- [One-on-ones that don't turn into a report](/en/blog/support-lead-one-on-one/) — 2026-12-10
+- [Assessing by observable facts](/en/blog/support-lead-facts-based-assessment/) — 2026-12-13
+- [The competency matrix](/en/blog/support-lead-competency-matrix/) — 2026-12-15
+- [Capacity instead of heroism](/en/blog/support-lead-capacity-planning/) — 2026-12-18
 
 **The outside world**
 
-- The interaction matrix — 2026-12-21
-- Status for management — 2026-12-24
-- Asking for decisions, not sympathy — 2026-12-26
-- The blameless incident review — 2026-12-29
-- The problem card for product — 2026-12-31
+- [The interaction matrix](/en/blog/support-lead-interaction-matrix/) — 2026-12-21
+- [Status for management](/en/blog/support-lead-management-status/) — 2026-12-24
+- [Asking for decisions, not sympathy](/en/blog/support-lead-ask-for-decisions/) — 2026-12-26
+- [The blameless incident review](/en/blog/support-lead-blameless-postmortem/) — 2026-12-29
+- [The problem card for product](/en/blog/support-lead-problem-card/) — 2026-12-31
 
 **Metrics and closing the year**
 
-- A metric without an action — 2027-01-04
-- The resilience audit — 2027-01-06
+- [A metric without an action](/en/blog/support-lead-metric-passport/) — 2027-01-04
+- [The resilience audit](/en/blog/support-lead-resilience-audit/) — 2027-01-06
 - Nine mistakes of a support lead — this article
 
 Thank you for reading to the end: a lead's year is built not from methods but from habits, and the nine mistakes are not a verdict but a list of what belongs in the plan. If you have a mistake that isn't in the table, write to me — I'll be glad to extend the list and discuss it in the next series.
@@ -475,43 +475,43 @@ flowchart TD
 
 - [חמשת התוצרים של מנהל תמיכה](/he/blog/support-lead-five-results/) — 2026-03-31
 - [גבולות אחריות](/he/blog/support-lead-boundaries/) — 2026-06-07
-- Baseline לפני מטרות — 2026-11-10
-- השנה של המנהל לפי רבעונים — 2026-11-13
+- [Baseline לפני מטרות](/he/blog/support-lead-baseline-first/) — 2026-11-10
+- [השנה של המנהל לפי רבעונים](/he/blog/support-lead-year-roadmap/) — 2026-11-13
 
 **ייצוב השירות**
 
-- מפת השירות ונקודת ההתחלה — 2026-11-15
-- מיון במגע הראשון — 2026-11-18
-- אף הפרה שקטה של SLA — 2026-11-21
-- הסלמה ל-L3 — 2026-11-24
+- [מפת השירות ונקודת ההתחלה](/he/blog/support-lead-service-map-baseline/) — 2026-11-15
+- [מיון במגע הראשון](/he/blog/support-lead-triage-first-touch/) — 2026-11-18
+- [אף הפרה שקטה של SLA](/he/blog/support-lead-no-silent-sla/) — 2026-11-21
+- [הסלמה ל-L3](/he/blog/support-lead-l3-escalation/) — 2026-11-24
 
 **ידע כמערכת**
 
-- KCS בזרימת העבודה — 2026-11-26
-- תבנית מאמר בבסיס הידע והבעלים שלו — 2026-11-29
-- בעיות חוזרות — 2026-12-02
-- שירות עצמי כ-Shift Left — 2026-12-05
+- [KCS בזרימת העבודה](/he/blog/support-lead-kcs-workflow/) — 2026-11-26
+- [תבנית מאמר בבסיס הידע והבעלים שלו](/he/blog/support-lead-kb-template/) — 2026-11-29
+- [בעיות חוזרות](/he/blog/support-lead-recurring-problems/) — 2026-12-02
+- [שירות עצמי כ-Shift Left](/he/blog/support-lead-shift-left-pilot/) — 2026-12-05
 
 **הצוות: אנשים והתפתחות**
 
-- הקצב של המנהל: כלל 40 אחוז — 2026-12-07
-- שיחות 1:1 שלא הופכות לדוח — 2026-12-10
-- הערכה לפי עובדות נצפות — 2026-12-13
-- מטריצת כשרים — 2026-12-15
-- כוח במקום גבורה — 2026-12-18
+- [הקצב של המנהל: כלל 40 אחוז](/he/blog/support-lead-rhythm-40-percent/) — 2026-12-07
+- [שיחות 1:1 שלא הופכות לדוח](/he/blog/support-lead-one-on-one/) — 2026-12-10
+- [הערכה לפי עובדות נצפות](/he/blog/support-lead-facts-based-assessment/) — 2026-12-13
+- [מטריצת כשרים](/he/blog/support-lead-competency-matrix/) — 2026-12-15
+- [כוח במקום גבורה](/he/blog/support-lead-capacity-planning/) — 2026-12-18
 
 **העולם שמחוץ**
 
-- מטריצת אינטראקציות — 2026-12-21
-- סטטוס להנהלה — 2026-12-24
-- לבקש החלטות ולא הזדהות — 2026-12-26
-- ניתוח תקלה בלי אשמים — 2026-12-29
-- כרטיס בעיה למוצר — 2026-12-31
+- [מטריצת אינטראקציות](/he/blog/support-lead-interaction-matrix/) — 2026-12-21
+- [סטטוס להנהלה](/he/blog/support-lead-management-status/) — 2026-12-24
+- [לבקש החלטות ולא הזדהות](/he/blog/support-lead-ask-for-decisions/) — 2026-12-26
+- [ניתוח תקלה בלי אשמים](/he/blog/support-lead-blameless-postmortem/) — 2026-12-29
+- [כרטיס בעיה למוצר](/he/blog/support-lead-problem-card/) — 2026-12-31
 
 **מדדים וסגירת השנה**
 
-- מדד בלי פעולה — 2027-01-04
-- ביקורת עמידות — 2027-01-06
+- [מדד בלי פעולה](/he/blog/support-lead-metric-passport/) — 2027-01-04
+- [ביקורת עמידות](/he/blog/support-lead-resilience-audit/) — 2027-01-06
 - תשע טעויות של מנהל תמיכה — המאמר הזה
 
 תודה שקראתם עד הסוף: השנה של מנהל תמיכה נבנית לא משיטות אלא מהרגלים, ותשע הטעויות אינן גזר דין אלא רשימה של מה שכדאי להעביר לתוכנית. אם יש לכם טעות שאינה בטבלה — כתבו לי, אשמח להרחיב את הרשימה ולדון בה בסדרה הבאה.

@@ -146,7 +146,7 @@ flowchart TD
 - у каждой цели есть срок, владелец и, если нужно, запрос ресурса;
 - договорённость с руководством зафиксирована письменно и имеет дату пересмотра.
 
-Точка А — это не бюрократия и не недоверие к команде. Это способ перестать спорить о том, что происходит, и начать спорить о том, что делать. Следующий шаг — превратить согласованные цели в дорожную карту на двенадцать месяцев: четыре квартала, где каждый следующий опирается на результат предыдущего. Об этом — в следующей статье серии.
+Точка А — это не бюрократия и не недоверие к команде. Это способ перестать спорить о том, что происходит, и начать спорить о том, что делать. Следующий шаг — превратить согласованные цели в дорожную карту на двенадцать месяцев: четыре квартала, где каждый следующий опирается на результат предыдущего. Об этом — в [следующей статье серии](/ru/blog/support-lead-year-roadmap/).
 
 <!-- lang:en -->
 
@@ -279,7 +279,7 @@ A short checklist that shows the start worked:
 - every goal has a deadline, an owner and, where needed, a resource request;
 - the agreement with management is written down and has a review date.
 
-Point A is not bureaucracy and not distrust of the team. It is a way to stop arguing about what is happening and start arguing about what to do. The next step is to turn the agreed goals into a twelve-month roadmap: four quarters where each rests on the result of the previous one. That is the next article of the series.
+Point A is not bureaucracy and not distrust of the team. It is a way to stop arguing about what is happening and start arguing about what to do. The next step is to turn the agreed goals into a twelve-month roadmap: four quarters where each rests on the result of the previous one. That is the [next article of the series](/en/blog/support-lead-year-roadmap/).
 
 <!-- lang:he -->
 
@@ -412,4 +412,4 @@ flowchart TD
 - לכל מטרה יש מועד, בעלים ואם צריך — בקשת משאב;
 - ההסכמה עם ההנהלה נרשמה בכתב ויש לה תאריך בחינה מחדש.
 
-נקודת המוצא היא לא בירוקרטיה ולא חוסר אמון בצוות. היא דרך להפסיק להתווכח על מה קורה ולהתחיל להתווכח על מה לעשות. הצעד הבא — להפוך את המטרות המוסכמות למפת דרכים לשנים עשר חודש: ארבעה רבעונים, שכל אחד נשען על התוצאה של זה שלפניו. על כך במאמר הבא בסדרה.
+נקודת המוצא היא לא בירוקרטיה ולא חוסר אמון בצוות. היא דרך להפסיק להתווכח על מה קורה ולהתחיל להתווכח על מה לעשות. הצעד הבא — להפוך את המטרות המוסכמות למפת דרכים לשנים עשר חודש: ארבעה רבעונים, שכל אחד נשען על התוצאה של זה שלפניו. על כך במאמר הבא בסדרה: [מפת דרכים לשנים עשר חודש](/he/blog/support-lead-year-roadmap/).

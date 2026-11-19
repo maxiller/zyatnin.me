@@ -23,7 +23,7 @@ translations:
 
 В первые месяцы на позиции лида я триажем не занимался. Точнее, занимался, но не называл так: открывал тикет, читал, думал «это к Саше», перекладывал — а приоритет оставлял тот, что был при создании. То есть никакой. Через месяц выяснилось, что очередь живёт своей жизнью: там перемешаны инциденты, вопросы по документации и запросы на доработку, тикеты на интеграцию висят рядом с просьбой поменять подпись в письме, а самое критичное всплывает не потому, что оно критичное, а потому, что клиент позвонил.
 
-В предыдущей статье серии — «Карта сервиса и Точка А: диагностика первого месяца» — речь шла о том, чтобы увидеть маршруты и замерить реакцию. Эта статья о том, что превращает несколько маршрутов в управляемый поток: точка входа, где обращения получают критичность, категорию и владельца.
+В предыдущей статье серии — [«Карта сервиса и Точка А: диагностика первого месяца»](/ru/blog/support-lead-service-map-baseline/) — речь шла о том, чтобы увидеть маршруты и замерить реакцию. Эта статья о том, что превращает несколько маршрутов в управляемый поток: точка входа, где обращения получают критичность, категорию и владельца.
 
 Тезис простой: триаж — единственный вход в сервис, и порядок решений внутри него не произвольный. Сначала критичность, потом классификация. Кто переставляет эти два шага местами, тот получает аккуратную аналитику по вчерашним пожарам.
 
@@ -37,7 +37,7 @@ translations:
 - **Тяжёлые заявки перегружены лишним.** Третья линия получает всё подряд, включая вопросы, на которые есть ответ в документации. Разработка тонет в поддержке, поддержка ждёт разработку, сроки не двигаются ни с одной стороны.
 - **Критичное тонет в общем потоке.** Инцидент, который затрагивает всех клиентов, лежит в одной куче с косметическими правками: у них одинаковый приоритет и общий порядок разбора.
 - **Нет данных.** Из потока нельзя ответить на вопрос, сколько было инцидентов, сколько запросов на изменение и где реально болит. Категории не заполнены или заполнены «прочее».
-- **Возвраты не видны.** Заявка прошла три линии, вернулась и была переоткрыта — никто не считает, что это и есть сигнал. Подробнее об этом — в статье «Ни одного тихого нарушения SLA: еженедельный контроль очереди».
+- **Возвраты не видны.** Заявка прошла три линии, вернулась и была переоткрыта — никто не считает, что это и есть сигнал. Подробнее об этом — в статье [«Ни одного тихого нарушения SLA: еженедельный контроль очереди»](/ru/blog/support-lead-no-silent-sla/).
 - **Лид снова диспетчер.** Пока маршрутизацией занимается самый доступный человек, сервис держится на нём одном — ровно та роль, от которой мы отказывались в статье [«Границы ответственности»](/ru/blog/support-lead-boundaries/).
 
 <!-- вилка: пример недели без триажа — что именно происходило с очередью и чем это закончилось. -->
@@ -133,7 +133,7 @@ flowchart TD
     W -->|"да"| S["Работа идёт по таймеру"]:::good
 ```
 
-Триаж не делает сервис быстрым сам по себе. Он делает его предсказуемым: у каждого обращения есть приоритет, владелец и срок, о котором знают все участники. Предсказуемость — то, что позволяет потом обещать клиенту сроки и не краснеть. Как только это работает, возникает следующий вопрос: кто следит за тем, чтобы сроки не истекали тихо. Об этом — в статье «Ни одного тихого нарушения SLA: еженедельный контроль очереди».
+Триаж не делает сервис быстрым сам по себе. Он делает его предсказуемым: у каждого обращения есть приоритет, владелец и срок, о котором знают все участники. Предсказуемость — то, что позволяет потом обещать клиенту сроки и не краснеть. Как только это работает, возникает следующий вопрос: кто следит за тем, чтобы сроки не истекали тихо. Об этом — в статье [«Ни одного тихого нарушения SLA: еженедельный контроль очереди»](/ru/blog/support-lead-no-silent-sla/).
 
 <!-- lang:en -->
 
@@ -143,7 +143,7 @@ Triage is three decisions taken at the moment of first touch: how critical this 
 
 In my first months as a lead I didn't do triage. Or rather I did, without calling it that: open the ticket, read it, think "that's one for Sasha", hand it over — and leave the priority exactly as it was at creation. Which was none. A month later the queue had a life of its own: incidents, documentation questions, and change requests were mixed together, integration work sat next to a request to change an email signature, and the most critical item surfaced not because it was critical but because the customer called.
 
-The previous article in the series — "Service map and point A: diagnosing the first month" — was about seeing the routes and measuring the response. This one is about what turns several routes into a managed flow: an entry point where requests get a priority, a category, and an owner.
+The previous article in the series — ["Service map and point A: diagnosing the first month"](/en/blog/support-lead-service-map-baseline/) — was about seeing the routes and measuring the response. This one is about what turns several routes into a managed flow: an entry point where requests get a priority, a category, and an owner.
 
 The thesis is simple: triage is the only entry into the service, and the order of decisions inside it isn't arbitrary. Priority first, classification second. Swap those two steps and you get tidy analytics about yesterday's fires.
 
@@ -157,7 +157,7 @@ The usual set of symptoms:
 - **The top line drowns in the wrong work.** The third line gets everything, including questions already answered in the documentation. Development drowns in support, support waits on development, and deadlines move on neither side.
 - **Critical work sinks into the general flow.** An incident affecting every customer sits in the same pile as cosmetic fixes: same priority, same order of review.
 - **There's no data.** The flow can't answer how many incidents there were, how many change requests, and where it actually hurts. Categories are empty or filled with "other".
-- **Returns are invisible.** A ticket went through three lines, came back, and was reopened — nobody counts that as a signal. More on this in "Not one silent SLA breach: weekly queue control".
+- **Returns are invisible.** A ticket went through three lines, came back, and was reopened — nobody counts that as a signal. More on this in ["Not one silent SLA breach: weekly queue control"](/en/blog/support-lead-no-silent-sla/).
 - **The lead is a dispatcher again.** While routing is done by the most available person, the service hinges on them alone — exactly the role we walked away from in ["Ownership boundaries"](/en/blog/support-lead-boundaries/).
 
 <!-- вилка: пример недели без триажа — что именно происходило с очередью и чем это закончилось. -->
@@ -253,7 +253,7 @@ flowchart TD
     W -->|"yes"| S["Work runs on the timer"]:::good
 ```
 
-Triage doesn't make a service fast by itself. It makes it predictable: every request has a priority, an owner, and a deadline everyone involved knows. Predictability is what later lets you promise customers dates without blushing. Once that works, the next question appears: who watches that deadlines don't expire quietly. That's "Not one silent SLA breach: weekly queue control".
+Triage doesn't make a service fast by itself. It makes it predictable: every request has a priority, an owner, and a deadline everyone involved knows. Predictability is what later lets you promise customers dates without blushing. Once that works, the next question appears: who watches that deadlines don't expire quietly. That's ["Not one silent SLA breach: weekly queue control"](/en/blog/support-lead-no-silent-sla/).
 
 <!-- lang:he -->
 
@@ -263,7 +263,7 @@ Triage doesn't make a service fast by itself. It makes it predictable: every req
 
 בחודשים הראשונים בתפקיד מנהל תמיכה לא עסקתי במיון. ליתר דיוק, עסקתי בלי לקרוא לזה כך: פתחתי את הפנייה, קראתי, חשבתי "זה של סשה", העברתי — והשארתי את הדחיפות כפי שהייתה ביצירה. כלומר, אין. כעבור חודש התברר שהתור חי חיים משל עצמו: תקלות, שאלות על התיעוד ובקשות שינוי מעורבות יחד, פניות אינטגרציה תלויות ליד בקשה להחליף חתימה במכתב, והדבר הקריטי צף לא מפני שהוא קריטי אלא מפני שהלקוח התקשר.
 
-המאמר הקודם בסדרה — "מפת השירות ונקודת המוצא: אבחון החודש הראשון" — עסק בלראות את המסלולים ולמדוד את התגובה. המאמר הזה עוסק במה שהופך כמה מסלולים לזרימה מנוהלת: נקודת כניסה שבה פניות מקבלות דחיפות, קטגוריה ובעלים.
+המאמר הקודם בסדרה — ["מפת השירות ונקודת המוצא: אבחון החודש הראשון"](/he/blog/support-lead-service-map-baseline/) — עסק בלראות את המסלולים ולמדוד את התגובה. המאמר הזה עוסק במה שהופך כמה מסלולים לזרימה מנוהלת: נקודת כניסה שבה פניות מקבלות דחיפות, קטגוריה ובעלים.
 
 הטענה פשוטה: מיון הוא הכניסה היחידה לשירות, וסדר ההחלטות בתוכו אינו מקרי. קודם דחיפות, אחר כך סיווג. מי שמחליף את שני הצעדים האלה מקבל אנליטיקה מסודרת של השריפות של אתמול.
 
@@ -277,7 +277,7 @@ Triage doesn't make a service fast by itself. It makes it predictable: every req
 - **הקו השלישי מוצף בדברים מיותרים.** הוא מקבל הכל, כולל שאלות שיש עליהן תשובה בתיעוד. הפיתוח טובע בתמיכה, התמיכה ממתינה לפיתוח, והמועדים לא זזים באף צד.
 - **הקריטי שוקע בזרימה הכללית.** תקלה שנוגעת בכל הלקוחות שוכבת באותה ערימה עם תיקוני קוסמטיקה: אותה עדיפות ואותו סדר טיפול.
 - **אין נתונים.** אי אפשר להשיב מתוך הזרימה כמה היו תקלות, כמה בקשות שינוי ואיפה באמת כואב. הקטגוריות ריקות או מלאות ב"אחר".
-- **חזרות לא נראות.** פנייה עברה שלושה קווים, חזרה ונפתחה שוב — ואף אחד לא סופר שזה סימן. על כך בהרחבה במאמר "בלי הפרת SLA שקטה: בקרת תור שבועית".
+- **חזרות לא נראות.** פנייה עברה שלושה קווים, חזרה ונפתחה שוב — ואף אחד לא סופר שזה סימן. על כך בהרחבה במאמר ["בלי הפרת SLA שקטה: בקרת תור שבועית"](/he/blog/support-lead-no-silent-sla/).
 - **מנהל התמיכה שוב מנתב.** כל עוד הניתוב נעשה על ידי האדם הזמין ביותר, השירות נשען עליו לבדו — בדיוק התפקיד שממנו פרשנו במאמר ["גבולות אחריות"](/he/blog/support-lead-boundaries/).
 
 <!-- вилка: пример недели без триажа — что именно происходило с очередью и чем это закончилось. -->
@@ -373,4 +373,4 @@ flowchart TD
     W -->|"כן"| S["העבודה לפי הטיימר"]:::good
 ```
 
-המיון לא עושה את השירות למהיר בעצמו. הוא עושה אותו לצפוי: לכל פנייה יש עדיפות, בעלים ומועד שכל המשתתפים יודעים עליו. צפיות היא מה שמאפשר אחר כך להבטיח ללקוחות מועדים ולא להתבייש. ברגע שזה עובד עולה השאלה הבאה: מי עוקב אחרי זה שהמועדים לא יפוגו בשקט. על כך במאמר "בלי הפרת SLA שקטה: בקרת תור שבועית".
+המיון לא עושה את השירות למהיר בעצמו. הוא עושה אותו לצפוי: לכל פנייה יש עדיפות, בעלים ומועד שכל המשתתפים יודעים עליו. צפיות היא מה שמאפשר אחר כך להבטיח ללקוחות מועדים ולא להתבייש. ברגע שזה עובד עולה השאלה הבאה: מי עוקב אחרי זה שהמועדים לא יפוגו בשקט. על כך במאמר ["בלי הפרת SLA שקטה: בקרת תור שבועית"](/he/blog/support-lead-no-silent-sla/).

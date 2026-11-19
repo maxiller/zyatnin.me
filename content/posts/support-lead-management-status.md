@@ -103,7 +103,7 @@ flowchart TD
 
 <!-- вилка: пример, когда статус изменил решение руководства — что было в письме, какое решение принято, к какому сроку. -->
 
-Статус — не бюрократия и не доказательство занятости. Это способ сделать так, чтобы руководство узнавало о проблеме раньше, чем она станет инцидентом, и чтобы решения принимались в момент, когда их ещё дёшево принимать. Следующая статья серии — о том, как просить эти решения: эскалация и запрос ресурсов по схеме, а не по эмоциям.
+Статус — не бюрократия и не доказательство занятости. Это способ сделать так, чтобы руководство узнавало о проблеме раньше, чем она станет инцидентом, и чтобы решения принимались в момент, когда их ещё дёшево принимать. Следующая статья серии — о том, как просить эти решения: [эскалация и запрос ресурсов по схеме, а не по эмоциям](/ru/blog/support-lead-ask-for-decisions/).
 
 <!-- lang:en -->
 
@@ -193,7 +193,7 @@ A technical detail that saves the hour too: the review is prepared in advance an
 
 <!-- вилка: пример, когда статус изменил решение руководства — что было в письме, какое решение принято, к какому сроку. -->
 
-A status is not bureaucracy and not proof of being busy. It is a way to make sure management learns about a problem before it becomes an incident, and that decisions are made while they are still cheap. The next article in the series is about asking for those decisions: escalation and resource requests by a template, not by emotion.
+A status is not bureaucracy and not proof of being busy. It is a way to make sure management learns about a problem before it becomes an incident, and that decisions are made while they are still cheap. The next article in the series is about asking for those decisions: [escalation and resource requests by a template, not by emotion](/en/blog/support-lead-ask-for-decisions/).
 
 <!-- lang:he -->
 
@@ -283,4 +283,4 @@ flowchart TD
 
 <!-- вилка: пример, когда статус изменил решение руководства — что было в письме, какое решение принято, к какому сроку. -->
 
-סטטוס הוא לא ביורוקרטיה ולא הוכחה לעומס. הוא דרך לוודא שההנהלה לומדת על בעיה לפני שהיא הופכת לתקלה, ושהחלטות מתקבלות כשהן עוד זולות. המאמר הבא בסדרה — על איך לבקש את ההחלטות האלה: הסלמה ובקשת משאבים לפי תבנית ולא לפי רגשות.
+סטטוס הוא לא ביורוקרטיה ולא הוכחה לעומס. הוא דרך לוודא שההנהלה לומדת על בעיה לפני שהיא הופכת לתקלה, ושהחלטות מתקבלות כשהן עוד זולות. המאמר הבא בסדרה — על איך לבקש את ההחלטות האלה: [הסלמה ובקשת משאבים לפי תבנית ולא לפי רגשות](/he/blog/support-lead-ask-for-decisions/).

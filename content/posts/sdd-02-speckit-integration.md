@@ -69,7 +69,7 @@ specs/
 
 К моменту, когда я пишу этот пост, у меня в рабочем дереве лежат девять новых каталогов `specs/003…011` — неотслеживаемые. Содержимое готово, коммита нет. Это не мелочь: пока спека не в git, её нельзя ревьюить, на неё нельзя ссылаться из кода, и при следующем чтении агент её не найдёт в истории.
 
-Поэтому в пост-мортеме серии коммит этих каталогов стоит отдельным пунктом action items. Spec-driven development ломается не когда плохо пишут спеки, а когда их забывают коммитить.
+Поэтому в [пост-мортеме серии](/ru/dev/blog/sdd-12-converge-and-series-postmortem/) коммит этих каталогов стоит отдельным пунктом action items. Spec-driven development ломается не когда плохо пишут спеки, а когда их забывают коммитить.
 
 ## Что получилось
 
@@ -144,7 +144,7 @@ The most annoying mistake here is treating `specs/` as "documentation on the sid
 
 As I write this post, nine new `specs/003…011` directories sit in my working tree untracked. The content is ready, the commit is not. That is not a detail: until a spec is in git it cannot be reviewed, cannot be referenced from code, and the agent will not find it in history next time.
 
-That is why committing those directories is a separate action item in the series post-mortem. Spec-driven development breaks not when specs are written badly, but when they are forgotten in the working tree.
+That is why committing those directories is a separate action item in the [series post-mortem](/en/dev/blog/sdd-12-converge-and-series-postmortem/). Spec-driven development breaks not when specs are written badly, but when they are forgotten in the working tree.
 
 ## What came out of it
 
@@ -219,7 +219,7 @@ specs/
 
 בזמן שאני כותב את הפוסט הזה, תשע תיקיות חדשות `specs/003…011` נמצאות בעץ העבודה שלי בלי להיות במעקב git. התוכן מוכן, ה-commit לא. זה לא פרט קטן: מפרט שלא ב-git לא ניתן ל-review, אי אפשר לקשר אליו מהקוד, והסוכן לא ימצא אותו בהיסטוריה בפעם הבאה.
 
-לכן commit של התיקיות האלה הוא סעיף פעולה נפרד בפוסט-מורטם של הסדרה. Spec-driven development נשבר לא כשכותבים מפרטים גרועים, אלא כששוכחים אותם בעץ העבודה.
+לכן commit של התיקיות האלה הוא סעיף פעולה נפרד ב[פוסט-מורטם של הסדרה](/he/dev/blog/sdd-12-converge-and-series-postmortem/). Spec-driven development נשבר לא כשכותבים מפרטים גרועים, אלא כששוכחים אותם בעץ העבודה.
 
 ## מה יצא מזה
 

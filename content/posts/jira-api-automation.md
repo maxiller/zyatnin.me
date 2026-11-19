@@ -54,7 +54,7 @@ translations:
 )</code></pre>
 
 <h2>Архитектура демона</h2>
-<p>Демон работает внутри Podman-пода вместе с Valkey для хранения состояния (какие задачи уже обработаны, когда было последнее оповещение). SSH-туннель к Jira запускается как sidecar-контейнер по паттерну эфемерных контейнеров.</p>
+<p>Демон работает внутри Podman-пода вместе с Valkey для хранения состояния (какие задачи уже обработаны, когда было последнее оповещение). SSH-туннель к Jira запускается как sidecar-контейнер <a href="/ru/blog/ephemeral-sidecar-podman-pods/">по паттерну эфемерных контейнеров</a>.</p>
 
 <h2>Стратегия логирования</h2>
 <p>Структурированные JSON-логи содержат: timestamp, уровень, issue_key, alert_type, результат отправки. Логи выводятся в stdout контейнера и собираются через podman logs или journald. Ротация логов настроена через systemd.</p>
@@ -107,7 +107,7 @@ localhost/jira-alert-daemon:latest</code></pre>
 <p>Different severity levels use different channels: P1 issues go to the general channel with responsible mentions, P2 to the work chat, P3/P4 as personal notifications to the assigned engineer.</p>
 
 <h2>Daemon Architecture</h2>
-<p>The daemon runs inside a Podman pod alongside Valkey for state storage (which issues have been processed, when the last alert was sent). The SSH tunnel to Jira launches as a sidecar container using the ephemeral container pattern.</p>
+<p>The daemon runs inside a Podman pod alongside Valkey for state storage (which issues have been processed, when the last alert was sent). The SSH tunnel to Jira launches as a sidecar container <a href="/en/blog/ephemeral-sidecar-podman-pods/">using the ephemeral container pattern</a>.</p>
 
 <h2>Logging Strategy</h2>
 <p>Structured JSON logs contain: timestamp, level, issue_key, alert_type, and send result. Logs output to the container's stdout and are collected via podman logs or journald. Log rotation is configured through systemd.</p>
@@ -136,7 +136,7 @@ localhost/jira-alert-daemon:latest</code></pre>
 <p>רמות חומרה שונות משתמשות בערוצים שונים: משימות P1 נשלחות לערוץ הכללי עם ציון האחראים, P2 לצ'אט העבודה, P3/P4 כהתראות אישיות למהנדס המוקצה.</p>
 
 <h2>ארכיטקטורת הדימון</h2>
-<p>הדימון רץ בתוך פוד Podman לצד Valkey לאחסון מצב. מנהרת SSH ל-Jira מופעלת כקונטיינר sidecar באמצעות תבנית הקונטיינר הזמני.</p>
+<p>הדימון רץ בתוך פוד Podman לצד Valkey לאחסון מצב. מנהרת SSH ל-Jira מופעלת כקונטיינר sidecar <a href="/he/blog/ephemeral-sidecar-podman-pods/">באמצעות תבנית הקונטיינר הזמני</a>.</p>
 
 <h2>אסטרטגיית לוגים</h2>
 <p>לוגים מובנים בפורמט JSON מכילים: timestamp, רמה, issue_key, סוג התראה ותוצאת שליחה. הלוגים מוצגים ב-stdout של הקונטיינר ונאספים דרך podman logs או journald.</p>

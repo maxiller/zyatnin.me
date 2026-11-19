@@ -21,7 +21,7 @@ translations:
 
 В первый год на позиции лида поддержки я составил план из девятнадцати инициатив. Через три месяца не осталось ни одной: часть сгорела в операционке, часть потеряла смысл после первых данных, часть я просто забыл. Сервис при этом не стал хуже — он просто не изменился.
 
-В предыдущей статье серии — «Baseline раньше целей» — речь шла о точке А и калибровке целей с руководством. Эта статья о следующем шаге: как из согласованных целей собирается календарь, в котором хватит места и на операционную работу, и на изменения.
+В предыдущей статье серии — [«Baseline раньше целей»](/ru/blog/support-lead-baseline-first/) — речь шла о точке А и калибровке целей с руководством. Эта статья о следующем шаге: как из согласованных целей собирается календарь, в котором хватит места и на операционную работу, и на изменения.
 
 Главная мысль, к которой я пришёл через несколько таких лет: дорожная карта — это не список желаний, а последовательность. Ценность в ней не в том, что в неё входит, а в том, в каком порядке это происходит и что нельзя начать, пока не закончено предыдущее.
 
@@ -133,46 +133,46 @@ flowchart TD
 
 - [Пять результатов работы лида поддержки](/ru/blog/support-lead-five-results/)
 - [Границы ответственности: что лид делает сам, делегирует и от чего отказывается](/ru/blog/support-lead-boundaries/)
-- Baseline раньше целей: почему годовые планы проваливаются на старте
+- [Baseline раньше целей: почему годовые планы проваливаются на старте](/ru/blog/support-lead-baseline-first/)
 - Год лида по кварталам: дорожная карта на 12 месяцев — эта статья
 
 **Стабилизация сервиса**
 
-- Карта сервиса и Точка А: диагностика первого месяца
-- Триаж при первом касании: категория, критичность, маршрут
-- Ни одного тихого нарушения SLA: еженедельный контроль очереди
-- Эскалация в L3: пакет, OLA и владелец клиента
+- [Карта сервиса и Точка А: диагностика первого месяца](/ru/blog/support-lead-service-map-baseline/)
+- [Триаж при первом касании: категория, критичность, маршрут](/ru/blog/support-lead-triage-first-touch/)
+- [Ни одного тихого нарушения SLA: еженедельный контроль очереди](/ru/blog/support-lead-no-silent-sla/)
+- [Эскалация в L3: пакет, OLA и владелец клиента](/ru/blog/support-lead-l3-escalation/)
 
 **Знания как система**
 
-- KCS в рабочем потоке: статья пишется в момент решения
-- Шаблон статьи базы знаний и владелец КБ
-- Повторяющиеся проблемы: от потока тикетов к записям с владельцем
-- Самообслуживание как Shift Left: пилот с честным измерением
+- [KCS в рабочем потоке: статья пишется в момент решения](/ru/blog/support-lead-kcs-workflow/)
+- [Шаблон статьи базы знаний и владелец КБ](/ru/blog/support-lead-kb-template/)
+- [Повторяющиеся проблемы: от потока тикетов к записям с владельцем](/ru/blog/support-lead-recurring-problems/)
+- [Самообслуживание как Shift Left: пилот с честным измерением](/ru/blog/support-lead-shift-left-pilot/)
 
 **Команда: люди и развитие**
 
-- Ритм руководителя: правило 40 %
-- 1:1, которые не превращаются в отчёт и аттестацию
-- Оценка по наблюдаемым фактам: QA-выборка и шесть критериев
-- Матрица компетенций: закрываем одноточечные риски
-- Мощность вместо героизма: расчёт потребности в инженерах
+- [Ритм руководителя: правило 40 %](/ru/blog/support-lead-rhythm-40-percent/)
+- [1:1, которые не превращаются в отчёт и аттестацию](/ru/blog/support-lead-one-on-one/)
+- [Оценка по наблюдаемым фактам: QA-выборка и шесть критериев](/ru/blog/support-lead-facts-based-assessment/)
+- [Матрица компетенций: закрываем одноточечные риски](/ru/blog/support-lead-competency-matrix/)
+- [Мощность вместо героизма: расчёт потребности в инженерах](/ru/blog/support-lead-capacity-planning/)
 
 **Внешний контур**
 
-- Матрица взаимодействий: кто решает и по каким вопросам
-- Статус руководству: письмо на страницу и часовой обзор
-- Просить решения, а не сочувствия: эскалация и запрос ресурсов
-- Blameless-разбор инцидента: хронология без имён
-- Карточка проблемы для продукта, которую не закрыть без статуса
+- [Матрица взаимодействий: кто решает и по каким вопросам](/ru/blog/support-lead-interaction-matrix/)
+- [Статус руководству: письмо на страницу и часовой обзор](/ru/blog/support-lead-management-status/)
+- [Просить решения, а не сочувствия: эскалация и запрос ресурсов](/ru/blog/support-lead-ask-for-decisions/)
+- [Blameless-разбор инцидента: хронология без имён](/ru/blog/support-lead-blameless-postmortem/)
+- [Карточка проблемы для продукта, которую не закрыть без статуса](/ru/blog/support-lead-problem-card/)
 
 **Метрики и замыкание года**
 
-- Метрика без действия — это картинка: паспорт метрики
-- Аудит живучести: что сломается, когда вас не будет
-- Девять ошибок лида поддержки — и годовой отчёт
+- [Метрика без действия — это картинка: паспорт метрики](/ru/blog/support-lead-metric-passport/)
+- [Аудит живучести: что сломается, когда вас не будет](/ru/blog/support-lead-resilience-audit/)
+- [Девять ошибок лида поддержки — и годовой отчёт](/ru/blog/support-lead-nine-mistakes/)
 
-Статьи выходят раз в двое-трое суток, поэтому ссылки в тексте появляются по мере публикации. Все вышедшие статьи серии собираются под меткой [team-leadership](/ru/tags/team-leadership/), а список выше остаётся планом серии целиком.
+Ссылки в списке стоят сразу на всю серию, включая статьи, которые выйдут позже: пока статья не опубликована, её название показывается текстом, а в день выхода та же строка становится ссылкой. Все статьи серии собираются под меткой [team-leadership](/ru/tags/team-leadership/), а список выше остаётся планом серии целиком.
 
 ## Что остаётся от такого года
 
@@ -186,7 +186,7 @@ flowchart TD
 
 In my first year as a support lead I wrote a plan of nineteen initiatives. Three months later none of them remained: some burned up in day-to-day operations, some lost their point after the first data, some I simply forgot. The service did not get worse — it just did not change.
 
-The previous article of the series — "Baseline before goals" — was about point A and calibrating goals with management. This one is about the next step: how agreed goals become a calendar with room both for operations and for change.
+The previous article of the series — ["Baseline before goals"](/en/blog/support-lead-baseline-first/) — was about point A and calibrating goals with management. This one is about the next step: how agreed goals become a calendar with room both for operations and for change.
 
 The main idea I arrived at after several such years: a roadmap is not a wish list but a sequence. Its value lies not in what it contains but in the order things happen and in what cannot start before the previous step is finished.
 
@@ -298,46 +298,46 @@ This text is the fourth article of the "Support management strategy" series, and
 
 - [The five results of a support lead](/en/blog/support-lead-five-results/)
 - [Ownership boundaries: what a support lead decides, delegates, and walks away from](/en/blog/support-lead-boundaries/)
-- Baseline before goals: why annual plans collapse at the start
+- [Baseline before goals: why annual plans collapse at the start](/en/blog/support-lead-baseline-first/)
 - A support lead's year by quarters: a twelve-month roadmap — this article
 
 **Stabilising the service**
 
-- Service map and point A: diagnosing the first month
-- Triage at first touch: category, severity, route
-- Not one silent SLA breach: weekly queue control
-- Escalation to L3: the package, the OLA and the client owner
+- [Service map and point A: diagnosing the first month](/en/blog/support-lead-service-map-baseline/)
+- [Triage at first touch: category, severity, route](/en/blog/support-lead-triage-first-touch/)
+- [Not one silent SLA breach: weekly queue control](/en/blog/support-lead-no-silent-sla/)
+- [Escalation to L3: the package, the OLA and the client owner](/en/blog/support-lead-l3-escalation/)
 
 **Knowledge as a system**
 
-- KCS in the workflow: the article is written at the moment of solving
-- A knowledge base article template and its owner
-- Recurring problems: from the ticket stream to records with an owner
-- Self-service as shift left: a pilot with honest measurement
+- [KCS in the workflow: the article is written at the moment of solving](/en/blog/support-lead-kcs-workflow/)
+- [A knowledge base article template and its owner](/en/blog/support-lead-kb-template/)
+- [Recurring problems: from the ticket stream to records with an owner](/en/blog/support-lead-recurring-problems/)
+- [Self-service as shift left: a pilot with honest measurement](/en/blog/support-lead-shift-left-pilot/)
 
 **The team: people and growth**
 
-- The manager's rhythm: the 40 % rule
-- One-on-ones that don't turn into a report and an appraisal
-- Assessment by observable facts: a QA sample and six criteria
-- The competency matrix: closing single points of failure
-- Capacity instead of heroism: calculating the need for engineers
+- [The manager's rhythm: the 40 % rule](/en/blog/support-lead-rhythm-40-percent/)
+- [One-on-ones that don't turn into a report and an appraisal](/en/blog/support-lead-one-on-one/)
+- [Assessment by observable facts: a QA sample and six criteria](/en/blog/support-lead-facts-based-assessment/)
+- [The competency matrix: closing single points of failure](/en/blog/support-lead-competency-matrix/)
+- [Capacity instead of heroism: calculating the need for engineers](/en/blog/support-lead-capacity-planning/)
 
 **The outer contour**
 
-- The interaction matrix: who decides and on which questions
-- Status for management: a one-page letter and an hourly review
-- Ask for decisions, not sympathy: escalation and the resource request
-- A blameless incident review: a timeline without names
-- A problem card for product that won't close without a status
+- [The interaction matrix: who decides and on which questions](/en/blog/support-lead-interaction-matrix/)
+- [Status for management: a one-page letter and an hourly review](/en/blog/support-lead-management-status/)
+- [Ask for decisions, not sympathy: escalation and the resource request](/en/blog/support-lead-ask-for-decisions/)
+- [A blameless incident review: a timeline without names](/en/blog/support-lead-blameless-postmortem/)
+- [A problem card for product that won't close without a status](/en/blog/support-lead-problem-card/)
 
 **Metrics and closing the year**
 
-- A metric without an action is a picture: the metric passport
-- Resilience audit: what breaks when you are gone
-- Nine mistakes of a support lead — and the annual report
+- [A metric without an action is a picture: the metric passport](/en/blog/support-lead-metric-passport/)
+- [Resilience audit: what breaks when you are gone](/en/blog/support-lead-resilience-audit/)
+- [Nine mistakes of a support lead — and the annual report](/en/blog/support-lead-nine-mistakes/)
 
-The articles come out every two or three days, so links appear in the text as they publish. Every published article of the series is collected under the [team-leadership](/en/tags/team-leadership/) tag, while the list above stays the full plan of the series.
+The links in the list are already in place for the whole series, including articles that are still to come: until an article is published its title shows as plain text, and on the day it comes out the same line becomes a link. Every article of the series is collected under the [team-leadership](/en/tags/team-leadership/) tag, while the list above stays the full plan of the series.
 
 ## What such a year leaves behind
 
@@ -351,7 +351,7 @@ If you need a single sentence out of this text, take this one: numbers first, th
 
 בשנה הראשונה שלי כמנהל תמיכה בניתי תוכנית של תשע־עשרה יוזמות. כעבור שלושה חודשים לא נשארה אף אחת: חלקן נשרפו בעבודה השוטפת, חלקן איבדו משמעות אחרי הנתונים הראשונים, וחלקן פשוט שכחתי. השירות לא נהיה גרוע יותר — הוא פשוט לא השתנה.
 
-המאמר הקודם בסדרה — "בסיס לפני מטרות" — עסק בנקודת המוצא ובכיול המטרות עם ההנהלה. המאמר הזה עוסק בצעד הבא: איך מהמטרות המוסכמות נבנה לוח שנה שיש בו מקום גם לעבודה השוטפת וגם לשינויים.
+המאמר הקודם בסדרה — ["בסיס לפני מטרות"](/he/blog/support-lead-baseline-first/) — עסק בנקודת המוצא ובכיול המטרות עם ההנהלה. המאמר הזה עוסק בצעד הבא: איך מהמטרות המוסכמות נבנה לוח שנה שיש בו מקום גם לעבודה השוטפת וגם לשינויים.
 
 הרעיון המרכזי שאליו הגעתי אחרי כמה שנים כאלה: מפת דרכים היא לא רשימת משאלות אלא רצף. הערך שלה לא במה שנכנס אליה אלא בסדר שבו הדברים קורים ובמה שאסור להתחיל לפני שהקודם נגמר.
 
@@ -463,46 +463,46 @@ flowchart TD
 
 - [חמשת התוצרים של מנהל תמיכה](/he/blog/support-lead-five-results/)
 - [גבולות אחריות: מה מנהל התמיכה מחליט בעצמו, מה הוא מאציל וממה הוא פורש](/he/blog/support-lead-boundaries/)
-- בסיס לפני מטרות: למה תוכניות שנתיות קורסות כבר בהתחלה
+- [בסיס לפני מטרות: למה תוכניות שנתיות קורסות כבר בהתחלה](/he/blog/support-lead-baseline-first/)
 - שנה של מנהל תמיכה לפי רבעונים: מפת דרכים לשנים עשר חודש — המאמר הזה
 
 **ייצוב השירות**
 
-- מפת השירות ונקודת המוצא: אבחון החודש הראשון
-- מיון במגע ראשון: קטגוריה, דחיפות, מסלול
-- אף הפרת SLA שקטה: בקרת תור שבועית
-- הסלמה ל-L3: החבילה, ה-OLA ובעל הלקוח
+- [מפת השירות ונקודת המוצא: אבחון החודש הראשון](/he/blog/support-lead-service-map-baseline/)
+- [מיון במגע ראשון: קטגוריה, דחיפות, מסלול](/he/blog/support-lead-triage-first-touch/)
+- [אף הפרת SLA שקטה: בקרת תור שבועית](/he/blog/support-lead-no-silent-sla/)
+- [הסלמה ל-L3: החבילה, ה-OLA ובעל הלקוח](/he/blog/support-lead-l3-escalation/)
 
 **הידע כמערכת**
 
-- KCS בזרימת העבודה: המאמר נכתב ברגע הפתרון
-- תבנית מאמר בבסיס הידע ובעל הבסיס
-- תקלות חוזרות: מזרימת הפניות לרשומות עם בעלים
-- שירות עצמי כ-Shift Left: פיילוט עם מדידה ישרה
+- [KCS בזרימת העבודה: המאמר נכתב ברגע הפתרון](/he/blog/support-lead-kcs-workflow/)
+- [תבנית מאמר בבסיס הידע ובעל הבסיס](/he/blog/support-lead-kb-template/)
+- [תקלות חוזרות: מזרימת הפניות לרשומות עם בעלים](/he/blog/support-lead-recurring-problems/)
+- [שירות עצמי כ-Shift Left: פיילוט עם מדידה ישרה](/he/blog/support-lead-shift-left-pilot/)
 
 **הצוות: אנשים והתפתחות**
 
-- הקצב של המנהל: כלל 40 %
-- שיחות 1:1 שלא הופכות לדוח ולהערכה
-- הערכה לפי עובדות נצפות: מדגם QA ושישה קריטריונים
-- מטריצת יכולות: סוגרים סיכוני נקודה בודדת
-- כושר נשיאה במקום גבורה: חישוב הצורך במהנדסים
+- [הקצב של המנהל: כלל 40 %](/he/blog/support-lead-rhythm-40-percent/)
+- [שיחות 1:1 שלא הופכות לדוח ולהערכה](/he/blog/support-lead-one-on-one/)
+- [הערכה לפי עובדות נצפות: מדגם QA ושישה קריטריונים](/he/blog/support-lead-facts-based-assessment/)
+- [מטריצת יכולות: סוגרים סיכוני נקודה בודדת](/he/blog/support-lead-competency-matrix/)
+- [כושר נשיאה במקום גבורה: חישוב הצורך במהנדסים](/he/blog/support-lead-capacity-planning/)
 
 **המעגל החיצוני**
 
-- מטריצת אינטראקציות: מי מחליט ובאילו שאלות
-- סטטוס להנהלה: מכתב בעמוד אחד וסקירה של שעה
-- לבקש החלטות ולא אמפתיה: הסלמה ובקשת משאבים
-- ניתוח תקלה blameless: כרונולוגיה בלי שמות
-- כרטיס בעיה למוצר שאי אפשר לסגור בלי סטטוס
+- [מטריצת אינטראקציות: מי מחליט ובאילו שאלות](/he/blog/support-lead-interaction-matrix/)
+- [סטטוס להנהלה: מכתב בעמוד אחד וסקירה של שעה](/he/blog/support-lead-management-status/)
+- [לבקש החלטות ולא אמפתיה: הסלמה ובקשת משאבים](/he/blog/support-lead-ask-for-decisions/)
+- [ניתוח תקלה blameless: כרונולוגיה בלי שמות](/he/blog/support-lead-blameless-postmortem/)
+- [כרטיס בעיה למוצר שאי אפשר לסגור בלי סטטוס](/he/blog/support-lead-problem-card/)
 
 **מדדים וסגירת השנה**
 
-- מדד בלי פעולה הוא תמונה: דרכון המדד
-- ביקורת חוסן: מה יישבר כשלא תהיו
-- תשע טעויות של מנהל תמיכה — והדוח השנתי
+- [מדד בלי פעולה הוא תמונה: דרכון המדד](/he/blog/support-lead-metric-passport/)
+- [ביקורת חוסן: מה יישבר כשלא תהיו](/he/blog/support-lead-resilience-audit/)
+- [תשע טעויות של מנהל תמיכה — והדוח השנתי](/he/blog/support-lead-nine-mistakes/)
 
-המאמרים יוצאים כל יומיים-שלושה, ולכן הקישורים בטקסט מופיעים עם הפרסום. כל המאמרים שיצאו לאור נאספים תחת התגית [team-leadership](/he/tags/team-leadership/), והרשימה למעלה נשארת התוכנית המלאה של הסדרה.
+הקישורים ברשימה מוצבים כבר עכשיו על כל הסדרה, כולל המאמרים שעוד ייצאו: כל עוד המאמר לא פורסם, שמו מוצג כטקסט, וביום הפרסום אותה שורה הופכת לקישור. כל מאמרי הסדרה נאספים תחת התגית [team-leadership](/he/tags/team-leadership/), והרשימה למעלה נשארת התוכנית המלאה של הסדרה.
 
 ## מה נשאר משנה כזאת
 

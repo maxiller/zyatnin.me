@@ -123,7 +123,7 @@ mindmap
 
 Самая слабая часть этого механизма в большинстве команд — последний переход. Запись живёт внутри поддержки, а решение лежит в продукте; если между ними нет моста, запись превращается в вечный обходной путь.
 
-Мост строится из того, что уже есть в записи: причина описана механизмом, масштаб известен, обход сформулирован. Из этого собирается карточка для продукта — с данными, статусом и владельцем на той стороне; о ней отдельно в статье «Карточка проблемы для продукта, которую не закрыть без статуса».
+Мост строится из того, что уже есть в записи: причина описана механизмом, масштаб известен, обход сформулирован. Из этого собирается карточка для продукта — с данными, статусом и владельцем на той стороне; о ней отдельно в статье [«Карточка проблемы для продукта, которую не закрыть без статуса»](/ru/blog/support-lead-problem-card/).
 
 Правило, которое я считаю ключевым: запись о проблеме не закрывается по факту «мы отправили». Она закрывается, когда у неё появился внешний статус — принято в работу, отклонено с причиной, запланировано на версию. Отсутствие статуса — тоже статус, и его надо называть вслух на разборе.
 
@@ -239,7 +239,7 @@ The owner, meanwhile, is better taken from support itself rather than from produ
 
 The weakest part of this mechanism in most teams is the last transition. The record lives inside support while the solution lives in product; if there is no bridge between them, the record turns into a permanent workaround.
 
-The bridge is built from what the record already holds: the cause described as a mechanism, the known scale, the formulated workaround. From that a card for product is assembled — with data, a status and an owner on the other side; that is covered separately in the article "A problem card for product that won't close without a status".
+The bridge is built from what the record already holds: the cause described as a mechanism, the known scale, the formulated workaround. From that a card for product is assembled — with data, a status and an owner on the other side; that is covered separately in the article ["A problem card for product that won't close without a status"](/en/blog/support-lead-problem-card/).
 
 A rule I consider essential: a problem record does not close on the fact of "we sent it". It closes when it has an external status — accepted for work, rejected with a reason, scheduled for a version. The absence of a status is also a status, and it has to be said out loud at the review.
 
@@ -355,7 +355,7 @@ mindmap
 
 החלק החלש ביותר במנגנון הזה ברוב הצוותים הוא המעבר האחרון. הרשומה חיה בתוך התמיכה והפתרון נמצא במוצר; אם אין ביניהם גשר, הרשומה הופכת למעקף נצחי.
 
-הגשר נבנה ממה שכבר יש ברשומה: הסיבה מתוארת כמנגנון, ההיקף ידוע, המעקף מנוסח. מזה מרכיבים כרטיס למוצר — עם נתונים, סטטוס ובעלים בצד השני; על כך בנפרד במאמר "כרטיס בעיה למוצר שאי אפשר לסגור בלי סטטוס".
+הגשר נבנה ממה שכבר יש ברשומה: הסיבה מתוארת כמנגנון, ההיקף ידוע, המעקף מנוסח. מזה מרכיבים כרטיס למוצר — עם נתונים, סטטוס ובעלים בצד השני; על כך בנפרד במאמר ["כרטיס בעיה למוצר שאי אפשר לסגור בלי סטטוס"](/he/blog/support-lead-problem-card/).
 
 כלל שאני מחשיב מרכזי: רשומת תקלה לא נסגרת על עצם העובדה ש"שלחנו". היא נסגרת כשיש לה סטטוס חיצוני — התקבל לעבודה, נדחה עם סיבה, תוכנן לגרסה. גם היעדר סטטוס הוא סטטוס, וצריך לומר אותו בקול בניתוח.
 
