@@ -55,6 +55,7 @@
       "linux": "Linux",
       "networking": "Networking",
       "podman": "Podman",
+      "product": "Product",
       "python": "Python",
       "queues": "Task queues",
       "sla": "SLA",
