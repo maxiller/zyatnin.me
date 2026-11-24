@@ -1,0 +1,101 @@
+---
+slug: interactive-tv-support
+view: leader
+order: 5
+status: done
+icon: "📺"
+translations:
+  ru:
+    title: "Стартап интерактивного ТВ: отдел поддержки с нуля"
+    excerpt: "Отдел клиентской поддержки с нуля для проприетарного стримингового сервиса: студенты вместо опытных инженеров, база знаний от разработки и скриптовые ответы на первой линии при ротации в полгода."
+    tags: ["Интерактивное ТВ", "Стриминг", "Студенты", "База знаний", "Онбординг"]
+    points:
+      - "Юнит собран как проект: границы, онбординг, база знаний и критерии результата вместо «нанять людей на телефоны»"
+      - "Набор из студентов под описанный скиллсет — под срок работы около полугода, а не под долгую карьеру в поддержке"
+      - "Онбординг — две-три недели до первого обращения, закрытого по базе без подсказки"
+      - "База знаний приходит от разработки: без статьи сценарий не уходит на первую линию"
+      - "Около 80% обращений закрывается по скрипту; скриптов около десяти — вводные, общие по сервису и по каждому приложению"
+      - "Знание живёт в артефактах: каждый нетиповой случай оставляет статью, у скрипта и статьи есть владелец и дата пересмотра"
+  en:
+    title: "Interactive TV Startup: a Support Department from Scratch"
+    excerpt: "Building a customer support department from scratch for a proprietary streaming service: students instead of seasoned engineers, a knowledge base from engineering, and scripted first-line answers at a six-month rotation."
+    tags: ["Interactive TV", "Streaming", "Students", "Knowledge base", "Onboarding"]
+    points:
+      - "The unit was built as a project: boundaries, onboarding, a knowledge base and acceptance criteria instead of hiring people for the phones"
+      - "Hiring students against a defined skillset — for a tenure of about six months, not for a long career in support"
+      - "Onboarding takes two to three weeks, up to the first request closed from the knowledge base without a hint"
+      - "The knowledge base comes from engineering: no scenario reaches the first line without an article"
+      - "About 80% of requests are closed by script; there are about ten scripts — introductory, shared across the service and one per application"
+      - "Knowledge lives in artifacts: every non-typical case leaves an article behind, and every script and article has an owner and a review date"
+  he:
+    title: "סטארטאפ טלוויזיה אינטראקטיבית: מחלקת תמיכה מאפס"
+    excerpt: "הקמת מחלקת תמיכת לקוחות מאפס לשירות סטרימינג קנייני: סטודנטים במקום מהנדסים מנוסים, בסיס ידע מהפיתוח ותשובות מבוססות סקריפט בקו הראשון, עם תחלופה של חצי שנה."
+    tags: ["טלוויזיה אינטראקטיבית", "סטרימינג", "סטודנטים", "בסיס ידע", "קליטה"]
+    points:
+      - "היחידה נבנתה כפרויקט: גבולות, קליטה, בסיס ידע וקריטריונים לתוצאה במקום גיוס אנשים לטלפונים"
+      - "גיוס סטודנטים לפי סקילסט מוגדר — לתקופת עבודה של כחצי שנה ולא לקריירה ארוכה בתמיכה"
+      - "קליטה של שבועיים עד שלושה שבועות, עד הפנייה הראשונה שנסגרת מבסיס הידע בלי רמז"
+      - "בסיס הידע מגיע מהפיתוח: בלי מאמר תרחיש לא עובר לקו הראשון"
+      - "כ-80% מהפניות נסגרות לפי סקריפט; יש כעשרה סקריפטים — מבוא, משותפים לשירות ואחד לכל אפליקציה"
+      - "הידע חי בארטיפקטים: כל מקרה לא טיפוסי משאיר מאמר אחריו, ולכל סקריפט ומאמר יש בעלים ותאריך בדיקה"
+---
+
+<!-- lang:ru -->
+
+Клиент — стартап интерактивного телевидения. Продукт — собственный: проприетарный интерактивный стриминговый сервис, который команда делает целиком внутри, без вендорской платформы под ним. Сервис показывали на международной выставке и ставили на трансляцию Олимпиады — нагрузка приходила не ровным потоком, а событиями с твёрдой датой, где права на ошибку нет. Знания о том, как продукт устроен и где он ломается, при этом существуют ровно в одном месте — у разработки. Поддержки как подразделения нет: обращения идут в общий канал, разбирают их разработчики между задачами, а время ответа зависит от того, кто сегодня свободен. Задача — создать отдел клиентской поддержки с нуля: границы, онбординг, база знаний, критерии результата. Формат — проект: со сроком, объёмом работ и результатом, который можно принять, а не функция, которую однажды заводят и дальше держат.
+
+Ограничение было известно до начала: текучка большая и останется большой. Люди работают около полугода, ротация идёт постоянно, и это не аварийная ситуация, а режим работы. При таком режиме не работает обычная конструкция отдела — та, где качество держится на опытных людях, которые всё помнят: пока человек набирает опыт, он уже уходит, а вместе с ним уходит и то, что он знал. Значит, устойчивость нужно строить не на людях, а на артефактах, и все решения проекта выведены из этого: что человек должен уметь на входе, что он обязан записать после себя и что можно проверить без его памяти.
+
+Набор — фокус на студентов. Студент приходит не за карьерой в поддержке на десять лет, а за входом в индустрию, реальным продуктом в опыте и графиком, который совмещается с учёбой; он уходит честно и предсказуемо, когда появляется что-то интереснее. Такая мотивация совпадает с ограничением, а не борется с ним: отдел не пытается вырастить из студента десятилетнего специалиста, а сразу проектирует роль под полгода работы. Плата за это — входной отбор и требования к скиллсету, а не к опыту: [найм под проект](/ru/blog/project-based-hiring/) — про то, как определить скиллсет и мотивацию, а не искать готового специалиста, который при такой ротации всё равно не задержится.
+
+Второе решение — база знаний от разработки. Написать её силами поддержки невозможно: чтобы описать, как ведёт себя сервис, надо его знать, а знать его на старте некому, кроме разработчиков. Поэтому работа с базой знаний стала частью проекта, а не пожеланием: по каждому сценарию — по сервису и по каждому приложению — разработка отдавала признаки, поведение и границу эскалации в виде статьи, по которой можно ответить, а не в виде рассказа на ходу. Поддержка эти статьи не переписывала «как поняла», а проверяла на реальных обращениях: если статья разошлась с поведением сервиса, это дефект статьи или продукта, и он возвращается туда, откуда пришёл.
+
+Онбординг из этого стал измеримым. Новый человек проходит не курс, а маршрут: доступы, тикет-система, круг по базе знаний, теневая смена на живых обращениях и обратная проверка — студент закрывает сценарий сам, наставник только смотрит. Маршрут занимает две-три недели, и критерий готовности — не «прослушал вводный курс», а первое обращение, закрытое по базе без чужой подсказки. При ротации это единственный критерий, который имеет смысл: онбординг, который не проверяется закрытым обращением, не проверен вообще.
+
+Третье решение — максимально скриптовые ответы. Для типовых обращений писались скрипты: точная формулировка ответа, ветвление по тому, что видит клиент, и условие, при котором разговор прекращается и вопрос уходит на вторую линию. Смысл не в том, чтобы заменить человека шаблоном, а в том, чтобы студент на первой линии не изобретал ответ, которого не знает. Скриптов оказалось около десяти — вводные, общие по сервису и по каждому приложению, — и по ним закрывалось около 80% обращений: продукт при всей интерактивности устроен достаточно однородно, чтобы большинство вопросов сводилось к небольшому числу веток. Остальное — как раз то, ради чего нужен человек: понять контекст, выбрать ветку, увидеть, что случай не типовой, и эскалировать. На событиях вроде трансляции Олимпиады это единственная работающая конструкция: там очередь нельзя растянуть, а ответ нельзя придумать на ходу. Разбор с самого начала шёл по той же логике — категория, критичность, маршрут ([триаж при первом касании](/ru/blog/support-lead-triage-first-touch/)).
+
+Отсюда дисциплина, без которой всё предыдущее рассыпается: знание живёт в артефактах, а не в голове уходящего. Обращение, которое не решилось по существующей статье, оставляет после себя статью или правку к ней; смена передаётся списком открытых вопросов, а не намёком «там в почте было». У скрипта и у статьи есть владелец и дата пересмотра — иначе через две ротации никто не скажет, чему в базе ещё можно верить.
+
+Забавная деталь, которая сейчас читается как историческая: это было до эпохи ИИ. Скрипты писались вручную и вычитывались человеком, базу знаний искали по ключевым словам в вики, а «умный подсказчик» означал, что рядом сидит кто-то, кто помнит, где смотреть. Сегодняшнюю версию такого отдела строили бы иначе: часть первой линии закрывали бы модели, а людям остались бы нетиповые случаи и качество базы ([где ИИ в поддержке помогает, а где мешает](/ru/blog/ai-agents-in-support/)). Тогда проект пришлось делать так, как делали: руками, шаблонами и дисциплиной записи — и именно это оказалось переносимым навыком для команды.
+
+Результат — работающий отдел, у которого ротация заложена в конструкцию, а не терпится как проблема. Набор идёт из студентов под заранее описанный скиллсет, база знаний принадлежит разработке и поддержке одновременно и обновляется в момент решения, онбординг занимает две-три недели и проверяется самостоятельным обращением, а около 80% типовых вопросов закрываются по скрипту, не дожидаясь опытного человека. Отдел не зависит от того, кто сейчас на смене, — и это ровно то, что можно было принять как результат проекта.
+
+<!-- lang:en -->
+
+The client is an interactive TV startup. The product is its own: a proprietary interactive streaming service built entirely in-house, with no vendor platform underneath. The service was shown at an international exhibition and used for an Olympic broadcast — load arrived not as a steady stream but as events with hard dates and no room for error. Knowledge of how the product works and where it breaks exists in exactly one place — engineering. Support as a department does not exist: requests land in a shared channel, engineers triage them between tasks, and response time depends on who happens to be free. The task was to build a customer support department from scratch: boundaries, onboarding, a knowledge base, acceptance criteria. The format was a project — with a deadline, a scope and a result that can be accepted, not a function that is set up once and carried forever.
+
+The constraint was known before we started: turnover is high and will stay high. People work about six months, rotation is continuous, and it is not an emergency, it is the mode of operation. In that mode the usual shape of a support department does not work — the one that rests on experienced people who remember everything: by the time a person gains experience they are already leaving, and what they knew leaves with them. So resilience has to be built into artifacts rather than people, and every decision in the project follows from that: what a person must know on entry, what they must record after themselves, and what can be verified without their memory.
+
+Hiring focused on students. A student is not here for a ten-year career in support but for a way into the industry, a real product on their record and a schedule that fits their studies; they leave honestly and predictably when something more interesting comes along. That motivation matches the constraint instead of fighting it: the department does not try to grow a ten-year specialist out of a student, it designs the role for a six-month tenure from the start. The price is entry selection and requirements on skillset rather than experience: [hiring for a project](/en/blog/project-based-hiring/) is about defining the skillset and the motivation instead of looking for a ready-made specialist who will not stay anyway at this rotation rate.
+
+The second decision was the knowledge base coming from engineering. Writing it with the support team is impossible: describing how the service behaves requires knowing it, and at the start nobody knows it except the engineers. So work on the knowledge base became part of the project rather than a wish: for every scenario — across the service and across each application — engineering handed over the signals, the behaviour and the escalation boundary as an article you can answer from, not as a story told on the go. Support did not rewrite those articles "as they understood them" but checked them against real requests: if an article disagreed with how the service behaves, that is a defect of the article or of the product, and it goes back to where it came from.
+
+Onboarding became measurable out of that. A new person goes through a route, not a course: access, the ticketing system, a pass over the knowledge base, a shadow shift on live requests and a reverse check — the student closes a scenario alone while the mentor only watches. The route takes two to three weeks, and the readiness criterion is not "completed the intro course" but the first request closed from the knowledge base without a hint. At this rotation that is the only criterion that means anything: onboarding that is not verified by a closed request is not verified at all.
+
+The third decision was scripted answers wherever possible. For typical requests we wrote scripts: the exact wording of the answer, a branch for what the customer sees, and the condition under which the conversation stops and the question goes to the second line. The point is not to replace a person with a template but to keep a first-line student from inventing an answer they do not have. There turned out to be about ten scripts — introductory ones, ones shared across the service and one per application — and about 80% of requests were closed with them: for all its interactive surface the product is uniform enough that most questions reduce to a small number of branches. The rest is exactly why a person is needed: to read the context, pick the branch, notice that the case is not typical and escalate. On events like an Olympic broadcast that is the only workable design: the queue cannot be stretched there, and an answer cannot be improvised on the spot. Triage followed the same logic from day one — category, priority, route ([triage at first touch](/en/blog/support-lead-triage-first-touch/)).
+
+Hence the discipline without which everything above falls apart: knowledge lives in artifacts, not in the head of whoever is leaving. A request that was not resolved from an existing article leaves an article or an edit behind; a shift is handed over as a list of open questions, not as a hint that "it was in the mail somewhere". A script and an article have an owner and a review date — otherwise, two rotations later, nobody can say what in the knowledge base is still trustworthy.
+
+One detail reads as historical now: this was before the AI era. Scripts were written by hand and proofread by a person, the knowledge base was searched by keywords in a wiki, and a "smart assistant" meant someone sitting nearby who remembers where to look. Today's version of such a department would be built differently: models would close part of the first line while people would keep the non-typical cases and the quality of the knowledge base ([where AI agents help in support and where they hurt](/en/blog/ai-agents-in-support/)). Back then the project had to be done the way it was done: by hand, with templates and with the discipline of writing things down — and that turned out to be the transferable skill for the team.
+
+The outcome is a working department with rotation built into its design rather than tolerated as a problem. Hiring runs on students against a skillset described in advance, the knowledge base belongs to engineering and support at the same time and is updated at the moment of resolution, onboarding takes two to three weeks and is verified by an independent request, and about 80% of typical questions are closed by script without waiting for an experienced person. The department does not depend on who is on shift right now — and that is exactly what could be accepted as the result of the project.
+
+<!-- lang:he -->
+
+הלקוח הוא סטארטאפ של טלוויזיה אינטראקטיבית. המוצר הוא קנייני: שירות סטרימינג אינטראקטיבי שנבנה כולו בבית, בלי פלטפורמת ונדור מתחתיו. השירות הוצג בתערוכה בינלאומית והועלה לשידור אולימפי — העומס הגיע לא כזרם אחיד אלא כאירועים עם תאריך קשיח וזמן אפס לטעויות. הידע על איך המוצר בנוי ואיפה הוא נשבר קיים במקום אחד בלבד — בפיתוח. תמיכה כמחלקה לא קיימת: פניות נוחתות בערוץ משותף, מהנדסים מטפלים בהן בין משימה למשימה, וזמן התגובה תלוי במי שפנוי באותו רגע. המשימה — להקים מחלקת תמיכת לקוחות מאפס: גבולות, קליטה, בסיס ידע וקריטריונים לתוצאה. הפורמט — פרויקט: עם מועד, היקף עבודה ותוצאה שאפשר לקבל, ולא פונקציה שפותחים פעם אחת ומחזיקים לנצח.
+
+האילוץ היה ידוע מראש: התחלופה גבוהה ותישאר גבוהה. אנשים עובדים כחצי שנה, הרוטציה מתמשכת, וזה לא מצב חירום אלא מצב עבודה. במצב כזה המבנה הרגיל של מחלקת תמיכה לא עובד — זה שנשען על אנשים מנוסים שזוכרים הכול: עד שאדם רוכש ניסיון הוא כבר עוזב, והניסיון עוזב איתו. לכן העמידות צריכה להיבנות בארטיפקטים ולא באנשים, וכל החלטות הפרויקט נגזרות מזה: מה אדם צריך לדעת בכניסה, מה הוא חייב לתעד אחריו, ומה אפשר לאמת בלי הזיכרון שלו.
+
+הגיוס התמקד בסטודנטים. סטודנט לא מגיע בשביל קריירה של עשר שנים בתמיכה, אלא בשביל כניסה לתעשייה, מוצר אמיתי בקורות החיים ולוח זמנים שמתאים ללימודים; הוא עוזב ביושר ובצפיות כשמגיע משהו מעניין יותר. המוטיבציה הזאת מתיישבת עם האילוץ במקום להילחם בו: המחלקה לא מנסה לגדל מסטודנט מומחה לעשר שנים, היא מתכננת את התפקיד לחצי שנה מראש. המחיר — סינון בכניסה ודרישות לכישורים ולא לניסיון: [גיוס לפרויקט](/he/blog/project-based-hiring/) עוסק בהגדרת הסקילסט והמוטיבציה במקום בחיפוש מומחה מוכן, שבתחלופה כזאת לא יישאר בכל מקרה.
+
+ההחלטה השנייה — בסיס ידע מהפיתוח. לכתוב אותו בכוחות התמיכה בלתי אפשרי: כדי לתאר איך השירות מתנהג צריך להכיר אותו, ובהתחלה אין מי שמכיר אותו מלבד המפתחים. לכן העבודה על בסיס הידע הפכה לחלק מהפרויקט ולא למשאלה: לכל תרחיש — בשירות ובכל אפליקציה — הפיתוח העביר את הסימנים, את ההתנהגות ואת גבול האסקלציה כמאמר שאפשר לענות ממנו, ולא כסיפור בעל פה. התמיכה לא כתבה את המאמרים מחדש «כפי שהבינה», אלא בדקה אותם מול פניות אמיתיות: אם מאמר לא התאים להתנהגות השירות, זה פגם במאמר או במוצר, והוא חוזר למקום שממנו בא.
+
+מכאן הקליטה הפכה למדידה. אדם חדש עובר מסלול ולא קורס: הרשאות, מערכת טיקטים, סבב בבסיס הידע, משמרת צל על פניות חיות ובדיקה הפוכה — הסטודנט סוגר תרחיש לבדו והמנטור רק צופה. המסלול נמשך בין שבועיים לשלושה, וקריטריון המוכנות הוא לא «סיים קורס מבוא» אלא הפנייה הראשונה שנסגרה מבסיס הידע בלי רמז. בתחלופה כזאת זה הקריטריון היחיד שיש לו משמעות: קליטה שלא נבדקה בפנייה סגורה לא נבדקה בכלל.
+
+ההחלטה השלישית — תשובות מבוססות סקריפט ככל האפשר. לפניות טיפוסיות נכתבו סקריפטים: ניסוח מדויק של התשובה, הסתעפות לפי מה שהלקוח רואה, ותנאי שבו השיחה נעצרת והשאלה עוברת לקו השני. הכוונה אינה להחליף אדם בתבנית אלא למנוע מסטודנט בקו הראשון להמציא תשובה שאין לו. התברר שיש כעשרה סקריפטים — מבוא, משותפים לשירות ואחד לכל אפליקציה — ולפיהם נסגרו כ-80% מהפניות: על כל המשטח האינטראקטיבי, המוצר אחיד מספיק כדי שרוב השאלות יצטמצמו למספר קטן של הסתעפויות. השאר הוא בדיוק הסיבה שצריך אדם: להבין את ההקשר, לבחור הסתעפות, לזהות שהמקרה אינו טיפוסי ולהסלים. באירוע כמו שידור אולימפי זה המבנה היחיד שעובד: שם אי אפשר למתוח את התור, ואי אפשר להמציא תשובה במקום. המיון הלך באותה לוגיקה מההתחלה — קטגוריה, דחיפות, מסלול ([מיון במגע ראשון](/he/blog/support-lead-triage-first-touch/)).
+
+מכאן המשמעת שבלעדיה כל האמור לעיל מתפרק: הידע חי בארטיפקטים ולא בראשו של מי שעוזב. פנייה שלא נפתרה לפי מאמר קיים משאירה אחריה מאמר או תיקון לו; משמרת מועברת כרשימת שאלות פתוחות ולא כרמז ש«זה היה איפשהו במייל». לסקריפט ולמאמר יש בעלים ותאריך בדיקה — אחרת אחרי שתי רוטציות איש לא יוכל לומר למה בבסיס הידע עוד אפשר להאמין.
+
+פרט אחד נקרא היום כהיסטורי: זה היה לפני עידן ה-AI. סקריפטים נכתבו ביד ונערכו על ידי אדם, בסיס הידע חופש לפי מילות מפתח בוויקי, ו«עוזר חכם» פירושו היה שמישהו יושב ליד וזוכר איפה לחפש. הגרסה של היום של מחלקה כזאת הייתה נבנית אחרת: מודלים היו סוגרים חלק מהקו הראשון, ולאנשים היו נשארים המקרים הלא טיפוסיים ואיכות בסיס הידע ([איפה סוכני AI בתמיכה עוזרים ואיפה הם מזיקים](/he/blog/ai-agents-in-support/)). אז הפרויקט נעשה כפי שנעשה: ביד, בתבניות ובמשמעת של תיעוד — וזה התברר ככישור שעובר הלאה לצוות.
+
+התוצאה — מחלקה עובדת שהרוטציה מוטבעת בתכנון שלה ולא נסבלת כבעיה. הגיוס מגיע מסטודנטים לפי סקילסט שהוגדר מראש, בסיס הידע שייך לפיתוח ולתמיכה בו-זמנית ומתעדכן ברגע הפתרון, הקליטה נמשכת שבועיים-שלושה ונבדקת בפנייה עצמאית, וכ-80% מהשאלות הטיפוסיות נסגרות לפי סקריפט בלי לחכות לאדם מנוסה. המחלקה לא תלויה במי שנמצא במשמרת עכשיו — וזה בדיוק מה שאפשר היה לקבל כתוצאה של הפרויקט.
