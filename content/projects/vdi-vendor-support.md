@@ -2,7 +2,7 @@
 slug: vdi-vendor-support
 view: leader
 order: 4
-status: done
+status: in_progress
 icon: "🎧"
 translations:
   ru:

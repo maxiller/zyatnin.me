@@ -2,7 +2,7 @@
 slug: bank-vdi
 view: leader
 order: 3
-status: done
+status: in_progress
 icon: "🖥️"
 translations:
   ru:
