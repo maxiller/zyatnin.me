@@ -7,10 +7,10 @@
 
   <text x="96" y="208" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#182231">When HR shows up in a</text>
   <text x="96" y="281" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#182231">technical email thread</text>
-  <rect x="96.0" y="347" width="243.9" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
-  <text x="218.0" y="382" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">Team leadership</text>
-  <rect x="353.9" y="347" width="294.9" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
-  <text x="501.4" y="382" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">Support management</text>
+  <rect x="96.0" y="347" width="177.4" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
+  <text x="184.7" y="382" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">Leadership</text>
+  <rect x="287.4" y="347" width="114.5" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
+  <text x="344.6" y="382" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">Hiring</text>
 
   <text x="96" y="556" text-anchor="start" font-family="Inter" font-size="24" font-weight="700" fill="#2b5fb0">zyatnin.me</text>
   <text x="96" y="588" text-anchor="start" font-family="Inter" font-size="22" font-weight="400" fill="#5f6d80">/en/blog/support-lead-hr-in-technical-thread/</text>

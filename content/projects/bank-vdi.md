@@ -4,11 +4,11 @@ view: leader
 order: 2
 status: in_progress
 icon: "🖥️"
+tags: [vdi, l2, handover]
 translations:
   ru:
     title: "Крупный банк: L2 вместо партнёра"
     excerpt: "Замена партнёрской команды L2 на собственную: партнёр пробрасывал обращения без анализа, вендор забрал разбор, перестроил процессы и вернул доверие банка."
-    tags: ["VDI", "150 000 пользователей", "L2", "Передача сервиса", "Клиентский успех"]
     points:
       - "Собственная L2 вместо партнёрской: матрица компетенций, расчёт мощности, набор и перевод инженеров"
       - "Передача знаний как условие выхода партнёра: регламенты, теневые смены, обратная проверка на реальных сценариях"
@@ -18,7 +18,6 @@ translations:
   en:
     title: "Major Bank: L2 without the partner"
     excerpt: "Replacing a partner L2 team with the vendor's own: the partner forwarded tickets without analysis, the vendor took over triage, rebuilt processes and won the bank's trust back."
-    tags: ["VDI", "150,000 users", "L2", "Service transfer", "Customer success"]
     points:
       - "Our own L2 instead of the partner's: competency matrix, capacity planning, hiring and internal transfers"
       - "Knowledge handover as a condition of the partner's exit: runbooks, shadow shifts, a reverse check on real scenarios"
@@ -28,7 +27,6 @@ translations:
   he:
     title: "בנק גדול: L2 בלי השותף"
     excerpt: "החלפת צוות L2 של שותף בצוות של הספק: השותף העביר פניות בלי ניתוח, הספק לקח את הטיפול, בנה מחדש תהליכים והחזיר את אמון הבנק."
-    tags: ["VDI", "150,000 משתמשים", "L2", "העברת שירות", "הצלחת לקוח"]
     points:
       - "L2 משלנו במקום של השותף: מטריצת כישורים, תכנון כוח אדם, גיוס והעברות פנימיות"
       - "העברת ידע כתנאי ליציאת השותף: נהלים, משמרות צל ובדיקה הפוכה על תרחישים אמיתיים"

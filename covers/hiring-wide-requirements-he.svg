@@ -10,10 +10,8 @@
   <text x="1104" y="354" text-anchor="end" font-family="Noto Sans Hebrew" font-size="66" font-weight="800" fill="#182231">הפשרה</text>
   <rect x="1001.8" y="420" width="102.2" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
   <text x="1052.9" y="455" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#1f4a91">גיוס</text>
-  <rect x="805.7" y="420" width="182.1" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
-  <text x="896.7" y="455" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#1f4a91">הובלת צוות</text>
-  <rect x="595.1" y="420" width="196.6" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
-  <text x="693.4" y="455" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#1f4a91">ניהול תמיכה</text>
+  <rect x="841.8" y="420" width="145.9" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
+  <text x="914.8" y="455" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#1f4a91">מנהיגות</text>
 
   <text x="1104" y="556" text-anchor="end" font-family="Inter" font-size="24" font-weight="700" fill="#2b5fb0">zyatnin.me</text>
   <text x="1104" y="588" text-anchor="end" font-family="Inter" font-size="22" font-weight="400" fill="#5f6d80">/he/blog/hiring-wide-requirements/</text>

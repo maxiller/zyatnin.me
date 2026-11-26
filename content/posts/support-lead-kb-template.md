@@ -2,7 +2,7 @@
 slug: support-lead-kb-template
 view: leader
 date: 2026-11-29
-tags: ["team-leadership", "support-management"]
+tags: [knowledge, process]
 translations:
   ru:
     title: "Шаблон статьи базы знаний и владелец КБ"

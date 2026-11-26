@@ -1,0 +1,28 @@
+{#- Карточки проектов вида «Инженер». Ожидает переменную `projects`.
+    Как и в виде «Лидер», ссылка на проект растянута с заголовка (::after), а
+    метки — отдельные ссылки на страницы меток проектов. -#}
+<div class="dev-repos">
+  {% for proj in projects %}
+  <article class="dev-repo fade-in">
+    <div class="dev-repo__top">
+      <span class="dev-repo__name"><a href="{{ proj.url }}" class="dev-repo__link">{{ proj.data.title }}/</a></span>
+      {% if proj.data.status %}
+      <span class="dev-badge dev-badge--{{ proj.data.status }}">{{ i18n.projects.status[proj.data.status] }}</span>
+      {% endif %}
+    </div>
+    <p class="dev-repo__desc">{{ proj.data.excerpt }}</p>
+    {% if proj.data.points %}
+    <ul class="dev-repo__points" role="list">
+      {% for point in proj.data.points %}
+      <li>{{ point }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <ul class="dev-tags" role="list">
+      {% for tag in proj.data.tags %}
+      <li><a class="dev-tag" href="{{ proj.data.lang | projectTagUrl(proj.data.view, tag) }}">{{ i18n.tags.names[tag] }}</a></li>
+      {% endfor %}
+    </ul>
+  </article>
+  {% endfor %}
+</div>

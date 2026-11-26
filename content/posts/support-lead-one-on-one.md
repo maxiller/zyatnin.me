@@ -2,7 +2,7 @@
 slug: support-lead-one-on-one
 view: leader
 date: 2026-12-10
-tags: ["team-leadership", "support-management"]
+tags: [team-leadership, hiring]
 translations:
   ru:
     title: "1:1, которые не превращаются в отчёт и аттестацию"

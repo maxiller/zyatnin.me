@@ -2,7 +2,7 @@
 slug: project-based-hiring
 view: leader
 date: 2026-03-14
-tags: ["hiring", "team-leadership"]
+tags: [hiring, team-leadership]
 translations:
   ru:
     title: "Найм под проект: правильное определение скиллсета и мотивации"

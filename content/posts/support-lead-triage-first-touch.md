@@ -2,7 +2,7 @@
 slug: support-lead-triage-first-touch
 view: leader
 date: 2026-11-18
-tags: ["team-leadership", "support-management"]
+tags: [process, support-management, sla]
 translations:
   ru:
     title: "Триаж при первом касании: категория, критичность, маршрут"

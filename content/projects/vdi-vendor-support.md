@@ -4,11 +4,11 @@ view: leader
 order: 1
 status: in_progress
 icon: "🎧"
+tags: [vdi, support-management, knowledge]
 translations:
   ru:
     title: "Вендор VDI, РФ"
     excerpt: "Поддержка L2–L3 для вендора VDI: структура команды, процессы, метрики и инженерный инструментарий."
-    tags: ["VDI", "Техподдержка", "L2–L3", "KCS", "KPI"]
     points:
       - "Действующая команда L2–L3: структура работы, матрица компетенций, расчёт мощности"
       - "Контуры сервиса: триаж, контроль SLA без тихих нарушений, эскалация в L3 с пакетом"
@@ -18,7 +18,6 @@ translations:
   en:
     title: "VDI Vendor, Russia"
     excerpt: "L2–L3 support for a VDI vendor: team structure, processes, metrics and engineering tooling."
-    tags: ["VDI", "Tech Support", "L2–L3", "KCS", "KPI"]
     points:
       - "An existing L2–L3 team: working structure, competency matrix, capacity planning"
       - "Service loops: triage, SLA control without silent breaches, L3 escalation with a package"
@@ -28,7 +27,6 @@ translations:
   he:
     title: "ספק VDI, רוסיה"
     excerpt: "תמיכה L2–L3 לספק VDI: מבנה הצוות, תהליכים, מדדים וערכת כלים הנדסית."
-    tags: ["VDI", "תמיכה טכנית", "L2–L3", "KCS", "KPI"]
     points:
       - "צוות L2–L3 קיים: מבנה עבודה, מטריצת כישורים, תכנון כוח אדם"
       - "מעגלי השירות: טריאז', בקרת SLA ללא הפרות שקטות, אסקלציה ל-L3 עם חבילת מידע"

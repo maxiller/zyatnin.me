@@ -2,7 +2,7 @@
 slug: support-lead-capacity-planning
 view: leader
 date: 2026-12-18
-tags: ["team-leadership", "support-management"]
+tags: [team-leadership, support-management, process]
 translations:
   ru:
     title: "Мощность вместо героизма: расчёт потребности в инженерах"

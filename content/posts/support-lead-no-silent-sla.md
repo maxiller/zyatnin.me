@@ -2,7 +2,7 @@
 slug: support-lead-no-silent-sla
 view: leader
 date: 2026-11-21
-tags: ["team-leadership", "support-management"]
+tags: [sla, process, kpi]
 translations:
   ru:
     title: "Ни одного тихого нарушения SLA: еженедельный контроль очереди"

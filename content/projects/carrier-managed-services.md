@@ -4,11 +4,11 @@ view: leader
 order: 4
 status: done
 icon: "📡"
+tags: [telecom, handover, knowledge]
 translations:
   ru:
     title: "Сотовый оператор, США"
     excerpt: "Из коробки в managed service: перестройка процессов оператора, передача экспертизы в глобальный центр и перенос поддержки в NA под ограничениями США."
-    tags: ["Телеком", "Managed Services", "Передача сервиса", "KCS", "США"]
     points:
       - "Ребалансировка капекса и опекса: коробочный продукт уходит на managed service вендора в рамках апгрейда — меняются сразу версия и модель обслуживания"
       - "Процессы клиента переписаны под роль заказчика сервиса: заказ, приоритет, изменение, эскалация — вместо эксплуатации"
@@ -19,7 +19,6 @@ translations:
   en:
     title: "Mobile Carrier, USA"
     excerpt: "From boxed product to managed service: rebuilding the carrier's processes, handing expertise to the global centre, and moving support to NA under US restrictions."
-    tags: ["Telecom", "Managed Services", "Service transfer", "KCS", "USA"]
     points:
       - "Rebalancing capex and opex: the boxed product moves to the vendor's managed service as part of an upgrade — version and service model change at once"
       - "The client's processes were rewritten for the role of a service customer: ordering, priority, change, escalation instead of operations"
@@ -30,7 +29,6 @@ translations:
   he:
     title: "ספק סלולר, ארה״ב"
     excerpt: "ממוצר מדף ל-managed services: בנייה מחדש של תהליכי הספק, העברת הידע למרכז הגלובלי והעברת התמיכה ל-NA תחת מגבלות ארה״ב."
-    tags: ["טלקום", "Managed Services", "העברת שירות", "KCS", "ארה״ב"]
     points:
       - "איזון מחדש של capex ו-opex: מוצר המדף עובר ל-managed service של הוונדור במסגרת שדרוג — הגרסה ומודל התחזוקה משתנים יחד"
       - "תהליכי הלקוח נכתבו מחדש לתפקיד של צרכן שירות: הזמנה, עדיפות, שינוי, אסקלציה במקום תפעול"

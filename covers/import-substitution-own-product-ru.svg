@@ -10,8 +10,8 @@
   <text x="96" y="354" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#182231">плевать на свой продукт</text>
   <rect x="96.0" y="420" width="156.8" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
   <text x="174.4" y="455" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">Продукт</text>
-  <rect x="266.8" y="420" width="332.1" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
-  <text x="432.9" y="455" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">Лидерство в команде</text>
+  <rect x="266.8" y="420" width="189.1" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
+  <text x="361.4" y="455" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">Лидерство</text>
 
   <text x="96" y="556" text-anchor="start" font-family="Inter" font-size="24" font-weight="700" fill="#2b5fb0">zyatnin.me</text>
   <text x="96" y="588" text-anchor="start" font-family="Inter" font-size="22" font-weight="400" fill="#5f6d80">/ru/blog/import-substitution-own-product/</text>

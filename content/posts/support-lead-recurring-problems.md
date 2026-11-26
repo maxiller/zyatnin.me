@@ -2,7 +2,7 @@
 slug: support-lead-recurring-problems
 view: leader
 date: 2026-12-02
-tags: ["team-leadership", "support-management"]
+tags: [process, product, knowledge]
 translations:
   ru:
     title: "Повторяющиеся проблемы: от потока тикетов к записям с владельцем"

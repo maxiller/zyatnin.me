@@ -2,7 +2,7 @@
 slug: kpi-system-technical-support
 view: leader
 date: 2025-08-04
-tags: ["kpi", "support-management"]
+tags: [kpi, support-management, process]
 translations:
   ru:
     title: "Проектирование KPI-систем для команд технической поддержки"

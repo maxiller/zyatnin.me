@@ -2,7 +2,7 @@
 slug: support-lead-hr-in-technical-thread
 view: leader
 date: 2027-01-12
-tags: ["team-leadership", "support-management"]
+tags: [team-leadership, hiring]
 translations:
   ru:
     title: "Когда в технической переписке появляется HR"

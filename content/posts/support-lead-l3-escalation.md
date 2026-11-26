@@ -2,7 +2,7 @@
 slug: support-lead-l3-escalation
 view: leader
 date: 2026-11-24
-tags: ["team-leadership", "support-management"]
+tags: [process, support-management, l2]
 translations:
   ru:
     title: "Эскалация в L3: пакет, OLA и владелец клиента"

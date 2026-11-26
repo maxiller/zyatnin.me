@@ -2,7 +2,7 @@
 slug: sdd-in-support-management
 view: leader
 date: 2026-11-19
-tags: ["spec-driven-dev", "support-management"]
+tags: [spec-driven-dev, support-management, process]
 translations:
   ru:
     title: "Spec-driven development в работе лида поддержки: спека вместо просьбы"

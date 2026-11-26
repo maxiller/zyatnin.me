@@ -10,10 +10,10 @@
   <text x="1104" y="354" text-anchor="end" font-family="Noto Sans Hebrew" font-size="66" font-weight="800" fill="#d7dbe2">Valkey</text>
   <rect x="978.1" y="420" width="125.9" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
   <text x="1041.0" y="455" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#8ecbff">Python</text>
-  <rect x="767.5" y="420" width="196.6" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
-  <text x="865.8" y="455" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#8ecbff">תורי משימות</text>
-  <rect x="596.6" y="420" width="156.8" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
-  <text x="675.1" y="455" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#8ecbff">Telegram</text>
+  <rect x="847.3" y="420" width="116.8" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
+  <text x="905.7" y="455" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#8ecbff">תורים</text>
+  <rect x="676.5" y="420" width="156.8" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
+  <text x="754.9" y="455" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#8ecbff">Telegram</text>
 
   <text x="1104" y="556" text-anchor="end" font-family="Inter" font-size="24" font-weight="700" fill="#61afef">zyatnin.me</text>
   <text x="1104" y="588" text-anchor="end" font-family="Inter" font-size="22" font-weight="400" fill="#9aa1ad">/he/dev/blog/telegram-bot-rq-valkey/</text>

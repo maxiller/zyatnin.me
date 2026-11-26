@@ -2,7 +2,7 @@
 slug: support-lead-rhythm-40-percent
 view: leader
 date: 2026-12-07
-tags: ["team-leadership", "support-management"]
+tags: [team-leadership, process]
 translations:
   ru:
     title: "Ритм руководителя: правило 40 %"

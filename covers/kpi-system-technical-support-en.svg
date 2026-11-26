@@ -9,8 +9,10 @@
   <text x="96" y="281" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#182231">Technical Support Teams</text>
   <rect x="96.0" y="347" width="84.8" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
   <text x="138.4" y="382" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">KPI</text>
-  <rect x="194.8" y="347" width="294.9" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
-  <text x="342.3" y="382" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">Support management</text>
+  <rect x="194.8" y="347" width="134.5" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
+  <text x="262.1" y="382" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">Support</text>
+  <rect x="343.3" y="347" width="168.8" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
+  <text x="427.7" y="382" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">Processes</text>
 
   <text x="96" y="556" text-anchor="start" font-family="Inter" font-size="24" font-weight="700" fill="#2b5fb0">zyatnin.me</text>
   <text x="96" y="588" text-anchor="start" font-family="Inter" font-size="22" font-weight="400" fill="#5f6d80">/en/blog/kpi-system-technical-support/</text>

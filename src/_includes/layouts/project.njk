@@ -10,7 +10,7 @@ layout: layouts/base.njk
       <h1 class="article__title article__title--mono">{{ title }}</h1>
       <ul class="tags article__tags" role="list">
         {% for tag in tags %}
-        <li class="tag">{{ tag }}</li>
+        <li><a class="tag" href="{{ i18n.lang | projectTagUrl(view, tag) }}">{{ i18n.tags.names[tag] }}</a></li>
         {% endfor %}
       </ul>
       {% if points %}

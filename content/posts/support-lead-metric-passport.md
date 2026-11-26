@@ -2,7 +2,7 @@
 slug: support-lead-metric-passport
 view: leader
 date: 2027-01-04
-tags: ["team-leadership", "support-management"]
+tags: [kpi, process]
 translations:
   ru:
     title: "Метрика без действия — это картинка: паспорт метрики"

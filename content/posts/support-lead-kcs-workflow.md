@@ -2,7 +2,7 @@
 slug: support-lead-kcs-workflow
 view: leader
 date: 2026-11-26
-tags: ["team-leadership", "support-management"]
+tags: [knowledge, process]
 translations:
   ru:
     title: "KCS в рабочем потоке: статья пишется в момент решения"

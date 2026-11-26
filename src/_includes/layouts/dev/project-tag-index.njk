@@ -1,0 +1,20 @@
+---
+layout: layouts/dev/base.njk
+---
+
+{#- Страница метки проектов вида «Инженер»: проекты этого языка с меткой.
+    `entry` — элемент коллекции projectTagPages_<lang>_dev (см. .eleventy.js). -#}
+{% set tagPages = collections["projectTagPages_" + i18n.lang + "_dev"] %}
+{% set currentTag = entry.tag %}
+
+<header class="dev-page-head">
+  <h1 class="dev-page-head__title">{{ i18n.dev.tags.project_title | replace("{tag}", entry.label) }}</h1>
+  <p class="dev-page-head__desc">{{ i18n.dev.tags.project_desc | replace("{tag}", entry.label) }}</p>
+</header>
+
+<div class="dev-page">
+  <a href="/{{ i18n.lang }}/dev/#projects" class="dev-article__back">cd ~/{{ i18n.projects.label | lower }}</a>
+  {% include "partials/dev/tag-bar.njk" %}
+  {% set projects = collections["projects_" + i18n.lang] | byView("dev") | byTag(entry.tag) %}
+  {% include "partials/dev/project-list.njk" %}
+</div>

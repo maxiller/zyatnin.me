@@ -2,7 +2,7 @@
 slug: support-lead-shift-left-pilot
 view: leader
 date: 2026-12-05
-tags: ["team-leadership", "support-management"]
+tags: [process, knowledge, support-management]
 translations:
   ru:
     title: "Самообслуживание как Shift Left: пилот с честным измерением"

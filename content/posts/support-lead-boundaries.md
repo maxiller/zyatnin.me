@@ -2,7 +2,7 @@
 slug: support-lead-boundaries
 view: leader
 date: 2026-06-07
-tags: ["team-leadership", "support-management"]
+tags: [team-leadership, process]
 translations:
   ru:
     title: "Границы ответственности: что лид делает сам, делегирует и от чего отказывается"

@@ -2,7 +2,7 @@
 slug: ai-agents-in-support
 view: leader
 date: 2026-01-21
-tags: ["ai-agents", "support-management"]
+tags: [ai-agents, support-management]
 translations:
   ru:
     title: "AI-агенты в поддержке: где помогают, а где мешают"

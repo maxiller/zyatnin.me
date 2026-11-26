@@ -43,28 +43,37 @@
   "tags": {
     "label": "Tags",
     "names": {
-      "ai-agents": "AI agents",
+      "ai-agents": "AI",
       "automation": "Automation",
       "ci-cd": "CI/CD",
       "containers": "Containers",
       "desktop": "Desktop",
       "gitlab": "GitLab",
+      "handover": "Handover",
       "hiring": "Hiring",
       "jira": "Jira",
+      "knowledge": "Knowledge",
       "kpi": "KPI",
+      "l2": "L2",
       "linux": "Linux",
       "networking": "Networking",
+      "onboarding": "Onboarding",
       "podman": "Podman",
+      "process": "Processes",
       "product": "Product",
       "python": "Python",
-      "queues": "Task queues",
+      "queues": "Queues",
       "sla": "SLA",
-      "spec-driven-dev": "Spec-Driven Development",
+      "spec-driven-dev": "SDD",
       "ssh": "SSH",
-      "support-management": "Support management",
+      "streaming": "Streaming",
+      "support-management": "Support",
       "systemd": "systemd",
-      "team-leadership": "Team leadership",
+      "team-leadership": "Leadership",
+      "telecom": "Telecom",
       "telegram": "Telegram",
+      "vdi": "VDI",
+      "vendor": "Vendor",
       "virtualization": "Virtualization"
     }
   },
@@ -112,7 +121,9 @@
     },
     "tags": {
       "page_title": "Articles tagged “{tag}”",
-      "page_desc": "Blog articles from the Support Leader view tagged “{tag}”"
+      "page_desc": "Blog articles from the Support Leader view tagged “{tag}”",
+      "project_title": "Projects tagged “{tag}”",
+      "project_desc": "Support Leader projects tagged “{tag}”"
     }
   },
   "dev": {
@@ -146,7 +157,9 @@
     },
     "tags": {
       "page_title": "Notes tagged “{tag}”",
-      "page_desc": "Developer notes tagged “{tag}”: deep dives, practice, and tools"
+      "page_desc": "Developer notes tagged “{tag}”: deep dives, practice, and tools",
+      "project_title": "Projects tagged “{tag}”",
+      "project_desc": "Developer projects tagged “{tag}”"
     }
   }
 }

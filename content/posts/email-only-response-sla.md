@@ -2,7 +2,7 @@
 slug: email-only-response-sla
 view: leader
 date: 2026-02-07
-tags: ["sla", "support-management"]
+tags: [sla, support-management]
 translations:
   ru:
     title: "SLA на реакцию, имея только почту"

@@ -4,11 +4,11 @@ view: leader
 order: 5
 status: done
 icon: "📺"
+tags: [streaming, onboarding, knowledge]
 translations:
   ru:
     title: "Стартап интерактивного ТВ: отдел поддержки с нуля"
     excerpt: "Отдел клиентской поддержки с нуля для проприетарного стримингового сервиса: студенты вместо опытных инженеров, база знаний от разработки и скриптовые ответы на первой линии при ротации в полгода."
-    tags: ["Интерактивное ТВ", "Стриминг", "Студенты", "База знаний", "Онбординг"]
     points:
       - "Юнит собран как проект: границы, онбординг, база знаний и критерии результата вместо «нанять людей на телефоны»"
       - "Набор из студентов под описанный скиллсет — под срок работы около полугода, а не под долгую карьеру в поддержке"
@@ -19,7 +19,6 @@ translations:
   en:
     title: "Interactive TV Startup: a Support Department from Scratch"
     excerpt: "Building a customer support department from scratch for a proprietary streaming service: students instead of seasoned engineers, a knowledge base from engineering, and scripted first-line answers at a six-month rotation."
-    tags: ["Interactive TV", "Streaming", "Students", "Knowledge base", "Onboarding"]
     points:
       - "The unit was built as a project: boundaries, onboarding, a knowledge base and acceptance criteria instead of hiring people for the phones"
       - "Hiring students against a defined skillset — for a tenure of about six months, not for a long career in support"
@@ -30,7 +29,6 @@ translations:
   he:
     title: "סטארטאפ טלוויזיה אינטראקטיבית: מחלקת תמיכה מאפס"
     excerpt: "הקמת מחלקת תמיכת לקוחות מאפס לשירות סטרימינג קנייני: סטודנטים במקום מהנדסים מנוסים, בסיס ידע מהפיתוח ותשובות מבוססות סקריפט בקו הראשון, עם תחלופה של חצי שנה."
-    tags: ["טלוויזיה אינטראקטיבית", "סטרימינג", "סטודנטים", "בסיס ידע", "קליטה"]
     points:
       - "היחידה נבנתה כפרויקט: גבולות, קליטה, בסיס ידע וקריטריונים לתוצאה במקום גיוס אנשים לטלפונים"
       - "גיוס סטודנטים לפי סקילסט מוגדר — לתקופת עבודה של כחצי שנה ולא לקריירה ארוכה בתמיכה"

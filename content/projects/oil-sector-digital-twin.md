@@ -4,11 +4,11 @@ view: leader
 order: 3
 status: done
 icon: "🏭"
+tags: [sla, vendor, support-management]
 translations:
   ru:
     title: "Нефтяной сектор, РФ"
     excerpt: "Поддержка цифрового двойника в закрытом контуре: SLA через юридического посредника и интегратора клиента, расчёт по цепочкам писем в Power BI и защищённые границы вендора."
-    tags: ["Цифровой двойник", "Закрытый контур", "SLA", "Вендор-менеджмент", "Power BI"]
     points:
       - "Процесс выстроен до перехода команды внедрения в стадию поддержки клиента"
       - "Два посредника: партнёр — только юридический, операционная работа шла напрямую с интегратором клиента под НДА"
@@ -18,7 +18,6 @@ translations:
   en:
     title: "Oil Sector, Russia"
     excerpt: "Supporting a digital twin inside a closed perimeter: SLA across a legal intermediary and the client's integrator, calculated from email threads in Power BI, with protected vendor boundaries."
-    tags: ["Digital Twin", "Closed Perimeter", "SLA", "Vendor Management", "Power BI"]
     points:
       - "The process was built before the implementation team moved into the client support stage"
       - "Two intermediaries: the partner was legal only, the operational work ran directly with the client's integrator under an NDA"
@@ -28,7 +27,6 @@ translations:
   he:
     title: "ענף הנפט, רוסיה"
     excerpt: "תמיכה בתאומה דיגיטלית בסביבה סגורה: SLA דרך מתווך משפטי והאינטגרטור של הלקוח, חישוב משרשורי אימייל ב-Power BI וגבולות אחריות מוגנים לספק."
-    tags: ["תאומה דיגיטלית", "סביבה סגורה", "SLA", "ניהול ונדורים", "Power BI"]
     points:
       - "התהליך נבנה לפני מעבר צוות ההטמעה לשלב תמיכת הלקוח"
       - "שני מתווכים: השותף היה משפטי בלבד, והעבודה התפעולית התנהלה ישירות מול האינטגרטור של הלקוח תחת NDA"

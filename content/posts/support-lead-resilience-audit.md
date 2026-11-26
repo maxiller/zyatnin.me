@@ -2,7 +2,7 @@
 slug: support-lead-resilience-audit
 view: leader
 date: 2027-01-06
-tags: ["team-leadership", "support-management"]
+tags: [process, team-leadership]
 translations:
   ru:
     title: "Аудит живучести: что сломается, когда вас не будет"

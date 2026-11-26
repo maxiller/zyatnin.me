@@ -2,7 +2,7 @@
 slug: support-lead-problem-card
 view: leader
 date: 2026-12-31
-tags: ["team-leadership", "support-management"]
+tags: [process, product]
 translations:
   ru:
     title: "Карточка проблемы для продукта, которую не закрыть без статуса"

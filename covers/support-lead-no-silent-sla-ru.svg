@@ -8,10 +8,12 @@
   <text x="96" y="208" text-anchor="start" font-family="Inter" font-size="58" font-weight="800" fill="#182231">Ни одного тихого нарушения</text>
   <text x="96" y="272" text-anchor="start" font-family="Inter" font-size="58" font-weight="800" fill="#182231">SLA: еженедельный контроль</text>
   <text x="96" y="336" text-anchor="start" font-family="Inter" font-size="58" font-weight="800" fill="#182231">очереди</text>
-  <rect x="96.0" y="402" width="332.1" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
-  <text x="262.0" y="437" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">Лидерство в команде</text>
-  <rect x="442.1" y="402" width="373.4" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
-  <text x="628.8" y="437" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">Управление поддержкой</text>
+  <rect x="96.0" y="402" width="92.4" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
+  <text x="142.2" y="437" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">SLA</text>
+  <rect x="202.4" y="402" width="173.0" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
+  <text x="288.8" y="437" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">Процессы</text>
+  <rect x="389.3" y="402" width="84.8" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
+  <text x="431.7" y="437" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">KPI</text>
 
   <text x="96" y="556" text-anchor="start" font-family="Inter" font-size="24" font-weight="700" fill="#2b5fb0">zyatnin.me</text>
   <text x="96" y="588" text-anchor="start" font-family="Inter" font-size="22" font-weight="400" fill="#5f6d80">/ru/blog/support-lead-no-silent-sla/</text>

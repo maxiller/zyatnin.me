@@ -2,7 +2,7 @@
 slug: support-lead-year-roadmap
 view: leader
 date: 2026-11-13
-tags: ["team-leadership", "support-management"]
+tags: [team-leadership, process]
 translations:
   ru:
     title: "Год лида по кварталам: дорожная карта на 12 месяцев"

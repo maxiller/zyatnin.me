@@ -2,7 +2,7 @@
 slug: support-lead-management-status
 view: leader
 date: 2026-12-24
-tags: ["team-leadership", "support-management"]
+tags: [process, team-leadership]
 translations:
   ru:
     title: "Статус руководству: письмо на страницу и часовой обзор"

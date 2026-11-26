@@ -9,8 +9,8 @@
   <text x="1104" y="281" text-anchor="end" font-family="Noto Sans Hebrew" font-size="66" font-weight="800" fill="#182231">אימייל</text>
   <rect x="1011.6" y="347" width="92.4" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
   <text x="1057.8" y="382" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#1f4a91">SLA</text>
-  <rect x="801.0" y="347" width="196.6" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
-  <text x="899.3" y="382" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#1f4a91">ניהול תמיכה</text>
+  <rect x="880.8" y="347" width="116.8" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
+  <text x="939.2" y="382" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#1f4a91">תמיכה</text>
 
   <text x="1104" y="556" text-anchor="end" font-family="Inter" font-size="24" font-weight="700" fill="#2b5fb0">zyatnin.me</text>
   <text x="1104" y="588" text-anchor="end" font-family="Inter" font-size="22" font-weight="400" fill="#5f6d80">/he/blog/email-only-response-sla/</text>

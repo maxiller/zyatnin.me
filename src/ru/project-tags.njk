@@ -1,0 +1,12 @@
+---
+layout: layouts/project-tag-index.njk
+pagination:
+  data: collections.projectTagPages_ru_leader
+  size: 1
+  alias: entry
+  addAllPagesToCollections: true
+permalink: "{{ entry.url }}"
+eleventyComputed:
+  title: "{{ i18n.leader.tags.project_title | replace('{tag}', entry.label) }}"
+  description: "{{ i18n.leader.tags.project_desc | replace('{tag}', entry.label) }}"
+---

@@ -2,7 +2,7 @@
 slug: support-lead-nine-mistakes
 view: leader
 date: 2027-01-09
-tags: ["team-leadership", "support-management"]
+tags: [team-leadership, support-management]
 translations:
   ru:
     title: "Девять ошибок лида поддержки — и годовой отчёт"

@@ -2,7 +2,7 @@
 slug: support-lead-facts-based-assessment
 view: leader
 date: 2026-12-13
-tags: ["team-leadership", "support-management"]
+tags: [team-leadership, kpi, hiring]
 translations:
   ru:
     title: "Оценка по наблюдаемым фактам: QA-выборка и шесть критериев"

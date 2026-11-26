@@ -2,7 +2,7 @@
 slug: support-lead-five-results
 view: leader
 date: 2026-03-31
-tags: ["team-leadership", "support-management"]
+tags: [team-leadership, kpi]
 translations:
   ru:
     title: "Пять результатов работы лида поддержки"

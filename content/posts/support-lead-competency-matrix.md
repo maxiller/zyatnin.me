@@ -2,7 +2,7 @@
 slug: support-lead-competency-matrix
 view: leader
 date: 2026-12-15
-tags: ["team-leadership", "support-management"]
+tags: [team-leadership, hiring, process]
 translations:
   ru:
     title: "Матрица компетенций: закрываем одноточечные риски"

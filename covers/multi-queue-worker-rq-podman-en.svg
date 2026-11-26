@@ -9,10 +9,10 @@
   <text x="96" y="281" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#d7dbe2">Worker with RQ and Podman</text>
   <rect x="96.0" y="347" width="125.9" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
   <text x="158.9" y="382" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#8ecbff">Python</text>
-  <rect x="235.9" y="347" width="195.8" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
-  <text x="333.8" y="382" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#8ecbff">Task queues</text>
-  <rect x="445.7" y="347" width="139.7" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
-  <text x="515.6" y="382" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#8ecbff">Podman</text>
+  <rect x="235.9" y="347" width="131.6" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
+  <text x="301.7" y="382" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#8ecbff">Queues</text>
+  <rect x="381.5" y="347" width="139.7" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
+  <text x="451.4" y="382" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#8ecbff">Podman</text>
 
   <text x="96" y="556" text-anchor="start" font-family="Inter" font-size="24" font-weight="700" fill="#61afef">zyatnin.me</text>
   <text x="96" y="588" text-anchor="start" font-family="Inter" font-size="22" font-weight="400" fill="#9aa1ad">/en/dev/blog/multi-queue-worker-rq-podman/</text>

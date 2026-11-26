@@ -62,31 +62,8 @@ layout: layouts/dev/base.njk
       <h2 class="dev-section__title">{{ i18n.projects.title }}</h2>
     </div>
   </header>
-  <div class="dev-repos">
-    {% for proj in devProjects %}
-    <a href="{{ proj.url }}" class="dev-repo fade-in">
-      <div class="dev-repo__top">
-        <span class="dev-repo__name">{{ proj.data.title }}/</span>
-        {% if proj.data.status %}
-        <span class="dev-badge dev-badge--{{ proj.data.status }}">{{ i18n.projects.status[proj.data.status] }}</span>
-        {% endif %}
-      </div>
-      <p class="dev-repo__desc">{{ proj.data.excerpt }}</p>
-      {% if proj.data.points %}
-      <ul class="dev-repo__points" role="list">
-        {% for point in proj.data.points %}
-        <li>{{ point }}</li>
-        {% endfor %}
-      </ul>
-      {% endif %}
-      <ul class="dev-tags" role="list">
-        {% for tag in proj.data.tags %}
-        <li class="dev-tag">{{ tag }}</li>
-        {% endfor %}
-      </ul>
-    </a>
-    {% endfor %}
-  </div>
+  {% set projects = devProjects %}
+  {% include "partials/dev/project-list.njk" %}
 </section>
 {% endif %}
 

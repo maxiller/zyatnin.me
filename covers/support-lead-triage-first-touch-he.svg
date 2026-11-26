@@ -7,10 +7,12 @@
 
   <text x="1104" y="208" text-anchor="end" font-family="Noto Sans Hebrew" font-size="66" font-weight="800" fill="#182231">מיון במגע ראשון: קטגוריה,</text>
   <text x="1104" y="281" text-anchor="end" font-family="Noto Sans Hebrew" font-size="66" font-weight="800" fill="#182231">דחיפות, מסלול</text>
-  <rect x="921.9" y="347" width="182.1" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
-  <text x="1013.0" y="382" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#1f4a91">הובלת צוות</text>
-  <rect x="711.3" y="347" width="196.6" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
-  <text x="809.6" y="382" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#1f4a91">ניהול תמיכה</text>
+  <rect x="958.1" y="347" width="145.9" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
+  <text x="1031.0" y="382" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#1f4a91">תהליכים</text>
+  <rect x="827.3" y="347" width="116.8" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
+  <text x="885.7" y="382" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#1f4a91">תמיכה</text>
+  <rect x="720.9" y="347" width="92.4" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
+  <text x="767.1" y="382" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#1f4a91">SLA</text>
 
   <text x="1104" y="556" text-anchor="end" font-family="Inter" font-size="24" font-weight="700" fill="#2b5fb0">zyatnin.me</text>
   <text x="1104" y="588" text-anchor="end" font-family="Inter" font-size="22" font-weight="400" fill="#5f6d80">/he/blog/support-lead-triage-first-touch/</text>

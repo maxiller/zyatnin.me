@@ -7,10 +7,12 @@
 
   <text x="96" y="208" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#182231">Эскалация в L3: пакет,</text>
   <text x="96" y="281" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#182231">OLA и владелец клиента</text>
-  <rect x="96.0" y="347" width="332.1" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
-  <text x="262.0" y="382" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">Лидерство в команде</text>
-  <rect x="442.1" y="347" width="373.4" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
-  <text x="628.8" y="382" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">Управление поддержкой</text>
+  <rect x="96.0" y="347" width="173.0" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
+  <text x="182.5" y="382" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">Процессы</text>
+  <rect x="283.0" y="347" width="189.1" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
+  <text x="377.5" y="382" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">Поддержка</text>
+  <rect x="486.0" y="347" width="75.7" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
+  <text x="523.9" y="382" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#1f4a91">L2</text>
 
   <text x="96" y="556" text-anchor="start" font-family="Inter" font-size="24" font-weight="700" fill="#2b5fb0">zyatnin.me</text>
   <text x="96" y="588" text-anchor="start" font-family="Inter" font-size="22" font-weight="400" fill="#5f6d80">/ru/blog/support-lead-l3-escalation/</text>

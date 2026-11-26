@@ -2,7 +2,7 @@
 slug: support-lead-interaction-matrix
 view: leader
 date: 2026-12-21
-tags: ["team-leadership", "support-management"]
+tags: [process, team-leadership]
 translations:
   ru:
     title: "Матрица взаимодействий: кто решает и по каким вопросам"

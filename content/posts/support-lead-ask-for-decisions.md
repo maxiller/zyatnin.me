@@ -2,7 +2,7 @@
 slug: support-lead-ask-for-decisions
 view: leader
 date: 2026-12-26
-tags: ["team-leadership", "support-management"]
+tags: [team-leadership, support-management]
 translations:
   ru:
     title: "Просить решения, а не сочувствия: эскалация и запрос ресурсов"

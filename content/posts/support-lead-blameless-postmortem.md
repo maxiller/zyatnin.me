@@ -2,7 +2,7 @@
 slug: support-lead-blameless-postmortem
 view: leader
 date: 2026-12-29
-tags: ["team-leadership", "support-management"]
+tags: [process, team-leadership]
 translations:
   ru:
     title: "Blameless-разбор инцидента: хронология без имён"

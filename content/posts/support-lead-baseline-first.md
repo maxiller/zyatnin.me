@@ -2,7 +2,7 @@
 slug: support-lead-baseline-first
 view: leader
 date: 2026-11-10
-tags: ["team-leadership", "support-management"]
+tags: [process, kpi, support-management]
 translations:
   ru:
     title: "Baseline раньше целей: почему годовые планы проваливаются на старте"

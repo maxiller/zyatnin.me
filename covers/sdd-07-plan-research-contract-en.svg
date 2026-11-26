@@ -8,10 +8,10 @@
   <text x="96" y="208" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#d7dbe2">/speckit.plan: research,</text>
   <text x="96" y="281" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#d7dbe2">data-model and the contract</text>
   <text x="96" y="354" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#d7dbe2">before code</text>
-  <rect x="96.0" y="420" width="350.5" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
-  <text x="271.3" y="455" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#8ecbff">Spec-Driven Development</text>
-  <rect x="460.5" y="420" width="155.8" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
-  <text x="538.4" y="455" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#8ecbff">AI agents</text>
+  <rect x="96.0" y="420" width="92.4" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
+  <text x="142.2" y="455" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#8ecbff">SDD</text>
+  <rect x="202.4" y="420" width="68.7" height="52" rx="26" fill="rgba(97, 175, 239, 0.14)"/>
+  <text x="236.7" y="455" text-anchor="middle" font-family="Inter" font-size="26" font-weight="600" fill="#8ecbff">AI</text>
 
   <text x="96" y="556" text-anchor="start" font-family="Inter" font-size="24" font-weight="700" fill="#61afef">zyatnin.me</text>
   <text x="96" y="588" text-anchor="start" font-family="Inter" font-size="22" font-weight="400" fill="#9aa1ad">/en/dev/blog/sdd-07-plan-research-contract/</text>

@@ -9,8 +9,10 @@
   <text x="1104" y="281" text-anchor="end" font-family="Noto Sans Hebrew" font-size="66" font-weight="800" fill="#182231">תמיכה טכנית</text>
   <rect x="1019.2" y="347" width="84.8" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
   <text x="1061.6" y="382" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#1f4a91">KPI</text>
-  <rect x="808.6" y="347" width="196.6" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
-  <text x="906.9" y="382" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#1f4a91">ניהול תמיכה</text>
+  <rect x="888.4" y="347" width="116.8" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
+  <text x="946.8" y="382" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#1f4a91">תמיכה</text>
+  <rect x="728.5" y="347" width="145.9" height="52" rx="26" fill="rgba(43, 95, 176, 0.09)"/>
+  <text x="801.4" y="382" text-anchor="middle" font-family="Noto Sans Hebrew" font-size="26" font-weight="600" fill="#1f4a91">תהליכים</text>
 
   <text x="1104" y="556" text-anchor="end" font-family="Inter" font-size="24" font-weight="700" fill="#2b5fb0">zyatnin.me</text>
   <text x="1104" y="588" text-anchor="end" font-family="Inter" font-size="22" font-weight="400" fill="#5f6d80">/he/blog/kpi-system-technical-support/</text>

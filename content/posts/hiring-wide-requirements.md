@@ -2,7 +2,7 @@
 slug: hiring-wide-requirements
 view: leader
 date: 2026-11-25
-tags: ["hiring", "team-leadership", "support-management"]
+tags: [hiring, team-leadership]
 translations:
   ru:
     title: "Найм на двадцать пунктов: инфраструктурный продукт, прямой клиент и цена компромисса"

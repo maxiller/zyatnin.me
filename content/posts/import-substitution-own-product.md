@@ -2,7 +2,7 @@
 slug: import-substitution-own-product
 view: leader
 date: 2027-01-15
-tags: ["product", "team-leadership"]
+tags: [product, team-leadership]
 translations:
   ru:
     title: "Проблема импортозамещения: всем плевать на свой продукт"

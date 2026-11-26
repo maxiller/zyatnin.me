@@ -43,28 +43,37 @@
   "tags": {
     "label": "תגיות",
     "names": {
-      "ai-agents": "סוכני AI",
+      "ai-agents": "AI",
       "automation": "אוטומציה",
       "ci-cd": "CI/CD",
       "containers": "מכולות",
-      "desktop": "שולחן עבודה",
+      "desktop": "דסקטופ",
       "gitlab": "GitLab",
+      "handover": "העברה",
       "hiring": "גיוס",
       "jira": "Jira",
+      "knowledge": "ידע",
       "kpi": "KPI",
+      "l2": "L2",
       "linux": "Linux",
       "networking": "רשתות",
+      "onboarding": "קליטה",
       "podman": "Podman",
+      "process": "תהליכים",
       "product": "מוצר",
       "python": "Python",
-      "queues": "תורי משימות",
+      "queues": "תורים",
       "sla": "SLA",
-      "spec-driven-dev": "Spec-Driven Development",
+      "spec-driven-dev": "SDD",
       "ssh": "SSH",
-      "support-management": "ניהול תמיכה",
+      "streaming": "סטרימינג",
+      "support-management": "תמיכה",
       "systemd": "systemd",
-      "team-leadership": "הובלת צוות",
+      "team-leadership": "מנהיגות",
+      "telecom": "טלקום",
       "telegram": "Telegram",
+      "vdi": "VDI",
+      "vendor": "ספק",
       "virtualization": "וירטואליזציה"
     }
   },
@@ -112,7 +121,9 @@
     },
     "tags": {
       "page_title": "מאמרים עם התגית «{tag}»",
-      "page_desc": "מאמרי הבלוג בתצוגת «מנהל תמיכה» עם התגית «{tag}»"
+      "page_desc": "מאמרי הבלוג בתצוגת «מנהל תמיכה» עם התגית «{tag}»",
+      "project_title": "פרויקטים עם התגית «{tag}»",
+      "project_desc": "פרויקטים בתצוגת «מנהל תמיכה» עם התגית «{tag}»"
     }
   },
   "dev": {
@@ -146,7 +157,9 @@
     },
     "tags": {
       "page_title": "רשומות עם התגית «{tag}»",
-      "page_desc": "רשומות מפתחים עם התגית «{tag}»: העמקה, תרגול וכלים"
+      "page_desc": "רשומות מפתחים עם התגית «{tag}»: העמקה, תרגול וכלים",
+      "project_title": "פרויקטים עם התגית «{tag}»",
+      "project_desc": "פרויקטים של מפתח עם התגית «{tag}»"
     }
   }
 }

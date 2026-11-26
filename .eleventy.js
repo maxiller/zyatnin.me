@@ -207,13 +207,20 @@ eleventyConfig.addFilter("switchLangUrl", (pages, url, targetLang) => {
   // place that decides their URLs (FR-119, FR-120).
   const tagUrl = (lang, view, tag) => contentModel.tagUrl(view, lang, tag);
   eleventyConfig.addFilter("tagUrl", tagUrl);
+  const projectTagUrl = (lang, view, tag) => contentModel.projectTagUrl(view, lang, tag);
+  eleventyConfig.addFilter("projectTagUrl", projectTagUrl);
 
   for (const lang of contentModel.LANGS) {
     for (const view of contentModel.VIEWS) {
       eleventyConfig.addCollection(`tagPages_${lang}_${view}`, () =>
         contentModel
           .load()
-          .tagPages.filter((tag) => tag.lang === lang && tag.view === view)
+          .tagPages.filter((tag) => tag.kind === "posts" && tag.lang === lang && tag.view === view)
+      );
+      eleventyConfig.addCollection(`projectTagPages_${lang}_${view}`, () =>
+        contentModel
+          .load()
+          .projectTagPages.filter((tag) => tag.kind === "projects" && tag.lang === lang && tag.view === view)
       );
     }
   }

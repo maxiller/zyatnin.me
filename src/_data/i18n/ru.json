@@ -43,28 +43,37 @@
   "tags": {
     "label": "Метки",
     "names": {
-      "ai-agents": "AI-агенты",
+      "ai-agents": "AI",
       "automation": "Автоматизация",
       "ci-cd": "CI/CD",
       "containers": "Контейнеры",
       "desktop": "Десктоп",
       "gitlab": "GitLab",
+      "handover": "Передача",
       "hiring": "Найм",
       "jira": "Jira",
+      "knowledge": "Знания",
       "kpi": "KPI",
+      "l2": "L2",
       "linux": "Linux",
       "networking": "Сети",
+      "onboarding": "Онбординг",
       "podman": "Podman",
+      "process": "Процессы",
       "product": "Продукт",
       "python": "Python",
-      "queues": "Очереди задач",
+      "queues": "Очереди",
       "sla": "SLA",
-      "spec-driven-dev": "Spec-Driven Development",
+      "spec-driven-dev": "SDD",
       "ssh": "SSH",
-      "support-management": "Управление поддержкой",
+      "streaming": "Стриминг",
+      "support-management": "Поддержка",
       "systemd": "systemd",
-      "team-leadership": "Лидерство в команде",
+      "team-leadership": "Лидерство",
+      "telecom": "Телеком",
       "telegram": "Telegram",
+      "vdi": "VDI",
+      "vendor": "Вендор",
       "virtualization": "Виртуализация"
     }
   },
@@ -112,7 +121,9 @@
     },
     "tags": {
       "page_title": "Статьи с меткой «{tag}»",
-      "page_desc": "Статьи блога вида «Лидер поддержки» с меткой «{tag}»"
+      "page_desc": "Статьи блога вида «Лидер поддержки» с меткой «{tag}»",
+      "project_title": "Проекты с меткой «{tag}»",
+      "project_desc": "Проекты вида «Лидер поддержки» с меткой «{tag}»"
     }
   },
   "dev": {
@@ -146,7 +157,9 @@
     },
     "tags": {
       "page_title": "Заметки с меткой «{tag}»",
-      "page_desc": "Заметки разработчика с меткой «{tag}»: разборы, практика и инструменты"
+      "page_desc": "Заметки разработчика с меткой «{tag}»: разборы, практика и инструменты",
+      "project_title": "Проекты с меткой «{tag}»",
+      "project_desc": "Проекты разработчика с меткой «{tag}»"
     }
   }
 }

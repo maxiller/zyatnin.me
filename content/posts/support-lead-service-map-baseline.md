@@ -2,7 +2,7 @@
 slug: support-lead-service-map-baseline
 view: leader
 date: 2026-11-15
-tags: ["team-leadership", "support-management"]
+tags: [process, support-management, kpi]
 translations:
   ru:
     title: "Карта сервиса и Точка А: диагностика первого месяца"
