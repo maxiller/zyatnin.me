@@ -1,7 +1,7 @@
 ---
 slug: oil-sector-digital-twin
 view: leader
-order: 2
+order: 3
 status: done
 icon: "🏭"
 translations:

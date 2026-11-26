@@ -1,7 +1,7 @@
 ---
 slug: carrier-managed-services
 view: leader
-order: 1
+order: 4
 status: done
 icon: "📡"
 translations:
