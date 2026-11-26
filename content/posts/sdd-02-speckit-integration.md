@@ -1,7 +1,7 @@
 ---
 slug: sdd-02-speckit-integration
 view: dev
-date: 2026-05-04
+date: 2026-04-22
 tags: ["spec-driven-dev", "ai-agents"]
 translations:
   ru:

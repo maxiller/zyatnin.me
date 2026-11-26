@@ -1,7 +1,7 @@
 ---
 slug: kvm-bridge-networking
 view: dev
-date: 2025-07-01
+date: 2025-07-03
 tags: ["networking", "virtualization", "linux"]
 translations:
   ru:

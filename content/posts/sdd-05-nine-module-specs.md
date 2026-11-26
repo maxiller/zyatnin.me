@@ -1,7 +1,7 @@
 ---
 slug: sdd-05-nine-module-specs
 view: dev
-date: 2026-07-11
+date: 2026-05-26
 tags: ["spec-driven-dev", "ai-agents"]
 translations:
   ru:

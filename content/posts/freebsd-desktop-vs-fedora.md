@@ -1,7 +1,7 @@
 ---
 slug: freebsd-desktop-vs-fedora
 view: dev
-date: 2025-09-07
+date: 2025-09-08
 tags: ["linux", "desktop"]
 translations:
   ru:

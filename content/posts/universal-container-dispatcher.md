@@ -1,7 +1,7 @@
 ---
 slug: universal-container-dispatcher
 view: dev
-date: 2025-10-28
+date: 2025-10-27
 tags: ["python", "containers", "automation"]
 translations:
   ru:

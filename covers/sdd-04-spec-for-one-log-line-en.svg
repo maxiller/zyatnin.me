@@ -2,7 +2,7 @@
   <rect width="1200" height="630" fill="#0f1115"/>
 
   <text x="96" y="92" text-anchor="start" font-family="Inter" font-size="24" font-weight="700" letter-spacing="4" fill="#61afef">ENGINEER</text>
-  <text x="1104" y="92" text-anchor="end" font-family="Inter" font-size="24" font-weight="400" fill="#9aa1ad">24 June 2026</text>
+  <text x="1104" y="92" text-anchor="end" font-family="Inter" font-size="24" font-weight="400" fill="#9aa1ad">14 May 2026</text>
   <rect x="96" y="112" width="72" height="6" rx="3" fill="#98c379"/>
 
   <text x="96" y="208" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#d7dbe2">/speckit.specify: a spec for</text>

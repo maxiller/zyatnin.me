@@ -1,7 +1,7 @@
 ---
 slug: sdd-01-constitution-and-specs
 view: dev
-date: 2026-04-17
+date: 2026-04-10
 tags: ["spec-driven-dev", "ai-agents"]
 translations:
   ru:

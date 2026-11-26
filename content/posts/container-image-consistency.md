@@ -1,7 +1,7 @@
 ---
 slug: container-image-consistency
 view: dev
-date: 2025-12-01
+date: 2025-11-24
 tags: ["containers", "ci-cd"]
 translations:
   ru:

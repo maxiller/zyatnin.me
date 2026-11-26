@@ -1,7 +1,7 @@
 ---
 slug: sdd-09-analyze-findings
 view: dev
-date: 2026-09-17
+date: 2026-07-13
 tags: ["spec-driven-dev", "ai-agents"]
 translations:
   ru:

@@ -1,7 +1,7 @@
 ---
 slug: sdd-06-spec-wave-postmortem
 view: dev
-date: 2026-07-28
+date: 2026-06-05
 tags: ["spec-driven-dev", "ai-agents"]
 translations:
   ru:

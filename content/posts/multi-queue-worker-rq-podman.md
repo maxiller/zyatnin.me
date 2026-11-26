@@ -1,7 +1,7 @@
 ---
 slug: multi-queue-worker-rq-podman
 view: dev
-date: 2025-12-18
+date: 2025-12-08
 tags: ["python", "queues", "podman"]
 translations:
   ru:

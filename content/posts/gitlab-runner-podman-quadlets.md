@@ -1,7 +1,7 @@
 ---
 slug: gitlab-runner-podman-quadlets
 view: dev
-date: 2025-08-21
+date: 2025-08-20
 tags: ["podman", "gitlab", "systemd"]
 translations:
   ru:

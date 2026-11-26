@@ -1,7 +1,7 @@
 ---
 slug: sdd-11-emission-moves-to-functions
 view: dev
-date: 2026-10-21
+date: 2026-08-04
 tags: ["spec-driven-dev", "ai-agents"]
 translations:
   ru:

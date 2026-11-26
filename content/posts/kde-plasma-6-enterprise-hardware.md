@@ -1,7 +1,7 @@
 ---
 slug: kde-plasma-6-enterprise-hardware
 view: dev
-date: 2025-09-24
+date: 2025-09-15
 tags: ["linux", "desktop"]
 translations:
   ru:

@@ -1,7 +1,7 @@
 ---
 slug: sdd-07-plan-research-contract
 view: dev
-date: 2026-08-14
+date: 2026-06-18
 tags: ["spec-driven-dev", "ai-agents"]
 translations:
   ru:

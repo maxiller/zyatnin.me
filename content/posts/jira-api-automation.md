@@ -1,7 +1,7 @@
 ---
 slug: jira-api-automation
 view: dev
-date: 2025-10-11
+date: 2025-10-13
 tags: ["python", "jira", "automation"]
 translations:
   ru:

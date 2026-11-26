@@ -1,7 +1,7 @@
 ---
 slug: ssh-tunnels-containers
 view: dev
-date: 2025-07-18
+date: 2025-07-16
 tags: ["containers", "ssh", "networking"]
 translations:
   ru:

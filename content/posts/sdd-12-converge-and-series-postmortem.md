@@ -1,7 +1,7 @@
 ---
 slug: sdd-12-converge-and-series-postmortem
 view: dev
-date: 2026-11-07
+date: 2026-08-17
 tags: ["spec-driven-dev", "ai-agents"]
 translations:
   ru:

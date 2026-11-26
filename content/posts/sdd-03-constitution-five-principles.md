@@ -1,7 +1,7 @@
 ---
 slug: sdd-03-constitution-five-principles
 view: dev
-date: 2026-05-21
+date: 2026-05-04
 tags: ["spec-driven-dev", "ai-agents"]
 translations:
   ru:

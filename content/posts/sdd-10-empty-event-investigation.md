@@ -1,7 +1,7 @@
 ---
 slug: sdd-10-empty-event-investigation
 view: dev
-date: 2026-10-04
+date: 2026-07-24
 tags: ["spec-driven-dev", "containers"]
 translations:
   ru:

@@ -1,7 +1,7 @@
 ---
 slug: podman-vs-docker
 view: dev
-date: 2026-02-24
+date: 2026-01-19
 tags: ["podman", "containers"]
 translations:
   ru:

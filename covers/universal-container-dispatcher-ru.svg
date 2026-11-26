@@ -2,7 +2,7 @@
   <rect width="1200" height="630" fill="#0f1115"/>
 
   <text x="96" y="92" text-anchor="start" font-family="Inter" font-size="24" font-weight="700" letter-spacing="4" fill="#61afef">ИНЖЕНЕР</text>
-  <text x="1104" y="92" text-anchor="end" font-family="Inter" font-size="24" font-weight="400" fill="#9aa1ad">28 октября 2025 г.</text>
+  <text x="1104" y="92" text-anchor="end" font-family="Inter" font-size="24" font-weight="400" fill="#9aa1ad">27 октября 2025 г.</text>
   <rect x="96" y="112" width="72" height="6" rx="3" fill="#98c379"/>
 
   <text x="96" y="208" text-anchor="start" font-family="Inter" font-size="66" font-weight="800" fill="#d7dbe2">Универсальный</text>

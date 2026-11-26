@@ -1,7 +1,7 @@
 ---
 slug: sdd-08-tasks-and-tdd
 view: dev
-date: 2026-08-31
+date: 2026-07-01
 tags: ["spec-driven-dev", "ai-agents"]
 translations:
   ru:

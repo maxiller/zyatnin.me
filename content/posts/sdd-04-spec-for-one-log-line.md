@@ -1,7 +1,7 @@
 ---
 slug: sdd-04-spec-for-one-log-line
 view: dev
-date: 2026-06-24
+date: 2026-05-14
 tags: ["spec-driven-dev", "ai-agents"]
 translations:
   ru:

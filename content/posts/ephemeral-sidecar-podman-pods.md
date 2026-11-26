@@ -1,7 +1,7 @@
 ---
 slug: ephemeral-sidecar-podman-pods
 view: dev
-date: 2026-01-04
+date: 2025-12-22
 tags: ["podman", "containers", "ssh"]
 translations:
   ru:

@@ -1,7 +1,7 @@
 ---
 slug: telegram-bot-rq-valkey
 view: dev
-date: 2025-11-14
+date: 2025-11-10
 tags: ["python", "queues", "telegram"]
 translations:
   ru:
